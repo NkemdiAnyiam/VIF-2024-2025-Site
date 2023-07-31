@@ -1,12 +1,18 @@
 import React from 'react';
-import './sass/main.scss';
+import { Route, Switch } from "react-router-dom";
 
-function App() {
+import './sass/main.scss';
+import { NavBar } from './components/NavBar/NavBar';
+
+export function App() {
   return (
     <div className="App">
-      App
+      <NavBar></NavBar>
+      <Switch>
+        <Route exact path='/'>
+          <div>aaa</div>
+        </Route>
+      </Switch>
     </div>
   );
 }
-
-export default App;

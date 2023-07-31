@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  transition: font-size 0.05s;
+  @include media-max(560px) {
+    font-size: 50%;
+  }
+  // background-color: black;
+}
+
+body {
+  position: relative;
+  background-color: $color-violet-darkest;
+  font-family: $font-secondary;
+  color: $color-white;
+  font-size: 1.6rem;
+  // max-width: 1366px;
+  // margin: 0 auto;
+}
