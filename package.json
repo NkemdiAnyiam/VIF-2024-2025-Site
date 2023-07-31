@@ -21,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "create-icons": "npx @svgr/cli src/Icons --out-dir src/Components/iconComponents --icon --no-dimensions --ignore-existing --typescript"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.0.1",
     "@types/react-router-dom": "^5.3.3",
     "sass": "^1.64.1"
   }
