@@ -21,6 +21,13 @@ body {
   font-family: $font-secondary;
   color: $color-white;
   font-size: 1.6rem;
-  // max-width: 1366px;
-  // margin: 0 auto;
+  height: 100vh;
+}
+
+.container {
+  max-width: 114rem;
+  width: 100%;
+
+  margin: 0 auto;
+  // background-color: $color-violet-darkest;
 }

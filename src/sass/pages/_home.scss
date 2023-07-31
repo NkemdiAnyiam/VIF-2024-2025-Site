@@ -1,0 +1,45 @@
+@mixin banner-background-image($url, $color) {
+  background-size: cover;
+  background-image: linear-gradient(rgba($color, 0.8), rgba($color, 0.8), rgba($color-violet-darkest, 1)),
+                    url($url);
+}
+
+.home-page {
+  header {
+    position: relative;
+
+    height: 45rem;
+    padding: 0 2rem;
+
+    display: grid;
+    place-content: center;
+
+    .background {
+      @include banner-background-image('/images/seated-group-photo-2.jpg', darken($color-brand-green-darker, 0));
+      background-position: 50% 25%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // filter: blur(1.5px);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 7rem;
+      font-family: $font-primary;
+      font-weight: 400;
+      text-shadow: $text-shadow;
+      text-align: center;
+
+      @include media-max(860px) {
+        font-size: 6rem;
+      }
+
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+}

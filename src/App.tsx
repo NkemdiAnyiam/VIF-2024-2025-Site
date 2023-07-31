@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 
+import { HomePage } from './pages/HomePage/HomePage';
+
 import './sass/main.scss';
 import { NavBar } from './components/NavBar/NavBar';
 
@@ -10,7 +12,7 @@ export function App() {
       <NavBar></NavBar>
       <Switch>
         <Route exact path='/'>
-          <div>aaa</div>
+          <HomePage></HomePage>
         </Route>
       </Switch>
     </div>

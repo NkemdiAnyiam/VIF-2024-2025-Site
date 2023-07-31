@@ -1,0 +1,24 @@
+.navbar {
+  $nav-height: 6rem;
+
+  position: sticky;
+  top: 0;
+
+  height: $nav-height;
+  margin-bottom: -$nav-height;
+  border-bottom: 1px solid $color-white;
+  background-color: rgba($color-violet-darkest, 0.7);
+
+  display: flex;
+  align-items: center;
+  padding: 1rem 4rem;
+
+  .logo-container {
+    display: grid;
+    place-content: center;
+
+    .vif-logo-mark {
+      height: 4rem;
+    }
+  }
+}
