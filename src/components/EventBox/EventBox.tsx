@@ -28,7 +28,7 @@ export function EventBox(props: EventBoxProps): JSX.Element {
     return props.events.map(([day, month, weekDate, [startTime, endTime]]) => {
       return (
         <li key={`${month} ${weekDate}`}>
-          <p>{day}, {month} {weekDate}{getWeekDatePostfix(weekDate)}</p>
+          <p>{day}, {month} {weekDate}<sup>{getWeekDatePostfix(weekDate)}</sup></p>
           <p>{startTime}–{endTime}</p>
         </li>
       )
