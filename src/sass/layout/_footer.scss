@@ -21,7 +21,7 @@
 
   &__icon {
     height: 3.1rem;
-    fill: $color-white;
+    fill: $color-gray-lightest;
 
     &--twitter {
       @include icon-solid(#5EBEE7);
