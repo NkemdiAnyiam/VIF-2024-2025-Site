@@ -1,4 +1,5 @@
 import React from 'react';
+import { EventBox } from '../../components/EventBox/EventBox';
 
 export function HomePage(): JSX.Element {
   return (
@@ -35,6 +36,27 @@ export function HomePage(): JSX.Element {
             <p>
               Along with this year's fair, The VIF Committee has put together several other events throughout the school year. These include industry speakers, workshops, portfolio & resume reviews, and mock interviews.
             </p>
+          </div>
+        </div>
+      </section>
+      <section className="section section--virtual-portfolio-reviews" id="virtual-portfolio-review-dates">
+        <div className="container">
+          <h2 className="heading-secondary">Virtual Portfolio Reviews</h2>
+          <div className="event-boxes">
+            <EventBox
+              season="Fall"
+              events={[
+                ["Thursday", "October", 19, ['10am', '4pm']],
+                ["Friday", "October", 20, ['10am', '4pm']],
+              ]}
+            />
+            <EventBox
+              season="Spring"
+              events={[
+                ["Thursday", "January", 25, ['10am', '4pm']],
+                ["Friday", "January", 26, ['10am', '4pm']],
+              ]}
+            />
           </div>
         </div>
       </section>
