@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function HomePage() {
+export function HomePage(): JSX.Element {
   return (
     <main className="home-page">
       <header className="banner">

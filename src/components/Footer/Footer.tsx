@@ -2,7 +2,7 @@ import React from 'react';
 import { FooterLink } from './FooterLink/FooterLink';
 import { LogoInstagram, LogoLinkedin, LogoTwitter, LogoYoutube } from '../iconComponents';
 
-export function Footer() {
+export function Footer(): JSX.Element {
   return (
     <footer className="footer">
       <ul className="footer__links">

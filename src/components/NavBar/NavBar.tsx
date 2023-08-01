@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { VifLogoMark } from '../iconComponents';
 
-export function NavBar() {
+export function NavBar(): JSX.Element {
   const [sticky, setSticky] = useState(window.scrollY > 0);
 
   useEffect(() => {

@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { SVGProps } from "react";
-const SvgLogoInstagram = (props: SVGProps<SVGSVGElement>) => (
+const SvgLogoInstagram = (props: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="logo-instagram_svg__ionicon"

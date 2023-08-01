@@ -7,7 +7,7 @@ import './sass/main.scss';
 import { NavBar } from './components/NavBar/NavBar';
 import { Footer } from './components/Footer/Footer';
 
-export function App() {
+export function App(): JSX.Element {
   return (
     <div className="App">
       <NavBar></NavBar>
