@@ -5,8 +5,10 @@
   font-size: 7rem;
   font-family: $font-primary;
   font-weight: 400;
+  line-height: 1.1;
   text-shadow: $text-shadow;
   text-align: center;
+  transition: font-size 0.05s;
 
   @include media-max(860px) {
     font-size: 6rem;

@@ -29,10 +29,15 @@
       background-attachment: fixed;
     }
 
+    .container {
+      display: grid;
+      row-gap: 1.8rem;
+    }
+
     &__intro-text {
       max-width: 100rem;
       font-size: max(1.8rem, 16px);
-      line-height: 1.3;
+      line-height: 1.5;
       text-align: center;
       text-shadow: $text-shadow;
       orphans: 4;
@@ -44,6 +49,7 @@
 
     .paragraphs {
       font-size: 16px;
+      line-height: 1.5;
   
       display: flex;
       flex-direction: column;
