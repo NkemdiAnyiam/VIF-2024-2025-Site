@@ -9,6 +9,7 @@
   text-shadow: $text-shadow;
   text-align: center;
   transition: font-size 0.05s;
+  margin-bottom: 1.8rem;
 
   @include media-max(860px) {
     font-size: 6rem;
@@ -17,4 +18,18 @@
   span {
     white-space: nowrap;
   }
+}
+
+.heading-secondary {
+  font-size: 5rem;
+  font-family: $font-bebas;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  // line-height: 1.1;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
 }
