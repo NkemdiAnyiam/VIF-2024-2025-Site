@@ -39,6 +39,7 @@ export function HomePage(): JSX.Element {
           </div>
         </div>
       </section>
+
       <section className="section section--virtual-portfolio-reviews" id="virtual-portfolio-review-dates">
         <div className="container">
           <h2 className="heading-secondary">Virtual Portfolio Reviews</h2>

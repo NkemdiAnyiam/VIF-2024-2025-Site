@@ -17,7 +17,7 @@ html {
 
 body {
   position: relative;
-  // background-color: $color-violet-darkest;
+  background-color: $color-black; // shouldn't actually show
   font-family: $font-secondary;
   color: $color-gray-lightest;
   font-size: 16px;
@@ -26,13 +26,37 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#page-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+
+  background-image: linear-gradient(rgba($color-black, 0.9), rgba($color-black, 0.9)),
+                    url('/images/grayscale-logo-background.png'),
+                    linear-gradient($color-white, $color-white);
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur(0.5px);
+  background-size: 50%;
 }
 
 #root {
   height: 100%;
+}
+
+.section {
+  max-width: 120rem;
+  padding: 4.8rem 0;
+  margin: 0 auto;
+  box-shadow: -6px 0px 6px rgba(black, 0.3);
+  clip-path: inset(0px 0px 0px -10px);
+
+  &.section--full-bleed {
+    max-width: unset;
+  }
 }
 
 .container {
@@ -40,5 +64,4 @@ code {
   width: 100%;
   padding: 0 4rem;
   margin: 0 auto;
-  // background-color: $color-violet-darkest;
 }
