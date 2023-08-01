@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { VifLogoMark } from '../iconComponents';
+import { VifLogoMark, VifLogoWide } from '../iconComponents';
 
 export function NavBar(): JSX.Element {
   const [sticky, setSticky] = useState(window.scrollY > 0);
@@ -21,6 +21,7 @@ export function NavBar(): JSX.Element {
     <nav className={`navbar${sticky ? ' navbar--sticky' : ''}`}>
       <span className="logo-container">
         <VifLogoMark className="vif-logo-mark" />
+        {/* <VifLogoWide className="vif-logo-wide" /> */}
       </span>
       Nav
     </nav>
