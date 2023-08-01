@@ -20,5 +20,21 @@
   &__icon {
     height: 3.1rem;
     fill: $color-white;
+
+    &--twitter {
+      @include icon-solid(#5EBEE7);
+    }
+
+    &--youtube {
+      @include icon-solid(#FF0000);
+    }
+
+    &--instagram {
+      @include icon-solid(#FFDC80);
+    }
+
+    &--linkedin {
+      @include icon-solid(#0077b5);
+    }
   }
 }
