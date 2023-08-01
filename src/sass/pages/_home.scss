@@ -56,18 +56,23 @@
     }
   }
 
-  .section--virtual-portfolio-reviews {
+  .section--virtual-portfolio-reviews,
+  .section--virtual-mock-interviews {
     padding: 4rem 0;
-    background-color: $color-violet-dark;
-
-    height: 50rem;
 
     .event-boxes {
       display: flex;
       flex-wrap: wrap;
       // grid-template-columns: 1fr 1fr;
       justify-content: space-evenly;
-      gap: 2rem;
+      gap: 3rem;
     }
+  }
+
+  .section--virtual-portfolio-reviews {
+    background-color: $color-violet-dark;
+  }
+  .section--virtual-mock-interviews {
+    background-color: $color-violet-darkest;
   }
 }

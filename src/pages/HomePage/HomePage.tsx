@@ -60,6 +60,26 @@ export function HomePage(): JSX.Element {
           </div>
         </div>
       </section>
+
+      <section className="section section--virtual-mock-interviews" id="virtual-mock-interview-dates">
+        <div className="container">
+          <h2 className="heading-secondary">Virtual Mock Interviews</h2>
+          <div className="event-boxes">
+            <EventBox
+              season="Fall"
+              events={[
+                ["Friday", "November", 3, ['10am', '4pm']],
+              ]}
+            />
+            <EventBox
+              season="Spring"
+              events={[
+                ["Friday", "February", 2, ['10am', '4pm']],
+              ]}
+            />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
