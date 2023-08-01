@@ -21,7 +21,11 @@ body {
   font-family: $font-secondary;
   color: $color-white;
   font-size: 1.6rem;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+#root {
+  height: 100%;
 }
 
 .container {

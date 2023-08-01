@@ -5,6 +5,7 @@ import { HomePage } from './pages/HomePage/HomePage';
 
 import './sass/main.scss';
 import { NavBar } from './components/NavBar/NavBar';
+import { Footer } from './components/Footer/Footer';
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
           <HomePage></HomePage>
         </Route>
       </Switch>
+      <Footer></Footer>
     </div>
   );
 }
