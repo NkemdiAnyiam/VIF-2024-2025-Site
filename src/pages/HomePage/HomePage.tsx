@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { EventBox } from '../../components/EventBox/EventBox';
 
 export function HomePage(): JSX.Element {

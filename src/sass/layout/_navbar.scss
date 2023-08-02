@@ -24,8 +24,8 @@
     position: sticky;
     top: 0;
     border-bottom: 1px solid $color-gray;
-    background-color: rgba(darken($color-violet-darkest, 10%), 0.7);
-    backdrop-filter: blur(1.5px);
+    background-color: rgba(darken($color-violet-darkest, 10%), 0.8);
+    backdrop-filter: blur(2px);
     box-shadow: 0 2px 10px rgba(black, 0.7);
   }
 
@@ -71,7 +71,7 @@
     list-style: none;
 
     display: flex;
-    gap: 3rem;
+    gap: 4rem;
   }
 
   // &__item{
@@ -82,10 +82,20 @@
     text-decoration: none;
     font-size: max(2rem, 18px);
     font-family: $font-bebas;
+    padding: 0.4rem 1.2rem;
+    transition: background-color 0.1s;
 
     &:link,
     &:visited {
       color: $color-gray-lightest;
+    }
+
+    &:hover {
+      background-color: rgba($color-gray, 0.5);
+    }
+
+    &:active {
+      background-color: rgba($color-gray, 0.3);
     }
   }
 }

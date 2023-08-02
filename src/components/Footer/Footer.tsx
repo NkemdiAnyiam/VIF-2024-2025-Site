@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { FooterLink } from './FooterLink/FooterLink';
 import { LogoInstagram, LogoLinkedin, LogoTwitter, LogoYoutube } from '../iconComponents';
 
