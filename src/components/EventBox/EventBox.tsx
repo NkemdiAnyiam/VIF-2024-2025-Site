@@ -10,6 +10,7 @@ type EventData = [day: Day, month: Month, weekDate: number, timeRange: [startTim
 type EventBoxProps = {
   season: Season;
   events: EventData[];
+  modifiers?: string[];
 };
 
 export function EventBox(props: EventBoxProps): JSX.Element {
@@ -27,20 +28,20 @@ export function EventBox(props: EventBoxProps): JSX.Element {
   const generateListItems = (): JSX.Element[] => {
     return props.events.map(([day, month, weekDate, [startTime, endTime]]) => {
       return (
-        <li key={`${month} ${weekDate}`}>
-          <p>{day}, {month} {weekDate}<sup>{getWeekDatePostfix(weekDate)}</sup></p>
-          <p>{startTime}–{endTime}</p>
+        <li key={`${month} ${weekDate}`} className="event-box__item">
+          <p className="event-box__date">{day}, {month} {weekDate}<sup>{getWeekDatePostfix(weekDate)}</sup></p>
+          <p className="event-box__time">{startTime}–{endTime}</p>
         </li>
       )
     });
   }
 
   return (
-    <div className="event-box">
+    <div className={`event-box${props.modifiers?.map(modifier => ` event-box--${modifier}`) ?? ''}`}>
       <h3 className="heading-tertiary">
         {props.season}
       </h3>
-      <ul className="dates-list">
+      <ul className="event-box__dates-list">
         {generateListItems()}
       </ul>
     </div>
