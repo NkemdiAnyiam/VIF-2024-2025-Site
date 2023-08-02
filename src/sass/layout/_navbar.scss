@@ -120,7 +120,8 @@
     font-size: max(1.8rem, 16px);
     background-color: rgba(darken($color-violet-darkest, 10%), 0.8);
     border: 1px solid $color-gray;
-    width: max-content;
+    min-width: max-content;
+    width: 100%;
     
     display: none;
     flex-direction: column;
@@ -129,7 +130,6 @@
     &.navbar__nested-list--expanded {
       position: unset;
       font-size: 3rem;
-      width: 100%;
       background-color: rgba(darken($color-violet-darkest, 10%), 0.4);
 
       display: flex;
