@@ -17,6 +17,7 @@ export function HomePage(): JSX.Element {
       </header>
       <section className="section section--description" id="description">
         <div className="container">
+          <h2 className="heading-secondary">Introduction</h2>
           <div className="paragraphs">
             <p>
               This event is an opportunity for students and alumni interested in Visualization, which includes Animation, Gaming, Graphics and Interactive technologies, to connect with prospective employers working in high level positions in some of today's leading industries and receive professional feedback on their work. The Fair will be held Friday, February 23<sup>rd</sup>, 2024 from 10am–4pm.
