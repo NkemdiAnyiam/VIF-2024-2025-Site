@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { VifLogoMark, VifLogoWide, XSign } from '../iconComponents';
@@ -8,6 +8,8 @@ export function NavBar(): JSX.Element {
   const [sticky, setSticky] = useState(window.scrollY > 0);
   const [isMobileWidth, setIsMobileWidth] = useState(window.matchMedia(`(max-width: 768px)`).matches);
   const [expanded, setExpanded] = useState(false);
+
+  const navRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => { setSticky(window.scrollY > 0); }
@@ -21,9 +23,37 @@ export function NavBar(): JSX.Element {
     const mediaList = window.matchMedia(`(max-width: 768px)`);
     mediaList.addEventListener('change', handleMediaQuery);
 
+    const navEl = navRef.current;
+    if (!navEl) { throw new Error('navRef.curr is null'); }
+    const trapFocus = (e: KeyboardEvent) => {
+      if (!expanded || e.key !== 'Tab') { return; }
+
+      // get all focusable elements within navbar and store the first and last ones
+      const focusableEls = navEl.querySelectorAll('span.navbar__link--top-level, a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])')
+      const firstFocusableEl = focusableEls[0] as HTMLElement;
+      const lastFocusableEl = focusableEls[focusableEls.length - 1] as HTMLElement;
+
+      // if Shift + Tab was pressed and first element is focused, wrap to last element
+      if (e.shiftKey) {
+        if (document.activeElement === firstFocusableEl) {
+          lastFocusableEl.focus();
+          e.preventDefault();
+        }
+      }
+      // if Tab is pressed and last element was focused, wrap to first element
+      else {
+        if (document.activeElement === lastFocusableEl) {
+          firstFocusableEl.focus();
+          e.preventDefault();
+        }
+      }
+    }
+    navRef.current?.addEventListener('keydown', trapFocus);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       mediaList.removeEventListener('change', handleMediaQuery);
+      navEl.removeEventListener('keydown', trapFocus);
     };
   });
 
@@ -38,7 +68,7 @@ export function NavBar(): JSX.Element {
   }
 
   return (
-    <nav className={`navbar${sticky ? ' navbar--sticky' : ''}${expanded ? ' navbar--expanded' : ''}`}>
+    <nav ref={navRef} className={`navbar${sticky ? ' navbar--sticky' : ''}${expanded ? ' navbar--expanded' : ''}`}>
       <Link to="/" className="navbar__logo-link">
           <VifLogoMark className={`vif-logo-mark${(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
           <VifLogoWide className={`vif-logo-wide${!(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
