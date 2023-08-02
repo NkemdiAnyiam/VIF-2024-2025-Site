@@ -23,8 +23,8 @@
     --nav-height: 6rem;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid $color-gray;
     background-color: rgba(darken($color-violet-darkest, 10%), 0.8);
+    border-bottom: 1px solid $color-gray;
     backdrop-filter: blur(2px);
     box-shadow: 0 2px 10px rgba(black, 0.7);
   }
@@ -74,9 +74,31 @@
     gap: 2vw;
   }
 
-  // &__item{
+  &__nested-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
 
-  // }
+    list-style: none;
+    background-color: rgba(darken($color-violet-darkest, 10%), 0.8);
+    border: 1px solid $color-gray;
+    width: max-content;
+    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+
+    &:hover,
+    &:focus-within {
+      .navbar__nested-list {
+        display: flex;
+      }
+    }
+  }
 
   &__link {
     text-decoration: none;
@@ -87,6 +109,20 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    &.navbar__link--nested {
+      font-size: max(1.8rem, 16px);
+      padding-left: 3rem;
+      padding-right: 3rem;
+      width: 100%;
+
+      justify-content: flex-start;
+
+      &:not(:last-child) {
+        border-bottom: 1px dashed $color-gray;
+      }
+    }
 
     &:link,
     &:visited {
@@ -101,7 +137,7 @@
       background-color: rgba($color-gray, 0.3);
     }
 
-    .triangle {
+    .dropdown-marker {
       display: inline-block;
       width: 1.4rem;
       height: 0.7rem;

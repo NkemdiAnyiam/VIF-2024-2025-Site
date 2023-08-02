@@ -27,11 +27,23 @@ export function NavBar(): JSX.Element {
 
       <ul className="navbar__links-list">
         <li className="navbar__item">
-          <Link to="#" className="navbar__link">About<span className="triangle"></span></Link>
+          <Link to="#" className="navbar__link">About<span className="dropdown-marker"></span></Link>
+          
+          <ul className="navbar__nested-list">
+            <Link to="#" className="navbar__link navbar__link--nested">About Viz</Link>
+          </ul>
         </li>
+
         <li className="navbar__item">
-          <Link to="#" className="navbar__link">Event Information<span className="triangle"></span></Link>
+          <Link to="#" className="navbar__link">Event Information<span className="dropdown-marker"></span></Link>
+
+          <ul className="navbar__nested-list">
+            <Link to="#" className="navbar__link navbar__link--nested">For Students</Link>
+            <Link to="#" className="navbar__link navbar__link--nested">For Industry</Link>
+            <Link to="#" className="navbar__link navbar__link--nested">Common Questions</Link>
+          </ul>
         </li>
+
         <li className="navbar__item">
           <Link to="#" className="navbar__link">Schedule</Link>
         </li>
