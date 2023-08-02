@@ -23,6 +23,10 @@
     box-shadow: 0 2px 10px transparent;
   }
 
+  &.navbar--sticky.navbar--expanded {
+    grid-template-rows: 4rem 1fr;
+  }
+
   &.navbar--sticky,
   &.navbar--expanded {
     position: sticky;
@@ -31,10 +35,6 @@
     border-bottom: 1px solid $color-gray;
     backdrop-filter: blur(2px);
     box-shadow: 0 2px 10px rgba(black, 0.7);
-  }
-
-  &.navbar--sticky.navbar--expanded {
-    grid-template-rows: 4rem 1fr;
   }
 
   &.navbar--sticky {
@@ -47,6 +47,7 @@
 
   &.navbar--expanded {
     --nav-height: 100vh;
+    overflow-y: auto;
 
     display: grid;
     grid-template-areas: "logo hamburger"
