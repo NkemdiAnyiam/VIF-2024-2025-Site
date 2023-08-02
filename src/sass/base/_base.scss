@@ -32,6 +32,12 @@ body {
   }
 }
 
+::selection {
+  background-color: $color-brand-green;
+  color: $color-black;
+  text-shadow: none !important;
+}
+
 #page-background {
   position: absolute;
   width: 100%;
