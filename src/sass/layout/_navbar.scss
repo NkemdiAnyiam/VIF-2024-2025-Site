@@ -5,7 +5,11 @@
   z-index: 1;
   height: $nav-height;
   margin-bottom: calc($nav-height * -1);
+  padding: 1rem min(4rem, 4vw);
   transition: all 0.2s;
+
+  display: flex;
+  align-items: center;
 
   &:not(.navbar--sticky) {
     background-color: transparent;
@@ -18,15 +22,11 @@
     --nav-height: 6rem;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid $color-gray-light;
-    background-color: rgba($color-violet-darkest, 0.7);
+    border-bottom: 1px solid $color-gray;
+    background-color: rgba(darken($color-violet-darkest, 10%), 0.7);
     backdrop-filter: blur(1.5px);
     box-shadow: 0 2px 10px rgba(black, 0.7);
   }
-
-  display: flex;
-  align-items: center;
-  padding: 1rem 4rem;
 
   .logo-container {
     display: grid;
@@ -35,6 +35,10 @@
     .vif-logo-mark,
     .vif-logo-wide {
       height: 4rem;
+
+      @include media-max(375px) {
+        height: 3.6rem;
+      }
     }
 
     // .vif-logo-mark {

@@ -6,7 +6,7 @@
 
 @mixin icon-solid($fill) {
   // fill: $fill;
-  transition: fill 0.2s, scale 0.1s;
+  transition: fill 0.1s, scale 0.1s;
 
   &:hover {
     fill: $fill;
@@ -15,6 +15,22 @@
   &:active {
     fill: darken($fill, 15%);
     scale: 0.96;
+  }
+}
+
+@mixin button-solid($fill, $neutral-fill: true) {
+  @if $neutral-fill == true {
+    background-color: $fill;
+  }
+  transition: fill 0.1s, scale 0.1s;
+
+  &:hover {
+    background-color: $fill;
+    scale: 0.99;
+  }
+  &:active {
+    background-color: darken($fill, 10%);
+    scale: 0.98;
   }
 }
 

@@ -83,8 +83,13 @@ export function HomePage(): JSX.Element {
       <section className="section section--cta" id="cta">
         <div className="container">
           <p className="cta-text">
-            <span>We look forward to seeing you at</span> <span>our many events and the fair!</span>
+            <span>We look forward to seeing you</span> <span>at our many events and the fair!</span>
           </p>
+          <div className="registration-buttons">
+            {/* TODO: Get actual links */}
+            <a href='#' className="registration-button registration-button--yellow">Student Registration</a>
+            <a href='#' className="registration-button registration-button--red">Industry Registration</a>
+          </div>
         </div>
       </section>
     </main>
