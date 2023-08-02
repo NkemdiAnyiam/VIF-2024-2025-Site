@@ -26,9 +26,6 @@ export function HomePage(): JSX.Element {
               This year, we are inviting former students to participate in both our virtual and in-person events at the same level as our current students, so they can continue their journey of lifelong learning and receive advice from our industry representatives.
             </p>
             <p>
-              Along with this year's fair, The VIF Committee has also put together several other events throughout the school year. These include industry speakers, workshops, portfolio & resume reviews and mock interviews.
-            </p>
-            <p>
               Because of continuing concerns with accessibility, we will be holding a virtual fair this year as well. The virtual fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm on Discord.
             </p>
             <p>
