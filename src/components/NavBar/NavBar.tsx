@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import { VifLogoMark, VifLogoWide, XSign } from '../iconComponents';
 
-// TODO: implement focus trap when in modal
 export function NavBar(): JSX.Element {
   const [sticky, setSticky] = useState(window.scrollY > 0);
   const [isMobileWidth, setIsMobileWidth] = useState(window.matchMedia(`(max-width: 768px)`).matches);
