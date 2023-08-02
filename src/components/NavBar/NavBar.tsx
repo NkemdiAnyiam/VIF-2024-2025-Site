@@ -27,10 +27,10 @@ export function NavBar(): JSX.Element {
 
       <ul className="navbar__links-list">
         <li className="navbar__item">
-          <Link to="#" className="navbar__link">About</Link>
+          <Link to="#" className="navbar__link">About<span className="triangle"></span></Link>
         </li>
         <li className="navbar__item">
-          <Link to="#" className="navbar__link">Event Information</Link>
+          <Link to="#" className="navbar__link">Event Information<span className="triangle"></span></Link>
         </li>
         <li className="navbar__item">
           <Link to="#" className="navbar__link">Schedule</Link>

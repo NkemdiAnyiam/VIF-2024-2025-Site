@@ -71,7 +71,7 @@
     list-style: none;
 
     display: flex;
-    gap: 4rem;
+    gap: 2vw;
   }
 
   // &__item{
@@ -85,6 +85,9 @@
     padding: 0.4rem 1.2rem;
     transition: background-color 0.1s;
 
+    display: flex;
+    align-items: center;
+
     &:link,
     &:visited {
       color: $color-gray-lightest;
@@ -96,6 +99,18 @@
 
     &:active {
       background-color: rgba($color-gray, 0.3);
+    }
+
+    .triangle {
+      display: inline-block;
+      width: 1.4rem;
+      height: 0.7rem;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      background-color: currentColor;
+      margin-left: 0.8rem;
+      margin-bottom: 0.2rem;
+
+      vertical-align: center;
     }
   }
 }
