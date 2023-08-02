@@ -79,6 +79,14 @@ export function HomePage(): JSX.Element {
           </div>
         </div>
       </section>
+
+      <section className="section section--cta" id="cta">
+        <div className="container">
+          <p className="cta-text">
+            <span>We look forward to seeing you at</span> <span>our many events and the fair!</span>
+          </p>
+        </div>
+      </section>
     </main>
   );
 }

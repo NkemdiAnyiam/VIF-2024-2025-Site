@@ -45,7 +45,8 @@
   }
 
   .section.section--description {
-    background-color: $color-violet-darkest;
+    // @include section-color($color-violet-darkest);
+    @include full-bleed;
 
     .paragraphs {
       line-height: 1.5;
@@ -70,9 +71,24 @@
   }
 
   .section--virtual-portfolio-reviews {
-    background-color: $color-violet-dark;
+    @include section-color($color-violet-dark);
+    @include full-bleed;
   }
   .section--virtual-mock-interviews {
-    background-color: $color-violet-darkest;
+    @include section-color($color-violet-darkest);
+    @include full-bleed;
+  }
+
+  .section.section--cta {
+    .cta-text {
+      font-size: 4rem;
+      font-family: $font-bebas;
+      text-align: center;
+
+      span {
+        // TODO: Improve way of handling nowrap
+        white-space: nowrap;
+      }
+    }
   }
 }

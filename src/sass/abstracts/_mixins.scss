@@ -17,3 +17,12 @@
     scale: 0.96;
   }
 }
+
+@mixin section-color($fill) {
+  background-color: $fill;
+  box-shadow: -6px 0px 6px rgba(black, 0.3);
+}
+
+@mixin full-bleed() {
+  max-width: unset;
+}
