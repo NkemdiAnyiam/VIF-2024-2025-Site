@@ -9,6 +9,7 @@
   transition: all 0.2s;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   &:not(.navbar--sticky) {
@@ -28,35 +29,41 @@
     box-shadow: 0 2px 10px rgba(black, 0.7);
   }
 
-  .logo-container {
-    flex: 1;
+  &__logo-container {
+    position: relative;
+    height: 4rem;
 
     display: flex;
     align-items: center;
 
-    :hover {
+    @include media-max(375px) {
+      height: 3.6rem;
+    }
+
+    &:hover {
       filter: brightness(1.05);
     }
 
-    :active {
+    &:active {
       filter: brightness(0.95);
     }
 
     .vif-logo-mark,
     .vif-logo-wide {
+      position: absolute;
+      left: 0;
+      top: 0;
       height: 4rem;
+      transition: opacity 0.2s;
+
+      &.vif-logo--invisible {
+        opacity: 0;
+        pointer-events: none;
+      }
 
       @include media-max(375px) {
         height: 3.6rem;
       }
-    }
-
-    .vif-logo-mark {
-      
-    }
-
-    .vif-logo-wide {
-
     }
   }
 
@@ -67,9 +74,9 @@
     gap: 3rem;
   }
 
-  &__item{
+  // &__item{
 
-  }
+  // }
 
   &__link {
     text-decoration: none;

@@ -20,12 +20,9 @@ export function NavBar(): JSX.Element {
 
   return (
     <nav className={`navbar${sticky ? ' navbar--sticky' : ''}`}>
-      <Link to="/" className="logo-container">
-        {
-          sticky ?
-          <VifLogoMark className="vif-logo-mark" /> :
-          <VifLogoWide className="vif-logo-wide" />
-        }
+      <Link to="/" className="navbar__logo-container">
+          <VifLogoMark className={`vif-logo-mark`} />
+          <VifLogoWide className={`vif-logo-wide${sticky ? ' vif-logo--invisible' : ''}`} />
       </Link>
 
       <ul className="navbar__links-list">
