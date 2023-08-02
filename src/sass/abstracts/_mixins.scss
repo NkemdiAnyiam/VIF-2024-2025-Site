@@ -4,6 +4,12 @@
   }
 }
 
+@mixin media-max-height($height) {
+  @media only screen and (max-height: $height) {
+    @content;
+  }
+}
+
 @mixin icon-solid($fill) {
   // fill: $fill;
   transition: fill 0.1s, scale 0.1s;

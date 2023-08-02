@@ -8,8 +8,10 @@
 
 html {
   font-size: 62.5%;
-  // transition: font-size 0.05s;
   @include media-max(560px) {
+    font-size: 50%;
+  }
+  @include media-max-height(560px) {
     font-size: 50%;
   }
   scroll-behavior: smooth;
@@ -44,7 +46,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   filter: blur(0.5px);
-  // background-size: 765px;
 }
 
 #root {
