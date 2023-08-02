@@ -2,15 +2,15 @@
   --nav-height: 8rem;
   $nav-height: var(--nav-height);
 
-  z-index: 1;
+  z-index: 1001;
   height: $nav-height;
   margin-bottom: calc($nav-height * -1);
   padding: 1rem min(4rem, 4vw);
-  transition: background-color 0.2s,
-              border-bottom 0.2s,
-              box-shadow 0.2s,
-              height 0.2s,
-              margin-bottom 0.2s;
+  // transition: background-color 0.2s,
+  //             border-bottom 0.2s,
+  //             box-shadow 0.2s;
+  //             height 0.2s,
+  //             margin-bottom 0.2s;
 
   display: flex;
   justify-content: space-between;
@@ -39,23 +39,28 @@
 
   &.navbar--sticky {
     --nav-height: 6rem;
+
+    .navbar__logo-link {
+      height: 3.6rem;
+    }
   }
 
   &.navbar--expanded {
     --nav-height: 100vh;
 
     display: grid;
-    grid-template-areas:
-                          "logo hamburger"
-                          "links links";
+    grid-template-areas: "logo hamburger"
+                         "links links";
     grid-template-columns: 1fr auto;
     grid-template-rows: 6rem 1fr;
   }
 
   &__logo-link {
     position: relative;
-    height: 4rem;
     grid-area: logo;
+    height: 4rem;
+    transition: height 0.05s;
+    margin-right: auto;
 
     display: flex;
     align-items: center;
@@ -77,14 +82,10 @@
       position: absolute;
       left: 0;
       top: 0;
-      height: 4rem;
+      height: 100%;
 
       &.vif-logo--invisible {
         display: none;
-      }
-
-      @include media-max(375px) {
-        height: 3.6rem;
       }
     }
   }
@@ -92,17 +93,30 @@
   &__links-list {
     grid-area: links;
     list-style: none;
+    font-size: max(2rem, 18px);
 
     display: flex;
     gap: 2vw;
+
+    &.navbar__links-list--expanded {
+      height: 100%;
+      font-size: 4rem;
+
+      flex-direction: column;
+      gap: 4rem;
+
+      .navbar__link--top-level {
+        background-color: transparent;
+      }
+    }
   }
 
   &__nested-list {
     position: absolute;
     top: 100%;
-    right: 0;
-
+    left: 0;
     list-style: none;
+    font-size: max(1.8rem, 16px);
     background-color: rgba(darken($color-violet-darkest, 10%), 0.8);
     border: 1px solid $color-gray;
     width: max-content;
@@ -110,6 +124,21 @@
     display: none;
     flex-direction: column;
     align-items: center;
+
+    &.navbar__nested-list--expanded {
+      position: unset;
+      font-size: 3rem;
+      width: 100%;
+      background-color: rgba(darken($color-violet-darkest, 10%), 0.4);
+
+      display: flex;
+
+      .navbar__link--nested {
+        justify-content: center;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+      }
+    }
   }
 
   &__item {
@@ -125,7 +154,6 @@
 
   &__link {
     text-decoration: none;
-    font-size: max(2rem, 18px);
     font-family: $font-bebas;
     padding: 0.4rem 1.2rem;
     transition: background-color 0.1s;
@@ -134,10 +162,21 @@
     align-items: center;
     justify-content: center;
 
+    &:link,
+    &:visited {
+      color: $color-gray-lightest;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba($color-gray, 0.5);
+    }
+
+    &:active:not(.navbar__link--top-level) {
+      background-color: rgba($color-gray, 0.3);
+    }
+
     &.navbar__link--nested {
-      font-size: max(1.8rem, 16px);
-      padding-left: 3rem;
-      padding-right: 3rem;
       width: 100%;
 
       justify-content: flex-start;
@@ -147,17 +186,8 @@
       }
     }
 
-    &:link,
-    &:visited {
-      color: $color-gray-lightest;
-    }
-
-    &:hover {
-      background-color: rgba($color-gray, 0.5);
-    }
-
-    &:active {
-      background-color: rgba($color-gray, 0.3);
+    &.navbar__link--top-level {
+      cursor: default;
     }
 
     .dropdown-marker {
@@ -208,5 +238,32 @@
       background-color: currentColor;
       margin-left: auto;
     }
+  }
+
+  &__close-button {
+    grid-area: hamburger;
+    color: $color-brand-red-light;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    height: 2.4rem;
+    width: 2.4rem;
+    transition: color 0.1s;
+
+    display: grid;
+    place-content: center;
+
+    &:hover {
+      opacity: 1;
+      color: $color-brand-red;
+    }
+    &:active {
+      color: darken($color-brand-red, 10%);
+    }
+  }
+
+  &__close-button-icon {
+    fill: currentColor;
+    width: 100%;
   }
 }
