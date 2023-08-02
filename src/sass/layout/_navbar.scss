@@ -6,7 +6,11 @@
   height: $nav-height;
   margin-bottom: calc($nav-height * -1);
   padding: 1rem min(4rem, 4vw);
-  transition: all 0.2s;
+  transition: background-color 0.2s,
+              border-bottom 0.2s,
+              box-shadow 0.2s,
+              height 0.2s,
+              margin-bottom 0.2s;
 
   display: flex;
   justify-content: space-between;
@@ -54,7 +58,7 @@
       left: 0;
       top: 0;
       height: 4rem;
-      transition: opacity 0.2s;
+      transition: opacity 0.1s;
 
       &.vif-logo--invisible {
         opacity: 0;

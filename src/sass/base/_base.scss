@@ -8,7 +8,7 @@
 
 html {
   font-size: 62.5%;
-  transition: font-size 0.05s;
+  // transition: font-size 0.05s;
   @include media-max(560px) {
     font-size: 50%;
   }
