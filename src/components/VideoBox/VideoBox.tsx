@@ -46,7 +46,7 @@ export function VideoBox(props: VideoBoxProps): JSX.Element {
         <div className="video-box__loading-notification">
           <span ref={spinnerRef} className="spinner"></span>
           <p className="video-box__loading-text">
-            Loading <a className="video-box__link" href={props.url} target="_blank" rel="noreferrer">{props.title}</a>
+            Loading <a className="video-box__link link" href={props.url} target="_blank" rel="noreferrer">{props.title}</a>
           </p>
         </div>
       }

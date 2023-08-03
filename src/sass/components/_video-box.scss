@@ -26,26 +26,8 @@
       line-height: 1.4;
     }
 
-    .video-box__link {
-      text-decoration: none;
-      transition: color 0.1s border-bottom 0.1s;
-      padding-bottom: 1px;
-      border-bottom: 1px solid transparent;
-
-      &:link,
-      &:visited {
-        color: $color-brand-green-light;
-      }
-
-      &:hover {
-        color: $color-brand-green;
-        border-bottom: 1px solid currentColor;
-      }
-
-      &:active {
-        color: $color-brand-green-dark;
-        border-bottom: 1px solid currentColor;
-      }
+    .video-box__link.link {
+      
     }
   }
 

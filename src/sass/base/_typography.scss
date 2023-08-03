@@ -49,3 +49,25 @@
   flex-direction: column;
   gap: 4rem;
 }
+
+.link {
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px dashed currentColor;
+  transition: color 0.1s, border-bottom 0.1s;
+
+  &:link,
+  &:visited {
+    color: $color-brand-green-light;
+  }
+
+  &:hover {
+    color: $color-brand-green;
+    border-bottom: 1px solid currentColor;
+  }
+
+  &:active {
+    color: $color-brand-green-dark;
+    border-bottom: 1px solid currentColor;
+  }
+}
