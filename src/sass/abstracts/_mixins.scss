@@ -48,3 +48,12 @@
 @mixin full-bleed() {
   max-width: unset;
 }
+
+@mixin banner-background-image($url, $color) {
+  background-image: linear-gradient(
+                      rgba(darken($color, 20%), 0.9) 3%,
+                      rgba($color, 0.9) 18%,
+                      rgba($color, 0.9)
+                    ),
+                    url($url);
+}

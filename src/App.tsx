@@ -6,7 +6,7 @@ import { HomePage } from './pages/HomePage/HomePage';
 import './sass/main.scss';
 import { NavBar } from './components/NavBar/NavBar';
 import { Footer } from './components/Footer/Footer';
-// import { AboutVizPage } from './pages/About/AboutVizPage.tsx/AboutVizPage';
+import { AboutVizPage } from './pages/About/AboutVizPage/AboutVizPage';
 // import { VifCommitteePage } from './pages/About/VifCommitteePage/VifCommitteePage';
 // import { ForStudentsPage } from './pages/EventInformation/ForStudentsPage/ForStudentsPage';
 // import { ForIndustryPage } from './pages/EventInformation/ForIndustryPage/ForIndustryPage';
@@ -17,11 +17,17 @@ export function App(): JSX.Element {
   return (
     <div className="App">
       <NavBar></NavBar>
+
       <Switch>
         <Route exact path='/'>
           <HomePage></HomePage>
         </Route>
+
+        <Route exact path='/about/about-viz'>
+          <AboutVizPage></AboutVizPage>
+        </Route>
       </Switch>
+
       <Footer></Footer>
     </div>
   );

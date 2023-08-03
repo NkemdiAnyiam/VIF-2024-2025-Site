@@ -1,0 +1,48 @@
+.about-viz-page {
+  .banner {
+    @include banner-background-image('/images/seated-group-photo-2.jpg', $color-brand-yellow-darker);
+    height: 30rem;
+    background-size: cover;
+    background-position: 50% 25%;
+    background-attachment: fixed;
+  }
+
+  .section.section--development {
+    @include section-color($color-violet-darkest);
+    @include full-bleed;
+  }
+
+  .section.section--programs {
+    @include full-bleed;
+
+    .container {
+      @include full-bleed;
+    }
+
+    .paragraphs {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: max(1.8rem, 16px);
+    }
+
+    .programs__list {
+      list-style: none;
+
+      display: flex;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .programs__item {
+      display: grid;
+      place-content: center;
+    }
+  }
+
+  .section.section--sizzle-reels {
+    @include full-bleed;
+    @include section-color($color-violet-darkest);
+  }
+}

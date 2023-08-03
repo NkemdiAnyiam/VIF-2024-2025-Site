@@ -17,7 +17,8 @@ export function HomePage(): JSX.Element {
           </p>
         </div>
       </header>
-      <section className="section section--description" id="description">
+
+      <section className="section section--introduction" id="introduction">
         <div className="container">
           <h2 className="heading-secondary">Introduction</h2>
           <div className="paragraphs">
@@ -32,7 +33,7 @@ export function HomePage(): JSX.Element {
             </p>
             <p>
               Because of continuing concerns with accessibility, we will be holding a virtual fair this year as well.
-             <strong> The virtual fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm on Discord.</strong>
+              <strong> The virtual fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm on Discord.</strong>
             </p>
             <p>
               The Viz Industry Fair is a student-run organization. These dedicated students, with focuses in Game Development, Animation, and Interactive Media,

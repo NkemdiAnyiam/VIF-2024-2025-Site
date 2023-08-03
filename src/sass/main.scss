@@ -5,9 +5,12 @@
 @import "base/typography";
 
 @import "components/event-box";
+@import "components/picture-box";
 
 @import "layout/app";
 @import "layout/footer";
+@import "layout/header";
 @import "layout/navbar";
 
+@import "pages/about-viz";
 @import "pages/home";

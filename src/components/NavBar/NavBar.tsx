@@ -100,7 +100,7 @@ export function NavBar(): JSX.Element {
             <span {...expanded ?  {} :{tabIndex: 0}} className="navbar__link navbar__link--top-level">About<span className="dropdown-marker"></span></span>
             
             <ul className={`navbar__nested-list${expanded ? ' navbar__nested-list--expanded' : ''}`}>
-              <Link to="#" className="navbar__link navbar__link--nested">About Viz</Link>
+              <Link to="/about/about-viz" className="navbar__link navbar__link--nested">About Viz</Link>
               <Link to="#" className="navbar__link navbar__link--nested">VIF Committee</Link>
             </ul>
           </li>
