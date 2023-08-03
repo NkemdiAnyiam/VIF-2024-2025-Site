@@ -41,7 +41,7 @@
 }
 
 @mixin section-color($fill) {
-  background-color: $fill;
+  background-color: rgba($fill, 0.85);
   box-shadow: -6px 0px 6px rgba(black, 0.3);
 }
 
