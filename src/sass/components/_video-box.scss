@@ -44,9 +44,14 @@
       height: 100%;
       aspect-ratio: 16 / 9;
       border: 1px dashed $color-gray-light;
+      transition: scale 0.1s;
   
       &--loading {
         display: none;
+      }
+
+      &:hover {
+        scale: 0.995;
       }
     }
 
