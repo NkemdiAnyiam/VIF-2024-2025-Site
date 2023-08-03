@@ -35,7 +35,7 @@ export function AboutVizPage(): JSX.Element {
               Our program also sponsors the <a href="http://chillennium.com/" className="link" target="_blank" rel="noreferrer">international game jam Chillennium</a> at Texas A&M University, which is the largest student run game jam in the world.
             </p>
             <p>
-              Since our establishment, the Visualization program has expanded to international recognition, and most recently transitioned
+              Since our establishment, the Visualization program has expanded to international recognition, and it most recently transitioned
               into the new school of Performance, Visualization and Fine Arts (PVFA). With the development of the new school,
               we look forward to welcoming new students and ushering in future generations of leaders in the fields of art and science.
             </p>
