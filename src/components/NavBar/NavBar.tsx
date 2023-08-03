@@ -55,6 +55,11 @@ export function NavBar(): JSX.Element {
       navEl.removeEventListener('keydown', trapFocus);
     };
   });
+  
+  const handleLogoClick = () => {
+    setExpanded(false);
+    document.querySelector('body')?.classList.remove('scroll-disabled');
+  }
 
   const handleHamburgerClick = () => {
     setExpanded(true);
@@ -68,14 +73,24 @@ export function NavBar(): JSX.Element {
 
   return (
     <nav ref={navRef} className={`navbar${sticky ? ' navbar--sticky' : ''}${expanded ? ' navbar--expanded' : ''}`}>
-      <Link to="/" className="navbar__logo-link">
+      <Link onClick={handleLogoClick} to="/" className="navbar__logo-link">
           <VifLogoMark className={`vif-logo-mark${(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
           <VifLogoWide className={`vif-logo-wide${!(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
       </Link>
 
       {
         (!isMobileWidth || expanded) &&
-        <ul className={`navbar__links-list${expanded ? ' navbar__links-list--expanded' : ''}`}>
+        <ul 
+          onClick={(e: React.MouseEvent<HTMLUListElement>) => {
+            if (e.target instanceof HTMLAnchorElement) {
+              e.currentTarget
+                .querySelectorAll('.navbar__link')
+                .forEach((link) => (link as HTMLElement).blur());
+              setExpanded(false);
+            }
+          }}
+          className={`navbar__links-list${expanded ? ' navbar__links-list--expanded' : ''}`}
+        >
           <li className="navbar__item">
             <span {...expanded ?  {} :{tabIndex: 0}} className="navbar__link navbar__link--top-level">About<span className="dropdown-marker"></span></span>
             
