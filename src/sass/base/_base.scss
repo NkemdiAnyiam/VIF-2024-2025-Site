@@ -48,10 +48,11 @@ body {
   top: 0;
   left: 0;
   z-index: -1000;
+  // $gradient-color: rgba($color-black, 0.9);
+  $gradient-color: rgba(darken($color-violet-darkest, 13%), 0.9);
 
-  background-image: linear-gradient(rgba($color-black, 0.9), rgba($color-black, 0.9)),
-                    url('/images/colored-logo-background.png'),
-                    linear-gradient($color-black, $color-black);
+  background-image: linear-gradient($gradient-color, $gradient-color),
+                    url('/images/colored-logo-background.png');
   background-size: cover;
   background-attachment: fixed;
   filter: blur(0.5px);
