@@ -55,7 +55,7 @@ export function AboutVizPage(): JSX.Element {
                 text="Minor in Game Design and Development"
                 imgUrl={require('../../../images/programs/game-design-and-development.jpg')}
                 altText="minor in game design and development"
-                color='green'
+                color='purple'
               />
             </li>
 
@@ -64,7 +64,7 @@ export function AboutVizPage(): JSX.Element {
                 text="Bachelor of Science in Visualization"
                 imgUrl={require('../../../images/programs/bachelor-of-science-visualization.jpg')}
                 altText="bachelor of science in visualization"
-                color='red'
+                color='green'
               />
             </li>
 
@@ -82,7 +82,7 @@ export function AboutVizPage(): JSX.Element {
                 text="Master of Fine Arts in Visualization"
                 imgUrl={require('../../../images/programs/master-of-fine-arts-visualization.jpg')}
                 altText="master of fine arts in visualization"
-                color='red'
+                color='yellow'
               />
             </li>
 
@@ -91,7 +91,7 @@ export function AboutVizPage(): JSX.Element {
                 text="Ph.D. in Architecture"
                 imgUrl={require('../../../images/programs/phd-architecture.jpg')}
                 altText="Ph.D. in architecture"
-                color='green'
+                color='red'
               />
             </li>
           </ul>
