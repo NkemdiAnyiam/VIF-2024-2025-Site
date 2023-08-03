@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { PictureSquare } from '../../../components/PictureSquare/PictureSquare';
+import { VideoBox } from '../../../components/VideoBox/VideoBox';
 
 export function AboutVizPage(): JSX.Element {
   return (
@@ -45,9 +46,7 @@ export function AboutVizPage(): JSX.Element {
         <div className="container">
           <h2 className="heading-secondary">Programs</h2>
           <div className="paragraphs">
-            <p>
-              Our programs include the following
-            </p>
+            <p>Our programs include the following</p>
           </div>
           <ul className="programs__list">
             <li className="programs__item">
@@ -98,11 +97,44 @@ export function AboutVizPage(): JSX.Element {
         </div>
       </section>
 
-<section className="section section--sizzle-reels" id="sizzle-reels">
-  <div className="container">
-    <h2 className="heading-secondary">Viz Sizzle Reels</h2>
-  </div>
-</section>
+      <section className="section section--sizzle-reels" id="sizzle-reels">
+        <div className="container">
+          <h2 className="heading-secondary">Viz Sizzle Reels</h2>
+          <div className="paragraphs">
+            <p>If you would like to check out our students work, below are links to our 2021 department reels</p>
+          </div>
+          <ul className="video-list">
+            <li className="video-item">
+              <VideoBox
+                title="TAMU Best of Visualization 2021"
+                url="https://youtu.be/zt7IZRzFEV8"
+                embedSrc="https://www.youtube.com/embed/zt7IZRzFEV8"
+              />
+            </li>
+            <li className="video-item">
+              <VideoBox
+                title="TAMU Best of Visualization - UI/UX and Graphic Design"
+                url="https://youtu.be/Ixusv-GMrho"
+                embedSrc="https://www.youtube.com/embed/Ixusv-GMrho"
+              />
+            </li>
+            <li className="video-item">
+              <VideoBox
+                title="TAMU Best of Visualization - Game Development"
+                url="https://youtu.be/U2Fjr0saMUY"
+                embedSrc="https://www.youtube.com/embed/U2Fjr0saMUY"
+              />
+            </li>
+            <li className="video-item">
+              <VideoBox
+                title="TAMU Best of Visualization - FX and Technical Direction"
+                url="https://youtu.be/V-3NX6AHwnY"
+                embedSrc="https://www.youtube.com/embed/V-3NX6AHwnY"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   );
 }
