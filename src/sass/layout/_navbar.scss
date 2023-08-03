@@ -108,6 +108,11 @@
 
       .navbar__link--top-level {
         background-color: transparent;
+        color: $color-gray-light;
+
+        .dropdown-marker {
+          display: none;
+        }
       }
     }
   }

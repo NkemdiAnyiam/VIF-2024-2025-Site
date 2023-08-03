@@ -77,7 +77,7 @@ export function NavBar(): JSX.Element {
         (!isMobileWidth || expanded) &&
         <ul className={`navbar__links-list${expanded ? ' navbar__links-list--expanded' : ''}`}>
           <li className="navbar__item">
-            <span tabIndex={0} className="navbar__link navbar__link--top-level">About<span className="dropdown-marker"></span></span>
+            <span {...expanded ?  {} :{tabIndex: 0}} className="navbar__link navbar__link--top-level">About<span className="dropdown-marker"></span></span>
             
             <ul className={`navbar__nested-list${expanded ? ' navbar__nested-list--expanded' : ''}`}>
               <Link to="#" className="navbar__link navbar__link--nested">About Viz</Link>
@@ -86,7 +86,7 @@ export function NavBar(): JSX.Element {
           </li>
 
           <li className="navbar__item">
-            <span tabIndex={0} className="navbar__link navbar__link--top-level">Event Information<span className="dropdown-marker"></span></span>
+            <span {...expanded ? {} : {tabIndex: 0}} className="navbar__link navbar__link--top-level">Event Information<span className="dropdown-marker"></span></span>
 
             <ul className={`navbar__nested-list${expanded ? ' navbar__nested-list--expanded' : ''}`}>
               <Link to="#" className="navbar__link navbar__link--nested">For Students</Link>
