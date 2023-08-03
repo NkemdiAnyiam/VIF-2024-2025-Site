@@ -17,7 +17,6 @@ export function NavBar(): JSX.Element {
     const handleMediaQuery = (e: MediaQueryListEvent) => {
       setIsMobileWidth(e.matches);
       setExpanded(false);
-      document.querySelector('body')?.classList.remove('scroll-disabled');
     }
     const mediaList = window.matchMedia(`(max-width: 768px)`);
     mediaList.addEventListener('change', handleMediaQuery);
@@ -55,20 +54,26 @@ export function NavBar(): JSX.Element {
       navEl.removeEventListener('keydown', trapFocus);
     };
   });
+
+  useEffect(() => {
+    if (expanded) {
+      document.querySelector('body')?.classList.add('scroll-disabled');
+    }
+    else {
+      document.querySelector('body')?.classList.remove('scroll-disabled');
+    }
+  }, [expanded])
   
   const handleLogoClick = () => {
     setExpanded(false);
-    document.querySelector('body')?.classList.remove('scroll-disabled');
   }
 
   const handleHamburgerClick = () => {
     setExpanded(true);
-    document.querySelector('body')?.classList.add('scroll-disabled');
   }
 
   const handleXClick = () => {
     setExpanded(false);
-    document.querySelector('body')?.classList.remove('scroll-disabled');
   }
 
   return (
