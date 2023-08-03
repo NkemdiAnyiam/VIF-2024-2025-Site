@@ -4,7 +4,7 @@ type PictureSquareProps = {
   text?: string;
   imgUrl: string;
   altText: string;
-  color: 'red' | 'green' | 'yellow';
+  color: 'red' | 'green' | 'yellow' | 'purple';
 }
 
 export function PictureSquare(props: PictureSquareProps): JSX.Element {
