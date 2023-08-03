@@ -1,5 +1,5 @@
-import React from 'react';
-import { Route, Switch } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Route, Switch, useLocation } from "react-router-dom";
 
 import { HomePage } from './pages/HomePage/HomePage';
 
@@ -14,6 +14,12 @@ import { AboutVizPage } from './pages/About/AboutVizPage/AboutVizPage';
 // import { SchedulePage } from './pages/SchedulePage/SchedulePage';
 
 export function App(): JSX.Element {
+  const {pathname} = useLocation<History>();
+
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'auto'});
+  }, [pathname]);
+
   return (
     <div className="App">
       <NavBar></NavBar>
