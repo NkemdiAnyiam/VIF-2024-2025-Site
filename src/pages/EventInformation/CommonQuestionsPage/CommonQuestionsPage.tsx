@@ -1,5 +1,6 @@
 import React from 'react';
 import { QuestionBox } from './QuestionBox/QuestionBox';
+import { Link } from 'react-router-dom';
 
 type QA = {
   question: string;
@@ -16,14 +17,14 @@ const studentQAs: QA[] = [
 
         <p>
           <strong>For in-person fairs:</strong> Upon registration, your contact information will be made available
-          to company representatives who may need to contact youafter the Industries Fair.
+          to company representatives who may need to contact you after the Industries Fair.
           <br />
           Please bring copies of your resume, and business cards if applicable.
         </p>
         <p>
 
-          <strong>For Virtual Fairs:</strong> Please make sure your virtual name is your first and last name,
-          and your focus is mentioned afterwards. For example: Mayet Andreassen - Modeling/LookDev, or Mayet Andreassen - UI/UX, ect.
+          <strong>For Virtual Fairs:</strong> Please make sure your virtual name is your first and last name followed by your focus.
+          For example: Mayet Andreassen - Modeling/LookDev, or Mayet Andreassen - UI/UX, etc.
           <br />
           Please turn on your cameras, present yourself in professional attire with adequate lighting, and be mindful of any background noise in your area.
         </p>
@@ -36,8 +37,8 @@ const studentQAs: QA[] = [
     content: (
       <>
         <p>
-          Students are not required to attend both events but <strong>we highly recommend it </strong>
-          since not all companies attending the virtual fair will attend the in-person fair and vice versa.
+          Students are not required to attend both events but <strong>we highly recommend it</strong>
+          &nbsp;since not all companies attending the virtual fair will attend the in-person fair and vice versa.
         </p>
       </>
     ),
@@ -57,7 +58,7 @@ const studentQAs: QA[] = [
         </p>
 
         <p className="no-gap">
-          The dates for these workshops are:
+          The dates for these workshops are as follows:
         </p>
         <ul>
           <li>Monday, September 25th</li>
@@ -67,7 +68,7 @@ const studentQAs: QA[] = [
 
         <p>
           Current students are <strong>required</strong> to attend one workshop if they wish to attend any of the portfolio reviews,
-          mock interviews, and the virtual/in-person industry fair. These workshops are hybrid, meaning they will take place in person
+          mock interviews, or the virtual/in-person industry fair. These workshops are hybrid, meaning they will take place in-person
           at <a className="link" href="#" target="_blank" rel="noreferrer">insert location here when we find one</a> and via Zoom.
           Students who register for the workshops will receive the Zoom link.
         </p>
@@ -75,7 +76,7 @@ const studentQAs: QA[] = [
         <p>
           If you cannot attend one of the workshop dates, please contact a committee member
           or email us at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a>
-          so we can send you the information and add you to our exceptions list. 
+          &nbsp;so we can send you the information and add you to our exceptions list.
         </p>
       </>
     ),
@@ -85,7 +86,8 @@ const studentQAs: QA[] = [
     question: "What if I'm a former student?",
     content: (
       <p>
-        Welcome back! We're happy to have you. Please see the For Students page and check "Former Student" on your Registration Form.
+        Welcome back! We're happy to have you. Please see the <Link className="link" to="/event-information/for-students">For Students page</Link>
+        &nbsp;and check "Former Student" on your registration form.
       </p>
     ),
   },
@@ -94,7 +96,7 @@ const studentQAs: QA[] = [
     question: "What is the dress code?",
     content: (
       <p>
-        You should wear clothes that are professionally appropriate for the position for which you are applying. 
+        You should wear clothes that are professionally appropriate for the position for which you are applying.
         If you're unsure of what to wear, you should always dress to impress.
       </p>
     ),
@@ -106,7 +108,7 @@ const studentQAs: QA[] = [
       <p>
         Absolutely! Student volunteers are essential for the Industry Fair to run smoothly.
         Please email our student representatives
-        at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a>if you are interested in participating.
+        at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> if you are interested in participating.
       </p>
     ),
   },
@@ -124,7 +126,7 @@ const studentQAs: QA[] = [
           (including those that are part of a cooperative education program) that have a duration of at least 10 weeks,
           provided that such interviews are related to the student's academic program and provided that
           the interviews are fixed date by employer policy and cannot be rescheduled. <strong>A student may not request excused absences
-          for employment or internship interviews for more than one scheduled class meeting in one academic term.</strong>
+            for employment or internship interviews for more than one scheduled class meeting in one academic term.</strong>
         </p>
 
         <p className="indented italicized">
@@ -135,19 +137,73 @@ const studentQAs: QA[] = [
           <strong><em>However</em></strong>, there is a maximum of one (1) excused absence for interviews or employment related activities.
           Please plan your day accordingly so you don't miss the opportunity to speak with company representatives.
           Some professors may allow students to attend during regularly scheduled class time.
-          <strong><em>Check with your professor regarding their policy for attending the Industry Fair. </em></strong>
-          Make sure to notify your professors ahead of time.
+          <strong><em> Check with your professor regarding their policy for attending the Industry Fair.</em></strong>
+          &nbsp;Make sure to notify your professors ahead of time.
         </p>
       </>
     ),
   },
 ];
 
-const renderQuestions = (items: QA[]) => {
+const companyQAs: QA[] = [
+  {
+    question: "Can we review student resumes and portfolios prior to the Industries Fair so we can conduct interviews while we're there?",
+    content: (
+      <p>
+        Certainly! Please include this request on your registration form and we will make them available to you.
+      </p>
+    ),
+  },
+
+  {
+    question: "Is it mandatory to attend both events? Or either?",
+    content: (
+      <p>
+        We are grateful for any amount of time you wish to dedicate towards our students, whether it is during or in-person,
+        or virtual events! Please only sign up for events that you feel comfortable attending.
+        It is not mandatory to attend all of them, and if complications arise, please notify us for any cancellations
+        or rescheduling at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a>.
+      </p>
+    ),
+  },
+
+  {
+    question: "Will there be food?",
+    content: (
+      <p>
+        Yes! Our industry fair is catered to our industry representatives.
+        Please list any dietary restrictions in your registration form.
+      </p>
+    ),
+  },
+  
+  {
+    question: "Will there be parking available?",
+    content: (
+      <p>
+        Yes! After registration, when we have a total headcount of company representatives,
+        parking passes will be purchased and distributed upon arrival.
+      </p>
+    ),
+  },
+
+  {
+    question: "Who do I contact if I have other questions?",
+    content: (
+      <p>
+        Please email our student representatives
+        at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> if
+        you have any questions or special needs.
+      </p>
+    ),
+  },
+];
+
+const renderQuestions = (items: QA[], color: 'red' | 'green' | 'yellow' | 'purple') => {
   return items.map(({ question, content }, index) => {
     return (
       <li className="question-item" key={question}>
-        <QuestionBox qNum={index + 1} question={question}>
+        <QuestionBox qNum={index + 1} question={question} color={color}>
           <div className="paragraphs">
             {content}</div>
         </QuestionBox>
@@ -171,7 +227,7 @@ export function CommonQuestionsPage(): JSX.Element {
       <div className="container">
         <h2 className="heading-secondary">Students</h2>
         <ul className="question-list">
-          {renderQuestions(studentQAs)}
+          {renderQuestions(studentQAs, 'yellow')}
         </ul>
       </div>
     </section>
@@ -180,7 +236,7 @@ export function CommonQuestionsPage(): JSX.Element {
       <div className="container">
         <h2 className="heading-secondary">Companies</h2>
         <ul className="question-list">
-          {/* {renderQuestions(companyQAs)} */}
+          {renderQuestions(companyQAs, 'red')}
         </ul>
       </div>
     </section>

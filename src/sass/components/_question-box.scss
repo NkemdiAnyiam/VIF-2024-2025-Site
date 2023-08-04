@@ -1,9 +1,36 @@
 .question-box {
+  $fill-color: var(--fill-color);
+  $border-color: var(--border-color);
+
+  &--yellow {
+    --fill-color: #{rgba(darken($color-brand-yellow-darker, 18%), 0.85)};
+    --border-color: #{lighten($color-brand-yellow-darker, 10%)};
+  }
+
+  &--red {
+    --fill-color: #{rgba(darken($color-brand-red-darker, 8%), 0.85)};
+    --border-color: #{lighten($color-brand-red-darker, 30%)};
+  }
+
+  &--green {
+    --fill-color: #{rgba(darken($color-brand-green-darker, 13%), 0.85)};
+    --border-color: #{lighten($color-brand-green-darker, 16%)};
+  }
+
+  &--purple {
+    --fill-color: #{rgba(darken($color-violet, 30%), 0.85)};
+    --border-color: #{lighten($color-violet, 16%)};
+  }
+
+  &__header,
+  &__answer {
+    background-color: $fill-color;
+    border: 2px solid $border-color;
+  }
+
   &__header {
     width: 100%;
     padding: 1.6rem 3rem;
-    background-color: rgba(darken($color-brand-red-darker, 7%), 0.85);
-    border: 2px solid lighten($color-brand-red-darker, 10%);
 
     display: flex;
     align-items: center;
@@ -17,8 +44,6 @@
   &__answer {
     width: 100%;
     padding: 1.6rem 3rem;
-    background-color: rgba(darken($color-brand-red-darker, 7%), 0.85);
-    border: 2px solid lighten($color-brand-red-darker, 10%);
     border-top: none;
   }
 }
