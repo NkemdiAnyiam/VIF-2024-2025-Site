@@ -96,8 +96,8 @@ export function HomePage(): JSX.Element {
           </p>
           <div className="registration-buttons">
             {/* TODO: Get actual links */}
-            <a href='#' className="registration-button registration-button--yellow">Student Registration</a>
-            <a href='#' className="registration-button registration-button--red">Industry Registration</a>
+            <a href="#" className="registration-button registration-button--yellow">Student Registration</a>
+            <a href="#" className="registration-button registration-button--red">Industry Registration</a>
           </div>
         </div>
       </section>
