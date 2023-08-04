@@ -20,12 +20,9 @@ export function QuestionBox(props: QuestionBoxProps): JSX.Element {
         </div>
       </div>
 
-      {
-        expanded &&
-        <div className="question-box__answer">
-          {props.children}
-        </div>
-      }
+      <div className="question-box__answer" hidden={!expanded ? true : false}>
+        {props.children}
+      </div>
     </div>
   );
 }
