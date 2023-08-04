@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 type QuestionBoxProps = {
   qNum: number;
@@ -8,14 +8,23 @@ type QuestionBoxProps = {
 }
 
 export function QuestionBox(props: QuestionBoxProps): JSX.Element {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <div className={`question-box${props.color ? ` question-box--${props.color}` : ''}`}>
-      <div className="question-box__header">
+      <div
+        className="question-box__header"
+        onClick={() => setExpanded(!expanded)}
+      >
         <h3 className="heading-tertiary question-box__question">{props.qNum}. {props.question}</h3>
       </div>
-      <div className="question-box__answer">
-        {props.children}
-      </div>
+
+      {
+        expanded &&
+        <div className="question-box__answer">
+          {props.children}
+        </div>
+      }
     </div>
   );
 }
