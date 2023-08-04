@@ -34,18 +34,18 @@
 
   &__header,
   &__answer {
-    background-color: $fill-color;
     border: 2px solid $border-color;
-    transition: background-color 0.1s;
   }
 
   &__header {
     width: 100%;
     padding: 1.6rem 3rem;
+    background-color: $fill-color;
+    transition: background-color 0.1s;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
-    cursor: pointer;
 
     &:hover {
       background-color: $fill-color-hover;
@@ -65,5 +65,6 @@
     width: 100%;
     padding: 1.6rem 3rem;
     border-top: none;
+    background-color: rgba($color-black, 0.3);
   }
 }
