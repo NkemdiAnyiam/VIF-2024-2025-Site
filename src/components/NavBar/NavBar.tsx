@@ -66,6 +66,7 @@ export function NavBar(): JSX.Element {
   
   const handleLogoClick = () => {
     setExpanded(false);
+    window.scrollTo(0, 0);
   }
 
   const handleHamburgerClick = () => {
