@@ -12,11 +12,12 @@ export function QuestionBox(props: QuestionBoxProps): JSX.Element {
 
   return (
     <div className={`question-box${props.color ? ` question-box--${props.color}` : ''}`}>
-      <div
-        className="question-box__header"
-        onClick={() => setExpanded(!expanded)}
-      >
+      <div className="question-box__header" onClick={() => setExpanded(!expanded)}>
         <h3 className="heading-tertiary question-box__question">{props.qNum}. {props.question}</h3>
+
+        <div className="dropdown-marker-container">
+          <span className={`dropdown-marker${expanded ? ' dropdown-marker--up' : ''}`}></span>
+        </div>
       </div>
 
       {
