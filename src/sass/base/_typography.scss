@@ -71,6 +71,8 @@
   padding-bottom: 1px;
   border-bottom: 1px dashed currentColor;
   transition: color 0.1s, border-bottom 0.1s;
+  hyphens: auto;
+  overflow-wrap: break-word;
 
   // // ::selection background color covers up 1px border AND...
   // // doesn't change currentColor, so use text-decoration when
