@@ -10,14 +10,14 @@ type QA = {
 // TODO: get proper links for everything within list
 const studentQAs: QA[] = [
   {
-    question: "Do I need to register to attend the Industries Fair?",
+    question: "Do I need to register to attend the Industry Fair?",
     content: (
       <>
         <p>YES! You must register <a className="link" href="#" target="_blank" rel="noreferrer">here</a>.</p>
 
         <p>
           <strong>For in-person fairs:</strong> Upon registration, your contact information will be made available
-          to company representatives who may need to contact you after the Industries Fair.
+          to company representatives who may need to contact you after the Industry Fair.
           <br />
           Please bring copies of your resume, and business cards if applicable.
         </p>
@@ -103,7 +103,7 @@ const studentQAs: QA[] = [
   },
 
   {
-    question: "Can I volunteer to help with the Industries Fair?",
+    question: "Can I volunteer to help with the Industry Fair?",
     content: (
       <p>
         Absolutely! Student volunteers are essential for the Industry Fair to run smoothly.
@@ -114,7 +114,7 @@ const studentQAs: QA[] = [
   },
 
   {
-    question: "Are classes cancelled for the Industries Fair?",
+    question: "Are classes cancelled for the Industry Fair?",
     content: (
       <>
         <p>
@@ -147,7 +147,7 @@ const studentQAs: QA[] = [
 
 const companyQAs: QA[] = [
   {
-    question: "Can we review student resumes and portfolios prior to the Industries Fair so we can conduct interviews while we're there?",
+    question: "Can we review student resumes and portfolios prior to the Industry Fair so we can conduct interviews while we're there?",
     content: (
       <p>
         Certainly! Please include this request on your registration form and we will make them available to you.
