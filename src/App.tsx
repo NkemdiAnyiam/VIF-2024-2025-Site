@@ -10,7 +10,7 @@ import { AboutVizPage } from './pages/About/AboutVizPage/AboutVizPage';
 // import { VifCommitteePage } from './pages/About/VifCommitteePage/VifCommitteePage';
 // import { ForStudentsPage } from './pages/EventInformation/ForStudentsPage/ForStudentsPage';
 // import { ForIndustryPage } from './pages/EventInformation/ForIndustryPage/ForIndustryPage';
-// import { CommonQuestionsPage } from './pages/EventInformation/CommonQuestionsPages/CommonQuestionsPage';
+import { CommonQuestionsPage } from './pages/EventInformation/CommonQuestionsPage/CommonQuestionsPage';
 // import { SchedulePage } from './pages/SchedulePage/SchedulePage';
 
 export function App(): JSX.Element {
