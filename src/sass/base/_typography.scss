@@ -56,13 +56,13 @@
   border-bottom: 1px dashed currentColor;
   transition: color 0.1s, border-bottom 0.1s;
 
-  // ::selection background color covers up 1px border AND...
-  // doesn't change currentColor, so use text-decoration when
-  // ::selection is on links
-  &::selection {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-  }
+  // // ::selection background color covers up 1px border AND...
+  // // doesn't change currentColor, so use text-decoration when
+  // // ::selection is on links
+  // &::selection {
+  //   text-decoration: underline;
+  //   text-decoration-style: dotted;
+  // }
 
   &:link,
   &:visited {
@@ -73,9 +73,9 @@
     color: $color-brand-green;
     border-bottom: 1px solid currentColor;
   
-    &::selection {
-      text-decoration-style: solid;
-    }
+    // &::selection {
+    //   text-decoration-style: solid;
+    // }
   }
 
   &:active {
