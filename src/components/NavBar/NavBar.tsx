@@ -111,7 +111,7 @@ export function NavBar(): JSX.Element {
 
             <ul className={`navbar__nested-list${expanded ? ' navbar__nested-list--expanded' : ''}`}>
               <Link to="#" className="navbar__link navbar__link--nested">For Students</Link>
-              <Link to="#" className="navbar__link navbar__link--nested">For Industry</Link>
+              <Link to="/event-information/for-industry" className="navbar__link navbar__link--nested">For Industry</Link>
               <Link to="/event-information/common-questions" className="navbar__link navbar__link--nested">Common Questions</Link>
             </ul>
           </li>
