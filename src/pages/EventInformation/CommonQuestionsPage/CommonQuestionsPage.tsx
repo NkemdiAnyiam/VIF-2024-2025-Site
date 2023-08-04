@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { QuestionBox } from './QuestionBox/QuestionBox';
 import { Link } from 'react-router-dom';
 
@@ -210,7 +211,7 @@ const renderQuestions = (items: QA[], color: 'red' | 'green' | 'yellow' | 'purpl
       </li>
     );
   });
-}
+};
 
 export function CommonQuestionsPage(): JSX.Element {
   return (<main className="common-questions-page">

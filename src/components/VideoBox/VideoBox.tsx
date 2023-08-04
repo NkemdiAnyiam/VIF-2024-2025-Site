@@ -19,9 +19,7 @@ export function VideoBox(props: VideoBoxProps): JSX.Element {
     const animation = new Animation(
       new KeyframeEffect(
         spinnerEl,
-        [
-          { rotate: `z 360deg` },
-        ],
+        [{ rotate: `z 360deg` }],
         {
           iterations: Infinity,
           duration: 2000,
