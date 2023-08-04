@@ -32,6 +32,10 @@ export function App(): JSX.Element {
         <Route exact path='/about/about-viz'>
           <AboutVizPage></AboutVizPage>
         </Route>
+
+        <Route exact path='/event-information/common-questions'>
+          <CommonQuestionsPage></CommonQuestionsPage>
+        </Route>
       </Switch>
 
       <Footer></Footer>

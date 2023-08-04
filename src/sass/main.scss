@@ -6,6 +6,7 @@
 
 @import "components/event-box";
 @import "components/picture-box";
+@import "components/question-box";
 @import "components/video-box";
 
 @import "layout/app";
@@ -14,4 +15,5 @@
 @import "layout/navbar";
 
 @import "pages/about-viz";
+@import "pages/common-questions";
 @import "pages/home";

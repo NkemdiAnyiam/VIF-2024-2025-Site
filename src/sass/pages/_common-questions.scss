@@ -1,0 +1,21 @@
+.common-questions-page {
+  .banner {
+    @include banner-background-image('/images/seated-group-photo-2.jpg', $color-brand-yellow-darker);
+    height: 30rem;
+    background-size: cover;
+    background-position: 50% 25%;
+    background-attachment: fixed;
+  }
+
+  .question-list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .question-item {
+      
+    }
+  }
+}
