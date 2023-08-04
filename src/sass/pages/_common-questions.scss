@@ -7,15 +7,26 @@
     background-attachment: fixed;
   }
 
+  .section {
+    &--student-questions,
+    &--company-questions {
+      @include full-bleed;
+
+      .container {
+        @include media-max(425px) {
+          @include full-bleed;
+          padding-left: 2.4rem;
+          padding-right: 2.4rem;
+        }
+      }
+    }
+  }
+
   .question-list {
     list-style: none;
 
     display: flex;
     flex-direction: column;
     gap: 4rem;
-
-    .question-item {
-      
-    }
   }
 }
