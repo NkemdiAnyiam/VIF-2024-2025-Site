@@ -24,9 +24,8 @@ export function ForIndustryPage(): JSX.Element {
           <div className="paragraphs">
             <p>
               Welcome, and thank you for joining us this semester at the Visualization Industry Fair!
-              Please email our student representatives at&nbsp;
-              <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a>
-              &nbsp;as early as possible if you have any specific needs so we can address them prior to the fair.
+              Please email our student representatives at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> as
+              early as possible if you have any specific needs so we can address them prior to the fair.
             </p>
 
             <p>
@@ -38,9 +37,9 @@ export function ForIndustryPage(): JSX.Element {
             <p>
               For additional information about the Visualization Department at Texas A&M University,
               visit the <Link to="/about/about-viz" className="link">About Viz page</Link>.
-              If you have any questions or concerns, please contact our committee members at&nbsp;
-              <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a>
-              &nbsp;and/or Glen Vigus at <a href="mailto:gvigus@arch.tamu.edu" className="link">gvigus@arch.tamu.edu</a>.
+              If you have any questions or concerns, please contact our committee members
+              at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> and/or
+              Glen Vigus at <a href="mailto:gvigus@arch.tamu.edu" className="link">gvigus@arch.tamu.edu</a>.
             </p>
           </div>
         </div>

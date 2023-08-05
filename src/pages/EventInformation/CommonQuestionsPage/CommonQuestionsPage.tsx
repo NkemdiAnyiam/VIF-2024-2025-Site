@@ -36,8 +36,8 @@ const studentQAs: QA[] = [
     content: (
       <>
         <p>
-          Students are not required to attend both events but <strong>we highly recommend it</strong>
-          &nbsp;since not all companies attending the virtual fair will attend the in-person fair and vice versa.
+          Students are not required to attend both events but <strong>we highly recommend it</strong> since
+          not all companies attending the virtual fair will attend the in-person fair and vice versa.
         </p>
       </>
     ),
@@ -74,8 +74,8 @@ const studentQAs: QA[] = [
 
         <p>
           If you cannot attend one of the workshop dates, please contact a committee member
-          or email us at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a>
-          &nbsp;so we can send you the information and add you to our exceptions list.
+          or email us at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> so
+          we can send you the information and add you to our exceptions list.
         </p>
       </>
     ),
@@ -85,8 +85,8 @@ const studentQAs: QA[] = [
     question: "What if I'm a former student?",
     content: (
       <p>
-        Welcome back! We're happy to have you. Please see the <Link className="link" to="/event-information/for-students">For Students page</Link>
-        &nbsp;and check "Former Student" on your registration form.
+        Welcome back! We're happy to have you. Please see the <Link className="link" to="/event-information/for-students">For Students page</Link> and
+        check "Former Student" on your registration form.
       </p>
     ),
   },
@@ -117,7 +117,8 @@ const studentQAs: QA[] = [
     content: (
       <>
         <p>
-          Though classes are not canceled, career fairs can be considered an excused absence under Rule 07 of the Texas A&M Attendance code, as they fall under the following section:
+          Though classes are not canceled, career fairs can be considered an excused absence under Rule 07
+          of the Texas A&M Attendance code, as they fall under the following section:
         </p>
 
         <p className="indented italicized">
@@ -125,7 +126,7 @@ const studentQAs: QA[] = [
           (including those that are part of a cooperative education program) that have a duration of at least 10 weeks,
           provided that such interviews are related to the student's academic program and provided that
           the interviews are fixed date by employer policy and cannot be rescheduled. <strong>A student may not request excused absences
-            for employment or internship interviews for more than one scheduled class meeting in one academic term.</strong>
+          for employment or internship interviews for more than one scheduled class meeting in one academic term.</strong>
         </p>
 
         <p className="indented italicized">
@@ -136,8 +137,8 @@ const studentQAs: QA[] = [
           <strong><em>However</em></strong>, there is a maximum of one (1) excused absence for interviews or employment related activities.
           Please plan your day accordingly so you don't miss the opportunity to speak with company representatives.
           Some professors may allow students to attend during regularly scheduled class time.
-          <strong><em> Check with your professor regarding their policy for attending the Industry Fair.</em></strong>
-          &nbsp;Make sure to notify your professors ahead of time.
+          <strong><em> Check with your professor regarding their policy for attending the Industry Fair.</em></strong> Make sure to
+          notify your professors ahead of time.
         </p>
       </>
     ),
