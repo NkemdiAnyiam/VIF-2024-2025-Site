@@ -51,7 +51,7 @@ body {
   $gradient-color: rgba(darken($color-violet-darkest, 16%), 0.9);
 
   background-image: linear-gradient($gradient-color, $gradient-color),
-                    url('/images/colored-logo-background.png');
+                    url('/images/colored-logo-background-min.png');
   background-size: cover;
   background-attachment: fixed;
   filter: blur(0.5px);

@@ -61,7 +61,7 @@ export function AboutVizPage(): JSX.Element {
             <li className="programs__item">
               <PictureSquare
                 text="Minor in Game Design and Development"
-                imgUrl={require('../../../images/programs/game-design-and-development.jpg')}
+                imgUrl={require('../../../images/programs/game-design-and-development-min.jpg')}
                 altText="minor in game design and development"
                 color='purple'
               />
@@ -70,7 +70,7 @@ export function AboutVizPage(): JSX.Element {
             <li className="programs__item">
               <PictureSquare
                 text="Bachelor of Science in Visualization"
-                imgUrl={require('../../../images/programs/bachelor-of-science-visualization.jpg')}
+                imgUrl={require('../../../images/programs/bachelor-of-science-visualization-min.jpg')}
                 altText="bachelor of science in visualization"
                 color='green'
               />
@@ -79,7 +79,7 @@ export function AboutVizPage(): JSX.Element {
             <li className="programs__item">
               <PictureSquare
                 text="Master of Science in Visualization"
-                imgUrl={require('../../../images/programs/master-of-science-visualization.jpg')}
+                imgUrl={require('../../../images/programs/master-of-science-visualization-min.jpg')}
                 altText="master of science in visualization"
                 color='yellow'
               />
@@ -88,7 +88,7 @@ export function AboutVizPage(): JSX.Element {
             <li className="programs__item">
               <PictureSquare
                 text="Master of Fine Arts in Visualization"
-                imgUrl={require('../../../images/programs/master-of-fine-arts-visualization.jpg')}
+                imgUrl={require('../../../images/programs/master-of-fine-arts-visualization-min.jpg')}
                 altText="master of fine arts in visualization"
                 color='yellow'
               />
@@ -97,7 +97,7 @@ export function AboutVizPage(): JSX.Element {
             <li className="programs__item">
               <PictureSquare
                 text="Ph.D. in Architecture"
-                imgUrl={require('../../../images/programs/phd-architecture.jpg')}
+                imgUrl={require('../../../images/programs/phd-architecture-min.jpg')}
                 altText="Ph.D. in architecture"
                 color='red'
               />
