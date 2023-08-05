@@ -1,0 +1,17 @@
+.for-students-page {
+  .banner {
+    @include banner-background-image('/images/seated-group-photo-2.jpg', $color-brand-yellow-darker);
+    height: 30rem;
+    background-size: cover;
+    background-position: 50% 25%;
+    background-attachment: fixed;
+  }
+
+  .section--past-companies {
+    .paragraphs {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: max(1.8rem, 16px);
+    }
+  }
+}
