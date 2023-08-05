@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Route, Switch, useLocation } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 
 import { HomePage } from './pages/HomePage/HomePage';
 
@@ -14,39 +15,41 @@ import { CommonQuestionsPage } from './pages/EventInformation/CommonQuestionsPag
 // import { SchedulePage } from './pages/SchedulePage/SchedulePage';
 
 export function App(): JSX.Element {
-  const {pathname} = useLocation<History>();
+  const { pathname } = useLocation<History>();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   return (
-    <div className="App">
-      <NavBar></NavBar>
+    <HelmetProvider>
+      <div className="App">
+        <NavBar></NavBar>
 
-      <Switch>
-        <Route exact path='/'>
-          <HomePage></HomePage>
-        </Route>
+        <Switch>
+          <Route exact path='/'>
+            <HomePage></HomePage>
+          </Route>
 
-        <Route exact path='/about/about-viz'>
-          <AboutVizPage></AboutVizPage>
-        </Route>
+          <Route exact path='/about/about-viz'>
+            <AboutVizPage></AboutVizPage>
+          </Route>
 
-        <Route exact path='/event-information/for-students'>
-          <ForStudentsPage></ForStudentsPage>
-        </Route>
+          <Route exact path='/event-information/for-students'>
+            <ForStudentsPage></ForStudentsPage>
+          </Route>
 
-        <Route exact path='/event-information/for-industry'>
-          <ForIndustryPage></ForIndustryPage>
-        </Route>
+          <Route exact path='/event-information/for-industry'>
+            <ForIndustryPage></ForIndustryPage>
+          </Route>
 
-        <Route exact path='/event-information/common-questions'>
-          <CommonQuestionsPage></CommonQuestionsPage>
-        </Route>
-      </Switch>
+          <Route exact path='/event-information/common-questions'>
+            <CommonQuestionsPage></CommonQuestionsPage>
+          </Route>
+        </Switch>
 
-      <Footer></Footer>
-    </div>
+        <Footer></Footer>
+      </div>
+    </HelmetProvider>
   );
 }

@@ -1,11 +1,18 @@
 import React from 'react';
 
+import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
+
 import { PictureSquare } from '../../../components/PictureSquare/PictureSquare';
 import { VideoBox } from '../../../components/VideoBox/VideoBox';
 
 export function AboutVizPage(): JSX.Element {
   return (
     <main className="about-viz-page">
+      <SearchEngineOpt
+        title="About Viz - Viz Industry Fair 2024"
+        // description="VIF is an opportunity for students and alumni to connect with prospective employers in today's leading industries as well as receive professional feedback."
+      />
+      
       <header className="banner">
         <div className="banner__background"></div>
         <div className="container">

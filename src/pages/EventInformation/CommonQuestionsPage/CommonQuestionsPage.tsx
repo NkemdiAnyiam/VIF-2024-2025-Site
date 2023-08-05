@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
+
 import { QuestionBox } from './QuestionBox/QuestionBox';
 
 type QA = {
@@ -126,7 +128,7 @@ const studentQAs: QA[] = [
           (including those that are part of a cooperative education program) that have a duration of at least 10 weeks,
           provided that such interviews are related to the student's academic program and provided that
           the interviews are fixed date by employer policy and cannot be rescheduled. <strong>A student may not request excused absences
-          for employment or internship interviews for more than one scheduled class meeting in one academic term.</strong>
+            for employment or internship interviews for more than one scheduled class meeting in one academic term.</strong>
         </p>
 
         <p className="indented italicized">
@@ -176,7 +178,7 @@ const companyQAs: QA[] = [
       </p>
     ),
   },
-  
+
   {
     question: "Will there be parking available?",
     content: (
@@ -213,33 +215,39 @@ const renderQuestions = (items: QA[], color: 'red' | 'green' | 'yellow' | 'purpl
 };
 
 export function CommonQuestionsPage(): JSX.Element {
-  return (<main className="common-questions-page">
-    <header className="banner">
-      <div className="banner__background"></div>
-      <div className="container">
-        <h1 className="heading-primary">
-          Common Questions
-        </h1>
-      </div>
-    </header>
+  return (
+    <main className="common-questions-page">
+      <SearchEngineOpt
+        title="Common Questions - Viz Industry Fair 2024"
+        // description="VIF is an opportunity for students and alumni to connect with prospective employers in today's leading industries as well as receive professional feedback."
+      />
 
-    <section className="section section--student-questions" id="student-questions">
-      <div className="container">
-        <h2 className="heading-secondary">Students</h2>
-        <ul className="question-list">
-          {renderQuestions(studentQAs, 'yellow')}
-        </ul>
-      </div>
-    </section>
+      <header className="banner">
+        <div className="banner__background"></div>
+        <div className="container">
+          <h1 className="heading-primary">
+            Common Questions
+          </h1>
+        </div>
+      </header>
 
-    <section className="section section--company-questions" id="company-questions">
-      <div className="container">
-        <h2 className="heading-secondary">Companies</h2>
-        <ul className="question-list">
-          {renderQuestions(companyQAs, 'red')}
-        </ul>
-      </div>
-    </section>
-  </main>
+      <section className="section section--student-questions" id="student-questions">
+        <div className="container">
+          <h2 className="heading-secondary">Students</h2>
+          <ul className="question-list">
+            {renderQuestions(studentQAs, 'yellow')}
+          </ul>
+        </div>
+      </section>
+
+      <section className="section section--company-questions" id="company-questions">
+        <div className="container">
+          <h2 className="heading-secondary">Companies</h2>
+          <ul className="question-list">
+            {renderQuestions(companyQAs, 'red')}
+          </ul>
+        </div>
+      </section>
+    </main>
   );
 }

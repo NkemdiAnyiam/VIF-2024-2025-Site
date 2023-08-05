@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import { EventBox } from '../../../components/EventBox/EventBox';
+import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
 
 type PastCompany = {
   companyName: string;
@@ -44,6 +43,11 @@ const renderPastCompanies = (companies: PastCompany[]) => {
 export function ForStudentsPage(): JSX.Element {
   return (
     <main className="for-students-page">
+      <SearchEngineOpt
+        title="For Students - Viz Industry Fair 2024"
+        // description="VIF is an opportunity for students and alumni to connect with prospective employers in today's leading industries as well as receive professional feedback."
+      />
+
       <header className="banner">
         <div className="banner__background"></div>
         <div className="container">

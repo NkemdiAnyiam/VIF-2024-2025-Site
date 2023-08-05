@@ -5,7 +5,7 @@ type Day = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturda
 type Month = 'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December';
 type Time = `${number}${'am' | 'pm'}`;
 
-type EventData = [day: Day, month: Month, weekDate: number, timeRange: [startTime: Time, endTime: Time]]
+type EventData = [day: Day, month: Month, weekDate: number, timeRange: [startTime: Time, endTime: Time]];
 
 type EventBoxProps = {
   season: Season;

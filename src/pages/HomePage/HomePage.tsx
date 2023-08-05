@@ -1,10 +1,16 @@
 import React from 'react';
 
+import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOpt';
+
 import { EventBox } from '../../components/EventBox/EventBox';
 
 export function HomePage(): JSX.Element {
   return (
     <main className="home-page">
+      <SearchEngineOpt
+        title="Viz Industry Fair 2024"
+        description="The Viz Industry Fair is an opportunity for students and alumni to connect with prospective employers in leading industries AND receive professional feedback."
+      />
       <header className="banner">
         <div className="banner__background"></div>
         <div className="container">
