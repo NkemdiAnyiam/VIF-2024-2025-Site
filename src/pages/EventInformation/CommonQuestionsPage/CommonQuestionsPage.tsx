@@ -19,14 +19,12 @@ const studentQAs: QA[] = [
         <p>
           <strong>For in-person fairs:</strong> Upon registration, your contact information will be made available
           to company representatives who may need to contact you after the Industry Fair.
-          <br />
           Please bring copies of your resume, and business cards if applicable.
         </p>
         <p>
 
           <strong>For Virtual Fairs:</strong> Please make sure your virtual name is your first and last name followed by your focus.
           For example: Mayet Andreassen - Modeling/LookDev, or Mayet Andreassen - UI/UX, etc.
-          <br />
           Please turn on your cameras, present yourself in professional attire with adequate lighting, and be mindful of any background noise in your area.
         </p>
       </>
