@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { QuestionBox } from './QuestionBox/QuestionBox';
-import { Link } from 'react-router-dom';
 
 type QA = {
   question: string;
@@ -60,9 +60,9 @@ const studentQAs: QA[] = [
           The dates for these workshops are as follows:
         </p>
         <ul>
-          <li>Monday, September 25th</li>
-          <li>Wednesday, September 27th</li>
-          <li>Friday, September 29th</li>
+          <li>Monday, September 25<sup>th</sup></li>
+          <li>Wednesday, September 27<sup>th</sup></li>
+          <li>Friday, September 29<sup>th</sup></li>
         </ul>
 
         <p>
