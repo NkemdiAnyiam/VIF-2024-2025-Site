@@ -8,10 +8,54 @@
   }
 
   .section--past-companies {
+    @include full-bleed;
+    @include section-color($color-violet-darkest);
+
+    .container {
+      // @include full-bleed;
+    }
+    
     .paragraphs {
       text-align: center;
       margin-bottom: 3rem;
       font-size: max(1.8rem, 16px);
+    }
+
+    .past-company-list {
+      list-style: none;
+
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, 40rem);
+      align-items: stretch;
+      gap: 1rem;
+
+      .past-company-item {
+        height: 100%;
+
+        &:nth-child(2n + 1) {
+          --bg-color: #{rgba(darken($color-brand-green-darker, 12%), 0.8)};
+        }
+        // &:nth-child(3n + 2) {
+        //   --bg-color: #{rgba(darken($color-brand-red-darker, 10%), 0.8)};
+        // }
+        &:nth-child(2n) {
+          --bg-color: #{rgba(darken($color-brand-yellow-darker, 16%), 0.8)};
+        }
+
+        .past-company-box {
+          width: 100%;
+          height: 100%;
+          padding: 2rem 1rem;
+          line-height: 1.4;
+          text-align: center;
+          border: 1px dashed $color-gray-light;
+          background-color: var(--bg-color);
+
+          display: grid;
+          place-content: center;
+        }
+      }
     }
   }
 }

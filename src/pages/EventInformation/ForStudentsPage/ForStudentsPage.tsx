@@ -3,6 +3,44 @@ import { Link } from 'react-router-dom';
 
 import { EventBox } from '../../../components/EventBox/EventBox';
 
+type PastCompany = {
+  companyName: string;
+}
+
+const pastCompanies: PastCompany[] = [
+  { companyName: "Aggieland Outfitters" },
+  { companyName: "Texas Film Commission" },
+  { companyName: "Texas Moving Picture Alliance (TXMPA)" },
+  { companyName: "Electronic Arts" },
+  { companyName: "NOKIA" },
+  { companyName: "N3D Studios Incorporated" },
+  { companyName: "Powerhouse Animation" },
+  { companyName: "SunSpear Games" },
+  { companyName: "Pumps & Pipes" },
+  { companyName: "Houston Methodist Institute for Technology, Innovation and Education" },
+  { companyName: "Gearbox Software" },
+  { companyName: "Aquifer" },
+  { companyName: "Digital Seat Media" },
+  { companyName: "Enduring Games" },
+  { companyName: "C.C. Creations" },
+  { companyName: "Booz Allen Hamilton, Inc." },
+  { companyName: "Cloud Imperium Games" },
+  { companyName: "Viasat" },
+];
+pastCompanies.sort((a, b) => a.companyName.toLowerCase() <= b.companyName.toLowerCase() ? -1 : 1);
+
+const renderPastCompanies = (companies: PastCompany[]) => {
+  return companies.map(({ companyName }) => {
+    return (
+      <li key={companyName} className="past-company-item">
+        <div className="past-company-box">
+          <p>{companyName}</p>
+        </div>
+      </li>
+    )
+  });
+};
+
 export function ForStudentsPage(): JSX.Element {
   return (
     <main className="for-students-page">
@@ -55,7 +93,7 @@ export function ForStudentsPage(): JSX.Element {
         </div>
       </section>
 
-      {/* <div className="section section--past-companies" id="past-companies">
+      <div className="section section--past-companies" id="past-companies">
         <div className="container">
           <h2 className="heading-secondary">Past Companies</h2>
           <div className="paragraphs">
@@ -63,8 +101,11 @@ export function ForStudentsPage(): JSX.Element {
               Past fairs have included some of the following companies
             </p>
           </div>
+          <ul className="past-company-list">
+            {renderPastCompanies(pastCompanies)}
+          </ul>
         </div>
-      </div> */}
+      </div>
     </main>
   );
 }
