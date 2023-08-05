@@ -30,7 +30,7 @@ export function ForIndustryPage(): JSX.Element {
 
           <div className="paragraphs">
             <p>
-              Welcome, and thank you for joining us this semester at the Visualization Industry Fair!
+              Welcome, and thank you for joining us this year at the Visualization Industry Fair!
               Please email our student representatives at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> as
               early as possible if you have any specific needs so we can address them prior to the fair.
             </p>
