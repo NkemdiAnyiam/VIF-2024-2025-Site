@@ -76,7 +76,7 @@ export function ForStudentsPage(): JSX.Element {
               {/* TODO: Get actual link */}
               <strong>Before you register for the fair</strong>, please <a href="#" className="link">register for our new Professionalism Workshop</a>!
               This workshop serves as an informational to the VIF events and teaches you best practices for communicating with industry professionals.
-              To uphold the professional standards of Texas A&M University, it is required for current students
+              To uphold the professional standards of Texas A&M University, it is <strong>required</strong> for current students
               to attend one of the three professionalism workshops in order to attend the industry fair or any other VIF event.
               Former students are not required to attend a workshop, but it is encouraged!
               The workshops will be held on the following dates:
