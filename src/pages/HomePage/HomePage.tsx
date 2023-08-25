@@ -38,8 +38,8 @@ export function HomePage(): JSX.Element {
               so they can continue their journey of lifelong learning and receive advice from our industry representatives.
             </p>
             <p>
-              Because of continuing concerns with accessibility, we will be holding a virtual fair this year as well.
-              <strong> The virtual fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm on Discord.</strong>
+              Because of continuing concerns with accessibility, we will be holding a Virtual Fair this year as well.
+              <strong>The Virtual Fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm on Discord.</strong>
             </p>
             <p>
               The Viz Industry Fair is a student-run organization. These dedicated students, with focuses in Game Development, Animation, and Interactive Media,

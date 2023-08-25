@@ -68,13 +68,13 @@ export function ForStudentsPage(): JSX.Element {
               The Visualization Industry Fair is an opportunity for students interested in Animation, Gaming, Graphics,
               and Interactive technologies to connect with prospective employers working in high level positions
               in some of today's leading industries and receive professional feedback on their work.
-              The virtual Fair will be held Thursday, February 22<sup>nd</sup>, 2024, from 10am–4pm via Discord.
-              The In-Person fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm in MSC 2406.
+              The Virtual Fair will be held Thursday, February 22<sup>nd</sup>, 2024, from 10am–4pm via Discord.
+              The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm in MSC 2406.
             </p>
 
             <p className="no-gap">
               {/* TODO: Get actual link */}
-              <strong>Before you register for the fair</strong>, please <a href="#" className="link">register for our new Professionalism Workshop</a>!
+              <strong>Before you register for the Fair</strong>, please <a href="#" className="link">register for our new Professionalism Workshop</a>!
               This workshop serves as an informational to the VIF events and teaches you best practices for communicating with industry professionals.
               To uphold the professional standards of Texas A&M University, it is <strong>required</strong> for current students
               to attend one of the three professionalism workshops in order to attend the industry fair or any other VIF event.
@@ -91,7 +91,7 @@ export function ForStudentsPage(): JSX.Element {
             <p>
               {/* TODO: Get actual link */}
               To register for the fair itself, you'll need a downloadable version of your resume and a link to your portfolio website.
-              Please <a href="#" className="link">register for the fair here</a>.
+              Please <a href="#" className="link">register for the Fair here</a>.
             </p>
           </div>
         </div>
@@ -102,7 +102,7 @@ export function ForStudentsPage(): JSX.Element {
           <h2 className="heading-secondary">Past Companies</h2>
           <div className="paragraphs">
             <p>
-              Past fairs have included some of the following companies
+              Past Fairs have included some of the following companies
             </p>
           </div>
           <ul className="past-company-list">
