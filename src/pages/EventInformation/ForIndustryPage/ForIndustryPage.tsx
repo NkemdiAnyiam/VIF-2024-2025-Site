@@ -62,14 +62,14 @@ export function ForIndustryPage(): JSX.Element {
           </div>
           <div className="event-boxes">
             <EventBox
-              season="Fall"
+              heading="Fall"
               events={[
                 ["Thursday", "October", 19, ['10am', '4pm']],
                 ["Friday", "October", 20, ['10am', '4pm']],
               ]}
             />
             <EventBox
-              season="Spring"
+              heading="Spring"
               events={[
                 ["Thursday", "January", 25, ['10am', '4pm']],
                 ["Friday", "January", 26, ['10am', '4pm']],
@@ -89,13 +89,13 @@ export function ForIndustryPage(): JSX.Element {
           </div>
           <div className="event-boxes">
             <EventBox
-              season="Fall"
+              heading="Fall"
               events={[
                 ["Friday", "November", 3, ['10am', '4pm']],
               ]}
             />
             <EventBox
-              season="Spring"
+              heading="Spring"
               events={[
                 ["Friday", "February", 2, ['10am', '4pm']],
               ]}

@@ -11,10 +11,10 @@
     // @include full-bleed;
   }
 
+  .section--virtual-professionalism-workshops,
   .section--virtual-portfolio-reviews,
-  .section--virtual-mock-interviews {
-    // padding: 4rem 0;
-
+  .section--virtual-mock-interviews,
+  .section--industry-fair {
     .event-boxes {
       display: flex;
       flex-wrap: wrap;
@@ -25,12 +25,23 @@
     }
   }
 
+  .section--virtual-professionalism-workshops {
+    @include section-color($color-violet-darkest);
+    @include full-bleed;
+  }
+
   .section--virtual-portfolio-reviews {
     @include section-color($color-violet-dark);
     @include full-bleed;
   }
+
   .section--virtual-mock-interviews {
     @include section-color($color-violet-darkest);
+    @include full-bleed;
+  }
+
+  .section--industry-fair {
+    @include section-color($color-violet-dark);
     @include full-bleed;
   }
 

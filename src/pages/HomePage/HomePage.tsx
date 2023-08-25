@@ -53,19 +53,35 @@ export function HomePage(): JSX.Element {
         </div>
       </section>
 
+      <section className="section section--virtual-professionalism-workshops" id="virtual-professionalism-workshop-dates">
+        <div className="container">
+          <h2 className="heading-secondary">Virtual Professionalism Workshops</h2>
+          <div className="event-boxes">
+            <EventBox
+              heading="Fall"
+              events={[
+                ["Monday", "September", 25, ['10am', '12pm']],
+                ["Wednesday", "September", 27, ['10am', '12pm']],
+                ["Friday", "September", 29, ['3pm', '5pm']],
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="section section--virtual-portfolio-reviews" id="virtual-portfolio-review-dates">
         <div className="container">
           <h2 className="heading-secondary">Virtual Portfolio Reviews</h2>
           <div className="event-boxes">
             <EventBox
-              season="Fall"
+              heading="Fall"
               events={[
                 ["Thursday", "October", 19, ['10am', '4pm']],
                 ["Friday", "October", 20, ['10am', '4pm']],
               ]}
             />
             <EventBox
-              season="Spring"
+              heading="Spring"
               events={[
                 ["Thursday", "January", 25, ['10am', '4pm']],
                 ["Friday", "January", 26, ['10am', '4pm']],
@@ -80,15 +96,35 @@ export function HomePage(): JSX.Element {
           <h2 className="heading-secondary">Virtual Mock Interviews</h2>
           <div className="event-boxes">
             <EventBox
-              season="Fall"
+              heading="Fall"
               events={[
                 ["Friday", "November", 3, ['10am', '4pm']],
               ]}
             />
             <EventBox
-              season="Spring"
+              heading="Spring"
               events={[
                 ["Friday", "February", 2, ['10am', '4pm']],
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--industry-fair" id="industry-fair-dates">
+        <div className="container">
+          <h2 className="heading-secondary">Industry Fair</h2>
+          <div className="event-boxes">
+            <EventBox
+              heading="Virtual"
+              events={[
+                ["Thursday", "February", 22, ['10am', '4pm']],
+              ]}
+            />
+            <EventBox
+              heading="In-Person"
+              events={[
+                ["Friday", "February", 23, ['10am', '4pm']],
               ]}
             />
           </div>

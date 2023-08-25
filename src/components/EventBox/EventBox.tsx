@@ -1,6 +1,5 @@
 import React from 'react';
 
-type Season = 'Fall' | 'Spring';
 type Day = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturday' | 'Sunday';
 type Month = 'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December';
 type Time = `${number}${'am' | 'pm'}`;
@@ -8,7 +7,7 @@ type Time = `${number}${'am' | 'pm'}`;
 type EventData = [day: Day, month: Month, weekDate: number, timeRange: [startTime: Time, endTime: Time]];
 
 type EventBoxProps = {
-  season: Season;
+  heading: string;
   events: EventData[];
   modifiers?: string[];
 };
@@ -39,7 +38,7 @@ export function EventBox(props: EventBoxProps): JSX.Element {
   return (
     <div className={`event-box${props.modifiers?.map(modifier => ` event-box--${modifier}`) ?? ''}`}>
       <h3 className="heading-tertiary">
-        {props.season}
+        {props.heading}
       </h3>
       <ul className="event-box__dates-list">
         {generateListItems(props.events)}
