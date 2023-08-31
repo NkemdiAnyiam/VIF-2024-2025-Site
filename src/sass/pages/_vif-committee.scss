@@ -12,6 +12,7 @@
       @include full-bleed;
 
       .container {
+        // @include full-bleed;
         @include media-max(425px) {
           @include full-bleed;
           padding-left: 2.4rem;
@@ -24,8 +25,14 @@
   .committee-list {
     list-style: none;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    justify-items: center;
     gap: 4rem;
+
+    @include media-max(425px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

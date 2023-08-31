@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React /*, { useState }*/ from 'react';
 
 type Color = 'red' | 'green' | 'yellow' | 'purple';
 
@@ -8,6 +8,15 @@ type CommitteeBlockProps = {
   rank: 1 | 2 | 3 | 4;
   imgSrc: string;
   description: string;
+  socials?: Partial<{
+    linkedin: string;
+    youtube: string;
+    twitter: string;
+    github: string;
+    facebook: string;
+    instagram: string;
+    website: string;
+  }>;
 };
 
 const rankToColor = (rank: 1 | 2 | 3 | 4): Color => {
@@ -21,19 +30,33 @@ const rankToColor = (rank: 1 | 2 | 3 | 4): Color => {
 };
 
 export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
-  const [expanded, setExpanded] = useState(false);
 
   return (
     <div className={`committee-block${` committee-block--${rankToColor(props.rank)}`}`}>
-      <div className="committee-block__header" onClick={() => setExpanded(!expanded)}>
-        <h3 className="heading-tertiary committee-block__name">{props.fullName}</h3>
+      <div className="committee-block__header">
+        <div className="committee-block__photo-container">
+          <img
+            src={props.imgSrc}
+            alt={props.fullName}
+            className="committee-block__photo"
+          />
+        </div>
 
-        <div className="dropdown-marker-container">
-          <span className={`dropdown-marker${expanded ? ' dropdown-marker--up' : ''}`}></span>
+        <div className={`committee-block__title`}>
+          <h3 className={`committee-block__name`}>{props.fullName}</h3>
+          <p className={`committee-block__role`}>{props.role}</p>
+        </div>
+
+        <div className={`committee-block__socials`}>
+          <div className="committee-block__social-link"></div>
+          <div className="committee-block__social-link"></div>
+          <div className="committee-block__social-link"></div>
+          <div className="committee-block__social-link"></div>
+          <div className="committee-block__social-link"></div>
         </div>
       </div>
 
-      <div className="committee-block__description" hidden={!expanded ? true : false}>
+      <div className="committee-block__description">
         <div className="paragraphs">
           <p>{props.description}</p>
         </div>

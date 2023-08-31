@@ -3,6 +3,7 @@
   $fill-color-hover: var(--fill-color-hover);
   $fill-color-active: var(--fill-color-active);
   $border-color: var(--border-color);
+  // max-width: 50rem;
 
   &--yellow {
     --fill-color: #{rgba(darken($color-brand-yellow-darker, 18%), 0.85)};
@@ -33,7 +34,8 @@
   }
 
   &__header,
-  &__description {
+  &__description,
+  &__header .committee-block__photo-container {
     border: 2px solid $border-color;
   }
 
@@ -44,42 +46,64 @@
     padding-right: 2rem;
     background-color: $fill-color;
     transition: background-color 0.1s;
-    cursor: pointer;
 
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-areas: "photo title"
+                         "photo socials";
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    // align-items: center;
 
-    &:hover {
-      background-color: $fill-color-hover;
-    }
+    // &:hover {
+    //   background-color: $fill-color-hover;
+    // }
 
-    &:active {
-      background-color: $fill-color-active;
-    }
+    // &:active {
+    //   background-color: $fill-color-active;
+    // }
+  }
 
-    .committee-block__name {
-      flex: 1;
-      margin-bottom: 0;
-      font-size: max(2rem, 18px);
-    }
+    .committee-block__photo-container {
+      grid-area: photo;
+      width: 10rem;
+      height: 10rem;
 
-    .dropdown-marker-container {
-      margin-left: 1.2rem;
-
-      .dropdown-marker {
+      .committee-block__photo {
         display: inline-block;
-        justify-self: center;
-        width: 2rem;
-        height: 1rem;
-        clip-path: polygon(0 0, 100% 0, 50% 100%);
-        background-color: currentColor;
-
-        &--up {
-          rotate: z 180deg;
-        }
+        width: 100%;
+        object-fit: fill;
       }
     }
-  }
+
+    .committee-block__title {
+      grid-area: title;
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+
+      .committee-block__name {
+        margin-bottom: 0;
+        font-size: max(2rem, 18px);
+      }
+
+      .committee-block__role {
+
+      }
+    }
+
+    .committee-block__socials {
+      grid-area: socials;
+      align-self: end;
+      display: flex;
+      gap: 1rem;
+
+      .committee-block__social-link {
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+      }
+    }
 
   &__description {
     width: 100%;
