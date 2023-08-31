@@ -2,22 +2,31 @@ import React from 'react';
 
 import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
 
-import { CommitteeBlock } from './VifCommBlock/CommitteeBlock';
+import { CommitteeBlock } from './CommitteeBlock/CommitteeBlock';
 
 type CommitteeMember = {
   fullName: string;
+  rank: 1 | 2 | 3 | 4;
   role: string;
   imgSrc: string;
   description: string;
 };
 
-const committeeMembers: CommitteeMember[] = [];
+const committeeMembers: CommitteeMember[] = [
+  {
+    fullName: `Kaylyn Luna`,
+    role: `Committee Co-Director`,
+    rank: 1,
+    imgSrc: `b`,
+    description: `Kaylyn is a graduate student pursuing her Masters of Science in Visualization with a focus on digital environments and layout for games. She is currently working as lead concept artist for the LIVE LAB where she creates illustrations, animations, video graphics and other digital content for the University. Outside of class, Kaylyn enjoys digital painting, cooking and reading comic books.`
+  }
+];
 
-const renderVifCommBlocks = (items: CommitteeMember[], color: 'red' | 'green' | 'yellow' | 'purple') => {
+const renderVifCommBlocks = (items: CommitteeMember[]) => {
   return items.map((data, index) => {
     return (
       <li className="committee-item" key={`${data.fullName} ${data.role}`}>
-        <CommitteeBlock {...data} color={color} />
+        <CommitteeBlock {...data} />
       </li>
     );
   });
@@ -44,7 +53,7 @@ export function VifCommitteePage(): JSX.Element {
         <div className="container">
           <h2 className="heading-secondary">Members</h2>
           <ul className="committee-list">
-            {renderVifCommBlocks(committeeMembers, 'yellow')}
+            {renderVifCommBlocks(committeeMembers)}
           </ul>
         </div>
       </section>
