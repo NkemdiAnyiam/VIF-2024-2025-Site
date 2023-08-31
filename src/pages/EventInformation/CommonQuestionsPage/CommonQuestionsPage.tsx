@@ -207,7 +207,8 @@ const renderQuestions = (items: QA[], color: 'red' | 'green' | 'yellow' | 'purpl
       <li className="question-item" key={question}>
         <QuestionBox qNum={index + 1} question={question} color={color}>
           <div className="paragraphs">
-            {content}</div>
+            {content}
+          </div>
         </QuestionBox>
       </li>
     );
