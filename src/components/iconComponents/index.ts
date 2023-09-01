@@ -1,3 +1,6 @@
+export { default as GlobeOutline } from "./GlobeOutline";
+export { default as LogoFacebook } from "./LogoFacebook";
+export { default as LogoGithub } from "./LogoGithub";
 export { default as LogoInstagram } from "./LogoInstagram";
 export { default as LogoLinkedin } from "./LogoLinkedin";
 export { default as LogoTwitter } from "./LogoTwitter";

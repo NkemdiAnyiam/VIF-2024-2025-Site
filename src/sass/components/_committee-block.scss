@@ -3,7 +3,11 @@
   $fill-color-hover: var(--fill-color-hover);
   $fill-color-active: var(--fill-color-active);
   $border-color: var(--border-color);
+  height: 100%;
   // max-width: 50rem;
+
+  display: flex;
+  flex-direction: column;
 
   &--yellow {
     --fill-color: #{rgba(darken($color-brand-yellow-darker, 18%), 0.85)};
@@ -43,48 +47,89 @@
     position: relative;
     width: 100%;
     padding: 1.6rem 3rem;
-    padding-right: 2rem;
+    padding-right: 4rem;
     background-color: $fill-color;
     transition: background-color 0.1s;
+    cursor: pointer;
 
     display: grid;
     grid-template-areas: "photo title"
                          "photo socials";
-    grid-template-columns: auto 1fr;
-    column-gap: 2rem;
-    // align-items: center;
+    grid-template-columns: min-content 1fr;
+    gap: 2rem;
 
-    // &:hover {
-    //   background-color: $fill-color-hover;
-    // }
+    &:not(:has(.committee-block__social-link:hover)):hover {
+      background-color: $fill-color-hover;
+    }
 
-    // &:active {
-    //   background-color: $fill-color-active;
-    // }
+    &:not(:has(.committee-block__social-link:active)):active {
+      background-color: $fill-color-active;
+    }
+
+    @include media-max(425px) {
+      grid-template-areas: "photo title"
+                           "socials socials";
+      flex-direction: column;
+      // align-items: center;
+      // text-align: center;
+    }
+
+    .dropdown-marker-container {
+      position: absolute;
+      top: 1.6rem;
+      right: 2rem;
+      margin-left: 1.2rem;
+      align-self: start;
+      justify-self: end;
+
+      .dropdown-marker {
+        display: inline-block;
+        justify-self: center;
+        width: 2rem;
+        height: 1rem;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        background-color: currentColor;
+
+        &--up {
+          rotate: z 180deg;
+        }
+      }
+    }
   }
 
     .committee-block__photo-container {
       grid-area: photo;
-      width: 10rem;
-      height: 10rem;
+      min-width: 10rem;
+      min-height: 10rem;
+
+      @include media-max(425px) {
+        // width: 15rem;
+        // height: 15rem;
+      }
 
       .committee-block__photo {
         display: inline-block;
         width: 100%;
-        object-fit: fill;
+        height: 100%;
+        object-fit: cover;
+        user-select: none;
       }
     }
 
     .committee-block__title {
       grid-area: title;
-      align-self: start;
+      // align-self: start;
       display: flex;
       flex-direction: column;
-      gap: 0.4rem;
+      gap: 0.6rem;
 
       .committee-block__name {
         margin-bottom: 0;
         font-size: max(2rem, 18px);
+
+        span {
+
+        }
       }
 
       .committee-block__role {
@@ -94,22 +139,43 @@
 
     .committee-block__socials {
       grid-area: socials;
-      align-self: end;
-      display: flex;
-      gap: 1rem;
+      list-style: none;
 
-      .committee-block__social-link {
-        width: 3rem;
-        height: 3rem;
-        background-color: white;
+      display: flex;
+      gap: 15px;
+      
+      @include media-max(425px) {
+        gap: 2rem;
+      }
+
+      .committee-block__social-item {
+        width: 30px;
+        height: 30px;
+        .committee-block__social-link {
+          width: 100%;
+          height: 100%;
+          fill: $color-white;
+          stroke: $color-white;
+          @include icon-solid(darken($color-white, 15%));
+        }
       }
     }
 
   &__description {
     width: 100%;
+    flex: 1;
     padding: 1.6rem 3rem;
     border-top: none;
     background-color: rgba($color-black, 0.3);
+    overflow: hidden;
+
+    &--hidden {
+      flex: 0;
+      flex-basis: 0;
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
   }
 }
 
