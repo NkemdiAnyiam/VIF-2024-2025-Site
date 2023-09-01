@@ -39,7 +39,7 @@ export function AboutVizPage(): JSX.Element {
             <p>
               Our program has helped develop artists who have gone into fields such as Game Art, Game Design, Technical Art, Animation,
               Surfacing, Production, Tool Development, Rigging, UI/UX, Interactive Design, Graphic Design, AR and VR, Visual Computing, and more.
-              Our program also sponsors the <a href="http://chillennium.com/" className="link" target="_blank" rel="noreferrer">international game jam Chillennium</a> at
+              Our program also sponsors the <a href="http://chillennium.com/" className="link" target="_blank" rel="noreferrer" aria-label="Visit Chillennium website">international game jam Chillennium</a> at
               Texas A&M University, which is the largest student run game jam in the world.
             </p>
             <p>

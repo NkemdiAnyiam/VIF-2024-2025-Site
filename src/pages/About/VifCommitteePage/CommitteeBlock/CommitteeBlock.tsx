@@ -35,7 +35,7 @@ const rankToColor = (rank: CommitteeBlockProps['rank']): Color => {
   }
 };
 
-const renderSocialLink = (type: keyof Socials, url: string): JSX.Element => {
+const renderSocialLink = (type: keyof Socials, url: string, memberName: string): JSX.Element => {
   return (
     <li key={url} className="committee-block__social-item">
       <a
@@ -43,6 +43,7 @@ const renderSocialLink = (type: keyof Socials, url: string): JSX.Element => {
         href={url}
         target="_blank"
         rel="noreferrer"
+        aria-label={`Visit ${memberName}'s ${type}`}
         onClick={(e) => {
           e.stopPropagation(); // prevents triggering setExpanded()
         }}
@@ -66,11 +67,11 @@ const renderSocialLink = (type: keyof Socials, url: string): JSX.Element => {
   );
 };
 
-const renderSocialLinks = (socials: Partial<Socials>): JSX.Element[] => {
+const renderSocialLinks = (socials: Partial<Socials>, memberName: string): JSX.Element[] => {
   return Object.entries(socials)
     .filter(([_, url]) => url)
     .map(([type, url]) => {
-      return renderSocialLink(type as keyof Socials, url);
+      return renderSocialLink(type as keyof Socials, url, memberName);
     });
 };
 
@@ -104,7 +105,7 @@ export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
         {
           Object.keys(props.socials).length > 0 &&
           <ul className={`committee-block__socials`}>
-            {renderSocialLinks(props.socials)}
+            {renderSocialLinks(props.socials, props.fullName)}
           </ul>
         }
 

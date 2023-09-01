@@ -14,6 +14,14 @@ import { ForIndustryPage } from './pages/EventInformation/ForIndustryPage/ForInd
 import { CommonQuestionsPage } from './pages/EventInformation/CommonQuestionsPage/CommonQuestionsPage';
 // import { SchedulePage } from './pages/SchedulePage/SchedulePage';
 
+console.log(`██╗   ██╗██╗███████╗
+██║   ██║██║██╔════╝
+██║   ██║██║█████╗  
+╚██╗ ██╔╝██║██╔══╝  
+ ╚████╔╝ ██║██║     
+  ╚═══╝  ╚═╝╚═╝     
+                    `);
+
 export function App(): JSX.Element {
   const { pathname } = useLocation<History>();
 

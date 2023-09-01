@@ -79,7 +79,7 @@ export function NavBar(): JSX.Element {
 
   return (
     <nav ref={navRef} className={`navbar${sticky ? ' navbar--sticky' : ''}${expanded ? ' navbar--expanded' : ''}`}>
-      <Link onClick={handleLogoClick} to="/" className="navbar__logo-link">
+      <Link onClick={handleLogoClick} to="/" className="navbar__logo-link" aria-label="Go to homepage">
           <VifLogoMark className={`vif-logo-mark${(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
           <VifLogoWide className={`vif-logo-wide${!(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
       </Link>
@@ -127,12 +127,12 @@ export function NavBar(): JSX.Element {
         (
           expanded ?
 
-          <button onClick={handleXClick} className="navbar__close-button">
+          <button onClick={handleXClick} className="navbar__close-button" aria-label="Close nav">
             <XSign className="navbar__close-button-icon" />
           </button> :
 
           <div onClick={handleHamburgerClick} className="navbar__hamburger">
-            <button className="navbar__hamburger-button">
+            <button className="navbar__hamburger-button" aria-label="Open nav">
               <div className="navbar__hamburger-bar"></div>
               <div className="navbar__hamburger-bar"></div>
               <div className="navbar__hamburger-bar"></div>
