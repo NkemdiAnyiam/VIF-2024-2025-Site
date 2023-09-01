@@ -14,11 +14,13 @@ type Socials = {
   website: string;
 };
 
-type CommitteeBlockProps = {
+export type CommitteeBlockProps = {
   fullName: string;
   role: string;
   rank: 1 | 2 | 3 | 4;
   imgSrc: string;
+  specialImgSrc?: string;
+  specialImgSrcAlt?: string;
   description: string;
   socials: Partial<Socials>;
 };
@@ -84,6 +86,14 @@ export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
             alt={props.fullName}
             className="committee-block__photo"
           />
+          {
+            props.specialImgSrc &&
+            <img
+              src={props.specialImgSrc}
+              alt={props.specialImgSrcAlt}
+              className="committee-block__photo committee-block__photo--special"
+            />
+          }
         </div>
 
         <div className={`committee-block__title`}>

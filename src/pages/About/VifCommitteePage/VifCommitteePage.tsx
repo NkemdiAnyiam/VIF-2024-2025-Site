@@ -2,31 +2,11 @@ import React from 'react';
 
 import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
 
-import { CommitteeBlock } from './CommitteeBlock/CommitteeBlock';
-
-type CommitteeMember = {
-  fullName: string;
-  rank: 1 | 2 | 3 | 4;
-  role: string;
-  imgSrc: string;
-  description: string;
-  socials: Socials;
-};
+import { CommitteeBlock, CommitteeBlockProps } from './CommitteeBlock/CommitteeBlock';
 
 const getPhotoSrc = (fullName: string) => require(`../../../images/committee/${fullName}-min.jpg`);
 
-
-type Socials = Partial<{
-  linkedin: string;
-  youtube: string;
-  twitter: string;
-  github: string;
-  facebook: string;
-  instagram: string;
-  website: string;
-}>;
-
-const committeeMembers: CommitteeMember[] = [
+const committeeMembers: CommitteeBlockProps[] = [
   {
     fullName: `Kaylyn Luna`,
     role: `Committee Co-Director`,
@@ -56,6 +36,8 @@ const committeeMembers: CommitteeMember[] = [
     role: `Web Developer`,
     rank: 2,
     imgSrc: getPhotoSrc(`Nkemdi-Anyiam`),
+    specialImgSrc: getPhotoSrc(`Nkemdi-Anyiam-Vector`),
+    specialImgSrcAlt: `Nkemdi Anyiam vectorized`,
     socials: {
       linkedin: `https://www.linkedin.com/in/nkemdi-anyiam/`,
       github: `https://github.com/NkemdiAnyiam`,
@@ -109,7 +91,7 @@ const committeeMembers: CommitteeMember[] = [
   },
 ];
 
-const renderVifCommBlocks = (items: CommitteeMember[]) => {
+const renderVifCommBlocks = (items: CommitteeBlockProps[]) => {
   return [...items]
     .sort(({rank: rankA, fullName: fullNameA}, {rank: rankB, fullName: fullNameB}) => {
       if (rankA !== rankB) {
