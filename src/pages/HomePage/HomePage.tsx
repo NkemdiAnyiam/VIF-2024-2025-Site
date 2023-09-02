@@ -14,6 +14,7 @@ export function HomePage(): JSX.Element {
       />
       <Header
         type="landing"
+        webpSrc={require('../../images/seated-group-photo-2-min.webp')}
         imageSrc={require('../../images/seated-group-photo-2-min.jpg')}
       >
         <h1 className="heading-primary">
