@@ -45,7 +45,7 @@ export function ForStudentsPage(): JSX.Element {
     <main className="for-students-page">
       <SearchEngineOpt
         title="For Students - Viz Industry Fair 2024"
-        // description="VIF is an opportunity for students and alumni to connect with prospective employers in today's leading industries as well as receive professional feedback."
+        description="Students will find important information about the Viz Industry Fair, including registration forms and a growing list of attending companies."
       />
 
       <header className="banner">

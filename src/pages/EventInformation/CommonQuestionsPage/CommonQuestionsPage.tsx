@@ -220,7 +220,7 @@ export function CommonQuestionsPage(): JSX.Element {
     <main className="common-questions-page">
       <SearchEngineOpt
         title="Common Questions - Viz Industry Fair 2024"
-        // description="VIF is an opportunity for students and alumni to connect with prospective employers in today's leading industries as well as receive professional feedback."
+        description="Here are common questions from students and employers about the Viz Industry Fair. If you cannot find an answer, email us at pvfavizindustryfair@tamu.edu."
       />
 
       <header className="banner">

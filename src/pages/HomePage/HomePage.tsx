@@ -9,7 +9,7 @@ export function HomePage(): JSX.Element {
     <main className="home-page">
       <SearchEngineOpt
         title="Viz Industry Fair 2024"
-        description="The Viz Industry Fair is an opportunity for students and alumni to connect with prospective employers in leading industries AND receive professional feedback."
+        description="The Visualization Industry Fair (VIF), is an annual event aimed at guiding students within the Performance, Visualization, and Fine Arts school towards successful careers."
       />
       <header className="banner">
         <div className="banner__background"></div>
