@@ -89,6 +89,18 @@ const committeeMembers: CommitteeBlockProps[] = [
     },
     description: `Emilie is a senior Visualization student currently working towards her B.S. degree. After college, her dream is to be a visual development/character artist in the animation and games industry. Outside of VIF, she serves as the Student Senator for SPVFA, the Visualization Student Technician Graphic Design Lead, Outreach Lead for Viz-A-GoGo, and is a musician in the TAMU Wind Symphony. When she is not creating art or performing, she enjoys running and taking care of plants.`,
   },
+
+  {
+    fullName: `Jocylin "Joy" Lopez`,
+    role: `Video Editor`,
+    rank: 2,
+    imgSrc: getPhotoSrc(`Jocylin-Lopez`),
+    socials: {
+      linkedin: `www.linkedin.com/in/jocylinylopez`,
+      website: `http://jocylinlopez.com/`,
+    },
+    description: `Joy is a graduate student pursuing a Master's in Visualization, specializing in character design, modeling, and game design. She works in marketing at the LIVE LAB, manages social media for the university, and holds roles as Social Media Officer for 2D Visual Developers and Lead Concept Artist mentor. Outside of her academic and professional life, Joy enjoys video games, anime, and oil painting.`,
+  },
 ];
 
 const renderVifCommBlocks = (items: CommitteeBlockProps[]) => {
@@ -97,8 +109,8 @@ const renderVifCommBlocks = (items: CommitteeBlockProps[]) => {
       if (rankA !== rankB) {
         return rankA - rankB;
       }
-      const lastNameA = fullNameA.split(' ')[1];
-      const lastNameB = fullNameB.split(' ')[1];
+      const lastNameA = fullNameA.split(' ').at(-1)!;
+      const lastNameB = fullNameB.split(' ').at(-1)!;
       return lastNameA.localeCompare(lastNameB);
     })
     .map((data, index) => {
