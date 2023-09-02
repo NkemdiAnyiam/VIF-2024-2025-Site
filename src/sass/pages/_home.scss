@@ -1,11 +1,4 @@
 .home-page {
-  .banner {
-    @include banner-background-image('/images/seated-group-photo-2-min.jpg', $color-brand-green-darker);
-    background-size: cover;
-    background-position: 50% 25%;
-    background-attachment: fixed;
-  }
-
   .section.section--introduction {
     // @include section-color($color-violet-darkest);
     // @include full-bleed;

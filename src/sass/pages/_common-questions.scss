@@ -1,12 +1,4 @@
 .common-questions-page {
-  .banner {
-    @include banner-background-image('/images/seated-group-photo-2-min.jpg', $color-brand-yellow-darker);
-    height: 30rem;
-    background-size: cover;
-    background-position: 50% 25%;
-    background-attachment: fixed;
-  }
-
   .section {
     &--student-questions,
     &--company-questions {

@@ -3,6 +3,7 @@ import React from 'react';
 import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { CommitteeBlock, CommitteeBlockProps } from './CommitteeBlock/CommitteeBlock';
+import { Header } from '../../../components/Header/Header';
 
 const getPhotoSrc = (fullName: string) => require(`../../../images/committee/${fullName}-min.jpg`);
 
@@ -130,14 +131,14 @@ export function VifCommitteePage(): JSX.Element {
         description="Introducing the VIF committee, our dedicated students and faculty who help make the Visualization Industry Fair possible!"
       />
 
-      <header className="banner">
-        <div className="banner__background"></div>
-        <div className="container">
-          <h1 className="heading-primary">
-            VIF Committee
-          </h1>
-        </div>
-      </header>
+      <Header
+        type="normal"
+        imageSrc={require('../../../images/seated-group-photo-2-min.jpg')}
+      >
+        <h1 className="heading-primary">
+          VIF Committee
+        </h1>
+      </Header>
 
       <section className="section section--vif-committee-members" id="vif-committee-members">
         <div className="container">

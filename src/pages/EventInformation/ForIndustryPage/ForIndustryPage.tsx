@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { EventBox } from '../../../components/EventBox/EventBox';
+import { Header } from '../../../components/Header/Header';
 
 export function ForIndustryPage(): JSX.Element {
   return (
@@ -13,14 +14,14 @@ export function ForIndustryPage(): JSX.Element {
         description="Employers and industry guests will find important information about the Viz Industry Fair, including registration forms and volunteer opportunities."
       />
 
-      <header className="banner">
-        <div className="banner__background"></div>
-        <div className="container">
-          <h1 className="heading-primary">
-            For Industry
-          </h1>
-        </div>
-      </header>
+      <Header
+        type="normal"
+        imageSrc={require('../../../images/seated-group-photo-2-min.jpg')}
+      >
+        <h1 className="heading-primary">
+          For Industry
+        </h1>
+      </Header>
 
       <section className="section section--welcome-industry" id="industry-welcome">
         <div className="container">

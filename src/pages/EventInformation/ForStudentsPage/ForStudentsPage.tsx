@@ -2,6 +2,8 @@ import React from 'react';
 
 import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
 
+import { Header } from '../../../components/Header/Header';
+
 type PastCompany = {
   companyName: string;
 }
@@ -48,14 +50,14 @@ export function ForStudentsPage(): JSX.Element {
         description="Students will find important information about the Viz Industry Fair, including registration forms and a growing list of attending companies."
       />
 
-      <header className="banner">
-        <div className="banner__background"></div>
-        <div className="container">
-          <h1 className="heading-primary">
-            For Students
-          </h1>
-        </div>
-      </header>
+      <Header
+        type="normal"
+        imageSrc={require('../../../images/seated-group-photo-2-min.jpg')}
+      >
+        <h1 className="heading-primary">
+          For Students
+        </h1>
+      </Header>
 
       <section className="section section--welcome-students" id="students-welcome">
         <div className="container">

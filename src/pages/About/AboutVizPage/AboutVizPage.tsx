@@ -4,6 +4,7 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 
 import { PictureSquare } from '../../../components/PictureSquare/PictureSquare';
 import { VideoBox } from '../../../components/VideoBox/VideoBox';
+import { Header } from '../../../components/Header/Header';
 
 export function AboutVizPage(): JSX.Element {
   return (
@@ -13,18 +14,14 @@ export function AboutVizPage(): JSX.Element {
         description="Learn about the internationally recognized Visualization program, which has helped develop artists who have ventured into creative and technical fields."
       />
       
-      <header className="banner">
-        <div className="banner__background"></div>
-        <div className="container">
-          <h1 className="heading-primary">
-            About Viz
-          </h1>
-          {/* <p className="banner__intro-text">
-            Viz Industry Fair (VIF) is both an organization and annual event dedicated to career planning and success for students within the new school
-            of Performance, Visualization and Fine Arts (PVFA).
-          </p> */}
-        </div>
-      </header>
+      <Header
+        type="normal"
+        imageSrc={require('../../../images/seated-group-photo-2-min.jpg')}
+      >
+        <h1 className="heading-primary">
+          About Viz
+        </h1>
+      </Header>
 
       <section className="section section--development" id="development">
         <div className="container">

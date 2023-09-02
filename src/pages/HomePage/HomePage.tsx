@@ -3,6 +3,7 @@ import React from 'react';
 import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { EventBox } from '../../components/EventBox/EventBox';
+import { Header } from '../../components/Header/Header';
 
 export function HomePage(): JSX.Element {
   return (
@@ -11,18 +12,18 @@ export function HomePage(): JSX.Element {
         title="Viz Industry Fair 2024"
         description="The Visualization Industry Fair (VIF), is an annual event aimed at guiding students within the Performance, Visualization, and Fine Arts school towards successful careers."
       />
-      <header className="banner">
-        <div className="banner__background"></div>
-        <div className="container">
-          <h1 className="heading-primary">
-            <span>Welcome to the 2024</span> <span>VIZ Industry Fair!</span>
-          </h1>
-          <p className="banner__intro-text">
-            Viz Industry Fair (VIF) is both an organization and annual event dedicated to career planning and success for students within the new school
-            of Performance, Visualization and Fine Arts (PVFA).
-          </p>
-        </div>
-      </header>
+      <Header
+        type="landing"
+        imageSrc={require('../../images/seated-group-photo-2-min.jpg')}
+      >
+        <h1 className="heading-primary">
+          <span>Welcome to the 2024</span> <span>VIZ Industry Fair!</span>
+        </h1>
+        <p className="header__intro-text">
+          Viz Industry Fair (VIF) is both an organization and annual event dedicated to career planning and success for students within the new school
+          of Performance, Visualization and Fine Arts (PVFA).
+        </p>
+      </Header>
 
       <section className="section section--introduction" id="introduction">
         <div className="container">

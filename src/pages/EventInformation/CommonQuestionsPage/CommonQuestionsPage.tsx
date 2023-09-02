@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { QuestionBox } from './QuestionBox/QuestionBox';
+import { Header } from '../../../components/Header/Header';
 
 type QA = {
   question: string;
@@ -221,14 +222,14 @@ export function CommonQuestionsPage(): JSX.Element {
         description="Here are common questions from students and employers about the Viz Industry Fair. If you cannot find an answer, email us at pvfavizindustryfair@tamu.edu."
       />
 
-      <header className="banner">
-        <div className="banner__background"></div>
-        <div className="container">
-          <h1 className="heading-primary">
-            Common Questions
-          </h1>
-        </div>
-      </header>
+      <Header
+        type="normal"
+        imageSrc={require('../../../images/seated-group-photo-2-min.jpg')}
+      >
+        <h1 className="heading-primary">
+          Common Questions
+        </h1>
+      </Header>
 
       <section className="section section--student-questions" id="student-questions">
         <div className="container">
