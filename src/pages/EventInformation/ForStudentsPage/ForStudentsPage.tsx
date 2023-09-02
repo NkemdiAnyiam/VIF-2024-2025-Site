@@ -73,8 +73,7 @@ export function ForStudentsPage(): JSX.Element {
             </p>
 
             <p className="no-gap">
-              {/* TODO: Get actual link */}
-              <strong>Before you register for the Fair</strong>, please <a href="#" className="link">register for our new Professionalism Workshop</a>!
+              <strong>Before you register for the Fair</strong>, please <a href="https://tally.so/r/3xMRPE" className="link" target="_blank" rel="noreferrer">register for our new Professionalism Workshop</a>!
               This workshop serves as an informational to the VIF events and teaches you best practices for communicating with industry professionals.
               To uphold the professional standards of Texas A&M University, it is <strong>required</strong> for current students
               to attend one of the three professionalism workshops in order to attend the industry fair or any other VIF event.
@@ -89,9 +88,8 @@ export function ForStudentsPage(): JSX.Element {
             </ul>
 
             <p>
-              {/* TODO: Get actual link */}
               To register for the fair itself, you'll need a downloadable version of your resume and a link to your portfolio website.
-              Please <a href="#" className="link">register for the Fair here</a>.
+              Please <a href="https://tally.so/r/w7LakL" className="link" target="_blank" rel="noreferrer">register for the Fair here</a>.
             </p>
           </div>
         </div>

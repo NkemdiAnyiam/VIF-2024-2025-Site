@@ -8,6 +8,7 @@ type EventData = [day: Day, month: Month, weekDate: number, timeRange: [startTim
 
 type EventBoxProps = {
   heading: string;
+  headingLink?: string;
   events: EventData[];
   modifiers?: string[];
 };
@@ -38,7 +39,11 @@ export function EventBox(props: EventBoxProps): JSX.Element {
   return (
     <div className={`event-box${props.modifiers?.map(modifier => ` event-box--${modifier}`) ?? ''}`}>
       <h3 className="heading-tertiary">
-        {props.heading}
+        {
+          props.headingLink
+          ? <a href={props.headingLink} className="link" target="_blank" rel="noreferrer">{props.heading}</a>
+          : props.heading
+        }
       </h3>
       <ul className="event-box__dates-list">
         {generateListItems(props.events)}

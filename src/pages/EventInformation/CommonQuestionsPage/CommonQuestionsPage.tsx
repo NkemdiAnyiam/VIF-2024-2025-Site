@@ -10,13 +10,12 @@ type QA = {
   content: JSX.Element;
 };
 
-// TODO: get proper links for everything within list
 const studentQAs: QA[] = [
   {
     question: "Do I need to register to attend the Industry Fair?",
     content: (
       <>
-        <p>YES! You must register <a className="link" href="#" target="_blank" rel="noreferrer">here</a>.</p>
+        <p>YES! You must register <a className="link" href="https://tally.so/r/w7LakL" target="_blank" rel="noreferrer">here</a>.</p>
 
         <p>
           <strong>For in-person fairs:</strong> Upon registration, your contact information will be made available
@@ -50,7 +49,7 @@ const studentQAs: QA[] = [
     content: (
       <>
         <p>
-          <a className="link" href="#" target="_blank" rel="noreferrer"><strong>REGISTER FOR THE PROFESSIONALISM WORKSHOP!</strong></a>
+          <a className="link" href="https://tally.so/r/3xMRPE" target="_blank" rel="noreferrer"><strong>REGISTER FOR THE PROFESSIONALISM WORKSHOP!</strong></a>
         </p>
 
         <p>
@@ -69,9 +68,8 @@ const studentQAs: QA[] = [
 
         <p>
           Current students are <strong>required</strong> to attend one workshop if they wish to attend any of the portfolio reviews,
-          mock interviews, or the virtual/in-person industry fair. These workshops are hybrid, meaning they will take place in-person
-          at <a className="link" href="#" target="_blank" rel="noreferrer">insert location here when we find one</a> and via Zoom.
-          Students who register for the workshops will receive the Zoom link.
+          mock interviews, or the virtual/in-person industry fair. The workshops are virtual via Zoom.
+          Students who register for the workshops will be emailed the Zoom link.
         </p>
 
         <p>

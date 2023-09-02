@@ -38,7 +38,7 @@ export function ForIndustryPage(): JSX.Element {
             <p>
               <strong>Before your arrival</strong>, please make sure you have filled out our registration form.
               This will ensure you a “table” at the fair and help us with planning the event.
-              To register, please click on this {/* TODO: Replace with actual link */} <a href="#" className="link">Industry Registration link</a>.
+              To register, please click on this <a href="https://tally.so/r/mJpWyd" className="link" target="_blank" rel="noreferrer">Industry Registration link</a>.
             </p>
 
             <p>
@@ -56,13 +56,13 @@ export function ForIndustryPage(): JSX.Element {
         <div className="container">
           <h2 className="heading-secondary">Virtual Portfolio Reviews</h2>
           <div className="paragraphs">
-            <p>If you would like to volunteer
-              to review student portfolios, {/* TODO: Replace with actual link */} <a href="#" className="link">please register here</a>.
+            <p>If you would like to volunteer to review student portfolios, please register below.
             </p>
           </div>
           <div className="event-boxes">
             <EventBox
               heading="Fall"
+              headingLink={`https://tally.so/r/3NlRzQ`}
               events={[
                 ["Thursday", "October", 19, ['10am', '4pm']],
                 ["Friday", "October", 20, ['10am', '4pm']],
@@ -70,6 +70,7 @@ export function ForIndustryPage(): JSX.Element {
             />
             <EventBox
               heading="Spring"
+              headingLink={`https://tally.so/r/mJpW7d `}
               events={[
                 ["Thursday", "January", 25, ['10am', '4pm']],
                 ["Friday", "January", 26, ['10am', '4pm']],
@@ -83,19 +84,20 @@ export function ForIndustryPage(): JSX.Element {
         <div className="container">
           <h2 className="heading-secondary">Virtual Mock Interviews</h2>
           <div className="paragraphs">
-            <p>If you would like to volunteer
-              for student mock interviews, {/* TODO: Replace with actual link */} <a href="#" className="link">please register here</a>.
+            <p>If you would like to volunteer for student mock interviews, please register below.
             </p>
           </div>
           <div className="event-boxes">
             <EventBox
               heading="Fall"
+              headingLink={`https://tally.so/r/3NldyN`}
               events={[
                 ["Friday", "November", 3, ['10am', '4pm']],
               ]}
             />
             <EventBox
               heading="Spring"
+              headingLink={`https://tally.so/r/w8aROx`}
               events={[
                 ["Friday", "February", 2, ['10am', '4pm']],
               ]}

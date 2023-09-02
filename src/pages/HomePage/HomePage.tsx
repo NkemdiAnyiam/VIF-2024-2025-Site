@@ -137,9 +137,8 @@ export function HomePage(): JSX.Element {
             <span>We look forward to seeing you</span> <span>at our many events and the fair!</span>
           </p>
           <div className="registration-buttons">
-            {/* TODO: Get actual links */}
-            <a href="#" className="registration-button registration-button--yellow">Student Registration</a>
-            <a href="#" className="registration-button registration-button--red">Industry Registration</a>
+            <a href="https://tally.so/r/w7LakL" className="registration-button registration-button--yellow" target="_blank" rel="noreferrer">Student Registration</a>
+            <a href="https://tally.so/r/mJpWyd" className="registration-button registration-button--red" target="_blank" rel="noreferrer">Industry Registration</a>
           </div>
         </div>
       </section>
