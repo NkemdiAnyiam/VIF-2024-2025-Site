@@ -31,7 +31,7 @@ export function HomePage(): JSX.Element {
             <p>
               This event is an opportunity for students and alumni interested in Visualization, which includes Animation, Gaming, Graphics
               and Interactive technologies, to connect with prospective employers working in high level positions in some of today's leading industries
-              and receive professional feedback on their work. <strong>The Fair will be held Friday, February 23<sup>rd</sup>, 2024 from 10am–4pm.</strong>
+              and receive professional feedback on their work. <strong>The Fair will be held Friday, February 23<sup>rd</sup>, 2024 from 10am–4pm in MSC 2406.</strong>
             </p>
             <p>
               This year, we are inviting former students to participate in both our virtual and in-person events at the same level as our current students,
@@ -39,7 +39,7 @@ export function HomePage(): JSX.Element {
             </p>
             <p>
               Because of continuing concerns with accessibility, we will be holding a Virtual Fair this year as well.
-              <strong>The Virtual Fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm on Discord.</strong>
+              <strong> The Virtual Fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm on Discord.</strong>
             </p>
             <p>
               The Viz Industry Fair is a student-run organization. These dedicated students, with focuses in Game Development, Animation, and Interactive Media,
