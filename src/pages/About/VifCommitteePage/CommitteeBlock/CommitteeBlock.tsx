@@ -109,7 +109,6 @@ export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
           </ul>
         }
 
-        
         <div className="dropdown-marker-container">
           <span className={`dropdown-marker${expanded ? ' dropdown-marker--up' : ''}`}></span>
         </div>
