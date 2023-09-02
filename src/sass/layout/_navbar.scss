@@ -196,6 +196,19 @@
       cursor: default;
     }
 
+    &--disabled {
+      cursor: not-allowed;
+
+      &:link,
+      &:visited {
+        color: $color-gray-light;
+      }
+
+      &:active:not(.navbar__link--top-level) {
+        background-color: rgba($color-gray, 0.5);
+      }
+    }
+
     .dropdown-marker {
       display: inline-block;
       width: 1.4rem;

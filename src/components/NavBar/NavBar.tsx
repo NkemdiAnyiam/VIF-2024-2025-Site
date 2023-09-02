@@ -92,6 +92,10 @@ export function NavBar(): JSX.Element {
               e.currentTarget
                 .querySelectorAll('.navbar__link')
                 .forEach((link) => (link as HTMLElement).blur());
+
+              // if the link is disabled, no need to close the navigation menu
+              if (e.target.classList.contains('navbar__link--disabled')) { return; }
+
               setExpanded(false);
             }
           }}
@@ -117,7 +121,7 @@ export function NavBar(): JSX.Element {
           </li>
 
           <li className="navbar__item">
-            <Link to="#" className="navbar__link">Schedule</Link>
+            <Link onClick={(e) => {e.preventDefault();}} to="#" className="navbar__link navbar__link--disabled">Schedule</Link>
           </li>
         </ul>
       }
