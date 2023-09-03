@@ -34,14 +34,7 @@
     user-select: none;
 
     &::after {
-      display: block;
-      content: "";
-      position: absolute;
-      top: 0;
-      height: 0;
-      width: 100%;
-      height: 100%;
-      
+      @include pseudo-elem-cover;
       background-image: linear-gradient(
                           $color-violet-darkest -10%,
                           var(--bg-color),
