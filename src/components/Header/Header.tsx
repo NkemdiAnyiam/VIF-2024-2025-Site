@@ -2,7 +2,7 @@ import React from 'react';
 
 type HeaderProps = {
   children: JSX.Element | JSX.Element[];
-  imageSrc: string;
+  jpegSrc: string;
   webpSrc: string;
   type: 'landing' | 'normal';
 }
@@ -13,8 +13,8 @@ export function Header(props: HeaderProps): JSX.Element {
       <div className={`header__background header__background--${props.type === 'landing' ? 'green' : 'yellow'}`}>
         <picture className="header__background-picture">
           <source srcSet={props.webpSrc} type="image/webp" />
-          <source srcSet={props.imageSrc} type="image/jpeg" />
-          <img src={props.imageSrc} alt="Seated group of Viz students" className="header__background-img" />
+          <source srcSet={props.jpegSrc} type="image/jpeg" />
+          <img src={props.jpegSrc} alt="Seated group of Viz students" className="header__background-img" />
         </picture>
       </div>
       <div className="container">

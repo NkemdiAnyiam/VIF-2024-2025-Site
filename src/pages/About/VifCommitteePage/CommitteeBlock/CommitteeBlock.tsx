@@ -18,9 +18,11 @@ export type CommitteeBlockProps = {
   fullName: string;
   role: string;
   rank: 1 | 2 | 3 | 4;
-  imgSrc: string;
-  specialImgSrc?: string;
-  specialImgSrcAlt?: string;
+  webpSrc: string;
+  jpegSrc: string;
+  specialWebpSrc?: string;
+  specialJpegSrc?: string;
+  specialImgAlt?: string;
   description: string;
   socials: Partial<Socials>;
 };
@@ -82,18 +84,18 @@ export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
     <div className={`committee-block${` committee-block--${rankToColor(props.rank)}`}`}>
       <div className="committee-block__header" onClick={() => setExpanded(!expanded)}>
         <div className="committee-block__photo-container">
-          <img
-            src={props.imgSrc}
-            alt={props.fullName}
-            className="committee-block__photo"
-          />
+          <picture className="committee-block__picture">
+            <source srcSet={props.webpSrc} type="image/webp" />
+            <source srcSet={props.jpegSrc} type="image/jpeg" />
+            <img src={props.jpegSrc} alt={props.fullName} className="committee-block__photo" />
+          </picture>
           {
-            props.specialImgSrc &&
-            <img
-              src={props.specialImgSrc}
-              alt={props.specialImgSrcAlt}
-              className="committee-block__photo committee-block__photo--special"
-            />
+            props.specialJpegSrc &&
+            <picture className="committee-block__picture">
+              <source srcSet={props.specialWebpSrc} type="image/webp" />
+              <source srcSet={props.specialJpegSrc} type="image/jpeg" />
+              <img src={props.specialJpegSrc} alt={props.specialImgAlt} className="committee-block__photo committee-block__photo--special" />
+            </picture>
           }
         </div>
 

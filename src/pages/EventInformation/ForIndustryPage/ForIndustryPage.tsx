@@ -17,7 +17,7 @@ export function ForIndustryPage(): JSX.Element {
       <Header
         type="normal"
         webpSrc={require('../../../images/seated-group-photo-2-min.webp')}
-        imageSrc={require('../../../images/seated-group-photo-2-min.jpg')}
+        jpegSrc={require('../../../images/seated-group-photo-2-min.jpg')}
       >
         <h1 className="heading-primary">
           For Industry
