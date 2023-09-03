@@ -56,7 +56,7 @@ export function VideoBox(props: VideoBoxProps): JSX.Element {
           title={props.title}
           allowFullScreen
           onLoad={onLoad}
-          src={props.embedSrc+'?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com'}
+          src={props.embedSrc+'?autoplay=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com&theme=dark&color=red'}
         >
         </iframe>
         <p className="video-box__caption">{props.title}</p>
