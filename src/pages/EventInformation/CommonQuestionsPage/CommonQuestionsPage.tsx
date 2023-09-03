@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import ReactDOMServer from 'react-dom/server';
 
 import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
 
@@ -9,6 +10,7 @@ import { Header } from '../../../components/Header/Header';
 type QA = {
   question: string;
   content: JSX.Element;
+  // safeContent?: JSX.Element;
 };
 
 const studentQAs: QA[] = [
@@ -90,6 +92,12 @@ const studentQAs: QA[] = [
         check "Former Student" on your registration form.
       </p>
     ),
+    // safeContent: (
+    //   <p>
+    //     Welcome back! We're happy to have you. Please see the <a className="link" href="/event-information/for-students">For Students page</a> and
+    //     check "Former Student" on your registration form.
+    //   </p>
+    // )
   },
 
   {
@@ -214,12 +222,31 @@ const renderQuestions = (items: QA[], color: 'red' | 'green' | 'yellow' | 'purpl
   });
 };
 
+// const renderEntities = (items: QA[]) => {
+//   return {
+//     "@context": "https://schema.org",
+//     "@type": "FAQPage",
+//     "mainEntity": items.map(({question, content}) => {
+//       console.log( ReactDOMServer.renderToString(content) );
+//       return {
+//         "@type": "Question",
+//         "name": question,
+//         "acceptedAnswer": {
+//           "@type": "Answer",
+//           "text": ReactDOMServer.renderToString(content)
+//         }
+//       }
+//     })
+//   };
+// };
+
 export function CommonQuestionsPage(): JSX.Element {
   return (
     <main className="common-questions-page">
       <SearchEngineOpt
         title="Common Questions | Viz Industry Fair 2024"
         description="Here are common questions from students and employers about the Viz Industry Fair. If you cannot find an answer, email us at pvfavizindustryfair@tamu.edu."
+        // structuredJSON={JSON.stringify(renderEntities(studentQAs))}
       />
 
       <Header type="normal" imageName={'seated-group-photo-2-min'}>

@@ -2,12 +2,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 type SearchEngineOptProps = {
-  title: string,
-  description?: string,
+  title: string;
+  description?: string;
+  structuredJSON?: string[];
+  children?: JSX.Element | JSX.Element[];
 };
 
 // TODO: Incorporate keywords
-export function SearchEngineOpt({ title, description }: SearchEngineOptProps) {
+export function SearchEngineOpt({ title, description, structuredJSON, children }: SearchEngineOptProps) {
   const descriptionProp = description ? {content: description} : {}
   return (
     <Helmet>
@@ -26,6 +28,8 @@ export function SearchEngineOpt({ title, description }: SearchEngineOptProps) {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" {...descriptionProp} />
       { /* End Twitter tags */}
+      {structuredJSON && structuredJSON.map(json => <script className='structured-data-list' type="application/ld+json">{json}</script>)}
+      {children}
     </Helmet>
-  )
+  );
 }
