@@ -18,10 +18,8 @@ export type CommitteeBlockProps = {
   fullName: string;
   role: string;
   rank: 1 | 2 | 3 | 4;
-  webpSrc: string;
-  jpegSrc: string;
-  specialWebpSrc?: string;
-  specialJpegSrc?: string;
+  imageName: string;
+  specialImageName?: string;
   specialImgAlt?: string;
   description: string;
   socials: Partial<Socials>;
@@ -85,16 +83,16 @@ export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
       <div className="committee-block__header" onClick={() => setExpanded(!expanded)}>
         <div className="committee-block__photo-container">
           <picture className="committee-block__picture">
-            <source srcSet={props.webpSrc} type="image/webp" />
-            <source srcSet={props.jpegSrc} type="image/jpeg" />
-            <img src={props.jpegSrc} alt={props.fullName} className="committee-block__photo" />
+            <source srcSet={require(`../../../../images/committee/${props.imageName}.webp`)} type="image/webp" />
+            <source srcSet={require(`../../../../images/committee/${props.imageName}.jpg`)} type="image/jpeg" />
+            <img src={require(`../../../../images/committee/${props.imageName}.jpg`)} alt={props.fullName} className="committee-block__photo" />
           </picture>
           {
-            props.specialJpegSrc &&
+            props.specialImageName &&
             <picture className="committee-block__picture">
-              <source srcSet={props.specialWebpSrc} type="image/webp" />
-              <source srcSet={props.specialJpegSrc} type="image/jpeg" />
-              <img src={props.specialJpegSrc} alt={props.specialImgAlt} className="committee-block__photo committee-block__photo--special" />
+              <source srcSet={require(`../../../../images/committee/${props.specialImageName}.webp`)} type="image/webp" />
+              <source srcSet={require(`../../../../images/committee/${props.specialImageName}.jpg`)} type="image/jpeg" />
+              <img src={require(`../../../../images/committee/${props.specialImageName}.jpg`)} alt={props.specialImgAlt} className="committee-block__photo committee-block__photo--special" />
             </picture>
           }
         </div>

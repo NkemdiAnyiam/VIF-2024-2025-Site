@@ -5,22 +5,12 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 import { CommitteeBlock, CommitteeBlockProps } from './CommitteeBlock/CommitteeBlock';
 import { Header } from '../../../components/Header/Header';
 
-const getPhotoSrc = (fullName: string): Pick<CommitteeBlockProps, 'webpSrc' | 'jpegSrc'> => ({
-  webpSrc: require(`../../../images/committee/${fullName}-min.webp`),
-  jpegSrc: require(`../../../images/committee/${fullName}-min.jpg`),
-});
-
-const getSpecialPhotoSrc = (fullName: string): Pick<CommitteeBlockProps, 'specialWebpSrc' | 'specialJpegSrc'> => ({
-  specialWebpSrc: require(`../../../images/committee/${fullName}-min.webp`),
-  specialJpegSrc: require(`../../../images/committee/${fullName}-min.jpg`),
-});
-
 const committeeMembers: CommitteeBlockProps[] = [
   {
     fullName: `Kaylyn Luna`,
     role: `Committee Co-Director`,
     rank: 1,
-    ...getPhotoSrc(`Kaylyn-Luna`),
+    imageName: `Kaylyn-Luna-min`,
     socials: {
       linkedin: `https://www.linkedin.com/in/kaylyn-luna-5378521a7`,
       website: `https://artbykaylynluna.godaddysites.com/`,
@@ -32,7 +22,7 @@ const committeeMembers: CommitteeBlockProps[] = [
     fullName: `Jenny Tran`,
     role: `Committee Co-Director`,
     rank: 1,
-    ...getPhotoSrc(`Jenny-Tran`),
+    imageName: `Jenny-Tran-min`,
     socials: {
       linkedin: `https://www.linkedin.com/in/jennyhantran/`,
       website: `https://www.jennyhtran.com/`
@@ -44,8 +34,8 @@ const committeeMembers: CommitteeBlockProps[] = [
     fullName: `Nkemdi Anyiam`,
     role: `Web Developer`,
     rank: 2,
-    ...getPhotoSrc(`Nkemdi-Anyiam`),
-    ...getSpecialPhotoSrc(`Nkemdi-Anyiam-Vector`),
+    imageName: `Nkemdi-Anyiam-min`,
+    specialImageName: `Nkemdi-Anyiam-Vector-min`,
     specialImgAlt: `Nkemdi Anyiam vectorized`,
     socials: {
       linkedin: `https://www.linkedin.com/in/nkemdi-anyiam/`,
@@ -58,7 +48,7 @@ const committeeMembers: CommitteeBlockProps[] = [
     fullName: `Nimi Parmar`,
     role: `TV/Marketing Lead`,
     rank: 2,
-    ...getPhotoSrc(`Nimi-Parmar`),
+    imageName: `Nimi-Parmar-min`,
     socials: {
       linkedin: `https://www.linkedin.com/in/nimi-parmar`,
       website: `https://nimiparmar06.wixsite.com/modeler`,
@@ -70,7 +60,7 @@ const committeeMembers: CommitteeBlockProps[] = [
     fullName: `Mayet Andreassen`,
     role: `Faculty Lead Liaison`,
     rank: 3,
-    ...getPhotoSrc(`Mayet-Andreassen`),
+    imageName: `Mayet-Andreassen-min`,
     socials: {},
     description: `Mayet Andreassen is currently working as a full-time Instructional Assistant Professor and Internship Coordinator in the Visualization Department at Texas A&M University. She is also a member of the TXMPA (Texas Motion Picture Assoc.) Board as the Education Representative. She has over 10 years of teaching experience with a focus in games and animation. She previously worked as a game and front-end artist, as well as a freelance illustrator and graphics artist, prior to becoming an educator.`,
   },
@@ -79,7 +69,7 @@ const committeeMembers: CommitteeBlockProps[] = [
     fullName: `Andersen Wood`,
     role: `Event Management Lead`,
     rank: 2,
-    ...getPhotoSrc(`Andersen-Wood`),
+    imageName: `Andersen-Wood-min`,
     socials: {
       linkedin: `https://www.linkedin.com/in/andersenwood/`,
       website: `https://www.andersenwood.com/`,
@@ -91,7 +81,7 @@ const committeeMembers: CommitteeBlockProps[] = [
     fullName: `Emilie Sangerhausen`,
     role: `Outreach Lead`,
     rank: 2,
-    ...getPhotoSrc(`Emilie-Sangerhausen`),
+    imageName: `Emilie-Sangerhausen-min`,
     socials: {
       linkedin: `https://www.linkedin.com/in/emilie-sangerhausen-35695a1a2/ `,
       website: `https://esangerhausen.wixsite.com/portfolio`,
@@ -103,7 +93,7 @@ const committeeMembers: CommitteeBlockProps[] = [
     fullName: `Jocylin "Joy" Lopez`,
     role: `Video Editor`,
     rank: 2,
-    ...getPhotoSrc(`Jocylin-Lopez`),
+    imageName: `Jocylin-Lopez-min`,
     socials: {
       linkedin: `www.linkedin.com/in/jocylinylopez`,
       website: `http://jocylinlopez.com/`,
@@ -139,11 +129,7 @@ export function VifCommitteePage(): JSX.Element {
         description="Introducing the VIF committee, our dedicated students and faculty who help make the Visualization Industry Fair possible!"
       />
 
-      <Header
-        type="normal"
-        webpSrc={require('../../../images/seated-group-photo-2-min.webp')}
-        jpegSrc={require('../../../images/seated-group-photo-2-min.jpg')}
-      >
+      <Header type="normal" imageName={'seated-group-photo-2-min'}>
         <h1 className="heading-primary">
           VIF Committee
         </h1>

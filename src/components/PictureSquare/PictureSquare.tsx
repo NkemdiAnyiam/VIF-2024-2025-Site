@@ -2,7 +2,7 @@ import React from "react";
 
 type PictureSquareProps = {
   text?: string;
-  imgUrl: string;
+  imageName: string;
   altText: string;
   color: 'red' | 'green' | 'yellow' | 'purple';
 }
@@ -13,7 +13,7 @@ export function PictureSquare(props: PictureSquareProps): JSX.Element {
       <p className="picture-square__text">{props.text}</p>
       <div className="picture-square__background">
         <img
-          src={props.imgUrl}
+          src={require(`../../images/programs/${props.imageName}.jpg`)}
           alt={props.altText}
           className="picture-square__image"
         />

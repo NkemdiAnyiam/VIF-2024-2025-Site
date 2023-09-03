@@ -50,11 +50,7 @@ export function ForStudentsPage(): JSX.Element {
         description="Students will find important information about the Viz Industry Fair, including registration forms and a growing list of attending companies."
       />
 
-      <Header
-        type="normal"
-        webpSrc={require('../../../images/seated-group-photo-2-min.webp')}
-        jpegSrc={require('../../../images/seated-group-photo-2-min.jpg')}
-      >
+      <Header type="normal" imageName={'seated-group-photo-2-min'}>
         <h1 className="heading-primary">
           For Students
         </h1>

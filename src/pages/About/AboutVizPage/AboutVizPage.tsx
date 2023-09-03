@@ -14,11 +14,7 @@ export function AboutVizPage(): JSX.Element {
         description="Learn about the internationally recognized Visualization program, which has helped develop artists who have ventured into creative and technical fields."
       />
       
-      <Header
-        type="normal"
-        webpSrc={require('../../../images/seated-group-photo-2-min.webp')}
-        jpegSrc={require('../../../images/seated-group-photo-2-min.jpg')}
-      >
+      <Header type="normal" imageName={'seated-group-photo-2-min'}>
         <h1 className="heading-primary">
           About Viz
         </h1>
@@ -59,7 +55,7 @@ export function AboutVizPage(): JSX.Element {
             <li className="programs__item">
               <PictureSquare
                 text="Minor in Game Design and Development"
-                imgUrl={require('../../../images/programs/game-design-and-development-min.jpg')}
+                imageName={'game-design-and-development-min'}
                 altText="minor in game design and development"
                 color='purple'
               />
@@ -68,7 +64,7 @@ export function AboutVizPage(): JSX.Element {
             <li className="programs__item">
               <PictureSquare
                 text="Bachelor of Science in Visualization"
-                imgUrl={require('../../../images/programs/bachelor-of-science-visualization-min.jpg')}
+                imageName={'bachelor-of-science-visualization-min'}
                 altText="bachelor of science in visualization"
                 color='green'
               />
@@ -77,7 +73,7 @@ export function AboutVizPage(): JSX.Element {
             <li className="programs__item">
               <PictureSquare
                 text="Master of Science in Visualization"
-                imgUrl={require('../../../images/programs/master-of-science-visualization-min.jpg')}
+                imageName={'master-of-science-visualization-min'}
                 altText="master of science in visualization"
                 color='yellow'
               />
@@ -86,7 +82,7 @@ export function AboutVizPage(): JSX.Element {
             <li className="programs__item">
               <PictureSquare
                 text="Master of Fine Arts in Visualization"
-                imgUrl={require('../../../images/programs/master-of-fine-arts-visualization-min.jpg')}
+                imageName={'master-of-fine-arts-visualization-min'}
                 altText="master of fine arts in visualization"
                 color='yellow'
               />
@@ -95,7 +91,7 @@ export function AboutVizPage(): JSX.Element {
             <li className="programs__item">
               <PictureSquare
                 text="Ph.D. in Architecture"
-                imgUrl={require('../../../images/programs/phd-architecture-min.jpg')}
+                imageName={'phd-architecture-min'}
                 altText="Ph.D. in architecture"
                 color='red'
               />

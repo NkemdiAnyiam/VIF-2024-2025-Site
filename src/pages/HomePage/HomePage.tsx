@@ -12,11 +12,7 @@ export function HomePage(): JSX.Element {
         title="Viz Industry Fair 2024"
         description="The Visualization Industry Fair (VIF), is an annual event aimed at guiding students within the Performance, Visualization, and Fine Arts school towards successful careers."
       />
-      <Header
-        type="landing"
-        webpSrc={require('../../images/seated-group-photo-2-min.webp')}
-        jpegSrc={require('../../images/seated-group-photo-2-min.jpg')}
-      >
+      <Header type="landing" imageName={'seated-group-photo-2-min'}>
         <h1 className="heading-primary">
           <span>Welcome to the 2024</span> <span>VIZ Industry Fair!</span>
         </h1>

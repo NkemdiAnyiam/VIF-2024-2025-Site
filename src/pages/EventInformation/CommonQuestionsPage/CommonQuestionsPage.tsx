@@ -222,11 +222,7 @@ export function CommonQuestionsPage(): JSX.Element {
         description="Here are common questions from students and employers about the Viz Industry Fair. If you cannot find an answer, email us at pvfavizindustryfair@tamu.edu."
       />
 
-      <Header
-        type="normal"
-        webpSrc={require('../../../images/seated-group-photo-2-min.webp')}
-        jpegSrc={require('../../../images/seated-group-photo-2-min.jpg')}
-      >
+      <Header type="normal" imageName={'seated-group-photo-2-min'}>
         <h1 className="heading-primary">
           Common Questions
         </h1>
