@@ -4,6 +4,7 @@ type HeaderProps = {
   children: JSX.Element | JSX.Element[];
   imageName: string;
   type: 'landing' | 'normal';
+  objectPosition?: `${number}${'%' | 'rem' | 'px'}` | `${number}${'%' | 'rem' | 'px'} ${number}${'%' | 'rem' | 'px'}`;
 }
 
 export function Header(props: HeaderProps): JSX.Element {
@@ -15,7 +16,11 @@ export function Header(props: HeaderProps): JSX.Element {
           <source media="(min-width: 769px)" srcSet={require(`../../images/banners/${props.imageName}.webp`)} type="image/webp" />
           <source media="(max-width: 768px)" srcSet={require(`../../images/banners/${props.imageName}--thin.jpg`)} type="image/jpeg" />
           <source media="(min-width: 769px)" srcSet={require(`../../images/banners/${props.imageName}.jpg`)} type="image/jpeg" />
-          <img src={require(`../../images/banners/${props.imageName}.jpg`)} alt="Seated group of Viz students" className="header__background-img" />
+          <img
+            src={require(`../../images/banners/${props.imageName}.jpg`)}
+            alt="Seated group of Viz students"
+            className="header__background-img"
+            {...(props.objectPosition ? {style: {objectPosition: props.objectPosition}} : {})} />
         </picture>
       </div>
       <div className="container">
