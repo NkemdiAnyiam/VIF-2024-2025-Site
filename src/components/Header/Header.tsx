@@ -11,9 +11,11 @@ export function Header(props: HeaderProps): JSX.Element {
     <header className={`header header--${props.type}`}>
       <div className={`header__background header__background--${props.type === 'landing' ? 'green' : 'yellow'}`}>
         <picture className="header__background-picture">
-          <source srcSet={require(`../../images/${props.imageName}.webp`)} type="image/webp" />
-          <source srcSet={require(`../../images/${props.imageName}.jpg`)} type="image/jpeg" />
-          <img src={require(`../../images/${props.imageName}.jpg`)} alt="Seated group of Viz students" className="header__background-img" />
+          <source media="(max-width: 768px)" srcSet={require(`../../images/banners/${props.imageName}--thin.webp`)} type="image/webp" />
+          <source media="(min-width: 769px)" srcSet={require(`../../images/banners/${props.imageName}.webp`)} type="image/webp" />
+          <source media="(max-width: 768px)" srcSet={require(`../../images/banners/${props.imageName}--thin.jpg`)} type="image/jpeg" />
+          <source media="(min-width: 769px)" srcSet={require(`../../images/banners/${props.imageName}.jpg`)} type="image/jpeg" />
+          <img src={require(`../../images/banners/${props.imageName}.jpg`)} alt="Seated group of Viz students" className="header__background-img" />
         </picture>
       </div>
       <div className="container">
