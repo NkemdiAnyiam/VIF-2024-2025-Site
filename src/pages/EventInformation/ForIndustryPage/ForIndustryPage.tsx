@@ -10,7 +10,7 @@ export function ForIndustryPage(): JSX.Element {
   return (
     <main className="for-industry-page">
       <SearchEngineOpt
-        title="For Industry - Viz Industry Fair 2024"
+        title="For Industry | Viz Industry Fair 2024"
         description="Employers and industry guests will find important information about the Viz Industry Fair, including registration forms and volunteer opportunities."
       />
 

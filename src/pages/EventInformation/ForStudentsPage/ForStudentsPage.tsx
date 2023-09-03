@@ -46,7 +46,7 @@ export function ForStudentsPage(): JSX.Element {
   return (
     <main className="for-students-page">
       <SearchEngineOpt
-        title="For Students - Viz Industry Fair 2024"
+        title="For Students | Viz Industry Fair 2024"
         description="Students will find important information about the Viz Industry Fair, including registration forms and a growing list of attending companies."
       />
 
