@@ -28,23 +28,34 @@ export function ForIndustryPage(): JSX.Element {
 
           <div className="paragraphs">
             <p>
-              Welcome, and thank you for joining us this year at the Visualization Industry Fair!
-              Please email our student representatives at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> as
-              early as possible if you have any specific needs so we can address them prior to the fair.
+              Welcome, and thank you for joining us this year at the Visualization Industry Fair! It is your generosity that makes our events happen.
+              The time that you donate to our students makes a lasting impact on their academic success and fuels the Aggie network that we are so proud of.
             </p>
 
             <p>
-              <strong>Before your arrival</strong>, please make sure you have filled out our registration form.
-              This will ensure you a “table” at the fair and help us with planning the event.
-              To register, please click on this <a href="https://tally.so/r/mJpWyd" className="link" target="_blank" rel="noreferrer">Industry Registration link</a>.
+              If you are a new company/organization and are interested in attending this fair, welcome!
+              You can find the <a href="https://tally.so/r/mJpWyd" className="link" target="_blank" rel="noreferrer">Industry Registration form here</a>.
+              Please make sure to fill out our form—this will ensure you a "table" at the fair and help us with planning the event.
+              Our Visualization Industry Fair is held both virtually and in-person, and in the form you have the option to attend either one or both.
+              Additionally, VIF has access to presentation and interview rooms during the fair.
+              If your company/organization would like to hold a presentation on a specific topic or interview students,
+              please fill out the specified area in the registration form.
+            </p>
+
+            <p>
+              If you cannot attend the Visualization Industry Fair but would still like to contribute some time to our students,
+              please consider attending our portfolio reviews and mock interviews. These events are entirely virtual, and they will
+              allow you to meet with students one-on-one and give feedback on their work and professional presentation.
+              You will find links to the registration forms for these events in the sections below.
             </p>
 
             <p>
               For additional information about the Visualization Department at Texas A&M University,
               visit the <Link to="/about/about-viz" className="link">About Viz page</Link>.
-              If you have any questions or concerns, please contact our committee members
+              If you have any questions, concerns, or specific needs, please contact our committee members
               at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> and/or
-              Glen Vigus at <a href="mailto:gvigus@arch.tamu.edu" className="link">gvigus@arch.tamu.edu</a>.
+              Glen Vigus at <a href="mailto:gvigus@arch.tamu.edu" className="link">gvigus@arch.tamu.edu</a> as soon as possible so we can address them
+              prior to the fair.
             </p>
           </div>
         </div>
