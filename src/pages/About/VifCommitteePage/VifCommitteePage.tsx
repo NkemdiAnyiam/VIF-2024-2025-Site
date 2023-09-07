@@ -100,6 +100,15 @@ const committeeMembers: CommitteeBlockProps[] = [
     },
     description: `Joy is a graduate student pursuing a Master's in Visualization, specializing in character design, modeling, and game design. She works in marketing at the LIVE LAB, manages social media for the university, and holds roles as Social Media Officer for 2D Visual Developers and Lead Concept Artist mentor. Outside of her academic and professional life, Joy enjoys video games, anime, and oil painting.`,
   },
+
+  {
+    fullName: `Cesar Rivera`,
+    role: `Career Services Coordinator`,
+    rank: 3,
+    imageName: `Cesar-Rivera-min`,
+    socials: {},
+    description: `Cesar joined the Texas A&M Career Center in 2023 and serves as the Career Coordinator for the School of Performance, Visualization, and Fine Arts. Cesar earned a B.A. in Communication Studies with a minor in Leadership Studies in 2019 as well as a M.S. in Counseling and Student Development in 2023, both from Kansas State University. He previously served in the United States Army and has work experience in the healthcare, sales, and hospital industries.`,
+  }
 ];
 
 const renderVifCommBlocks = (items: CommitteeBlockProps[]) => {
