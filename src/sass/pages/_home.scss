@@ -4,20 +4,6 @@
     // @include full-bleed;
   }
 
-  .section--virtual-professionalism-workshops,
-  .section--virtual-portfolio-reviews,
-  .section--virtual-mock-interviews,
-  .section--industry-fair {
-    .event-boxes {
-      display: flex;
-      flex-wrap: wrap;
-      // grid-template-columns: 1fr 1fr;
-      justify-content: space-evenly;
-      column-gap: 6rem;
-      row-gap: 3rem;
-    }
-  }
-
   .section--virtual-professionalism-workshops {
     @include section-color($color-violet-darkest);
     @include full-bleed;
@@ -38,38 +24,42 @@
     @include full-bleed;
   }
 
-  .section.section--cta {
-    display: grid;
+  // .section.section--cta {
+  //   display: grid;
+  //   @include full-bleed;
+  //   @include section-color($color-violet-dark);
+  // }
 
-    .cta-text {
-      margin-bottom: 3rem;
-    }
+  .cta-text {
+    margin-bottom: 3rem;
+    margin-top: 3.6rem;
+  }
 
-    .registration-buttons {
-      margin: 0 auto;
+  .cta-buttons {
+    margin: 0 auto;
+    @include full-bleed;
 
-      display: flex;
-      justify-content: center;
-      gap: 3rem 6rem;
-      flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 3rem 6rem;
+    flex-wrap: wrap;
 
-      .registration-button {
-        text-decoration: none;
-        @include button-solid($color-brand-green, false);
-        padding: 1rem 2rem;
-        font-family: $font-bebas;
-        font-size: max(2rem, 18px);
-        // TODO: Add drop-shadow
-  
-        &:link,
-        &:visited {
-          // color: $color-gray-lightest;
-          color: $color-black;
-        }
+    .cta-button {
+      text-decoration: none;
+      @include button-solid($color-brand-green, false);
+      padding: 1rem 2rem;
+      font-family: $font-bebas;
+      font-size: max(2rem, 18px);
+      // TODO: Add drop-shadow
 
-        &--yellow { @include button-solid($color-brand-yellow); }
-        &--red { @include button-solid($color-brand-red-light); }
+      &:link,
+      &:visited {
+        // color: $color-gray-lightest;
+        color: $color-black;
       }
+
+      &--yellow { @include button-solid($color-brand-yellow); }
+      &--red { @include button-solid($color-brand-red-light); }
     }
   }
 }

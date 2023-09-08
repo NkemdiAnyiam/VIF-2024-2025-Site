@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOpt';
 
-import { EventBox } from '../../components/EventBox/EventBox';
+// import { EventBox } from '../../components/EventBox/EventBox';
 import { Header } from '../../components/Header/Header';
 
 export function HomePage(): JSX.Element {
@@ -48,10 +49,88 @@ export function HomePage(): JSX.Element {
               These include industry speakers, workshops, portfolio & resume reviews, and mock interviews.
             </p>
           </div>
-        </div>
-      </section>
+        {/* </div>
+      </section> */}
 
-      <section className="section section--virtual-professionalism-workshops" id="virtual-professionalism-workshop-dates">
+      {/* <section className="section section--events">
+        <div className="container">
+          <h2 className="heading-secondary">Events</h2>
+
+          <div className="events">
+            <div className="event-set">
+              <h3 className="heading-tertiary">Virtual Professionalism Workshops</h3>
+              <div className="event-boxes">
+                <EventBox
+                  heading="Fall"
+                  events={[
+                    ["Monday", "September", 25, ['10am', '12pm']],
+                    ["Wednesday", "September", 27, ['10am', '12pm']],
+                    ["Friday", "September", 29, ['3pm', '5pm']],
+                  ]}
+                />
+              </div>
+            </div>
+
+            <div className="event-set">
+              <h3 className="heading-tertiary">Virtual Portfolio Reviews</h3>
+                <div className="event-boxes">
+                <EventBox
+                  heading="Fall"
+                  events={[
+                    ["Thursday", "October", 19, ['10am', '4pm']],
+                    ["Friday", "October", 20, ['10am', '4pm']],
+                  ]}
+                />
+                <EventBox
+                  heading="Spring"
+                  events={[
+                    ["Thursday", "January", 25, ['10am', '4pm']],
+                    ["Friday", "January", 26, ['10am', '4pm']],
+                  ]}
+                />
+              </div>
+            </div>
+            
+            <div className="event-set">
+              <h3 className="heading-tertiary">Virtual Mock Interviews</h3>
+              <div className="event-boxes">
+                <EventBox
+                  heading="Fall"
+                  events={[
+                    ["Friday", "November", 3, ['10am', '4pm']],
+                  ]}
+                />
+                <EventBox
+                  heading="Spring"
+                  events={[
+                    ["Friday", "February", 2, ['10am', '4pm']],
+                  ]}
+                />
+              </div>
+            </div>
+
+            <div className="event-set">
+              <h3 className="heading-tertiary">Industry Fair</h3>
+              <div className="event-boxes">
+                <EventBox
+                  heading="Virtual"
+                  events={[
+                    ["Thursday", "February", 22, ['10am', '4pm']],
+                  ]}
+                />
+                <EventBox
+                  heading="In-Person"
+                  events={[
+                    ["Friday", "February", 23, ['10am', '4pm']],
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* <section className="section section--virtual-professionalism-workshops" id="virtual-professionalism-workshop-dates">
         <div className="container">
           <h2 className="heading-secondary">Virtual Professionalism Workshops</h2>
           <div className="event-boxes">
@@ -65,9 +144,9 @@ export function HomePage(): JSX.Element {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="section section--virtual-portfolio-reviews" id="virtual-portfolio-review-dates">
+      {/* <section className="section section--virtual-portfolio-reviews" id="virtual-portfolio-review-dates">
         <div className="container">
           <h2 className="heading-secondary">Virtual Portfolio Reviews</h2>
           <div className="event-boxes">
@@ -87,9 +166,9 @@ export function HomePage(): JSX.Element {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="section section--virtual-mock-interviews" id="virtual-mock-interview-dates">
+      {/* <section className="section section--virtual-mock-interviews" id="virtual-mock-interview-dates">
         <div className="container">
           <h2 className="heading-secondary">Virtual Mock Interviews</h2>
           <div className="event-boxes">
@@ -107,9 +186,9 @@ export function HomePage(): JSX.Element {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="section section--industry-fair" id="industry-fair-dates">
+      {/* <section className="section section--industry-fair" id="industry-fair-dates">
         <div className="container">
           <h2 className="heading-secondary">Industry Fair</h2>
           <div className="event-boxes">
@@ -127,16 +206,16 @@ export function HomePage(): JSX.Element {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="section section--cta" id="cta">
-        <div className="container">
+      {/* <section className="section section--cta" id="cta">
+        <div className="container"> */}
           <p className="cta-text">
             <span>We look forward to seeing you</span> <span>at our many events and the fair!</span>
           </p>
-          <div className="registration-buttons">
-            <a href="https://tally.so/r/w7LakL" className="registration-button registration-button--yellow" target="_blank" rel="noreferrer">Student Registration</a>
-            <a href="https://tally.so/r/mJpWyd" className="registration-button registration-button--red" target="_blank" rel="noreferrer">Industry Registration</a>
+          <div className="cta-buttons">
+            <Link to="/event-information/for-students" className="cta-button cta-button--yellow">Student Information</Link>
+            <Link to="/event-information/for-industry" className="cta-button cta-button--red">Industry Information</Link>
           </div>
         </div>
       </section>
