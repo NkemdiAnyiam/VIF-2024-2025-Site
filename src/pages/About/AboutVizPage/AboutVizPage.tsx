@@ -104,7 +104,7 @@ export function AboutVizPage(): JSX.Element {
         <div className="container">
           <h2 className="heading-secondary">Viz Sizzle Reels</h2>
           <div className="paragraphs">
-            <p>If you would like to check out our students work, below are links to our 2021 department reels</p>
+            <p>If you would like to check out our students work, below are our 2021 department reels</p>
           </div>
           <ul className="video-list">
             <li className="video-item">
