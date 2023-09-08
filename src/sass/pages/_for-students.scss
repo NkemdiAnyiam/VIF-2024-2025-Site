@@ -22,6 +22,10 @@
       align-items: stretch;
       gap: 1rem;
 
+      @include media-max(425px) {
+        grid-template-columns: unset;
+      }
+
       .past-company-item {
         height: 100%;
 
