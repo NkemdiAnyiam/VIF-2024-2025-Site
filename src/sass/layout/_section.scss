@@ -8,6 +8,20 @@
   &.section--full-bleed {
     max-width: unset;
   }
+
+  &.section--events {
+    .container {
+      overflow-x: hidden;
+    }
+
+    .events {
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
 }
 
 .container {

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { EventBox } from '../../../components/EventBox/EventBox';
+import { Event } from '../../../components/Event/Event';
 import { Header } from '../../../components/Header/Header';
 
 export function ForIndustryPage(): JSX.Element {
@@ -61,57 +62,68 @@ export function ForIndustryPage(): JSX.Element {
         </div>
       </section>
 
-      <section className="section section--virtual-portfolio-reviews" id="virtual-portfolio-review-dates">
+      <section className="section section--events section--volunteer-events" id="volunteer-events">
         <div className="container">
-          <h2 className="heading-secondary">Virtual Portfolio Reviews</h2>
-          <div className="paragraphs">
-            <p>If you would like to volunteer to review student portfolios, please register below.
-            </p>
-          </div>
-          <div className="event-boxes">
-            <EventBox
-              heading="Fall"
-              headingLink={`https://tally.so/r/3NlRzQ`}
-              events={[
-                ["Thursday", "October", 19, ['10am', '4pm']],
-                ["Friday", "October", 20, ['10am', '4pm']],
-              ]}
-            />
-            <EventBox
-              heading="Spring"
-              headingLink={`https://tally.so/r/mJpW7d `}
-              events={[
-                ["Thursday", "January", 25, ['10am', '4pm']],
-                ["Friday", "January", 26, ['10am', '4pm']],
-              ]}
-            />
-          </div>
-        </div>
-      </section>
+          <h2 className="heading-secondary">Volunteer Events</h2>
 
-      <section className="section section--virtual-mock-interviews" id="virtual-mock-interview-dates">
-        <div className="container">
-          <h2 className="heading-secondary">Virtual Mock Interviews</h2>
-          <div className="paragraphs">
-            <p>If you would like to volunteer for student mock interviews, please register below.
-            </p>
-          </div>
-          <div className="event-boxes">
-            <EventBox
-              heading="Fall"
-              headingLink={`https://tally.so/r/3NldyN`}
-              events={[
-                ["Friday", "November", 3, ['10am', '4pm']],
+          <div className="events">
+            <Event
+              eventName="Virtual Portfolio Reviews"
+              eventBoxes={[
+                <EventBox
+                  heading="Fall"
+                  headingLink={`https://tally.so/r/3NlRzQ`}
+                  events={[
+                    ["Thursday", "October", 19, ['10am', '4pm']],
+                    ["Friday", "October", 20, ['10am', '4pm']],
+                  ]}
+                />,
+
+                <EventBox
+                  heading="Spring"
+                  headingLink={`https://tally.so/r/mJpW7d `}
+                  events={[
+                    ["Thursday", "January", 25, ['10am', '4pm']],
+                    ["Friday", "January", 26, ['10am', '4pm']],
+                  ]}
+                />
               ]}
-            />
-            <EventBox
-              heading="Spring"
-              headingLink={`https://tally.so/r/w8aROx`}
-              events={[
-                ["Friday", "February", 2, ['10am', '4pm']],
+            >
+              <div className="paragraphs">
+                <p>
+                  If you would like to volunteer to review student portfolios, please register below.
+                </p>
+              </div>
+            </Event>
+
+            <Event
+              eventName="Virtual Mock Interviews"
+              eventBoxes={[
+                <EventBox
+                  heading="Fall"
+                  headingLink={`https://tally.so/r/3NldyN`}
+                  events={[
+                    ["Friday", "November", 3, ['10am', '4pm']],
+                  ]}
+                />,
+
+                <EventBox
+                  heading="Spring"
+                  headingLink={`https://tally.so/r/w8aROx`}
+                  events={[
+                    ["Friday", "February", 2, ['10am', '4pm']],
+                  ]}
+                />
               ]}
-            />
+            >
+              <div className="paragraphs">
+                <p>
+                  If you would like to volunteer for student mock interviews, please register below.
+                </p>
+              </div>
+            </Event>
           </div>
+          
         </div>
       </section>
 
