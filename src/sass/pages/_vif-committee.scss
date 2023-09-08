@@ -2,15 +2,6 @@
   .section {
     &--vif-committee-members {
       @include full-bleed;
-
-      .container {
-        // @include full-bleed;
-        @include media-max(425px) {
-          @include full-bleed;
-          padding-left: 2.4rem;
-          padding-right: 2.4rem;
-        }
-      }
     }
   }
 
