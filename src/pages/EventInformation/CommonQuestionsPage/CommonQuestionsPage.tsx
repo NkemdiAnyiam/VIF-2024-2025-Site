@@ -18,7 +18,11 @@ const studentQAs: QA[] = [
     question: "Do I need to register to attend the Industry Fair?",
     content: (
       <>
-        <p>YES! <a className="link" href="https://tally.so/r/w7LakL" target="_blank" rel="noreferrer">You must register here</a>.</p>
+        <p>
+          YES!
+          Please <a className="link" href="https://tally.so/r/wgbEqP" target="_blank" rel="noreferrer" aria-label='Open Virtual Registration Form'>register for the Virtual Fair here</a>.
+          Please <a className="link" href="https://tally.so/r/w7LakL" target="_blank" rel="noreferrer" aria-label='Open In-Person Registration Form'>register for the In-Person Fair here</a>.
+        </p>
 
         <p>
           <strong>For in-person fairs:</strong> Upon registration, your contact information will be made available
