@@ -1,7 +1,7 @@
 .for-students-page {
   .section--past-companies {
     @include full-bleed;
-    @include section-color($color-violet-dark);
+    // @include section-color($color-violet-dark);
 
     .container {
       // @include full-bleed;
@@ -68,6 +68,19 @@
           display: grid;
           place-content: center;
         }
+      }
+    }
+  }
+
+  .section--additional-events {
+    @include section-color($color-violet-dark);
+    @include full-bleed;
+
+    .events {
+      margin-top: 3rem;
+
+      .paragraphs {
+        text-align: unset;
       }
     }
   }

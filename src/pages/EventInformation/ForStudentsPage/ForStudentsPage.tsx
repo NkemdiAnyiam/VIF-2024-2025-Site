@@ -3,6 +3,8 @@ import React from 'react';
 import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { Header } from '../../../components/Header/Header';
+import { Event } from '../../../components/Event/Event';
+import { EventBox } from '../../../components/EventBox/EventBox';
 
 type PastCompany = {
   companyName: string;
@@ -67,8 +69,8 @@ export function ForStudentsPage(): JSX.Element {
               The Visualization Industry Fair is an opportunity for students interested in Animation, Gaming, Graphics,
               and Interactive technologies to connect with prospective employers working in high level positions
               in some of today's leading industries and receive professional feedback on their work.
-              The Virtual Fair will be held Thursday, February 22<sup>nd</sup>, 2024, from 10am–4pm via Discord.
-              The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm in MSC 2406.
+              <strong> The Virtual Fair will be held Thursday, February 22<sup>nd</sup>, 2024, from 10am–4pm via Discord.</strong>
+              <strong> The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm in MSC 2406.</strong>
             </p>
 
             <p className="no-gap">
@@ -94,6 +96,77 @@ export function ForStudentsPage(): JSX.Element {
           </div>
         </div>
       </section>
+
+      <div className="section section--events section--additional-events" id="additional-events">
+        <div className="container">
+          <h2 className="heading-secondary">Additional Events</h2>
+          <div className="paragraphs">
+            <p>
+              In addition to our annual Visualization Industry Fair, VIF also hosts portfolio reviews, mock interviews, and our alumni mixer!
+              Below are the dates and registration forms for these events. Instructions on how to participate are in the registration forms.
+              We hope to see you there!
+            </p>
+          </div>
+          
+          <div className="events">
+            <Event
+              eventName="Virtual Portfolio Reviews"
+              eventBoxes={[
+                <EventBox
+                  heading="Fall"
+                  headingLink="https://tally.so/r/mZEZxy"
+                  events={[
+                    ['Thursday', 'October', 19, ['10am', '4pm']],
+                    ['Friday', 'October', 20, ['10am', '4pm']],
+                  ]}
+                />,
+
+                <EventBox
+                  heading="Spring"
+                  headingLink="https://tally.so/r/w2jpVb"
+                  events={[
+                    ['Thursday', 'January', 25, ['10am', '4pm']],
+                    ['Friday', 'January', 26, ['10am', '4pm']],
+                  ]}
+                />
+              ]}
+            />
+
+            <Event
+              eventName="Virtual Mock Interviews"
+              eventBoxes={[
+                <EventBox
+                  heading="Fall"
+                  headingLink="https://tally.so/r/nrDMRL"
+                  events={[
+                    ['Friday', 'November', 3, ['10am', '4pm']],
+                  ]}
+                />,
+
+                <EventBox
+                  heading="Spring"
+                  headingLink="https://tally.so/r/w2a7yg"
+                  events={[
+                    ['Friday', 'February', 2, ['10am', '4pm']],
+                  ]}
+                />
+              ]}
+            />
+
+            <Event
+              eventName="Alumni Mixer"
+            >
+              <div className="paragraphs">
+                <p>
+                  Our Alumni Mixer is a new event on <strong>Friday, November 3<sup>rd</sup>. </strong>
+                  It is an opportunity for current students to network with former students within and outside the industry.
+                  This event is still being planned, but come back later for more info and registration!
+                </p>
+              </div>
+            </Event>
+          </div>
+        </div>
+      </div>
 
       <div className="section section--past-companies" id="past-companies">
         <div className="container">
