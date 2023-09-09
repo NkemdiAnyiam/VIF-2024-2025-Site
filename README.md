@@ -1,5 +1,5 @@
 I designed and developed the website for the 2024 Viz Industry Fair (VIF), which is an annual Texas A&M event aimed at guiding students toward successful careers.
-Over the course of the school year, it offers portfolio reviews, mock interviews, professionalism workshop, talks and presentations, and fair days—ALL involving industry professionals.
+Over the course of the school year, it offers portfolio reviews, mock interviews, professionalism workshops, talks and presentations, and fair days—ALL involving industry professionals.
 The official website is https://vizindustryfair.com/. However, since I (or anyone in the future) will eventually update the site again, I am also hosting the 2024 version of the site
 at https://vizindustryfair-wip.netlify.app/.
 
