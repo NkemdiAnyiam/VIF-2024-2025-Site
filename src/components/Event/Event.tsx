@@ -16,7 +16,7 @@ export function Event({ eventName, eventBoxes, children }: EventProps): JSX.Elem
       {
         eventBoxes &&
         <div className="event__event-boxes">
-          {eventBoxes}
+          {eventBoxes.map(eventBox => {return {...eventBox, key: eventBox.props.heading}})}
         </div>
       }
     </div>
