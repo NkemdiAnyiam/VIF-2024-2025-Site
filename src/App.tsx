@@ -32,7 +32,7 @@ export function App(): JSX.Element {
 
   return (
     <HelmetProvider>
-      <div className="App">
+      <div className="app">
         <NavBar></NavBar>
 
         <Switch>
