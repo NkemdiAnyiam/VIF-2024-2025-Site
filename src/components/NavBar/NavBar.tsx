@@ -62,20 +62,20 @@ export function NavBar(): JSX.Element {
     else {
       document.querySelector('body')?.classList.remove('scroll-disabled');
     }
-  }, [expanded])
+  }, [expanded]);
   
   const handleLogoClick = () => {
     setExpanded(false);
     window.scrollTo(0, 0);
-  }
+  };
 
   const handleHamburgerClick = () => {
     setExpanded(true);
-  }
+  };
 
   const handleXClick = () => {
     setExpanded(false);
-  }
+  };
 
   return (
     <nav ref={navRef} className={`navbar${sticky ? ' navbar--sticky' : ''}${expanded ? ' navbar--expanded' : ''}`}>
