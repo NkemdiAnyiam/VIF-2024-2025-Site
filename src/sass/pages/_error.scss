@@ -10,7 +10,16 @@
   
     &__logo-mark {
       width: 15.9rem;
+      display: block;
       height: auto;
+
+      &:hover {
+        filter: brightness(1.05);
+      }
+
+      &:active {
+        filter: brightness(0.95);
+      }
     }
   
     &__message {
