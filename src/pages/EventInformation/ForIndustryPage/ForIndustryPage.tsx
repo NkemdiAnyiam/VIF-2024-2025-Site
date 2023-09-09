@@ -47,7 +47,8 @@ export function ForIndustryPage(): JSX.Element {
               If you cannot attend the Visualization Industry Fair but would still like to contribute some time to our students,
               please consider attending our portfolio reviews and mock interviews. These events are entirely virtual, and they will
               allow you to meet with students one-on-one and give feedback on their work and professional presentation.
-              You will find links to the registration forms for these events in the sections below.
+              You will find links to the registration forms for the events
+              in the <a className="link" href="/event-information/for-industry#volunteer-events">Volunteer Events section</a> below.
             </p>
 
             <p>
