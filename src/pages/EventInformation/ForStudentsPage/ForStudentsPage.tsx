@@ -89,9 +89,14 @@ export function ForStudentsPage(): JSX.Element {
               <li>Friday, September 29<sup>th</sup></li>
             </ul>
 
-            <p>
+            <p className="no-gap">
               To register for the fair itself, you'll need a downloadable version of your resume and a link to your portfolio website.
-              Please <a href="https://tally.so/r/w7LakL" className="link" target="_blank" rel="noreferrer">register for the Fair here</a>.
+            </p>
+            <p className="no-gap">
+              Please <a href="https://tally.so/r/wgbEqP" className="link" target="_blank" rel="noreferrer">register for the Virtual Fair here</a>.
+            </p>
+            <p className="no-gap">
+              Please <a href="https://tally.so/r/w7LakL" className="link" target="_blank" rel="noreferrer">register for the In-Person Fair here</a>.
             </p>
           </div>
         </div>
