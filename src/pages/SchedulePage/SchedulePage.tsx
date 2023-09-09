@@ -10,7 +10,7 @@ export function SchedulePage(): JSX.Element {
 
       <SearchEngineOpt
         title="Schedule | Viz Industry Fair 2024"
-        description="Find out which and when companies are attending the fair as well as what they are seeking."
+        description="Find out what companies are attending the fair, when they will be avaiable, and whom they are hiring."
       />
 
       <Header type="normal" imageName={'seated-group-photo-2-min'}>
