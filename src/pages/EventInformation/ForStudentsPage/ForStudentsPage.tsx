@@ -6,34 +6,56 @@ import { Header } from '../../../components/Header/Header';
 import { Event } from '../../../components/Event/Event';
 import { EventBox } from '../../../components/EventBox/EventBox';
 
-type PastCompany = {
-  companyName: string;
-}
+// type PastCompany = {
+//   companyName: string;
+// }
 
-const pastCompanies: PastCompany[] = [
-  { companyName: "Aggieland Outfitters" },
-  { companyName: "Texas Film Commission" },
-  { companyName: "Texas Moving Picture Alliance (TXMPA)" },
-  { companyName: "Electronic Arts" },
-  { companyName: "NOKIA" },
-  { companyName: "N3D Studios Incorporated" },
-  { companyName: "Powerhouse Animation" },
-  { companyName: "SunSpear Games" },
-  { companyName: "Pumps & Pipes" },
-  { companyName: "Houston Methodist Institute for Technology, Innovation and Education" },
-  { companyName: "Gearbox Software" },
-  { companyName: "Aquifer" },
-  { companyName: "Digital Seat Media" },
-  { companyName: "Enduring Games" },
-  { companyName: "C.C. Creations" },
-  { companyName: "Booz Allen Hamilton, Inc." },
-  { companyName: "Cloud Imperium Games" },
-  { companyName: "Viasat" },
-];
-pastCompanies.sort((a, b) => a.companyName.toLowerCase() <= b.companyName.toLowerCase() ? -1 : 1);
+const pastCompanies: string[] = Array.from(new Set([
+  "Aggieland Outfitters",
+  "Texas Film Commission",
+  "Texas Moving Picture Alliance (TXMPA)",
+  "Electronic Arts",
+  "NOKIA",
+  "N3D Studios Incorporated",
+  "Powerhouse Animation",
+  "SunSpear Games",
+  "Pumps & Pipes",
+  "Houston Methodist Institute for Technology, Innovation and Education",
+  "Gearbox Software",
+  "Aquifer",
+  "Digital Seat Media",
+  "Enduring Games",
+  "C.C. Creations",
+  "Booz Allen Hamilton, Inc.",
+  "Cloud Imperium Games",
+  "Viasat",
+  "DreamWorks Animation",
+  "Deloitte",
+  "TRG",
+  "900lbs",
+  "AEM Creations",
+  "App Lovin",
+  "Blur Studios Inc.",
+  "BonusXP",
+  "Click Here Labs - TRG",
+  "Cockram Scenario",
+  "Credera",
+  "Game Worlds",
+  "IMG Studio",
+  "Jacobs",
+  "K2Share",
+  "Mighty Coconut",
+  "Proteus Games",
+  "Sandshark Games",
+  "Six Foot",
+  "The Third Floor, Inc.",
+  "VIBE",
+  "Vytal Studios",
+]));
+pastCompanies.sort((a, b) => a.toLowerCase() <= b.toLowerCase() ? -1 : 1);
 
-const renderPastCompanies = (companies: PastCompany[]) => {
-  return companies.map(({ companyName }) => {
+const renderPastCompanies = (companies: string[]) => {
+  return companies.map((companyName) => {
     return (
       <li key={companyName} className="past-company-item">
         <div className="past-company-box">
