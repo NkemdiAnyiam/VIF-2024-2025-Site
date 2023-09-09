@@ -27,12 +27,12 @@ const studentQAs: QA[] = [
         <p>
           <strong>For in-person fairs:</strong> Upon registration, your contact information will be made available
           to company representatives who may need to contact you after the Industry Fair.
-          Please bring copies of your resume, and business cards if applicable.
+          Please bring copies of your resume and business cards if applicable.
         </p>
         <p>
 
           <strong>For Virtual Fairs:</strong> Please make sure your virtual name is your first and last name followed by your focus.
-          For example: Mayet Andreassen - Modeling/LookDev, or Mayet Andreassen - UI/UX, etc.
+          For example: "Mayet Andreassen - Modeling/LookDev", or "Mayet Andreassen - UI/UX", etc.
           Please turn on your cameras, present yourself in professional attire with adequate lighting, and be mindful of any background noise in your area.
         </p>
       </>
@@ -60,8 +60,8 @@ const studentQAs: QA[] = [
         </p>
 
         <p>
-          To uphold the professional standards of Texas A&M University, we ask that all current students register
-          and attend our Professionalism Workshop. There are three workshops; however, you only need to attend one.
+          To uphold the professional standards of Texas A&M University, we require all current students to register for
+          and attend our Professionalism Workshop. There are three workshops, but you only need to attend one.
         </p>
 
         <p className="no-gap">
@@ -108,8 +108,8 @@ const studentQAs: QA[] = [
     question: "What is the dress code?",
     content: (
       <p>
-        You should wear clothes that are professionally appropriate for the position for which you are applying.
-        If you're unsure of what to wear, you should always dress to impress.
+        You should wear clothes that are professionally appropriate for the position you are applying for.
+        If you are unsure of what to wear, you should always dress to impress.
       </p>
     ),
   },
@@ -139,7 +139,7 @@ const studentQAs: QA[] = [
           (including those that are part of a cooperative education program) that have a duration of at least 10 weeks,
           provided that such interviews are related to the student's academic program and provided that
           the interviews are fixed date by employer policy and cannot be rescheduled. <strong>A student may not request excused absences
-            for employment or internship interviews for more than one scheduled class meeting in one academic term.</strong>
+          for employment or internship interviews for more than one scheduled class meeting in one academic term.</strong>
         </p>
 
         <p className="indented italicized">
@@ -147,10 +147,10 @@ const studentQAs: QA[] = [
         </p>
 
         <p>
-          <strong><em>However</em></strong>, there is a maximum of one (1) excused absence for interviews or employment related activities.
+          <strong className="italicized">However</strong>, there is a maximum of one (1) excused absence for interviews or employment related activities.
           Please plan your day accordingly so you don't miss the opportunity to speak with company representatives.
           Some professors may allow students to attend during regularly scheduled class time.
-          <strong><em> Check with your professor regarding their policy for attending the Industry Fair.</em></strong> Make sure to
+          <strong className="italicized"> Check with your professor regarding their policy for attending the Industry Fair.</strong> Make sure to
           notify your professors ahead of time.
         </p>
       </>
@@ -169,10 +169,10 @@ const companyQAs: QA[] = [
   },
 
   {
-    question: "Is it mandatory to attend both events? Or either?",
+    question: "Is it mandatory to attend both fairs? Or either?",
     content: (
       <p>
-        We are grateful for any amount of time you wish to dedicate towards our students, whether it is during or in-person,
+        We are grateful for any amount of time you wish to dedicate towards our students, whether it is during our in-person
         or virtual events! Please only sign up for events that you feel comfortable attending.
         It is not mandatory to attend all of them, and if complications arise, please notify us for any cancellations
         or rescheduling at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a>.

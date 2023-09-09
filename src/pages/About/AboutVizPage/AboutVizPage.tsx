@@ -38,7 +38,7 @@ export function AboutVizPage(): JSX.Element {
             </p>
             <p>
               Since our establishment, the Visualization program has expanded to international recognition, and it most recently transitioned
-              into the new school of Performance, Visualization and Fine Arts (PVFA). With the development of the new school,
+              into the new school of Performance, Visualization, and Fine Arts (PVFA). With the development of the new school,
               we look forward to welcoming new students and ushering in future generations of leaders in the fields of art and science.
             </p>
           </div>

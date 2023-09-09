@@ -32,7 +32,7 @@ const committeeMembers: CommitteeBlockProps[] = [
 
   {
     fullName: `Nkemdi Anyiam`,
-    role: `Web Developer`,
+    role: `Web Designer / Developer`,
     rank: 2,
     imageName: `Nkemdi-Anyiam-min`,
     specialImageName: `Nkemdi-Anyiam-Vector-min`,

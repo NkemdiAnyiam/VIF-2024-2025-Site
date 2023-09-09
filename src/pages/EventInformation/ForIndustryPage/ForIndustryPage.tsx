@@ -29,7 +29,7 @@ export function ForIndustryPage(): JSX.Element {
 
           <div className="paragraphs">
             <p>
-              Welcome, and thank you for joining us this year at the Visualization Industry Fair! It is your generosity that makes our events happen.
+              Welcome, and thank you for joining us this year at the Visualization Industry Fair (VIF)! It is your generosity that makes our events happen.
               The time that you donate to our students makes a lasting impact on their academic success and fuels the Aggie network that we are so proud of.
             </p>
 

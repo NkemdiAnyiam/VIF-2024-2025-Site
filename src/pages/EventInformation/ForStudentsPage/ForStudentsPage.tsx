@@ -66,7 +66,7 @@ export function ForStudentsPage(): JSX.Element {
 
           <div className="paragraphs">
             <p>
-              The Visualization Industry Fair is an opportunity for students interested in Animation, Gaming, Graphics,
+              The Visualization Industry Fair (VIF) is an opportunity for students interested in Animation, Gaming, Graphics,
               and Interactive technologies to connect with prospective employers working in high level positions
               in some of today's leading industries and receive professional feedback on their work.
               <strong> The Virtual Fair will be held Thursday, February 22<sup>nd</sup>, 2024, from 10am–4pm via Discord.</strong>
@@ -74,8 +74,8 @@ export function ForStudentsPage(): JSX.Element {
             </p>
 
             <p className="no-gap">
-              <strong>Before you register for the Fair</strong>, please <a href="https://tally.so/r/3xMRPE" className="link" target="_blank" rel="noreferrer">register for our new Professionalism Workshop</a>!
-              This workshop serves as an informational to the VIF events and teaches you best practices for communicating with industry professionals.
+              <strong>Before you register for the Fair, </strong>please <a href="https://tally.so/r/3xMRPE" className="link" target="_blank" rel="noreferrer">register for our new Professionalism Workshop</a>!
+              This workshop serves as an informational for the VIF events and teaches you best practices for communicating with industry professionals.
               To uphold the professional standards of Texas A&M University, current students are <strong>required</strong> to
               attend one of the three professionalism workshops before attending the industry fair or any other VIF event.
               Current students who attempt to register for an event without first attending a workshop day will be removed from the registration list.
@@ -90,12 +90,12 @@ export function ForStudentsPage(): JSX.Element {
             </ul>
 
             <p className="no-gap">
-              To register for the fair itself, you'll need a downloadable version of your resume and a link to your portfolio website.
+              To register for the fair itself, you will need a downloadable version of your resume and a link to your portfolio website.
             </p>
             <p className="no-gap">
               Please <a href="https://tally.so/r/wgbEqP" className="link" target="_blank" rel="noreferrer">register for the Virtual Fair here</a>.
             </p>
-            <p className="no-gap">
+            <p>
               Please <a href="https://tally.so/r/w7LakL" className="link" target="_blank" rel="noreferrer">register for the In-Person Fair here</a>.
             </p>
           </div>
@@ -178,7 +178,7 @@ export function ForStudentsPage(): JSX.Element {
           <h2 className="heading-secondary">Past Companies</h2>
           <div className="paragraphs">
             <p>
-              Past Fairs have included some of the following companies
+              Past fairs have included some of the following companies:
             </p>
           </div>
           <ul className="past-company-list">
