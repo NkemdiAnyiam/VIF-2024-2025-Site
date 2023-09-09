@@ -12,8 +12,8 @@ import { VifCommitteePage } from './pages/About/VifCommitteePage/VifCommitteePag
 import { ForStudentsPage } from './pages/EventInformation/ForStudentsPage/ForStudentsPage';
 import { ForIndustryPage } from './pages/EventInformation/ForIndustryPage/ForIndustryPage';
 import { CommonQuestionsPage } from './pages/EventInformation/CommonQuestionsPage/CommonQuestionsPage';
+import { SchedulePage } from './pages/SchedulePage/SchedulePage';
 import { ErrorPage } from './pages/ErrorPage/ErrorPage';
-// import { SchedulePage } from './pages/SchedulePage/SchedulePage';
 
 console.log(`██╗   ██╗██╗███████╗
 ██║   ██║██║██╔════╝
@@ -58,6 +58,10 @@ export function App(): JSX.Element {
 
           <Route exact path='/event-information/common-questions'>
             <CommonQuestionsPage></CommonQuestionsPage>
+          </Route>
+
+          <Route exact path='/schedule'>
+            <SchedulePage></SchedulePage>
           </Route>
             
           <Route path="*">

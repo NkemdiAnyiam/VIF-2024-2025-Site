@@ -121,7 +121,7 @@ export function NavBar(): JSX.Element {
           </li>
 
           <li className="navbar__item">
-            <Link onClick={(e) => {e.preventDefault();}} to="#" className="navbar__link navbar__link--disabled">Schedule</Link>
+            <Link to="/schedule" className="navbar__link">Schedule</Link>
           </li>
         </ul>
       }
