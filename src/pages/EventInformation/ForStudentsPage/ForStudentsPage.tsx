@@ -124,7 +124,7 @@ export function ForStudentsPage(): JSX.Element {
         </div>
       </section>
 
-      <div className="section section--events section--additional-events" id="additional-events">
+      <section className="section section--events section--additional-events" id="additional-events">
         <div className="container">
           <h2 className="heading-secondary">Additional Events</h2>
           <div className="paragraphs">
@@ -193,9 +193,9 @@ export function ForStudentsPage(): JSX.Element {
             </Event>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="section section--past-companies" id="past-companies">
+      <section className="section section--past-companies" id="past-companies">
         <div className="container">
           <h2 className="heading-secondary">Past Companies</h2>
           <div className="paragraphs">
@@ -207,7 +207,7 @@ export function ForStudentsPage(): JSX.Element {
             {renderPastCompanies(pastCompanies)}
           </ul>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

@@ -128,7 +128,7 @@ export function ForIndustryPage(): JSX.Element {
         </div>
       </section>
 
-      <div className="section section--see-you-there">
+      <section className="section section--see-you-there">
         <div className="container">
           <div className="paragraphs">
             <p className="cta-text">
@@ -136,7 +136,7 @@ export function ForIndustryPage(): JSX.Element {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
