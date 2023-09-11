@@ -46,7 +46,7 @@ export function HomePage(): JSX.Element {
               —such as UI/UX and web design—reach out to companies, create the Fair content and website, and run the social media campaign of the Fair and other events.
             </p>
             <p>
-              Along with this year's fair, The VIF Committee has also put together several other events throughout the school year.
+              Along with this year's fair, The <Link to="/about/vif-committee" className="link">VIF Committee</Link> has also put together several other events throughout the school year.
               These include industry speakers, workshops, portfolio & resume reviews, and mock interviews.
             </p>
           </div>
