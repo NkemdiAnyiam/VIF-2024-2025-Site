@@ -42,8 +42,8 @@ export function HomePage(): JSX.Element {
               so they can continue their journey of lifelong learning and receive advice from our industry representatives.
             </p>
             <p>
-              The Viz Industry Fair (VIF) is a student-run organization. These dedicated students, with focuses in Game Development, Animation, and Interactive Media
-              —such as UI/UX and web design—reach out to companies, create the Fair content and website, and run the social media campaign of the Fair and other events.
+              The Viz Industry Fair (VIF) is a student-run organization. These dedicated students, with focuses in Game Development, Animation, and Interactive Media—such as
+              UI/UX and web design—reach out to companies, create the Fair content and website, and run the social media campaign of the Fair and other events.
             </p>
             <p>
               Along with this year's fair, The <Link to="/about/vif-committee" className="link">VIF Committee</Link> has also put together several other events throughout the school year.
