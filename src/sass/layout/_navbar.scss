@@ -182,6 +182,12 @@
       background-color: rgba($color-gray, 0.3);
     }
 
+    &.navbar__link--active:not(.navbar__link--top-level) {
+      background-color: rgba($color-gray, 0.3);
+      color: lighten($color-brand-yellow-light, 5%);
+      cursor: default;
+    }
+
     &.navbar__link--nested {
       width: 100%;
 

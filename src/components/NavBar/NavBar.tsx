@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { NavLink } from './NavLink/NavLink';
 import { VifLogoMark, VifLogoWide, XSign } from '../iconComponents';
 
 export function NavBar(): JSX.Element {
@@ -102,11 +103,11 @@ export function NavBar(): JSX.Element {
           className={`navbar__links-list${expanded ? ' navbar__links-list--expanded' : ''}`}
         >
           <li className="navbar__item">
-            <span {...expanded ?  {} :{tabIndex: 0}} className="navbar__link navbar__link--top-level">About<span className="dropdown-marker"></span></span>
+            <span {...expanded ?  {} : {tabIndex: 0}} className="navbar__link navbar__link--top-level">About<span className="dropdown-marker"></span></span>
             
             <ul className={`navbar__nested-list${expanded ? ' navbar__nested-list--expanded' : ''}`}>
-              <Link to="/about/about-viz" className="navbar__link navbar__link--nested">About Viz</Link>
-              <Link to="/about/vif-committee" className="navbar__link navbar__link--nested">VIF Committee</Link>
+              <NavLink to="/about/about-viz" nested>About Viz</NavLink>
+              <NavLink to="/about/vif-committee" nested>VIF Committee</NavLink>
             </ul>
           </li>
 
@@ -114,14 +115,14 @@ export function NavBar(): JSX.Element {
             <span {...expanded ? {} : {tabIndex: 0}} className="navbar__link navbar__link--top-level">Event Information<span className="dropdown-marker"></span></span>
 
             <ul className={`navbar__nested-list${expanded ? ' navbar__nested-list--expanded' : ''}`}>
-              <Link to="/event-information/for-students" className="navbar__link navbar__link--nested">For Students</Link>
-              <Link to="/event-information/for-industry" className="navbar__link navbar__link--nested">For Industry</Link>
-              <Link to="/event-information/common-questions" className="navbar__link navbar__link--nested">Common Questions</Link>
+              <NavLink to="/event-information/for-students" nested>For Students</NavLink>
+              <NavLink to="/event-information/for-industry" nested>For Industry</NavLink>
+              <NavLink to="/event-information/common-questions" nested>Common Questions</NavLink>
             </ul>
           </li>
 
           <li className="navbar__item">
-            <Link to="/schedule" className="navbar__link">Schedule</Link>
+            <NavLink to="/schedule">Schedule</NavLink>
           </li>
         </ul>
       }
