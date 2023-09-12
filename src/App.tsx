@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Route, Switch, useLocation } from "react-router-dom";
-import { HelmetProvider } from 'react-helmet-async';
 
 import { HomePage } from './pages/HomePage/HomePage';
 
@@ -31,48 +30,46 @@ export function App(): JSX.Element {
   }, [pathname]);
 
   return (
-    <HelmetProvider>
-      <div className="app">
-        <NavBar></NavBar>
+    <div className="app">
+      <NavBar></NavBar>
 
-        <Switch>
-          <Route exact path='/'>
-            <HomePage></HomePage>
-          </Route>
+      <Switch>
+        <Route exact path='/'>
+          <HomePage></HomePage>
+        </Route>
 
-          <Route exact path='/about/about-viz'>
-            <AboutVizPage></AboutVizPage>
-          </Route>
+        <Route exact path='/about/about-viz'>
+          <AboutVizPage></AboutVizPage>
+        </Route>
 
-          <Route exact path='/about/vif-committee'>
-            <VifCommitteePage></VifCommitteePage>
-          </Route>
+        <Route exact path='/about/vif-committee'>
+          <VifCommitteePage></VifCommitteePage>
+        </Route>
 
-          <Route exact path='/event-information/for-students'>
-            <ForStudentsPage></ForStudentsPage>
-          </Route>
+        <Route exact path='/event-information/for-students'>
+          <ForStudentsPage></ForStudentsPage>
+        </Route>
 
-          <Route exact path='/event-information/for-industry'>
-            <ForIndustryPage></ForIndustryPage>
-          </Route>
+        <Route exact path='/event-information/for-industry'>
+          <ForIndustryPage></ForIndustryPage>
+        </Route>
 
-          <Route exact path='/event-information/common-questions'>
-            <CommonQuestionsPage></CommonQuestionsPage>
-          </Route>
+        <Route exact path='/event-information/common-questions'>
+          <CommonQuestionsPage></CommonQuestionsPage>
+        </Route>
 
-          <Route exact path='/schedule'>
-            <SchedulePage></SchedulePage>
-          </Route>
-            
-          <Route path="*">
-            <ErrorPage
-              message={"404 Page Not Found"}
-            />
-          </Route>
-        </Switch>
+        <Route exact path='/schedule'>
+          <SchedulePage></SchedulePage>
+        </Route>
+          
+        <Route path="*">
+          <ErrorPage
+            message={"404 Page Not Found"}
+          />
+        </Route>
+      </Switch>
 
-        <Footer></Footer>
-      </div>
-    </HelmetProvider>
+      <Footer></Footer>
+    </div>
   );
 }
