@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 type SearchEngineOptProps = {
@@ -6,16 +7,20 @@ type SearchEngineOptProps = {
   description?: string;
   structuredJSON?: string[];
   children?: JSX.Element | JSX.Element[];
+  disableCanonicalUrl?: boolean;
 };
 
 // TODO: Incorporate keywords
-export function SearchEngineOpt({ title, description, structuredJSON, children }: SearchEngineOptProps) {
+export function SearchEngineOpt({ title, description, structuredJSON, children, disableCanonicalUrl = false }: SearchEngineOptProps) {
+  const history = useHistory();
+
   const descriptionProp = description ? {content: description} : {}
   return (
     <Helmet>
       { /* Standard metadata tags */}
       <title>{title}</title>
       <meta name='description' {...descriptionProp} />
+      {!disableCanonicalUrl && <link rel="canonical" href={`https://www.vizindustryfair.com${history.location.pathname}`} />}
       { /* End standard metadata tags */}
       { /* Facebook tags */}
       {/* <meta property="og:type" content={type} /> */}
