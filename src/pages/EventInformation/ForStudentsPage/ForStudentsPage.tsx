@@ -105,11 +105,17 @@ export function ForStudentsPage(): JSX.Element {
               The workshops will be held on the following dates:
             </p>
 
-            <ul>
+            <ul className="no-gap">
               <li>Monday, September 25<sup>th</sup></li>
               <li>Wednesday, September 27<sup>th</sup></li>
               <li>Friday, September 29<sup>th</sup></li>
             </ul>
+            
+            <p>
+              If you cannot attend one of the workshop dates, please contact a committee member
+              or email us at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> so
+              we can send you the information and add you to our exceptions list.
+            </p>
 
             <p className="no-gap">
               To register for the fair itself, you will need a downloadable version of your resume and a link to your portfolio website.
