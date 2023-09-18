@@ -53,7 +53,7 @@ img {
   top: 0;
   left: 0;
   z-index: -1000;
-  $gradient-color: rgba(darken($color-violet-darkest, 16%), 0.9);
+  $gradient-color: rgba(darken($color-violet-darkest, 16%), 0.925);
 
   display: grid;
   place-items: center;
