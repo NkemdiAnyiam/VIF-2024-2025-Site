@@ -91,8 +91,8 @@ export function ForStudentsPage(): JSX.Element {
               The Visualization Industry Fair (VIF) is an opportunity for students interested in Animation, Gaming, Graphics,
               and Interactive technologies to connect with prospective employers working in high level positions
               in some of today's leading industries and receive professional feedback on their work.
-              <strong> The Virtual Fair will be held Thursday, February 22<sup>nd</sup>, 2024, from 10am–4pm via Discord.</strong>
-              <strong> The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm in MSC 2406.</strong>
+              <strong> The Virtual Fair will be held Thursday, February 22<sup>nd</sup>, 2024, from 10am–4pm CST via Discord.</strong>
+              <strong> The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm CST in MSC 2406.</strong>
             </p>
 
             <p className="no-gap">
