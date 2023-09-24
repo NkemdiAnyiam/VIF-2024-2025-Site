@@ -5,6 +5,7 @@ type VideoBoxProps = {
   embedSrc: string;
   url: string;
   includeCaption?: boolean;
+  fixedScale?: boolean;
 }
 
 export function VideoBox(props: VideoBoxProps): JSX.Element {
@@ -53,7 +54,7 @@ export function VideoBox(props: VideoBoxProps): JSX.Element {
       <div className={`video-box__video-container${!loaded ? ' video-box__video-container--loading' : ''}`}>
         <iframe
           ref={iframeRef}
-          className={`video-box__video${!loaded ? ' video-box__video--loading' : ''}`}
+          className={`video-box__video${!loaded ? ' video-box__video--loading' : ''}${props.fixedScale ? ' video-box__video--fixed-scale' : ''}`}
           title={props.title}
           allowFullScreen
           onLoad={onLoad}

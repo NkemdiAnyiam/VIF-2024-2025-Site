@@ -54,6 +54,10 @@
       &:hover {
         scale: 0.995;
       }
+
+      &--fixed-scale {
+        scale: 1 !important;
+      }
     }
 
     .video-box__caption {
