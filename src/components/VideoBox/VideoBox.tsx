@@ -4,6 +4,7 @@ type VideoBoxProps = {
   title: string;
   embedSrc: string;
   url: string;
+  includeCaption?: boolean;
 }
 
 export function VideoBox(props: VideoBoxProps): JSX.Element {
@@ -59,7 +60,7 @@ export function VideoBox(props: VideoBoxProps): JSX.Element {
           src={props.embedSrc.replace('youtube', 'youtube-nocookie')+'?autoplay=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com&theme=dark&color=red'}
         >
         </iframe>
-        <p className="video-box__caption">{props.title}</p>
+        {props.includeCaption && <p className="video-box__caption">{props.title}</p>}
       </div>
     </div>
   );

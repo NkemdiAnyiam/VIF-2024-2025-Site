@@ -112,6 +112,7 @@ export function AboutVizPage(): JSX.Element {
                 title="TAMU Best of Visualization 2021"
                 url="https://youtu.be/zt7IZRzFEV8"
                 embedSrc="https://www.youtube.com/embed/zt7IZRzFEV8"
+                includeCaption
               />
             </li>
             <li className="video-item">
@@ -119,6 +120,7 @@ export function AboutVizPage(): JSX.Element {
                 title="TAMU Best of Visualization - UI/UX and Graphic Design"
                 url="https://youtu.be/Ixusv-GMrho"
                 embedSrc="https://www.youtube.com/embed/Ixusv-GMrho"
+                includeCaption
               />
             </li>
             <li className="video-item">
@@ -126,6 +128,7 @@ export function AboutVizPage(): JSX.Element {
                 title="TAMU Best of Visualization - Game Development"
                 url="https://youtu.be/U2Fjr0saMUY"
                 embedSrc="https://www.youtube.com/embed/U2Fjr0saMUY"
+                includeCaption
               />
             </li>
             <li className="video-item">
@@ -133,6 +136,7 @@ export function AboutVizPage(): JSX.Element {
                 title="TAMU Best of Visualization - FX and Technical Direction"
                 url="https://youtu.be/V-3NX6AHwnY"
                 embedSrc="https://www.youtube.com/embed/V-3NX6AHwnY"
+                includeCaption
               />
             </li>
           </ul>
