@@ -58,12 +58,24 @@
     grid-template-columns: min-content 1fr;
     gap: 2rem;
 
-    &:not(:has(.committee-block__social-link:hover)):hover {
-      background-color: $fill-color-hover;
+    @supports selector(:has(*)) {
+      &:not(:has(.committee-block__social-link:hover)):hover {
+        background-color: $fill-color-hover;
+      }
+  
+      &:not(:has(.committee-block__social-link:active)):active {
+        background-color: $fill-color-active;
+      }
     }
 
-    &:not(:has(.committee-block__social-link:active)):active {
-      background-color: $fill-color-active;
+    @supports not selector(:has(*)) {
+      &:hover {
+        background-color: $fill-color-hover;
+      }
+  
+      &:active {
+        background-color: $fill-color-active;
+      }
     }
 
     @include media-max(425px) {
