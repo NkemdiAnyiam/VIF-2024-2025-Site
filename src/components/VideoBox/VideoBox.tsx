@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 type VideoBoxProps = {
   title: string;
-  embedSrc: string;
-  url: string;
+  videoId: string;
   includeCaption?: boolean;
   fixedScale?: boolean;
 }
@@ -46,7 +45,7 @@ export function VideoBox(props: VideoBoxProps): JSX.Element {
         <div className="video-box__loading-notification">
           <span ref={spinnerRef} className="spinner"></span>
           <p className="video-box__loading-text">
-            Loading <a className="video-box__link link" href={props.url} target="_blank" rel="noreferrer">{props.title}</a>
+            Loading <a className="video-box__link link" href={`https://www.youtube.com/watch?v=${props.videoId}`} target="_blank" rel="noreferrer">{props.title}</a>
           </p>
         </div>
       }
@@ -58,7 +57,7 @@ export function VideoBox(props: VideoBoxProps): JSX.Element {
           title={props.title}
           allowFullScreen
           onLoad={onLoad}
-          src={props.embedSrc.replace('youtube', 'youtube-nocookie')+'?autoplay=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com&theme=dark&color=red'}
+          src={`https://www.youtube.com/embed/${props.videoId}`.replace('youtube', 'youtube-nocookie')+'?autoplay=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com&theme=dark&color=red'}
         >
         </iframe>
         {props.includeCaption && <p className="video-box__caption">{props.title}</p>}
