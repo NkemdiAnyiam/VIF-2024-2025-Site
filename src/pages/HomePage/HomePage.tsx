@@ -5,6 +5,7 @@ import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOp
 
 // import { EventBox } from '../../components/EventBox/EventBox';
 import { Header } from '../../components/Header/Header';
+import { VideoBox } from '../../components/VideoBox/VideoBox';
 
 export function HomePage(): JSX.Element {
   return (
@@ -26,6 +27,11 @@ export function HomePage(): JSX.Element {
       <section className="section section--introduction" id="introduction">
         <div className="container">
           <h2 className="heading-secondary">Introduction</h2>
+          <VideoBox
+            title="TAMU Best of Visualization - UI/UX and Graphic Design"
+            videoId="sfnlbThIZtY"
+            fixedScale
+          />
           <div className="paragraphs">
             <p>
               This event is an opportunity for students and alumni interested in Visualization—which includes Animation, Gaming, Graphics
