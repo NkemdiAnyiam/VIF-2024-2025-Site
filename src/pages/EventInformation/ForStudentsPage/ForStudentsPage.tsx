@@ -191,7 +191,7 @@ export function ForStudentsPage(): JSX.Element {
             >
               <div className="paragraphs paragraphs--temp-no-margin">
                 <p>
-                  Our Alumni Mixer is a new event on <strong>Friday, November 3<sup>rd</sup>. </strong>
+                  Our Alumni Mixer is a new event on <strong>Friday, November 10<sup>th</sup>. </strong>
                   It is an opportunity for current students to network with former students within and outside the industry.
                   This event is still being planned, but come back later for more info and registration!
                 </p>
