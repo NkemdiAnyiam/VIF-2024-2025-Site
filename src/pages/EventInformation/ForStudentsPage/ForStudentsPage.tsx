@@ -194,7 +194,7 @@ export function ForStudentsPage(): JSX.Element {
                   Our Alumni Mixer is a new event on <strong>Friday, November 10<sup>th</sup>, 2024, from 7pm–10pm CST. </strong>
                   It is an opportunity for current students to network with former students within and outside of the industry,
                   allowing them to network in a casual setting and introduce new faces into the Viz Aggie Network community.
-                  <strong>All participants must RSVP in order to attend.</strong>
+                  <strong> All participants must RSVP in order to attend.</strong>
                 </p>
 
                 <div className="photo-and-paragraph">
