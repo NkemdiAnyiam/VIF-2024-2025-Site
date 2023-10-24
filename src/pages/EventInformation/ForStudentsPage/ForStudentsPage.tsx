@@ -191,10 +191,26 @@ export function ForStudentsPage(): JSX.Element {
             >
               <div className="paragraphs paragraphs--temp-no-margin">
                 <p>
-                  Our Alumni Mixer is a new event on <strong>Friday, November 10<sup>th</sup>. </strong>
-                  It is an opportunity for current students to network with former students within and outside the industry.
-                  This event is still being planned, but come back later for more info and registration!
+                  Our Alumni Mixer is a new event on <strong>Friday, November 10<sup>th</sup>, 2024, from 7pm–10pm CST. </strong>
+                  It is an opportunity for current students to network with former students within and outside of the industry,
+                  allowing them to network in a casual setting and introduce new faces into the Viz Aggie Network community.
+                  <strong>All participants must RSVP in order to attend.</strong>
                 </p>
+
+                <div className="photo-and-paragraph">
+                  <p>
+                    The Alumni Mixer is being held at <a href="https://maps.app.goo.gl/LntciY62AtJRsrUZ8" className="link" target="_blank" rel="noreferrer">The Corner Bar and Grill</a>,
+                    located at 401 University Dr, College Station, TX 77840. VIF will be catering a fixed menu and non-alcoholic beverages.
+                    Expenses such as parking and alcoholic beverages will not be covered by VIF. <a href="https://tally.so/r/nrOlON" className="link" target="_blank" rel="noreferrer">
+                    Register for the event here</a>.
+                  </p>
+
+                  <picture className="building-photo-picture">
+                    <source srcSet={require(`../../../images/misc/corner-bar-and-grill-min.webp`)} type="image/webp" />
+                    <source srcSet={require(`../../../images/misc/corner-bar-and-grill-min.jpg`)} type="image/jpeg" />
+                    <img src={require(`../../../images/misc/corner-bar-and-grill-min.jpg`)} alt={`The Corner Bar and Grill`} className="building-photo-img" />
+                  </picture>
+                </div>
               </div>
             </Event>
           </div>
