@@ -26,7 +26,7 @@ export function SchedulePage(): JSX.Element {
           <div className="paragraphs">
             <p>
               On this page, you will be able to see which companies are attending the fair, <span className="italicized">when</span> they will be attending,
-              and what kinds of students each company is looking to hire. There is nothing to see here yet, but stay tuned—any company that registers for the
+              and what kinds of students each company is looking to hire. The page is currently under construction, but stay tuned—any company that registers for the
               Virtual or In-Person Fair will show up here.
             </p>
           </div>
