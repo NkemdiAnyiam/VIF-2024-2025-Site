@@ -62,7 +62,7 @@ const committeeMembers: CommitteeBlockProps[] = [
     rank: 3,
     imageName: `Mayet-Andreassen-min`,
     socials: {},
-    description: `Mayet Andreassen is currently working as a full-time Instructional Assistant Professor and Internship Coordinator in the Visualization Department at Texas A&M University. She is also a member of the TXMPA (Texas Motion Picture Assoc.) Board as the Education Representative. She has over 10 years of teaching experience with a focus in games and animation. She previously worked as a game and front-end artist, as well as a freelance illustrator and graphics artist, prior to becoming an educator.`,
+    description: `Mayet Andreassen is currently working as a full-time Instructional Assistant Professor and Associate Program Director in the Visualization Department at Texas A&M University. She is also a member of the TXMPA (Texas Motion Picture Assoc.) Board as the Education Representative. She has over 10 years of teaching experience with a focus in games and animation. She previously worked as a game and front-end artist, as well as a freelance illustrator and graphics artist, prior to becoming an educator.`,
   },
 
   {
