@@ -36,11 +36,11 @@
     }
 
     &--linkedin {
-      @include icon-solid(#0077b5);
+      @include icon-solid(#00a0dc);
     }
 
     &--tamu {
-      @include icon-solid($color-gray);
+      @include icon-solid(#d6d3c4);
     }
   }
 }
