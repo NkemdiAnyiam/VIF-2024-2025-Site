@@ -56,12 +56,19 @@
     grid-template-rows: 6rem 1fr;
   }
 
+  &__logos {
+    grid-area: logo;
+    margin-right: auto;
+
+    display: flex;
+    // gap: min(2vw, 2.4rem);
+    gap: 0.6rem;
+  }
+
   &__logo-link {
     position: relative;
-    grid-area: logo;
     height: 4rem;
     transition: height 0.05s;
-    margin-right: auto;
 
     display: flex;
     align-items: center;
@@ -70,24 +77,36 @@
       height: 3.6rem;
     }
 
-    &:hover {
-      filter: brightness(1.05);
+    &--vif {
     }
 
-    &:active {
-      filter: brightness(0.95);
+    &--tamu {
+      
     }
 
     .vif-logo-mark,
     .vif-logo-wide {
-      position: absolute;
-      left: 0;
-      top: 0;
       height: 100%;
+      transition: filter 0.1s;
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+  
+      &:active {
+        filter: brightness(0.95);
+      }
 
       &.vif-logo--invisible {
         display: none;
       }
+    }
+
+    .tamu-logo-mark {
+      height: 100%;
+      fill: $color-white;
+      scale: 1 !important;
+      @include icon-solid(#d6d3c4);
     }
   }
 

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { NavLink } from './NavLink/NavLink';
-import { VifLogoMark, VifLogoWide, XSign } from '../iconComponents';
+import { TamLogoWhite, VifLogoMark, VifLogoWide, XSign } from '../iconComponents';
 
 export function NavBar(): JSX.Element {
   const [sticky, setSticky] = useState(window.scrollY > 0);
@@ -80,11 +80,16 @@ export function NavBar(): JSX.Element {
 
   return (
     <nav ref={navRef} className={`navbar${sticky ? ' navbar--sticky' : ''}${expanded ? ' navbar--expanded' : ''}`}>
-      <Link onClick={handleLogoClick} to="/" className="navbar__logo-link" aria-label="Go to homepage">
-          <VifLogoMark className={`vif-logo-mark${(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
-          <VifLogoWide className={`vif-logo-wide${!(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
-      </Link>
-
+      <div className="navbar__logos">
+        <Link onClick={handleLogoClick} to="/" className="navbar__logo-link navbar__logo-link--vif" aria-label="Go to homepage">
+            <VifLogoMark className={`vif-logo-mark${(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
+            <VifLogoWide className={`vif-logo-wide${!(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
+        </Link>
+        <a href="https://pvfa.tamu.edu/" className="navbar__logo-link navbar__logo-link--tamu" target="_blank" rel="noreferrer" aria-label="Go to PVFA website">
+          <TamLogoWhite className={`tamu-logo-mark`} />
+        </a>
+      </div>
+      
       {
         (!isMobileWidth || expanded) &&
         <ul 
