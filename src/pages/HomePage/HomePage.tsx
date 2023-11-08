@@ -20,7 +20,7 @@ export function HomePage(): JSX.Element {
         </h1>
         <p className="header__intro-text">
           Viz Industry Fair (VIF) is both an organization and annual event dedicated to career planning and success for students within the new school
-          of Performance, Visualization & Fine Arts (PVFA).
+          of Performance, Visualization & Fine Arts (PVFA) at Texas A&M University.
         </p>
       </Header>
 
