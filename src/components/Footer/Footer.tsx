@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { FooterLink } from './FooterLink/FooterLink';
-import { LogoInstagram, LogoLinkedin, LogoTwitter, LogoYoutube } from '../iconComponents';
+import { LogoInstagram, LogoLinkedin, LogoTwitter, LogoYoutube, TamLogoWhite } from '../iconComponents';
 
 export function Footer(): JSX.Element {
   return (
@@ -21,6 +21,10 @@ export function Footer(): JSX.Element {
 
         <FooterLink href="https://www.linkedin.com/company/texas-a-m-visualization-industry-fair" ariaLabel={`Visit LinkedIn`}>
           <LogoLinkedin className="footer__icon footer__icon--linkedin" />
+        </FooterLink>
+
+        <FooterLink href="https://pvfa.tamu.edu/" ariaLabel={`Visit PVFA site`}>
+          <TamLogoWhite className="footer__icon footer__icon--tamu" />
         </FooterLink>
       </ul>
     </footer>

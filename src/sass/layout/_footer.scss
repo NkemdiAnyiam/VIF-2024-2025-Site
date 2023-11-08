@@ -38,5 +38,9 @@
     &--linkedin {
       @include icon-solid(#0077b5);
     }
+
+    &--tamu {
+      @include icon-solid($color-gray);
+    }
   }
 }
