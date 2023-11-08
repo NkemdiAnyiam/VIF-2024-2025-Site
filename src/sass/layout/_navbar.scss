@@ -81,7 +81,6 @@
     }
 
     &--tamu {
-      
     }
 
     .vif-logo-mark,
@@ -89,13 +88,8 @@
       height: 100%;
       transition: filter 0.1s;
 
-      &:hover {
-        filter: brightness(1.1);
-      }
-  
-      &:active {
-        filter: brightness(0.95);
-      }
+      &:hover { filter: brightness(1.1); }
+      &:active { filter: brightness(0.95); }
 
       &.vif-logo--invisible {
         display: none;
@@ -105,8 +99,6 @@
     .tamu-logo-mark {
       height: 100%;
       fill: $color-white;
-      scale: 1 !important;
-      @include icon-solid(#d6d3c4);
     }
   }
 

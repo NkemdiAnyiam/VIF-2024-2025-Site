@@ -85,9 +85,9 @@ export function NavBar(): JSX.Element {
             <VifLogoMark className={`vif-logo-mark${(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
             <VifLogoWide className={`vif-logo-wide${!(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
         </Link>
-        <a href="https://pvfa.tamu.edu/" className="navbar__logo-link navbar__logo-link--tamu" target="_blank" rel="noreferrer" aria-label="Go to PVFA website">
+        <div className="navbar__logo-link navbar__logo-link--tamu">
           <TamLogoWhite className={`tamu-logo-mark`} />
-        </a>
+        </div>
       </div>
       
       {
