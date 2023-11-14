@@ -3,6 +3,7 @@ import React from 'react';
 import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { Header } from '../../components/Header/Header';
+import { Timetable } from '../../components/Timetable/Timetable';
 
 export function SchedulePage(): JSX.Element {
   return (
@@ -29,6 +30,16 @@ export function SchedulePage(): JSX.Element {
               and what kinds of students each company is looking to hire. The page is currently under construction, but stay tuned—any company that registers for the
               Virtual or In-Person Fair will show up here.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--timetable" id="timetable">
+        <div className="container">
+          <h2 className="heading-secondary">Company Times</h2>
+
+          <div>
+            <Timetable />
           </div>
         </div>
       </section>
