@@ -7,7 +7,7 @@ interface TimetableProps {
   rowData: string[][];
 }
 
-const renderRows = (rowData: TimetableProps['rowData']) => {
+const renderRows = (rowData: TimetableProps['rowData']): JSX.Element[] => {
   return rowData.map((arr) => {
     return <TimetableRow key={arr[0]} cellData={arr} />
   });
@@ -23,7 +23,11 @@ export function Timetable({heading, rowData}: TimetableProps): JSX.Element {
     const handleClick = (e: MouseEvent) => {
       const cell = (e.target as HTMLElement);
       // only do process if time cells were clicked
-      if (!(cell.classList.contains('cell--filled') || cell.classList.contains('cell--empty'))) { return; }
+      if (!(
+        cell.classList.contains('cell--filled')
+        || cell.classList.contains('cell--empty')
+        || cell.classList.contains('cell--spacer')
+      )) { return; }
 
       document.documentElement.classList.add('cursor--move');
       // unhighlight all text to prevent annoying dragging issues
@@ -81,7 +85,7 @@ export function Timetable({heading, rowData}: TimetableProps): JSX.Element {
       />
       {renderRows(rowData)}
 
-      <TimetableRow
+      {/* <TimetableRow
         cellData={[
           'AEM Creations',
           'X',
@@ -284,7 +288,7 @@ export function Timetable({heading, rowData}: TimetableProps): JSX.Element {
           'O',
           'O',
         ]}
-      />
+      /> */}
     </div>
   );
 }
