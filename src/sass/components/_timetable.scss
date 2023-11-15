@@ -6,6 +6,10 @@
   max-width: 100%;
   max-height: 70vh;
   border: 2px solid $color-gray-lightest;
+
+  @include media-max(1024px) {
+    overscroll-behavior: unset;
+  }
   
   &__row {
     position: relative;
@@ -14,6 +18,7 @@
     
     display: flex;
 
+    // row underline
     &:not(:last-child) {
       .cell {
         border-bottom: 1.5px solid $color-gray-lightest;
@@ -99,7 +104,7 @@
         top: 0;
         width: 20rem;
         padding: 1rem 2rem;
-        border-right: 2px solid $color-gray-lightest !important;
+        border-right: 2px solid $color-gray-lightest;
         box-shadow: 2px 0 10px rgba($color-black, 0.3);
       }
 
