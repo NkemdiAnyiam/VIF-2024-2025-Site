@@ -11,23 +11,24 @@ const renderCells = (cellData: string[], isHeader?: boolean): JSX.Element[] => {
   if (isHeader) {
     row = cellData.map((str) => {
       return (
-        <div className={`cell`}><span>{str}</span></div>
+        <div key={str} className={`cell`}><span>{str}</span></div>
       );
     });
   }
   else {
-    row = [<div className={`cell`}><span>{cellData[0]}</span></div>];
+    const companyName = cellData[0];
+    row = [<div key={companyName} className={`cell`}><span>{companyName}</span></div>];
     row = row.concat(
-      cellData.slice(1).map((str) => {
+      cellData.slice(1).map((str, index) => {
         return (
-          <div className={`cell ${str === 'X' ? 'cell--filled' : 'cell--empty'}`}></div>
+          <div key={`${companyName}-${index}`} className={`cell ${str === 'X' ? 'cell--filled' : 'cell--empty'}`}></div>
         );
       })
     );
   }
 
-  row.splice(1, 0, <div className="cell cell--spacer"></div>);
-  row.push(<div className="cell cell--spacer"></div>);
+  row.splice(1, 0, <div key="spacer-1" className="cell cell--spacer"></div>);
+  row.push(<div key="spacer-2" className="cell cell--spacer"></div>);
 
   return row;
 }
