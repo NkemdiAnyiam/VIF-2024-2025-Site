@@ -6,6 +6,7 @@
   max-width: 100%;
   max-height: 70vh;
   border: 2px solid $color-gray-lightest;
+  // box-shadow: 0 2px 10px $color-black;
 
   @include media-max(1024px) {
     overscroll-behavior: unset;
@@ -14,7 +15,7 @@
   &__row {
     position: relative;
     width: max-content;
-    min-height: 6rem;
+    min-height: min(56px, 6rem);
     
     display: flex;
 
@@ -33,7 +34,7 @@
       left: 0;
       font-weight: bold;
       border-bottom: 2px solid $color-gray-lightest;
-      box-shadow: 0 2px 10px rgba($color-black, 0.3);
+      box-shadow: 0 2px 10px rgba($color-black, 0.4);
 
       .cell {
         background-color: $color-violet;
@@ -106,7 +107,7 @@
         width: 20rem;
         padding: 1rem 2rem;
         border-right: 2px solid $color-gray-lightest;
-        box-shadow: 2px 0 10px rgba($color-black, 0.3);
+        box-shadow: 2px 0 10px rgba($color-black, 0.4);
       }
 
       &--spacer {
