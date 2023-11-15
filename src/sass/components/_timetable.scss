@@ -1,6 +1,7 @@
 .timetable {
   position: relative;
   overflow: auto;
+  overscroll-behavior: contain;
   width: max-content;
   max-width: 100%;
   max-height: 70vh;
@@ -81,7 +82,7 @@
       }
 
       &--spacer {
-        width: 3rem;
+        width: 30px;
         background-color: $color-black;
       };
     }
