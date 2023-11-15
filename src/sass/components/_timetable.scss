@@ -38,9 +38,17 @@
 
         &:not(:first-child) {
           span {
+            position: relative;
             background-color: $color-violet;
             display: inline-block;
             translate: -50%;
+            padding: 0.5px;
+
+            &::after {
+              @include pseudo-elem-cover; // height: 100% is more than enough to cover dashes
+              top: -100%;
+              background-color: $color-violet;
+            }
           }
         }
 
