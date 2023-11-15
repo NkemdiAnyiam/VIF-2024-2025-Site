@@ -41,6 +41,63 @@
   }
 }
 
+@mixin button-neon() {
+  $fill-color: var(--fill-color);
+  $fill-color-hover: var(--fill-color-hover);
+  $fill-color-active: var(--fill-color-active);
+  $border-color: var(--border-color);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-family: $font-bebas;
+  font-size: max(2rem, 18px);
+  border: 2px solid $border-color;
+  background-color: $fill-color;
+  transition: background-color 0.1s;
+  cursor: pointer;
+
+  &:link,
+  &:visited,
+  & {
+    color: $color-gray-lightest;
+  }
+
+  &:hover {
+    background-color: $fill-color-hover;
+  }
+
+  &:active {
+    background-color: $fill-color-active;
+  }
+
+  &--yellow {
+    --fill-color: #{rgba(darken($color-brand-yellow-darker, 18%), 0.85)};
+    --fill-color-hover: #{rgba(darken($color-brand-yellow-darker, 10%), 1)};
+    --fill-color-active: #{rgba(darken($color-brand-yellow-darker, 14%), 1)};
+    --border-color: #{lighten($color-brand-yellow-darker, 10%)};
+  }
+
+  &--red {
+    --fill-color: #{rgba(darken($color-brand-red-darker, 8%), 0.85)};
+    --fill-color-hover: #{rgba(darken($color-brand-red-darker, 0%), 1)};
+    --fill-color-active: #{rgba(darken($color-brand-red-darker, 4%), 1)};
+    --border-color: #{lighten($color-brand-red-darker, 30%)};
+  }
+
+  &--green {
+    --fill-color: #{rgba(darken($color-brand-green-darker, 13%), 0.85)};
+    --fill-color-hover: #{rgba(darken($color-brand-green-darker, 5%), 1)};
+    --fill-color-active: #{rgba(darken($color-brand-green-darker, 9%), 1)};
+    --border-color: #{lighten($color-brand-green-darker, 16%)};
+  }
+
+  &--purple {
+    --fill-color: #{rgba(darken($color-violet, 30%), 0.85)};
+    --fill-color-hover: #{rgba(darken($color-violet, 22%), 1)};
+    --fill-color-active: #{rgba(darken($color-violet, 26%), 1)};
+    --border-color: #{lighten($color-violet, 16%)};
+  }
+}
+
 @mixin section-color($fill) {
   background-color: rgba($fill, 0.85);
   box-shadow: -6px 0px 6px rgba(black, 0.3);
