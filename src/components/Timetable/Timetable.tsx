@@ -2,6 +2,10 @@ import React, { useEffect, useRef } from 'react';
 
 import { TimetableRow } from './TimetableRow/TimetableRow';
 
+interface TimetableProps {
+  heading: 'Virtual' | 'In-Person';
+}
+
 const rowData: string[][] = [
   ['Framestore', ...'X'.repeat(12).split('')],
   ['Luna Creative', ...'X'.repeat(12).split('')],
@@ -16,7 +20,7 @@ const renderRows = () => {
   });
 }
 
-export function Timetable(): JSX.Element {
+export function Timetable({heading}: TimetableProps): JSX.Element {
   const tableRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -66,7 +70,7 @@ export function Timetable(): JSX.Element {
       <TimetableRow
         isHeader
         cellData={[
-          'Companies',
+          heading,
           '10:00',
           '10:30',
           '11:00',

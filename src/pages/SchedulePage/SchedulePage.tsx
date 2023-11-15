@@ -40,13 +40,11 @@ export function SchedulePage(): JSX.Element {
 
           <div className="timetables">
             <div className="timetable-container timetable-container--virtual">
-              <h3 className="heading-tertiary">Virtual</h3>
-              <Timetable />
+              <Timetable heading="Virtual" />
             </div>
 
             <div className="timetable-container timetable-container--in-person">
-              <h3 className="heading-tertiary">In-Person</h3>
-              <Timetable />
+              <Timetable heading="In-Person" />
             </div>
           </div>
         </div>
