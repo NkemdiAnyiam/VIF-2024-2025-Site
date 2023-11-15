@@ -93,7 +93,8 @@
 
         @supports selector(:has(*)) {
           &:has(+ .cell--filled) {
-            border-right: 1px solid $color-brand-green;
+            border-right: 1px dashed rgba($color-gray-lightest, 0.35);
+            stroke-dasharray: 12;
           }
         }
       }
