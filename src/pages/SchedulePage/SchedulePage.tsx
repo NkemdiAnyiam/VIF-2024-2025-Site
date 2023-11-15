@@ -40,11 +40,29 @@ export function SchedulePage(): JSX.Element {
 
           <div className="timetables">
             <div className="timetable-container timetable-container--virtual">
-              <Timetable heading="Virtual" />
+              <Timetable
+                heading="Virtual"
+                rowData={[
+                  ['Framestore', ...'X'.repeat(12).split('')],
+                  ['Luna Creative', ...'X'.repeat(12).split('')],
+                  ['A Bunch of Short Guys', ...'X'.repeat(12).split('')],
+                  ['Texas Film Commission', ...'X'.repeat(12).split('')],
+                  ['Brazen Animation', ...'X'.repeat(4).split(''), ...'O'.repeat(12 - 4).split('')],
+                ]}
+              />
             </div>
 
             <div className="timetable-container timetable-container--in-person">
-              <Timetable heading="In-Person" />
+              <Timetable
+                heading="In-Person"
+                rowData={[
+                  ['Framestore', ...'X'.repeat(12).split('')],
+                  ['Luna Creative', ...'X'.repeat(12).split('')],
+                  ['A Bunch of Short Guys', ...'X'.repeat(12).split('')],
+                  ['Texas Film Commission', ...'X'.repeat(12).split('')],
+                  ['Brazen Animation', ...'X'.repeat(4).split(''), ...'O'.repeat(12 - 4).split('')],
+                ]}
+              />
             </div>
           </div>
         </div>
