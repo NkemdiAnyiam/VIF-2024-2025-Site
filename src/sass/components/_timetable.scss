@@ -3,7 +3,7 @@
   overflow: auto;
   width: max-content;
   max-width: 100%;
-  max-height: 25rem;
+  max-height: 70vh;
   border: 2px solid $color-gray-lightest;
   
   &__row {
@@ -14,7 +14,7 @@
     display: flex;
 
     &:not(:last-child) {
-      border-bottom: 1px solid $color-gray-lightest;
+      border-bottom: 1.5px solid $color-gray-lightest;
     }
 
     &:first-child {
@@ -24,6 +24,7 @@
       top: 0;
       left: 0;
       border-bottom: 2px solid $color-gray-lightest;
+      box-shadow: 0 2px 10px rgba($color-black, 0.3);
 
       .cell {
         background-color: $color-violet;
@@ -75,6 +76,7 @@
         width: 20rem;
         padding: 1rem 2rem;
         border-right: 2px solid $color-gray-lightest !important;
+        box-shadow: 2px 0 10px rgba($color-black, 0.3);
       }
 
       &--spacer {
