@@ -62,13 +62,19 @@
 
       display: flex;
       align-items: center;
-
-      &--filled {
-        background-color: $color-brand-green;
-      }
       
       &:not(:last-child) {
         border-right: 1px dashed $color-gray-lightest;
+      }
+
+      &--filled {
+        background-color: $color-brand-green;
+
+        @supports selector(:has(*)) {
+          &:has(+ .cell--filled) {
+            border-right: 1px solid $color-brand-green;
+          }
+        }
       }
 
       &:first-child {
