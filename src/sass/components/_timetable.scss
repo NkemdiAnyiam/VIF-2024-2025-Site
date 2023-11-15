@@ -15,7 +15,9 @@
     display: flex;
 
     &:not(:last-child) {
-      border-bottom: 1.5px solid $color-gray-lightest;
+      .cell {
+        border-bottom: 1.5px solid $color-gray-lightest;
+      }
     }
 
     &:first-child {
@@ -73,6 +75,12 @@
       
       &:not(:last-child) {
         border-right: 1px dashed $color-gray-lightest;
+      }
+
+      &--filled,
+      &--empty {
+        user-select: none;
+        cursor: move;
       }
 
       &--filled {

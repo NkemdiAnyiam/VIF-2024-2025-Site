@@ -38,7 +38,7 @@ export function SchedulePage(): JSX.Element {
         <div className="container">
           <h2 className="heading-secondary">Company Times</h2>
 
-          <div>
+          <div className="timetable-container">
             <Timetable />
           </div>
         </div>

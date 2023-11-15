@@ -1,10 +1,54 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import { TimetableRow } from './TimetableRow/TimetableRow';
 
 export function Timetable(): JSX.Element {
+  const tableRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const tableEl = tableRef.current;
+
+    // when table is clicked
+    const handleClick = (e: MouseEvent) => {
+      const cell = (e.target as HTMLElement);
+      // only do process if time cells were clicked
+      if (!(cell.classList.contains('cell--filled') || cell.classList.contains('cell--empty'))) { return; }
+
+      document.documentElement.classList.add('cursor--move');
+      // unhighlight all text to prevent annoying dragging issues
+      document.getSelection()?.removeAllRanges();
+      // add listeners for handling drag and release
+      window.addEventListener('mousemove', handleDrag);
+      window.addEventListener('mouseup', handleRelease);
+      window.addEventListener('mouseleave', handleRelease);
+    };
+
+    const handleDrag = (e: MouseEvent) => {
+      const [x, y] = [e.movementX, e.movementY];
+      if (tableEl) {
+        tableRef.current?.scrollTo({top: tableEl.scrollTop - y, left: tableEl.scrollLeft - x});
+      }
+    }
+    
+    const handleRelease = (e: MouseEvent) => {
+      document.documentElement.classList.remove('cursor--move');
+      window.removeEventListener('mousemove', handleDrag);
+      window.removeEventListener('mouseup', handleRelease);
+      window.removeEventListener('mouseleave', handleRelease);
+    }
+
+    tableEl?.addEventListener('mousedown', handleClick);
+
+    return () => {
+      tableEl?.removeEventListener('mousedown', handleClick);
+      window.removeEventListener('mousemove', handleDrag);
+      window.removeEventListener('mouseup', handleRelease);
+      window.removeEventListener('mouseleave', handleRelease);
+    }
+  }, []);
+
   return (
-    <div className={`timetable`}>
+    <div ref={tableRef} className={`timetable`} draggable={'false'}>
       <TimetableRow
         isHeader
         cellData={[
