@@ -90,7 +90,7 @@
       }
 
       &--filled {
-        background-color: $color-brand-green;
+        background-color: var(--cell-fill-color);
 
         @supports selector(:has(*)) {
           &:has(+ .cell--filled) {

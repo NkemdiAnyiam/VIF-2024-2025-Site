@@ -2,8 +2,34 @@
   .section--timetable {
     // @include full-bleed;
     // @include section-color($color-violet-dark);
-  }
 
-  .timetable-container {
+    .timetables {
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+
+      .timetable-container {
+        // FOR ADDING INSET SHADOW ON RIGHT
+        // position: relative;
+        // &::after {
+        //   @include pseudo-elem-cover;
+        //   left: unset;
+        //   right: 0;
+        //   width: 20rem;
+        //   translate: calc(100% - 2px);
+        //   z-index: 5;
+        //   box-shadow: -2px 0 10px rgba($color-black, 0.4);
+        //   pointer-events: none;
+        // }
+
+        &--virtual {
+          --cell-fill-color: #{$color-brand-green};
+        }
+
+        &--in-person {
+          --cell-fill-color: #{darken($color-brand-yellow, 10%)};
+        }
+      }
+    }
   }
 }

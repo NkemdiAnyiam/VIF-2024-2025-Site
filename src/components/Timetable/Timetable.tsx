@@ -2,6 +2,20 @@ import React, { useEffect, useRef } from 'react';
 
 import { TimetableRow } from './TimetableRow/TimetableRow';
 
+const rowData: string[][] = [
+  ['Framestore', ...'X'.repeat(12).split('')],
+  ['Luna Creative', ...'X'.repeat(12).split('')],
+  ['A Bunch of Short Guys', ...'X'.repeat(12).split('')],
+  ['Texas Film Commission', ...'X'.repeat(12).split('')],
+  ['Brazen Animation', ...'X'.repeat(4).split(''), ...'O'.repeat(12 - 4).split('')],
+]
+
+const renderRows = () => {
+  return rowData.map((arr) => {
+    return <TimetableRow key={arr[0]} cellData={arr} />
+  });
+}
+
 export function Timetable(): JSX.Element {
   const tableRef = useRef<HTMLDivElement | null>(null);
 
@@ -68,6 +82,8 @@ export function Timetable(): JSX.Element {
           '4:00',
         ]}
       />
+      {renderRows()}
+
       <TimetableRow
         cellData={[
           'AEM Creations',

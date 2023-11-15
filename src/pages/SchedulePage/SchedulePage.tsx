@@ -36,10 +36,18 @@ export function SchedulePage(): JSX.Element {
 
       <section className="section section--timetable" id="timetable">
         <div className="container">
-          <h2 className="heading-secondary">Company Times</h2>
+          <h2 className="heading-secondary">Company Times (CST)</h2>
 
-          <div className="timetable-container">
-            <Timetable />
+          <div className="timetables">
+            <div className="timetable-container timetable-container--virtual">
+              <h3 className="heading-tertiary">Virtual</h3>
+              <Timetable />
+            </div>
+
+            <div className="timetable-container timetable-container--in-person">
+              <h3 className="heading-tertiary">In-Person</h3>
+              <Timetable />
+            </div>
           </div>
         </div>
       </section>
