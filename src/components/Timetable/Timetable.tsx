@@ -19,14 +19,44 @@ export function Timetable(): JSX.Element {
           '1:30',
           '2:00',
           '2:30',
+          '3:00',
+          '3:30',
+          '4:00',
         ]}
       />
-      {/* <TimetableRow
-        cellData={[]}
-      />
       <TimetableRow
-        cellData={[]}
-      /> */}
+        cellData={[
+          'Credera',
+          'X',
+          'X',
+          'O',
+          'X',
+          'X',
+          'O',
+          'O',
+          'O',
+          'O',
+          'X',
+          'X',
+          'X',
+        ]}
+      /><TimetableRow
+      cellData={[
+        'Disney',
+        'O',
+        'X',
+        'O',
+        'O',
+        'X',
+        'O',
+        'O',
+        'O',
+        'O',
+        'O',
+        'O',
+        'O',
+      ]}
+    />
     </div>
   );
 }
