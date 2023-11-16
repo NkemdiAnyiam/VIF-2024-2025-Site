@@ -43,11 +43,6 @@ export function SchedulePage(): JSX.Element {
               <Timetable
                 heading="Virtual"
                 rowData={[
-                  ['Framestore', ...'X'.repeat(12).split('')],
-                  // ['Luna Creative', ...'X'.repeat(12).split('')],
-                  // ['A Bunch of Short Guys', ...'X'.repeat(12).split('')],
-                  // ['Texas Film Commission', ...'X'.repeat(12).split('')],
-                  ['Brazen Animation', ...'X'.repeat(4).split(''), ...'O'.repeat(12 - 4).split('')],
                 ]}
               />
             </div>
@@ -61,6 +56,7 @@ export function SchedulePage(): JSX.Element {
                   ['A Bunch of Short Guys', ...'X'.repeat(12).split('')],
                   ['Texas Film Commission', ...'X'.repeat(12).split('')],
                   ['Brazen Animation', ...'X'.repeat(4).split(''), ...'O'.repeat(12 - 4).split('')],
+                  ['POWER Engineers', ...'X'.repeat(12).split('')],
                 ]}
               />
             </div>

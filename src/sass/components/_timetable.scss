@@ -20,7 +20,7 @@
     display: flex;
 
     // row underline
-    &:not(:last-child) {
+    &:not(:last-child, :first-child) {
       .cell {
         border-bottom: 1.5px solid $color-gray-lightest;
       }
