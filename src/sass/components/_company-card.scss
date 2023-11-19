@@ -3,6 +3,8 @@
   $fill-color-hover: var(--fill-color-hover);
   $fill-color-active: var(--fill-color-active);
   $border-color: var(--border-color);
+  $border-style: 2px solid $border-color;
+  border: $border-style;
   height: 100%;
   // max-width: 50rem;
 
@@ -14,12 +16,6 @@
     --fill-color-hover: #{rgba(darken($color-gray, 22%), 1)};
     --fill-color-active: #{rgba(darken($color-gray, 26%), 1)};
     --border-color: #{lighten($color-gray, 10%)};
-  }
-
-  &__header,
-  &__description,
-  &__header .company-card__photo-container {
-    border: 2px solid $border-color;
   }
 
   &__header {
@@ -93,6 +89,7 @@
     min-width: 8rem;
     min-height: 8rem;
     background-color: $color-white;
+    border: $border-style;
 
     display: grid;
     place-content: center;
@@ -127,7 +124,7 @@
     width: 100%;
     flex: 1;
     padding: 1.6rem 3rem;
-    border-top: none;
+    border-top: $border-style;
     background-color: rgba($color-black, 0.3);
     overflow: hidden;
 
