@@ -37,6 +37,13 @@
     --border-color: #{lighten($color-violet, 16%)};
   }
 
+  &--white {
+    --fill-color: #{rgba(darken($color-gray, 30%), 0.85)};
+    --fill-color-hover: #{rgba(darken($color-gray, 22%), 1)};
+    --fill-color-active: #{rgba(darken($color-gray, 26%), 1)};
+    --border-color: #{lighten($color-gray, 10%)};
+  }
+
   &__header,
   &__description,
   &__header .committee-block__photo-container {
