@@ -3,7 +3,8 @@ import React from 'react';
 import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { Header } from '../../components/Header/Header';
-// import { Timetable } from '../../components/Timetable/Timetable';
+import { Timetable } from '../../components/Timetable/Timetable';
+import { CompanyCard } from './CompanyCard/CompanyCard';
 
 export function SchedulePage(): JSX.Element {
   return (
@@ -63,6 +64,49 @@ export function SchedulePage(): JSX.Element {
           </div>
         </div>
       </section> */}
+
+      <section className="section section--companies" id="companies">
+        <div className="container">
+          <h2 className="heading-secondary">Attending Companies</h2>
+
+          <ul className="companies-list">
+            <li className="company-item">
+              <CompanyCard
+                description="aaa ukhbsdf khbsadfg hadfgf hndfgk hubaddg ukhbadg uhobsbddg ukhnsdg ubnbnddrgr uhbsdfg uhbsdrgr uhbsdtgt byu"
+                companyName='Framestore'
+                imageName='framestore'
+                focuses='Visual Effects / Animation / Immersive'
+              />
+            </li>
+            <li className="company-item">
+              <CompanyCard
+                description="bbb kauhrb kuhakuhb akuhbr ukbae kjhsdrg kujhbubk kushrbfg jkuhbar khubar kuhbsg khub"
+                // companyName='Texas Film Commission'
+                companyName='Texas Moving Picture Alliance (TXMPA)'
+                imageName='texas-film-commission'
+                focuses='Animation, Game Development'
+              />
+            </li>
+            <li className="company-item">
+              <CompanyCard
+                description="bbb kauhrb kuhakuhb akuhbr ukbae kjhsdrg kujhbubk kushrbfg jkuhbar khubar kuhbsg khub"
+                // companyName='A Bunch of Short Guys'
+                companyName='Houston Methodist Institute for Technology, Innovation and Education'
+                imageName='a-bunch-of-short-guys'
+                focuses='Animation, Game Development, Graphic Design'
+              />
+            </li>
+            <li className="company-item">
+              <CompanyCard
+                description="bbb kauhrb kuhakuhb akuhbr ukbae kjhsdrg kujhbubk kushrbfg jkuhbar khubar kuhbsg khub"
+                companyName='Luna Creative'
+                imageName='luna-creative'
+                focuses='Graphic Design'
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   );
 }

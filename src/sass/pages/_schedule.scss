@@ -32,4 +32,24 @@
       }
     }
   }
+
+  .section--companies {
+    .companies-list {
+      list-style: none;
+  
+      display: grid;
+      // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      // justify-items: center;
+      gap: 2rem;
+  
+      @include media-max(425px) {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .company-item {
+        height: 100%;
+      }
+    }
+  }
 }
