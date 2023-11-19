@@ -18,6 +18,13 @@
     --border-color: #{lighten($color-gray, 10%)};
   }
 
+  &--purple {
+    --fill-color: #{rgba(darken($color-violet, 30%), 0.85)};
+    --fill-color-hover: #{rgba(darken($color-violet, 22%), 1)};
+    --fill-color-active: #{rgba(darken($color-violet, 26%), 1)};
+    --border-color: #{lighten($color-violet, 16%)};
+  }
+
   &__header {
     position: relative;
     width: 100%;
@@ -134,6 +141,25 @@
       padding: 0;
       margin: 0;
       border: none;
+    }
+
+    .heading-quaternary {
+      font-size: max(1.8rem, 16px);
+    }
+  }
+
+  &__positions-list {
+    list-style: none;
+
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+    .company-card__position-tag {
+      background-color: $color-violet;
+      color: $color-white; // TODO: Remember to remove this if we change background
+      // border-radius: 20px;
+      padding: 0.6rem 0.8rem;
     }
   }
 }

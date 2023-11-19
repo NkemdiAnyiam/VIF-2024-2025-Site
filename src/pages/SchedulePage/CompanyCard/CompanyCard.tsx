@@ -1,10 +1,23 @@
 import React, { useState } from 'react';
 
+type PositionType = 'Full-time' | 'Part-time' | 'Intern' | 'Contract worker' | 'Volunteer' | 'Freelance' | 'Researcher';
+
 interface CompanyCardProps {
   companyName: string;
   imageName: string;
   description: string;
   focuses: string;
+  positionTypes: PositionType[];
+}
+
+const renderTags = (positionTypes: PositionType[]): JSX.Element[] => {
+  return positionTypes.map((positionType) => {
+    return (
+      <li key={positionType} className="company-card__position-item">
+        <div className="company-card__position-tag">{positionType}</div>
+      </li>
+    )
+  })
 }
 
 export function CompanyCard(props: CompanyCardProps): JSX.Element {
@@ -34,9 +47,8 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
       </div>
 
       <div className={`company-card__description${!expanded ? ' company-card__description--hidden' : ''}`}>
-        <div className="paragraphs">
-          <p>{props.description}</p>
-        </div>
+        <h4 className="heading-quaternary">Recruiting:</h4>
+        <ul className="company-card__positions-list">{renderTags(props.positionTypes)}</ul>
       </div>
     </div>
   );
