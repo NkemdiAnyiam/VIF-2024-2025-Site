@@ -3,7 +3,8 @@ import React from 'react';
 import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { Header } from '../../components/Header/Header';
-// import { Timetable } from '../../components/Timetable/Timetable';
+import { Timetable } from '../../components/Timetable/Timetable';
+import { CompanyCard } from './CompanyCard/CompanyCard';
 
 export function SchedulePage(): JSX.Element {
   return (
@@ -27,14 +28,14 @@ export function SchedulePage(): JSX.Element {
           <div className="paragraphs">
             <p>
               On this page, you will be able to see which companies are attending the fair, <span className="italicized">when</span> they will be attending,
-              and what kinds of students each company is looking to hire. The page is currently under construction, but stay tuned—any company that registers for the
-              Virtual or In-Person Fair will show up here.
+              and what kinds of students each company is looking to hire. Any company that registers for the
+              Virtual or In-Person Fair will show up here, so stay tuned.
             </p>
           </div>
         </div>
       </section>
 
-      {/* <section className="section section--timetable" id="timetable">
+      <section className="section section--timetable" id="timetable">
         <div className="container">
           <h2 className="heading-secondary">Company Times (CST)</h2>
 
@@ -62,7 +63,58 @@ export function SchedulePage(): JSX.Element {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
+
+      <section className="section section--companies" id="companies">
+        <div className="container">
+          <h2 className="heading-secondary">Current Companies</h2>
+
+          <ul className="companies-list">
+            <li className="company-item">
+              <CompanyCard
+                description="aaa ukhbsdf khbsadfg hadfgf hndfgk hubaddg ukhbadg uhobsbddg ukhnsdg ubnbnddrgr uhbsdfg uhbsdrgr uhbsdtgt byu"
+                companyName='Framestore'
+                imageName='framestore'
+                focuses='Visual Effects / Animation / Immersive'
+                positionTypes={['Full-time', 'Part-time', 'Intern', 'Contract worker', 'Freelance', 'Researcher', 'Volunteer']}
+                website="powereng.com"
+              />
+            </li>
+            <li className="company-item">
+              <CompanyCard
+                description="bbb kauhrb kuhakuhb akuhbr ukbae kjhsdrg kujhbubk kushrbfg jkuhbar khubar kuhbsg khub"
+                // companyName='Texas Film Commission'
+                companyName='Texas Moving Picture Alliance (TXMPA)'
+                imageName='texas-film-commission'
+                focuses='Animation, Game Development'
+                positionTypes={['Intern']}
+                website="www.gov.texas.gov/film"
+              />
+            </li>
+            <li className="company-item">
+              <CompanyCard
+                description="bbb kauhrb kuhakuhb akuhbr ukbae kjhsdrg kujhbubk kushrbfg jkuhbar khubar kuhbsg khub"
+                // companyName='A Bunch of Short Guys'
+                companyName='Houston Methodist Institute for Technology, Innovation and Education'
+                imageName='a-bunch-of-short-guys'
+                focuses='Animation, Game Development, Graphic Design'
+                positionTypes={['Volunteer']}
+                website="https://www.abunchofshortguys.org/"
+              />
+            </li>
+            <li className="company-item">
+              <CompanyCard
+                description="bbb kauhrb kuhakuhb akuhbr ukbae kjhsdrg kujhbubk kushrbfg jkuhbar khubar kuhbsg khub"
+                companyName='Luna Creative'
+                imageName='luna-creative'
+                focuses='Graphic Design'
+                positionTypes={['Intern']}
+                website="www.luna-creative.com"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   );
 }

@@ -1,7 +1,7 @@
 .schedule-page {
   .section--timetable {
-    // @include full-bleed;
-    // @include section-color($color-violet-dark);
+    @include full-bleed;
+    @include section-color($color-violet-dark);
 
     .timetables {
       display: flex;
@@ -28,6 +28,35 @@
 
         &--in-person {
           --cell-fill-color: #{darken($color-brand-yellow, 10%)};
+        }
+      }
+    }
+  }
+
+  .section--companies {
+    // @include full-bleed;
+    // @include section-color($color-violet-darkest);
+
+    .companies-list {
+      list-style: none;
+  
+      display: grid;
+      // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      // justify-items: center;
+      // gap: 2rem;
+  
+      @include media-max(425px) {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .company-item {
+        height: 100%;
+
+        &:not(:first-child) {
+          .company-card {
+            border-top: none !important;
+          }
         }
       }
     }
