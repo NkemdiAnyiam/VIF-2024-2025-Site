@@ -3,8 +3,8 @@ import React from 'react';
 import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { Header } from '../../components/Header/Header';
-// import { Timetable } from '../../components/Timetable/Timetable';
-// import { CompanyCard } from './CompanyCard/CompanyCard';
+import { Timetable } from '../../components/Timetable/Timetable';
+import { CompanyCard } from './CompanyCard/CompanyCard';
 
 export function SchedulePage(): JSX.Element {
   return (
@@ -35,7 +35,7 @@ export function SchedulePage(): JSX.Element {
         </div>
       </section>
 
-      {/* <section className="section section--timetable" id="timetable">
+      <section className="section section--timetable" id="timetable">
         <div className="container">
           <h2 className="heading-secondary">Company Times (CST)</h2>
 
@@ -52,69 +52,92 @@ export function SchedulePage(): JSX.Element {
               <Timetable
                 heading="In-Person"
                 rowData={[
+                  ['POWER Engineers', ...'X'.repeat(12).split('')],
                   ['Framestore', ...'X'.repeat(12).split('')],
                   ['Luna Creative', ...'X'.repeat(12).split('')],
                   ['A Bunch of Short Guys', ...'X'.repeat(12).split('')],
                   ['Texas Film Commission', ...'X'.repeat(12).split('')],
                   ['Brazen Animation', ...'X'.repeat(4).split(''), ...'O'.repeat(12 - 4).split('')],
-                  ['POWER Engineers', ...'X'.repeat(12).split('')],
                 ]}
               />
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="section section--companies" id="companies">
+      <section className="section section--companies" id="companies">
         <div className="container">
           <h2 className="heading-secondary">Current Companies</h2>
 
           <ul className="companies-list">
             <li className="company-item">
               <CompanyCard
-                description="aaa ukhbsdf khbsadfg hadfgf hndfgk hubaddg ukhbadg uhobsbddg ukhnsdg ubnbnddrgr uhbsdfg uhbsdrgr uhbsdtgt byu"
-                companyName='Framestore'
-                imageName='framestore'
-                focuses='Visual Effects / Animation / Immersive'
-                positionTypes={['Full-time', 'Part-time', 'Intern', 'Contract worker', 'Freelance', 'Researcher', 'Volunteer']}
-                website="powereng.com"
+                companyName={`Power Engineers`}
+                focuses={`VR/AR Engineering visualization`}
+                website={`powereng.com`}
+                imageName={`power-engineers-min`}
+                positionTypes={['Intern', 'Full-time']}
+                interviews={`Yes`}
               />
             </li>
+
             <li className="company-item">
               <CompanyCard
-                description="bbb kauhrb kuhakuhb akuhbr ukbae kjhsdrg kujhbubk kushrbfg jkuhbar khubar kuhbsg khub"
-                // companyName='Texas Film Commission'
-                companyName='Texas Moving Picture Alliance (TXMPA)'
-                imageName='texas-film-commission'
-                focuses='Animation, Game Development'
+                companyName={`Framestore`}
+                focuses={`Visual Effects / Animation / Immersive`}
+                website={`https://www.framestore.com/about-us?language=en`}
+                imageName={`framestore-min`}
+                positionTypes={['Intern', 'Full-time', 'Part-time']}
+                interviews={`No`}
+              />
+            </li>
+
+            <li className="company-item">
+              <CompanyCard
+                companyName={`Luna Creative`}
+                focuses={`Graphic Design`}
+                website={`www.luna-creative.com`}
+                imageName={`luna-creative-min`}
                 positionTypes={['Intern']}
-                website="www.gov.texas.gov/film"
+                interviews={`No`}
               />
             </li>
+
             <li className="company-item">
               <CompanyCard
-                description="bbb kauhrb kuhakuhb akuhbr ukbae kjhsdrg kujhbubk kushrbfg jkuhbar khubar kuhbsg khub"
-                // companyName='A Bunch of Short Guys'
-                companyName='Houston Methodist Institute for Technology, Innovation and Education'
-                imageName='a-bunch-of-short-guys'
-                focuses='Animation, Game Development, Graphic Design'
+                companyName={`A Bunch of Short Guys`}
+                focuses={`Animation, Game Development, Graphic Design`}
+                website={`https://www.abunchofshortguys.org/`}
+                imageName={`a-bunch-of-short-guys-min`}
                 positionTypes={['Volunteer']}
-                website="https://www.abunchofshortguys.org/"
+                interviews={`No`}
               />
             </li>
+
             <li className="company-item">
               <CompanyCard
-                description="bbb kauhrb kuhakuhb akuhbr ukbae kjhsdrg kujhbubk kushrbfg jkuhbar khubar kuhbsg khub"
-                companyName='Luna Creative'
-                imageName='luna-creative'
-                focuses='Graphic Design'
+                companyName={`Texas Film Commission`}
+                focuses={`Animation, Game Development`}
+                website={`www.gov.texas.gov/film`}
+                imageName={`texas-film-commission-min`}
                 positionTypes={['Intern']}
-                website="www.luna-creative.com"
+                interviews={`No`}
+              />
+            </li>
+
+            <li className="company-item">
+              <CompanyCard
+                companyName={`Brazen Animation`}
+                focuses={`Animation, Graphic Design`}
+                website={`https://www.brazenanimation.com/`}
+                imageName={`brazen-animation-min`}
+                positionTypes={['Full-time', 'Freelance', 'Contract worker']}
+                interviews={`No`}
               />
             </li>
           </ul>
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }

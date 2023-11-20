@@ -5,10 +5,10 @@ type PositionType = 'Full-time' | 'Part-time' | 'Intern' | 'Contract worker' | '
 interface CompanyCardProps {
   companyName: string;
   imageName: string;
-  description: string;
   focuses: string;
   positionTypes: PositionType[];
   website: string;
+  interviews: string;
 }
 
 // for some reason, React assumes that any link without an http/https protocol is internal,
@@ -35,8 +35,7 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
       <div className="company-card__header" onClick={() => setExpanded(!expanded)}>
         <div className="company-card__photo-container">
           <picture className="company-card__picture">
-            {/* <source srcSet={require(`../../../images/companies/${props.imageName}.png`)} type="image/png" /> */}
-            {/* <source srcSet={require(`../../../images/companies/${props.imageName}.webp`)} type="image/webp" /> */}
+            <source srcSet={require(`../../../images/companies/${props.imageName}.webp`)} type="image/webp" />
             <source srcSet={require(`../../../images/companies/${props.imageName}.jpg`)} type="image/jpeg" />
             <img src={require(`../../../images/companies/${props.imageName}.jpg`)} alt={props.companyName} className="company-card__photo" />
           </picture>
@@ -74,7 +73,7 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
 
         <div className="company-card__description-section">
           <h4 className="heading-quaternary">Interviews:</h4>
-          <p>N/A</p>
+          <p>{props.interviews}</p>
         </div>
       </div>
     </div>
