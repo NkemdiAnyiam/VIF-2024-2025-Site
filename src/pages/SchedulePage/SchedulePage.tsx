@@ -113,9 +113,11 @@ export function SchedulePage(): JSX.Element {
 
           <div className="paragraphs">
             <p>
-              On this page, you will be able to see which companies are attending the fair, <span className="italicized">when</span> they will be attending,
-              and what kinds of students each company is looking to hire. Any company that registers for the
-              Virtual or In-Person Fair will show up here, so stay tuned.
+              On this page, you can find <a className="link" href="/schedule#companies">information about the companies attending the fairs</a> as
+              well as <a className="link" href="/schedule#timetable">when</a> they will be attending.
+              Any company that registers for the Virtual or In-Person Fair will show up here, so stay tuned.
+              The Virtual Fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm CST on Discord.
+              The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm CST in MSC 2406.
             </p>
           </div>
         </div>
