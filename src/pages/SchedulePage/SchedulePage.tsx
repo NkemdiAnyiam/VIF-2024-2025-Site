@@ -3,8 +3,8 @@ import React from 'react';
 import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOpt';
 
 import { Header } from '../../components/Header/Header';
-import { Timetable } from '../../components/Timetable/Timetable';
-import { CompanyCard } from './CompanyCard/CompanyCard';
+// import { Timetable } from '../../components/Timetable/Timetable';
+// import { CompanyCard } from './CompanyCard/CompanyCard';
 
 export function SchedulePage(): JSX.Element {
   return (
@@ -35,7 +35,7 @@ export function SchedulePage(): JSX.Element {
         </div>
       </section>
 
-      <section className="section section--timetable" id="timetable">
+      {/* <section className="section section--timetable" id="timetable">
         <div className="container">
           <h2 className="heading-secondary">Company Times (CST)</h2>
 
@@ -63,9 +63,9 @@ export function SchedulePage(): JSX.Element {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="section section--companies" id="companies">
+      {/* <section className="section section--companies" id="companies">
         <div className="container">
           <h2 className="heading-secondary">Current Companies</h2>
 
@@ -114,7 +114,7 @@ export function SchedulePage(): JSX.Element {
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
