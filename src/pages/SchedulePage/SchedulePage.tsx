@@ -75,7 +75,6 @@ export function SchedulePage(): JSX.Element {
                 companyName={`Power Engineers`}
                 focuses={`VR/AR Engineering visualization`}
                 website={`powereng.com`}
-                imageName={`power-engineers-min`}
                 positionTypes={['Intern', 'Full-time']}
                 interviews={`Yes`}
               />
@@ -86,7 +85,6 @@ export function SchedulePage(): JSX.Element {
                 companyName={`Framestore`}
                 focuses={`Visual Effects / Animation / Immersive`}
                 website={`https://www.framestore.com/about-us?language=en`}
-                imageName={`framestore-min`}
                 positionTypes={['Intern', 'Full-time', 'Part-time']}
                 interviews={`No`}
               />
@@ -97,7 +95,6 @@ export function SchedulePage(): JSX.Element {
                 companyName={`Luna Creative`}
                 focuses={`Graphic Design`}
                 website={`www.luna-creative.com`}
-                imageName={`luna-creative-min`}
                 positionTypes={['Intern']}
                 interviews={`No`}
               />
@@ -108,7 +105,6 @@ export function SchedulePage(): JSX.Element {
                 companyName={`A Bunch of Short Guys`}
                 focuses={`Animation, Game Development, Graphic Design`}
                 website={`https://www.abunchofshortguys.org/`}
-                imageName={`a-bunch-of-short-guys-min`}
                 positionTypes={['Volunteer']}
                 interviews={`No`}
               />
@@ -119,7 +115,6 @@ export function SchedulePage(): JSX.Element {
                 companyName={`Texas Film Commission`}
                 focuses={`Animation, Game Development`}
                 website={`www.gov.texas.gov/film`}
-                imageName={`texas-film-commission-min`}
                 positionTypes={['Intern']}
                 interviews={`No`}
               />
@@ -130,7 +125,6 @@ export function SchedulePage(): JSX.Element {
                 companyName={`Brazen Animation`}
                 focuses={`Animation, Graphic Design`}
                 website={`https://www.brazenanimation.com/`}
-                imageName={`brazen-animation-min`}
                 positionTypes={['Full-time', 'Freelance', 'Contract worker']}
                 interviews={`No`}
               />

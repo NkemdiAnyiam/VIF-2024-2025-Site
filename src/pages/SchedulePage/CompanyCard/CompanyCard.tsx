@@ -4,7 +4,6 @@ type PositionType = 'Full-time' | 'Part-time' | 'Intern' | 'Contract worker' | '
 
 interface CompanyCardProps {
   companyName: string;
-  imageName: string;
   focuses: string;
   positionTypes: PositionType[];
   website: string;
@@ -15,6 +14,10 @@ interface CompanyCardProps {
 // so we need to fix any submitted links that do not start with http or https
 const cleanUrl = (url: string): string => {
   return url.match(/(https|http):\/\//) ? url : `https://${url}`;
+};
+
+const nameToLogoName = (companyName: string): string => {
+  return companyName.trim().toLowerCase().replaceAll(/\s+/g, '-') + '-min';
 };
 
 const renderTags = (positionTypes: PositionType[]): JSX.Element[] => {
@@ -29,15 +32,16 @@ const renderTags = (positionTypes: PositionType[]): JSX.Element[] => {
 
 export function CompanyCard(props: CompanyCardProps): JSX.Element {
   const [expanded, setExpanded] = useState(false);
+  const logoName = nameToLogoName(props.companyName);
 
   return (
     <div className={`company-card company-card--white`}>
       <div className="company-card__header" onClick={() => setExpanded(!expanded)}>
         <div className="company-card__photo-container">
           <picture className="company-card__picture">
-            <source srcSet={require(`../../../images/companies/${props.imageName}.webp`)} type="image/webp" />
-            <source srcSet={require(`../../../images/companies/${props.imageName}.jpg`)} type="image/jpeg" />
-            <img src={require(`../../../images/companies/${props.imageName}.jpg`)} alt={props.companyName} className="company-card__photo" />
+            <source srcSet={require(`../../../images/companies/${logoName}.webp`)} type="image/webp" />
+            <source srcSet={require(`../../../images/companies/${logoName}.jpg`)} type="image/jpeg" />
+            <img src={require(`../../../images/companies/${logoName}.jpg`)} alt={props.companyName} className="company-card__photo" />
           </picture>
         </div>
 
