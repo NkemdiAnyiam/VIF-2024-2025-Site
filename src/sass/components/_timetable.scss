@@ -106,8 +106,16 @@
       }
     }
 
+    // change background color of empty cells when row is hovered to increased accessibility
+    &:not(:first-child):hover {
+      .cell:not(.cell--filled) {
+        background-color: lighten($color-violet-dark, 7%);
+      }
+    }
+
     .cell {
       background-color: $color-violet-dark;
+      transition: background-color 0.1s;
       width: 7rem;
       flex: 0 0 auto;
 
@@ -127,7 +135,6 @@
 
       &--filled {
         background-color: var(--cell-fill-color);
-        transition: background-color 0.1s;
 
         &.cell--group-hovered {
           background-color: color-mix(in srgb,var(--cell-fill-color),#fff 20%);
