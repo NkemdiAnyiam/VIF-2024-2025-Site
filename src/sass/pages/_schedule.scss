@@ -1,7 +1,7 @@
 .schedule-page {
   .section--timetable {
-    // @include full-bleed;
-    // @include section-color($color-violet-dark);
+    @include full-bleed;
+    @include section-color($color-violet-dark);
 
     .timetables {
       display: flex;
@@ -34,6 +34,9 @@
   }
 
   .section--companies {
+    // @include full-bleed;
+    // @include section-color($color-violet-darkest);
+
     .companies-list {
       list-style: none;
   
