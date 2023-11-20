@@ -5,6 +5,22 @@ interface TimetableRowProps {
   cellData: string[];
 }
 
+const times = [
+  '10:00',
+  '10:30',
+  '11:00',
+  '11:30',
+  '12:00',
+  '12:30',
+  '1:00',
+  '1:30',
+  '2:00',
+  '2:30',
+  '3:00',
+  '3:30',
+  '4:00',
+]
+
 const renderCells = (cellData: string[], isHeader?: boolean): JSX.Element[] => {
   let row: JSX.Element[];
 
@@ -19,10 +35,48 @@ const renderCells = (cellData: string[], isHeader?: boolean): JSX.Element[] => {
   }
   else {
     const [companyName, ...availabilities] = cellData;
+    let currentConsec = 0;
+    let chainStarted = true;
+    let chainStart = -1;
     row = [
       <div key={companyName} className={`cell`}><span>{companyName}</span></div>,
       ...availabilities.map((str, index) => {
-        return (<div key={`${companyName}-${index}`} className={`cell ${str === 'X' ? 'cell--filled' : 'cell--empty'}`}></div>);
+        if (str === 'X') {
+          if (chainStarted) {
+            chainStart = index;
+          }
+          chainStarted = false;
+          const startTime = times[chainStart];
+          const endTime = times[chainStart + availabilities.join('').slice(chainStart).match(/X*/)![0].length];
+          return (
+            <div
+              title={`${companyName}\n${startTime}-${endTime}`}
+              data-group={currentConsec}
+              data-start={times[index]}
+              data-end={times[index + 1]}
+              onMouseEnter={(e) => {
+                const parent = e.currentTarget.parentElement!;
+                const children = Array.from(parent.querySelectorAll(`[data-group="${e.currentTarget.dataset.group}"]`));
+                children.forEach((child) => child.classList.add(`cell--group-hovered`));
+              }}
+              onMouseLeave={(e) => {
+                const parent = e.currentTarget.parentElement!;
+                const children = Array.from(parent.querySelectorAll(`[data-group="${e.currentTarget.dataset.group}"]`));
+                children.forEach((child) => child.classList.remove(`cell--group-hovered`));
+              }}
+              key={`${companyName}-${index}`}
+              className={`cell cell--filled`}
+            >
+            </div>
+          );
+        }
+        else {
+          ++currentConsec;
+          chainStarted = true;
+          return (
+            <div key={`${companyName}-${index}`} className={`cell cell--empty`}></div>
+          )
+        }
       })
     ];
   }

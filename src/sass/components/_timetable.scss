@@ -127,6 +127,11 @@
 
       &--filled {
         background-color: var(--cell-fill-color);
+        transition: background-color 0.1s;
+
+        &.cell--group-hovered {
+          background-color: color-mix(in srgb,var(--cell-fill-color),#fff 20%);
+        }
 
         @supports selector(:has(*)) {
           &:has(+ .cell--filled) {
