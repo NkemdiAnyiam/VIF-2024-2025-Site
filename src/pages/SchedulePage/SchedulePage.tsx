@@ -76,7 +76,8 @@ export function SchedulePage(): JSX.Element {
                 companyName='Framestore'
                 imageName='framestore'
                 focuses='Visual Effects / Animation / Immersive'
-                positionTypes={['Full-time', 'Part-time', 'Intern']}
+                positionTypes={['Full-time', 'Part-time', 'Intern', 'Contract worker', 'Freelance', 'Researcher', 'Volunteer']}
+                website="powereng.com"
               />
             </li>
             <li className="company-item">
@@ -87,6 +88,7 @@ export function SchedulePage(): JSX.Element {
                 imageName='texas-film-commission'
                 focuses='Animation, Game Development'
                 positionTypes={['Intern']}
+                website="www.gov.texas.gov/film"
               />
             </li>
             <li className="company-item">
@@ -97,6 +99,7 @@ export function SchedulePage(): JSX.Element {
                 imageName='a-bunch-of-short-guys'
                 focuses='Animation, Game Development, Graphic Design'
                 positionTypes={['Volunteer']}
+                website="https://www.abunchofshortguys.org/"
               />
             </li>
             <li className="company-item">
@@ -106,6 +109,7 @@ export function SchedulePage(): JSX.Element {
                 imageName='luna-creative'
                 focuses='Graphic Design'
                 positionTypes={['Intern']}
+                website="www.luna-creative.com"
               />
             </li>
           </ul>
