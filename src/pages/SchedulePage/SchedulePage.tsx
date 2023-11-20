@@ -4,7 +4,93 @@ import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOp
 
 import { Header } from '../../components/Header/Header';
 import { Timetable } from '../../components/Timetable/Timetable';
-import { CompanyCard } from './CompanyCard/CompanyCard';
+import { CompanyCard, CompanyCardProps } from './CompanyCard/CompanyCard';
+
+type Company = CompanyCardProps & {virtualTimes: any, inPersonTimes: string[]};
+
+const companyComparator = (companyA: Company, companyB: Company) => companyA.companyName.toLowerCase().localeCompare(companyB.companyName.toLowerCase());
+
+const companyCardData: Company[] = [
+  {
+    companyName: `Power Engineers`,
+    focuses: `VR/AR Engineering visualization`,
+    website: `powereng.com`,
+    positionTypes: ['Intern', 'Full-time'],
+    interviews: `Yes`,
+    virtualTimes: 'O'.repeat(12).split(''),
+    inPersonTimes: 'X'.repeat(12).split(''),
+  },
+
+  {
+    companyName: `Framestore`,
+    focuses: `Visual Effects / Animation / Immersive`,
+    website: `https://www.framestore.com/about-us?language=en`,
+    positionTypes: ['Intern', 'Full-time', 'Part-time'],
+    interviews: `No`,
+    virtualTimes: 'O'.repeat(12).split(''),
+    inPersonTimes: 'X'.repeat(12).split(''),
+  },
+
+  {
+    companyName: `Luna Creative`,
+    focuses: `Graphic Design`,
+    website: `www.luna-creative.com`,
+    positionTypes: ['Intern'],
+    interviews: `No`,
+    virtualTimes: 'O'.repeat(12).split(''),
+    inPersonTimes: 'X'.repeat(12).split(''),
+  },
+
+  {
+    companyName: `A Bunch of Short Guys`,
+    focuses: `Animation, Game Development, Graphic Design`,
+    website: `https://www.abunchofshortguys.org/`,
+    positionTypes: ['Volunteer'],
+    interviews: `No`,
+    virtualTimes: 'O'.repeat(12).split(''),
+    inPersonTimes: 'X'.repeat(12).split(''),
+  },
+
+  {
+    companyName: `Texas Film Commission`,
+    focuses: `Animation, Game Development`,
+    website: `www.gov.texas.gov/film`,
+    positionTypes: ['Intern'],
+    interviews: `No`,
+    virtualTimes: 'O'.repeat(12).split(''),
+    inPersonTimes: 'X'.repeat(12).split(''),
+  },
+
+  {
+    companyName: `Brazen Animation`,
+    focuses: `Animation, Graphic Design`,
+    website: `https://www.brazenanimation.com/`,
+    positionTypes: ['Full-time', 'Freelance', 'Contract worker'],
+    interviews: `No`,
+    virtualTimes: 'O'.repeat(12).split(''),
+    inPersonTimes: [...'X'.repeat(4).split(''), ...'O'.repeat(8).split('')],
+  }
+];
+companyCardData.sort(companyComparator);
+
+const renderCards = (companies: Company[]): JSX.Element[] => {
+  return companies
+    .map((company) => {
+      return (
+        <li key={company.companyName} className="company-item">
+          <CompanyCard {...company} />
+        </li>
+      );
+    });
+};
+
+const generateRowData = (companies: Company[], timeType: keyof Pick<Company, 'virtualTimes' | 'inPersonTimes'>) => {
+  return companies
+    .filter(company => company[timeType].includes('X'))
+    .map((company) => {
+      return [company.companyName, ...company[timeType]];
+    });
+};
 
 export function SchedulePage(): JSX.Element {
   return (
@@ -43,22 +129,14 @@ export function SchedulePage(): JSX.Element {
             <div className="timetable-container timetable-container--virtual">
               <Timetable
                 heading="Virtual"
-                rowData={[
-                ]}
+                rowData={generateRowData(companyCardData, 'virtualTimes')}
               />
             </div>
 
             <div className="timetable-container timetable-container--in-person">
               <Timetable
                 heading="In-Person"
-                rowData={[
-                  ['POWER Engineers', ...'X'.repeat(12).split('')],
-                  ['Framestore', ...'X'.repeat(12).split('')],
-                  ['Luna Creative', ...'X'.repeat(12).split('')],
-                  ['A Bunch of Short Guys', ...'X'.repeat(12).split('')],
-                  ['Texas Film Commission', ...'X'.repeat(12).split('')],
-                  ['Brazen Animation', ...'X'.repeat(4).split(''), ...'O'.repeat(12 - 4).split('')],
-                ]}
+                rowData={generateRowData(companyCardData, 'inPersonTimes')}
               />
             </div>
           </div>
@@ -70,65 +148,7 @@ export function SchedulePage(): JSX.Element {
           <h2 className="heading-secondary">Current Companies</h2>
 
           <ul className="companies-list">
-            <li className="company-item">
-              <CompanyCard
-                companyName={`Power Engineers`}
-                focuses={`VR/AR Engineering visualization`}
-                website={`powereng.com`}
-                positionTypes={['Intern', 'Full-time']}
-                interviews={`Yes`}
-              />
-            </li>
-
-            <li className="company-item">
-              <CompanyCard
-                companyName={`Framestore`}
-                focuses={`Visual Effects / Animation / Immersive`}
-                website={`https://www.framestore.com/about-us?language=en`}
-                positionTypes={['Intern', 'Full-time', 'Part-time']}
-                interviews={`No`}
-              />
-            </li>
-
-            <li className="company-item">
-              <CompanyCard
-                companyName={`Luna Creative`}
-                focuses={`Graphic Design`}
-                website={`www.luna-creative.com`}
-                positionTypes={['Intern']}
-                interviews={`No`}
-              />
-            </li>
-
-            <li className="company-item">
-              <CompanyCard
-                companyName={`A Bunch of Short Guys`}
-                focuses={`Animation, Game Development, Graphic Design`}
-                website={`https://www.abunchofshortguys.org/`}
-                positionTypes={['Volunteer']}
-                interviews={`No`}
-              />
-            </li>
-
-            <li className="company-item">
-              <CompanyCard
-                companyName={`Texas Film Commission`}
-                focuses={`Animation, Game Development`}
-                website={`www.gov.texas.gov/film`}
-                positionTypes={['Intern']}
-                interviews={`No`}
-              />
-            </li>
-
-            <li className="company-item">
-              <CompanyCard
-                companyName={`Brazen Animation`}
-                focuses={`Animation, Graphic Design`}
-                website={`https://www.brazenanimation.com/`}
-                positionTypes={['Full-time', 'Freelance', 'Contract worker']}
-                interviews={`No`}
-              />
-            </li>
+            {renderCards(companyCardData)}
           </ul>
         </div>
       </section>

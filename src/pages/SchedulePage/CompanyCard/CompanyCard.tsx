@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 type PositionType = 'Full-time' | 'Part-time' | 'Intern' | 'Contract worker' | 'Volunteer' | 'Freelance' | 'Researcher';
 
-interface CompanyCardProps {
+export interface CompanyCardProps {
   companyName: string;
   focuses: string;
   positionTypes: PositionType[];
