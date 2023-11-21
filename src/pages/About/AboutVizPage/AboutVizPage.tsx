@@ -33,7 +33,7 @@ export function AboutVizPage(): JSX.Element {
             <p>
               Our program has helped develop artists who have gone into fields such as Game Art, Game Design, Technical Art, Animation,
               Surfacing, Production, Tool Development, Rigging, UI/UX, Interactive Design, Graphic Design, AR and VR, Visual Computing, and more.
-              Our program also sponsors the <a href="http://chillennium.com/" className="link" target="_blank" rel="noreferrer" aria-label="Visit Chillennium website">international game jam Chillennium</a> at
+              Our program also sponsors the <a href="http://chillennium.com/" className="link" target="_blank" rel="noreferrer">international game jam Chillennium</a> at
               Texas A&M University, which is the largest student run game jam in the world.
             </p>
             <p>
@@ -56,7 +56,6 @@ export function AboutVizPage(): JSX.Element {
               <PictureSquare
                 text="Minor in Game Design and Development"
                 imageName={'game-design-and-development-min'}
-                altText="minor in game design and development"
                 color='purple'
               />
             </li>
@@ -65,7 +64,6 @@ export function AboutVizPage(): JSX.Element {
               <PictureSquare
                 text="Bachelor of Science in Visualization"
                 imageName={'bachelor-of-science-visualization-min'}
-                altText="bachelor of science in visualization"
                 color='green'
               />
             </li>
@@ -74,7 +72,6 @@ export function AboutVizPage(): JSX.Element {
               <PictureSquare
                 text="Master of Science in Visualization"
                 imageName={'master-of-science-visualization-min'}
-                altText="master of science in visualization"
                 color='yellow'
               />
             </li>
@@ -83,7 +80,6 @@ export function AboutVizPage(): JSX.Element {
               <PictureSquare
                 text="Master of Fine Arts in Visualization"
                 imageName={'master-of-fine-arts-visualization-min'}
-                altText="master of fine arts in visualization"
                 color='yellow'
               />
             </li>
@@ -92,7 +88,6 @@ export function AboutVizPage(): JSX.Element {
               <PictureSquare
                 text="Ph.D. in Architecture"
                 imageName={'phd-architecture-min'}
-                altText="Ph.D. in architecture"
                 color='red'
               />
             </li>
