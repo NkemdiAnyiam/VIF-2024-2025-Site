@@ -24,7 +24,7 @@ const renderTags = (positionTypes: PositionType[]): JSX.Element[] => {
   return positionTypes.map((positionType) => {
     return (
       <li key={positionType} className="company-card__position-item">
-        <div className="company-card__position-tag">{positionType}</div>
+        <div className="company-card__tag">{positionType}</div>
       </li>
     );
   });
@@ -77,7 +77,7 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
 
         <div className="company-card__description-section">
           <h4 className="heading-quaternary">Interviews:</h4>
-          <p>{props.interviews}</p>
+          <div className={`company-card__tag company-card__tag--${props.interviews === 'Yes' ? 'green' : 'red'}`}>{props.interviews}</div>
         </div>
       </div>
     </div>

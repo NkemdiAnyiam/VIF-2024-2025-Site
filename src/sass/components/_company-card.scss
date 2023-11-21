@@ -173,13 +173,20 @@
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+  }
     
-    .company-card__position-tag {
-      background-color: $color-violet;
-      color: $color-white; // TODO: Remember to remove this if we change background
-      // border-radius: 20px;
-      padding: 0.6rem 0.8rem;
-      width: max-content;
+  &__tag {
+    background-color: $color-violet;
+    color: $color-white; // TODO: Remember to remove this if we change background
+    padding: 0.6rem 0.8rem;
+    width: max-content;
+
+    &--green {
+      background-color: darken($color-brand-green-darker, 2%);
+    }
+
+    &--red {
+      background-color: $color-brand-red-dark;
     }
   }
 }
