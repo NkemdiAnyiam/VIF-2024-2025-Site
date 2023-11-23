@@ -6,89 +6,51 @@ import { Header } from '../../components/Header/Header';
 import { Timetable } from '../../components/Timetable/Timetable';
 import { CompanyCard, CompanyCardProps } from './CompanyCard/CompanyCard';
 
-type Company = CompanyCardProps & {virtualTimes: any, inPersonTimes: string[]};
+import { data } from '../../data/companies';
+
+const timeRanges = [
+  '10:00',
+  '10:30',
+  '11:00',
+  '11:30',
+  '12:00',
+  '12:30',
+  '1:00',
+  '1:30',
+  '2:00',
+  '2:30',
+  '3:00',
+  '3:30',
+  '4:00',
+].map((_, index, array) => `${array[index]}-${array[index+1]}`).slice(0, -1);
+
+type Company = CompanyCardProps & {virtualTimes: string, inPersonTimes: string};
 
 const companyComparator = (companyA: Company, companyB: Company) => companyA.companyName.toLowerCase().localeCompare(companyB.companyName.toLowerCase());
-
-const companyCardData: Company[] = [
-  {
-    companyName: `Power Engineers`,
-    focuses: `VR/AR Engineering visualization`,
-    website: `powereng.com`,
-    positionTypes: ['Intern', 'Full-time'],
-    interviews: `Yes`,
-    virtualTimes: 'O'.repeat(12).split(''),
-    inPersonTimes: 'X'.repeat(12).split(''),
-  },
-
-  {
-    companyName: `Framestore`,
-    focuses: `Visual Effects / Animation / Immersive`,
-    website: `https://www.framestore.com/about-us?language=en`,
-    positionTypes: ['Intern', 'Full-time', 'Part-time'],
-    interviews: `No`,
-    virtualTimes: 'O'.repeat(12).split(''),
-    inPersonTimes: 'X'.repeat(12).split(''),
-  },
-
-  {
-    companyName: `Luna Creative`,
-    focuses: `Graphic Design`,
-    website: `www.luna-creative.com`,
-    positionTypes: ['Intern'],
-    interviews: `No`,
-    virtualTimes: 'O'.repeat(12).split(''),
-    inPersonTimes: 'X'.repeat(12).split(''),
-  },
-
-  {
-    companyName: `A Bunch of Short Guys`,
-    focuses: `Animation, Game Development, Graphic Design`,
-    website: `https://www.abunchofshortguys.org/`,
-    positionTypes: ['Volunteer'],
-    interviews: `No`,
-    virtualTimes: 'O'.repeat(12).split(''),
-    inPersonTimes: 'X'.repeat(12).split(''),
-  },
-
-  {
-    companyName: `Texas Film Commission`,
-    focuses: `Animation, Game Development`,
-    website: `www.gov.texas.gov/film`,
-    positionTypes: ['Intern'],
-    interviews: `No`,
-    virtualTimes: 'O'.repeat(12).split(''),
-    inPersonTimes: 'X'.repeat(12).split(''),
-  },
-
-  {
-    companyName: `Brazen Animation`,
-    focuses: `Animation, Graphic Design`,
-    website: `https://www.brazenanimation.com/`,
-    positionTypes: ['Full-time', 'Freelance', 'Contract worker'],
-    interviews: `No`,
-    virtualTimes: 'O'.repeat(12).split(''),
-    inPersonTimes: [...'X'.repeat(4).split(''), ...'O'.repeat(8).split('')],
-  }
-];
-companyCardData.sort(companyComparator);
+const companyCardData: Company[] = ([...data] as Company[]).sort(companyComparator);
 
 const renderCards = (companies: Company[]): JSX.Element[] => {
-  return companies
-    .map((company) => {
-      return (
-        <li key={company.companyName} className="company-item">
-          <CompanyCard {...company} />
-        </li>
-      );
-    });
+  return companies.map((company) => {
+    return (
+      <li key={company.companyName} className="company-item">
+        <CompanyCard {...company} />
+      </li>
+    );
+  });
 };
 
 const generateRowData = (companies: Company[], timeType: keyof Pick<Company, 'virtualTimes' | 'inPersonTimes'>) => {
   return companies
-    .filter(company => company[timeType].includes('X'))
+    .filter(company => company[timeType] !== '')
     .map((company) => {
-      return [company.companyName, ...company[timeType]];
+      const companyTimesStr: string = company[timeType];
+      return [
+        company.companyName,
+        ...(companyTimesStr === 'All Day'
+          ? 'X'.repeat(timeRanges.length).split('')
+          : timeRanges.map(timeRange => companyTimesStr.includes(timeRange) ? 'X' : 'O')
+        )
+      ];
     });
 };
 
