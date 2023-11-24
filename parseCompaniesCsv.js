@@ -28,6 +28,8 @@ const parse = csvParse.parse;
       // get rid of 'Other' option from focuses
       const [focuses1, focuses2] = [companyFocuses.split(/\s*,\s*/).filter(str => str.toLowerCase() !== 'other').join(', '), otherFocuses];
 
+      if (companiesMap.has(companyName.trim().toLowerCase())) { throw new Error(`ERROR: Duplicate company found`); }
+
       const companyObj = {
         companyName,
         // join focuses into string separated by commas
@@ -40,7 +42,7 @@ const parse = csvParse.parse;
         inPersonTimes,
         logoUrlCheckString
       }
-      companiesMap.set(companyName, companyObj);
+      companiesMap.set(companyName.trim().toLowerCase(), companyObj);
     }
 
     // write data to .ts file
