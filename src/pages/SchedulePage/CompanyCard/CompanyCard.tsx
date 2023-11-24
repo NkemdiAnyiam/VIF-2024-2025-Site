@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 
-type PositionType = 'Full-time' | 'Part-time' | 'Intern' | 'Contract worker' | 'Volunteer' | 'Freelance' | 'Researcher';
-
 export interface CompanyCardProps {
   companyName: string;
   focuses: string;
-  positionTypes: PositionType[];
+  positionTypes: string[];
   website: string;
   interviews: string;
 }
@@ -20,7 +18,7 @@ const nameToLogoName = (companyName: string): string => {
   return companyName.trim().toLowerCase().replaceAll(/\s+/g, '-') + '-min';
 };
 
-const renderTags = (positionTypes: PositionType[]): JSX.Element[] => {
+const renderTags = (positionTypes: string[]): JSX.Element[] => {
   return positionTypes.map((positionType) => {
     return (
       <li key={positionType} className="company-card__position-item">
