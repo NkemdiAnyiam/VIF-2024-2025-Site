@@ -35,9 +35,17 @@ export function ForIndustryPage(): JSX.Element {
 
             <p>
               If you are a new company/organization and are interested in attending this fair, welcome!
-              You can find the <a href="https://tally.so/r/mJpWyd" className="link" target="_blank" rel="noreferrer">Industry Registration form here</a>.
               Please make sure to fill out our form—this will ensure you a "table" at the fair and help us with planning the event.
-              Our Visualization Industry Fair is held both virtually and in-person, and in the form you have the option to attend either one or both.
+              Our Visualization Industry Fair is held both virtually and in-person—in the form you, have the option to attend either one or both.
+              <br />
+              <strong> The Virtual Fair will be held Thursday, February 22<sup>nd</sup>, 2024, from 10am–4pm CST via Discord.</strong>
+              <br />
+              <strong> The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm CST in MSC 2406.</strong>
+            </p>
+
+            <a href="https://tally.so/r/mJpWyd" className="registration-button registration-button--red" target="_blank" rel="noreferrer">Register Here</a>
+
+            <p>
               Additionally, VIF has access to presentation and interview rooms during the fair.
               If your company/organization would like to hold a presentation on a specific topic or interview students,
               please fill out the specified area in the registration form.

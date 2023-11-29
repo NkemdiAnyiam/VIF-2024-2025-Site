@@ -1,4 +1,13 @@
 .for-industry-page {
+  .section--welcome-industry {
+    .registration-button {
+      @include button-neon;
+      // width: fit-content;
+      text-align: center;
+      margin: -1.6rem 0;
+    }
+  }
+
   .section--volunteer-events {
     @include section-color($color-violet-dark);
     @include full-bleed;
