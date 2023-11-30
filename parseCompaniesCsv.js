@@ -8,7 +8,7 @@ const parse = csvParse.parse;
   const csvFilePath = path.resolve(__dirname, 'companyFairSubmissions.csv');
   
   // relevant column headers
-  const headers = ['Company Name', 'Company Focus', 'Other Focuses', 'Position types', 'Interviews', 'Company Website', 'Virtual Fair Times', 'In-Person Fair Times', 'Company Logo'];
+  const headers = ['Company Name', 'Company Focus', 'Other Focuses', 'Position Types', 'Interviews', 'Company Website', 'Virtual Fair Times', 'In-Person Fair Times', 'Company Logo'];
   
   const fileContent = fs.readFileSync(csvFilePath, { encoding: 'utf-8' });
   
