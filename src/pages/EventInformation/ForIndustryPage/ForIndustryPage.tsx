@@ -63,9 +63,8 @@ export function ForIndustryPage(): JSX.Element {
               For additional information about the Visualization Department at Texas A&M University,
               visit the <Link to="/about/about-viz" className="link">About Viz page</Link>.
               If you have any questions, concerns, or specific needs, please contact our committee members
-              at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> and/or
-              Glen Vigus at <a href="mailto:gvigus@arch.tamu.edu" className="link">gvigus@arch.tamu.edu</a> as soon as possible so we can address them
-              prior to the fair.
+              at <a href="mailto:pvfavizindustryfair@tamu.edu" className="link">pvfavizindustryfair@tamu.edu</a> as soon as possible
+              so we can address them prior to the fair.
             </p>
           </div>
         </div>
