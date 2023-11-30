@@ -90,5 +90,19 @@ export const data = JSON.parse(`[
     "virtualTimes": "",
     "inPersonTimes": "",
     "logoUrlCheckString": "https://storage.tally.so/private/final_logo_grey.png?id=gb2WdJ&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdiMldkSiIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwMTM3NzcwNH0.oLA1m-K7mfq14d2ntMZffdYCYYiC-O24A_fWj3Gradk&signature=3dc5935e8df1124528a8195645ac96789f9aec6ca2f98b323505aa1549664e1d"
+  },
+  {
+    "companyName": "AEM Creations",
+    "focuses": "Animation, Web Development, 3D Game Support",
+    "positionTypes": [
+      "Interns",
+      "Contract Workers",
+      "Freelancers"
+    ],
+    "website": "https://www.aem2create.com/",
+    "interviews": "No",
+    "virtualTimes": "All Day",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://storage.tally.so/private/Logo_Full_Black.png?id=NqkMPQ&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik5xa01QUSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwMTM4MjE3NH0.19Yh8uOKO6_EFb60PGCGcro4Pyjx0CY3rDcG24tM-5Q&signature=b469c4b44ac3302f89440c866cccf8478461ea080f9e00641f72d1629eafd699"
   }
 ]`);
