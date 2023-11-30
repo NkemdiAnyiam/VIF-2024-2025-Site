@@ -77,5 +77,18 @@ export const data = JSON.parse(`[
     "virtualTimes": "",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://storage.tally.so/private/Logo.png?id=PRN5dd&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlBSTjVkZCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwMDU4ODY1Nn0.xGUGbPDmNDptW4u3U6_HctLAhn-4dBM1zBgTjuMsDv4&signature=e95615acbc0079136266ec55a7343aec40d769829bef0b3909d5ee7adf89c57d"
+  },
+  {
+    "companyName": "Overland Partners",
+    "focuses": "architectural viz",
+    "positionTypes": [
+      "Full-time Employees",
+      "Freelancers"
+    ],
+    "website": "overlandpartners.com",
+    "interviews": "No",
+    "virtualTimes": "",
+    "inPersonTimes": "",
+    "logoUrlCheckString": "https://storage.tally.so/private/final_logo_grey.png?id=gb2WdJ&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdiMldkSiIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwMTM3NzcwNH0.oLA1m-K7mfq14d2ntMZffdYCYYiC-O24A_fWj3Gradk&signature=3dc5935e8df1124528a8195645ac96789f9aec6ca2f98b323505aa1549664e1d"
   }
 ]`);
