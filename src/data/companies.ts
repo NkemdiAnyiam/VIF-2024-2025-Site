@@ -85,7 +85,7 @@ export const data = JSON.parse(`[
       "Full-time Employees",
       "Freelancers"
     ],
-    "website": "overlandpartners.com",
+    "website": "www.overlandpartners.com",
     "interviews": "No",
     "virtualTimes": "",
     "inPersonTimes": "",
