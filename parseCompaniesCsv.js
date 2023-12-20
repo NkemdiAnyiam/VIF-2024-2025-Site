@@ -25,6 +25,9 @@ const parse = csvParse.parse;
     for (const row of result.slice(1)) {
       const tupleRecord = columnIndices.map(index => row[index]);
       const [companyName, companyFocuses, otherFocuses, positionTypes, interviews, website, virtualTimes, inPersonTimes, logoUrlCheckString] = tupleRecord;
+      // if row empty, don't add to map
+      if (!companyName) { continue; }
+      
       // get rid of 'Other' option from focuses
       const [focuses1, focuses2] = [companyFocuses.split(/\s*,\s*/).filter(str => str.toLowerCase() !== 'other').join(', '), otherFocuses];
 
