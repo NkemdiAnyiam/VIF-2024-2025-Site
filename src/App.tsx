@@ -14,13 +14,16 @@ import { CommonQuestionsPage } from './pages/EventInformation/CommonQuestionsPag
 import { SchedulePage } from './pages/SchedulePage/SchedulePage';
 import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 
-console.log(`██╗   ██╗██╗███████╗
-██║   ██║██║██╔════╝
-██║   ██║██║█████╗  
-╚██╗ ██╔╝██║██╔══╝  
- ╚████╔╝ ██║██║     
-  ╚═══╝  ╚═╝╚═╝     
-                    `);
+console.log(`\
+******        ***** ***********
+ ******     *  *** ***********
+  ******  ****  * ***********
+   ************   *****
+     ********* ** *********
+      ******  *** ********
+       ****  **** *****
+        **  ***** *****\
+`);
 
 export function App(): JSX.Element {
   const { pathname } = useLocation<History>();
