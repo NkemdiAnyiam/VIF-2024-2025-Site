@@ -118,5 +118,17 @@ export const data = JSON.parse(`[
     "virtualTimes": "",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://storage.tally.so/private/Overland-logo.jpg?id=Q17r0l&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlExN3IwbCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwMjk5OTYzMn0.O0hj0hNUFEEcDLLf0cTkcKgfORdddvuCKh7VIESP0GE&signature=0fb5c93bfb9ad868a9931e567b86e75b45d835b9beab0f665a8d938647abdb2e"
+  },
+  {
+    "companyName": "Bluepoint Games",
+    "focuses": "Game Development",
+    "positionTypes": [
+      "Interns"
+    ],
+    "website": "https://www.bluepointgames.com/",
+    "interviews": "Yes",
+    "virtualTimes": "All Day",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://storage.tally.so/private/Bluepoint_Games_logo.png?id=Rx2KO4&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlJ4MktPNCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNTk1MDA4Nn0.FKgR_fnld3gnNrsBk1_gLngvXUUmZZENJEhm3OVFa_c&signature=79d2a8417bb64d9ea5083ce8cf4bd388d5fdde266c4be31871692e2719a5e839"
   }
 ]`);
