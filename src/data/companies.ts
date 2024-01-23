@@ -130,5 +130,21 @@ export const data = JSON.parse(`[
     "virtualTimes": "All Day",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://storage.tally.so/private/Bluepoint_Games_logo.png?id=Rx2KO4&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlJ4MktPNCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNTk1MDA4Nn0.FKgR_fnld3gnNrsBk1_gLngvXUUmZZENJEhm3OVFa_c&signature=79d2a8417bb64d9ea5083ce8cf4bd388d5fdde266c4be31871692e2719a5e839"
+  },
+  {
+    "companyName": "TRG",
+    "focuses": "Graphic Design, Advertising",
+    "positionTypes": [
+      "Part-Time Employees",
+      "Full-time Employees",
+      "Interns",
+      "Contract Workers",
+      "Freelancers"
+    ],
+    "website": "https://trg.agency/",
+    "interviews": "No",
+    "virtualTimes": "10:00-10:30, 10:30-11:00, 11:00-11:30, 11:30-12:00, 1:30-2:00, 2:00-2:30",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://storage.tally.so/private/TRG-Logo.jpeg?id=Aza5ve&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkF6YTV2ZSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjA0MDQ0N30.MJTUUCswzTtshBb0ogs34kp8i8eXO1txeQz08TIVPnM&signature=5ab175b4c4006b0296e4aeb48ada81c001864b03d7834a4577ef3d5977b5455d"
   }
 ]`);
