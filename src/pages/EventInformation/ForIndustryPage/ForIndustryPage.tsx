@@ -119,7 +119,7 @@ export function ForIndustryPage(): JSX.Element {
                   heading="Spring"
                   headingLink={`https://tally.so/r/w8aROx`}
                   events={[
-                    ["Friday", "February", 2, ['10am', '4pm']],
+                    ["Friday", "February", 3, ['10am', '4pm']],
                   ]}
                 />
               ]}
