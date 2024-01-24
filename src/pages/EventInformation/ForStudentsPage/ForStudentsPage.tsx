@@ -180,7 +180,7 @@ export function ForStudentsPage(): JSX.Element {
                   heading="Spring"
                   headingLink="https://tally.so/r/w2a7yg"
                   events={[
-                    ['Friday', 'February', 3, ['10am', '4pm']],
+                    ['Saturday', 'February', 3, ['10am', '4pm']],
                   ]}
                 />
               ]}
