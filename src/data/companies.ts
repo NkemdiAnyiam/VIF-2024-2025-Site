@@ -146,5 +146,17 @@ export const data = JSON.parse(`[
     "virtualTimes": "10:00-10:30, 10:30-11:00, 11:00-11:30, 11:30-12:00, 1:30-2:00, 2:00-2:30",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://storage.tally.so/private/TRG-Logo.jpeg?id=Aza5ve&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkF6YTV2ZSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjA0MDQ0N30.MJTUUCswzTtshBb0ogs34kp8i8eXO1txeQz08TIVPnM&signature=5ab175b4c4006b0296e4aeb48ada81c001864b03d7834a4577ef3d5977b5455d"
+  },
+  {
+    "companyName": "Populous",
+    "focuses": "Graphic Design",
+    "positionTypes": [
+      "Full-time Employees"
+    ],
+    "website": "https://populous.com",
+    "interviews": "Yes",
+    "virtualTimes": "",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://storage.tally.so/private/Populous.jfif?id=qLpje2&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InFMcGplMiIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjEzNjc3Nn0.N0OyPyQXYLkf5eyWsrrCepgl-pW33BA4WOKR_riUQgQ&signature=cc0ceb0aaf3e7312c950991fdb511f04a53d2bfa04b0ede55369bb572554d198"
   }
 ]`);
