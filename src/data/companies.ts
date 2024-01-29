@@ -158,5 +158,18 @@ export const data = JSON.parse(`[
     "virtualTimes": "",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://storage.tally.so/private/Populous.jfif?id=qLpje2&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InFMcGplMiIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjEzNjc3Nn0.N0OyPyQXYLkf5eyWsrrCepgl-pW33BA4WOKR_riUQgQ&signature=cc0ceb0aaf3e7312c950991fdb511f04a53d2bfa04b0ede55369bb572554d198"
+  },
+  {
+    "companyName": "Electronic Arts",
+    "focuses": "Game Development",
+    "positionTypes": [
+      "Interns",
+      "Full-time Employees"
+    ],
+    "website": "www.ea.com",
+    "interviews": "No",
+    "virtualTimes": "All Day",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://storage.tally.so/private/Electronic_Arts_wordmark_RGB_whitebackground.png?id=VGBYba&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlZHQlliYSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjU2NzM0NH0.oXFMQilSUXYstlK6aF93SKp_ffekcask_0zlt_Fe7GA&signature=2d3ec9509df655d1b5cf47e87960eb5d79dbf2a5041cb9a8aa38619cfa961d0f, https://storage.tally.so/private/Electronic_Arts_wordmark_RGB.png?id=Nr9YbG&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik5yOVliRyIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjU2NzM0NH0.S7QzTXAs7XRcsuW-KUcL9wPH8MUh8gmBTjEfCFibJYU&signature=eb113e85e18786e2673e264a209e7d72b58fa2127ce5c15cd70678b7d5d747c1"
   }
 ]`);
