@@ -171,5 +171,17 @@ export const data = JSON.parse(`[
     "virtualTimes": "All Day",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://storage.tally.so/private/Electronic_Arts_wordmark_RGB_whitebackground.png?id=VGBYba&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlZHQlliYSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjU2NzM0NH0.oXFMQilSUXYstlK6aF93SKp_ffekcask_0zlt_Fe7GA&signature=2d3ec9509df655d1b5cf47e87960eb5d79dbf2a5041cb9a8aa38619cfa961d0f, https://storage.tally.so/private/Electronic_Arts_wordmark_RGB.png?id=Nr9YbG&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik5yOVliRyIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjU2NzM0NH0.S7QzTXAs7XRcsuW-KUcL9wPH8MUh8gmBTjEfCFibJYU&signature=eb113e85e18786e2673e264a209e7d72b58fa2127ce5c15cd70678b7d5d747c1"
+  },
+  {
+    "companyName": "Deloitte",
+    "focuses": "Graphic Design, UX/UI",
+    "positionTypes": [
+      "Full-time Employees"
+    ],
+    "website": "https://www.deloitte.com/global/en.html",
+    "interviews": "No",
+    "virtualTimes": "1:00-1:30, 11:00-11:30, 11:30-12:00, 12:30-1:00, 1:30-2:00",
+    "inPersonTimes": "",
+    "logoUrlCheckString": "https://storage.tally.so/private/Deloitte_Logo.png?id=7qg8NA&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdxZzhOQSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjYzNTkxNn0.elR0VqVZ9WpOXzXHy1N5Frza6VbbtD8wfhE47iJ6shU&signature=38f4a6568aef448be84c73fa7f12fd6bcdf21e81c3a0f31782983355ce921c15"
   }
 ]`);
