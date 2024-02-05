@@ -126,11 +126,11 @@ const studentQAs: QA[] = [
   },
 
   {
-    question: "Are classes cancelled for the Industry Fair?",
+    question: "Does the Industry Fair count as an excused absence?",
     content: (
       <>
         <p>
-          Though classes are not canceled, career fairs can be considered an excused absence under Rule 07
+          Career fairs can be considered an excused absence under Rule 07
           of the Texas A&M Attendance code, as they fall under the following section:
         </p>
 
