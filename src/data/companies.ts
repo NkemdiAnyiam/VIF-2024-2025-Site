@@ -183,5 +183,18 @@ export const data = JSON.parse(`[
     "virtualTimes": "1:00-1:30, 11:00-11:30, 11:30-12:00, 12:30-1:00, 1:30-2:00",
     "inPersonTimes": "",
     "logoUrlCheckString": "https://storage.tally.so/private/Deloitte_Logo.png?id=7qg8NA&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdxZzhOQSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjYzNTkxNn0.elR0VqVZ9WpOXzXHy1N5Frza6VbbtD8wfhE47iJ6shU&signature=38f4a6568aef448be84c73fa7f12fd6bcdf21e81c3a0f31782983355ce921c15"
+  },
+  {
+    "companyName": "PBK Architects",
+    "focuses": "Architectural Vizualization",
+    "positionTypes": [
+      "Interns",
+      "Full-time Employees"
+    ],
+    "website": "https://pbk.com/",
+    "interviews": "Yes",
+    "virtualTimes": "",
+    "inPersonTimes": "11:00-11:30, 11:30-12:00, 12:30-1:00, 1:00-1:30, 2:00-2:30, 3:00-3:30, 3:30-4:00, 1:30-2:00",
+    "logoUrlCheckString": "https://storage.tally.so/private/PBK-LOGO-Vector.svg?id=EKoVGX&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkVLb1ZHWCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNzI2MjEzOH0.Y3jLdkVTBcJS4PiH1Jv8sts7vQjVgco17Ts67dDg-EY&signature=ba14a4167f8fe3be88320a2f1793bd821cd062cdd53eec5c6be5bebb49acd55f"
   }
 ]`);
