@@ -196,5 +196,17 @@ export const data = JSON.parse(`[
     "virtualTimes": "",
     "inPersonTimes": "11:00-11:30, 11:30-12:00, 12:30-1:00, 1:00-1:30, 2:00-2:30, 3:00-3:30, 3:30-4:00, 1:30-2:00",
     "logoUrlCheckString": "https://storage.tally.so/private/PBK-LOGO-Vector.svg?id=EKoVGX&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkVLb1ZHWCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNzI2MjEzOH0.Y3jLdkVTBcJS4PiH1Jv8sts7vQjVgco17Ts67dDg-EY&signature=ba14a4167f8fe3be88320a2f1793bd821cd062cdd53eec5c6be5bebb49acd55f"
+  },
+  {
+    "companyName": "The Third Floor Inc.",
+    "focuses": "Animation",
+    "positionTypes": [
+      "Full-time Employees"
+    ],
+    "website": "https://thethirdfloorinc.com/",
+    "interviews": "No",
+    "virtualTimes": "12:30-1:00, 1:00-1:30",
+    "inPersonTimes": "",
+    "logoUrlCheckString": "https://storage.tally.so/private/TTF-Logomark-highres.png?id=Z8rPAB&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ilo4clBBQiIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNzM1MjkzNn0.6fOwy4P26YtD_sFztfaVhKcG6ZnV5AiEBouY4Dbshho&signature=74811c707ab6fca01d2c00cc2b7c48d662cf2b741537dd3ce173a72bd9c5d135"
   }
 ]`);
