@@ -39,7 +39,7 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
           <picture className="company-card__picture">
             <source srcSet={require(`../../../images/companies/${logoName}.webp`)} type="image/webp" />
             <source srcSet={require(`../../../images/companies/${logoName}.jpg`)} type="image/jpeg" />
-            <img src={require(`../../../images/companies/${logoName}.jpg`)} alt={props.companyName} className="company-card__photo" />
+            <img src={require(`../../../images/companies/${logoName}.jpg`)} alt={props.companyName + ' logo'} className="company-card__photo" />
           </picture>
         </div>
 
