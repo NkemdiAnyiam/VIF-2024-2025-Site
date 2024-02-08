@@ -15,7 +15,7 @@ const cleanUrl = (url: string): string => {
 };
 
 const nameToLogoName = (companyName: string): string => {
-  return companyName.trim().toLowerCase().replaceAll(/\s+/g, '-') + '-min';
+  return companyName.trim().toLowerCase().replaceAll(/\s+/g, '-').match(/\w+.*\w+/)?.[0] + '-min';
 };
 
 const renderTags = (positionTypes: string[]): JSX.Element[] => {
