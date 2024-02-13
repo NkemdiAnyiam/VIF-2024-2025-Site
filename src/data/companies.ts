@@ -132,22 +132,6 @@ export const data = JSON.parse(`[
     "logoUrlCheckString": "https://storage.tally.so/private/Bluepoint_Games_logo.png?id=Rx2KO4&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlJ4MktPNCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNTk1MDA4Nn0.FKgR_fnld3gnNrsBk1_gLngvXUUmZZENJEhm3OVFa_c&signature=79d2a8417bb64d9ea5083ce8cf4bd388d5fdde266c4be31871692e2719a5e839"
   },
   {
-    "companyName": "TRG",
-    "focuses": "Graphic Design, Advertising",
-    "positionTypes": [
-      "Part-Time Employees",
-      "Full-time Employees",
-      "Interns",
-      "Contract Workers",
-      "Freelancers"
-    ],
-    "website": "https://trg.agency/",
-    "interviews": "No",
-    "virtualTimes": "10:00-10:30, 10:30-11:00, 11:00-11:30, 11:30-12:00, 1:30-2:00, 2:00-2:30",
-    "inPersonTimes": "All Day",
-    "logoUrlCheckString": "https://storage.tally.so/private/TRG-Logo.jpeg?id=Aza5ve&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkF6YTV2ZSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNjA0MDQ0N30.MJTUUCswzTtshBb0ogs34kp8i8eXO1txeQz08TIVPnM&signature=5ab175b4c4006b0296e4aeb48ada81c001864b03d7834a4577ef3d5977b5455d"
-  },
-  {
     "companyName": "Populous",
     "focuses": "Graphic Design",
     "positionTypes": [
@@ -208,5 +192,20 @@ export const data = JSON.parse(`[
     "virtualTimes": "12:30-1:00, 1:00-1:30",
     "inPersonTimes": "",
     "logoUrlCheckString": "https://storage.tally.so/private/TTF-Logomark-highres.png?id=Z8rPAB&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ilo4clBBQiIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNzM1MjkzNn0.6fOwy4P26YtD_sFztfaVhKcG6ZnV5AiEBouY4Dbshho&signature=74811c707ab6fca01d2c00cc2b7c48d662cf2b741537dd3ce173a72bd9c5d135"
+  },
+  {
+    "companyName": "TRG",
+    "focuses": "Graphic Design, Motion Graphics",
+    "positionTypes": [
+      "Interns",
+      "Full-time Employees",
+      "Part-Time Employees",
+      "Freelancers"
+    ],
+    "website": "https://trg.agency/",
+    "interviews": "No",
+    "virtualTimes": "10:30-11:00, 10:00-10:30, 1:00-1:30, 1:30-2:00, 3:30-4:00, 3:00-3:30",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://storage.tally.so/private/TRG-logo.png?id=4QMO95&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRRTU85NSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNzg0NDY0NX0.h6e0o0fyauBiWzca8RHMKmWqRQ-ZPoORkd55_2E-QdI&signature=7853ab9a20f46fff12a3f369208c67ee07eb74a6f0cb6617339114baa1043558"
   }
 ]`);
