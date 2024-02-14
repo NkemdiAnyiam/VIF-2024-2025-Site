@@ -182,18 +182,6 @@ export const data = JSON.parse(`[
     "logoUrlCheckString": "https://storage.tally.so/private/PBK-LOGO-Vector.svg?id=EKoVGX&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkVLb1ZHWCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNzI2MjEzOH0.Y3jLdkVTBcJS4PiH1Jv8sts7vQjVgco17Ts67dDg-EY&signature=ba14a4167f8fe3be88320a2f1793bd821cd062cdd53eec5c6be5bebb49acd55f"
   },
   {
-    "companyName": "The Third Floor Inc.",
-    "focuses": "Animation",
-    "positionTypes": [
-      "Full-time Employees"
-    ],
-    "website": "https://thethirdfloorinc.com/",
-    "interviews": "No",
-    "virtualTimes": "12:30-1:00, 1:00-1:30",
-    "inPersonTimes": "",
-    "logoUrlCheckString": "https://storage.tally.so/private/TTF-Logomark-highres.png?id=Z8rPAB&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ilo4clBBQiIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNzM1MjkzNn0.6fOwy4P26YtD_sFztfaVhKcG6ZnV5AiEBouY4Dbshho&signature=74811c707ab6fca01d2c00cc2b7c48d662cf2b741537dd3ce173a72bd9c5d135"
-  },
-  {
     "companyName": "TRG",
     "focuses": "Graphic Design, Motion Graphics",
     "positionTypes": [
@@ -207,5 +195,19 @@ export const data = JSON.parse(`[
     "virtualTimes": "10:30-11:00, 10:00-10:30, 1:00-1:30, 1:30-2:00, 3:30-4:00, 3:00-3:30",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://storage.tally.so/private/TRG-logo.png?id=4QMO95&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRRTU85NSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNzg0NDY0NX0.h6e0o0fyauBiWzca8RHMKmWqRQ-ZPoORkd55_2E-QdI&signature=7853ab9a20f46fff12a3f369208c67ee07eb74a6f0cb6617339114baa1043558"
+  },
+  {
+    "companyName": "The Third Floor Inc.",
+    "focuses": "Animation, Film & TV ",
+    "positionTypes": [
+      "Contract Workers",
+      "Freelancers",
+      "Part-Time Employees"
+    ],
+    "website": "https://thethirdfloorinc.com/",
+    "interviews": "No",
+    "virtualTimes": "All Day",
+    "inPersonTimes": "",
+    "logoUrlCheckString": "https://storage.tally.so/private/bGhIYKdV_400x400.jpg?id=kl2jlr&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImtsMmpsciIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNzg4MDM1NX0.I-jfrUejoadShr5KtYEdoWzD_AoUAC_FH9HW0WZ4Mrs&signature=6729c0003414419610951b8580836d31c13b10b44bf1aca2c84b804997d59468"
   }
 ]`);
