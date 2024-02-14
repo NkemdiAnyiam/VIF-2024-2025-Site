@@ -109,9 +109,9 @@ export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
           </ul>
         }
 
-        <div className="dropdown-marker-container">
+        <button className="dropdown-marker-container" aria-label={`${expanded ? 'Collapse' : 'Expand'} description for ${props.fullName}`}>
           <span className={`dropdown-marker${expanded ? ' dropdown-marker--up' : ''}`}></span>
-        </div>
+        </button>
       </div>
 
       <div className={`committee-block__description${!expanded ? ' committee-block__description--hidden' : ''}`}>

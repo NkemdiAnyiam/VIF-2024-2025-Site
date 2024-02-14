@@ -73,8 +73,12 @@
       top: 1.6rem;
       right: 2rem;
       margin-left: 1.2rem;
+      color: currentColor;
+      background-color: unset;
+      border: none;
       align-self: start;
       justify-self: end;
+      cursor: pointer;
 
       .dropdown-marker {
         display: inline-block;

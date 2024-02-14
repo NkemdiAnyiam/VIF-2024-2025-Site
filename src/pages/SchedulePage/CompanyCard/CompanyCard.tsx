@@ -49,9 +49,9 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
 
         <p className={`company-card__focuses`}>{props.focuses}</p>
 
-        <div className="dropdown-marker-container">
+        <button className="dropdown-marker-container" aria-label={`${expanded ? 'Collapse' : 'Expand'} description for ${props.companyName}`}>
           <span className={`dropdown-marker${expanded ? ' dropdown-marker--up' : ''}`}></span>
-        </div>
+        </button>
       </div>
 
       <div className={`company-card__description${!expanded ? ' company-card__description--hidden' : ''}`}>
