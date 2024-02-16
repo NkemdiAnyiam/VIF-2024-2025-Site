@@ -52,20 +52,6 @@ export const data = JSON.parse(`[
     "logoUrlCheckString": "https://storage.tally.so/private/Luna_cREATIVE_4.jpg?id=xVP0b9&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InhWUDBiOSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwMDU4ODY1Nn0.Pu3Ux2vxQTfiSy8MaNZmjPivJAvyyVQA4DyQQ6t9oZo&signature=b72b0cc3a996c593ae0e892dc7ca52a4ec8c96034cdb46fae17ee48a58d8a61f"
   },
   {
-    "companyName": "Framestore",
-    "focuses": "Visual Effects, Animation, Immersive",
-    "positionTypes": [
-      "Interns",
-      "Full-time Employees",
-      "Part-Time Employees"
-    ],
-    "website": "https://www.framestore.com/about-us?language=en",
-    "interviews": "No",
-    "virtualTimes": "",
-    "inPersonTimes": "All Day",
-    "logoUrlCheckString": "https://storage.tally.so/private/Copy-of-ICON_dblue.png?id=YjJ8Gq&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllqSjhHcSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwMDU4ODY1Nn0.EB-53nqu-ZpNiUINGL2T2GgEPgzo2lTJ29droOB_gls&signature=20d874e1514db159551e1f673b690975d2645d55815f907de828f0f9871717f5"
-  },
-  {
     "companyName": "POWER Engineers",
     "focuses": "VR/AR Engineering Visualization",
     "positionTypes": [
@@ -198,16 +184,39 @@ export const data = JSON.parse(`[
   },
   {
     "companyName": "The Third Floor Inc.",
-    "focuses": "Animation, Film & TV ",
+    "focuses": "Animation",
     "positionTypes": [
-      "Contract Workers",
-      "Freelancers",
-      "Part-Time Employees"
+      "Full-time Employees"
     ],
     "website": "https://thethirdfloorinc.com/",
     "interviews": "No",
-    "virtualTimes": "All Day",
+    "virtualTimes": "12:30-1:00, 1:00-1:30",
     "inPersonTimes": "",
-    "logoUrlCheckString": "https://storage.tally.so/private/bGhIYKdV_400x400.jpg?id=kl2jlr&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImtsMmpsciIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwNzg4MDM1NX0.I-jfrUejoadShr5KtYEdoWzD_AoUAC_FH9HW0WZ4Mrs&signature=6729c0003414419610951b8580836d31c13b10b44bf1aca2c84b804997d59468"
+    "logoUrlCheckString": "https://storage.tally.so/private/TTF-Logomark-highres.png?id=OaRMGY&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ik9hUk1HWSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwODAyMjI3NX0.I1qze_eAMByr6bjwu3p6m7yMcJIXM7lS6LQsBX99yDc&signature=b0d178f6874dcc6a551a13cee88af942390224bc288fa3ada2518bfb9a2f07ee"
+  },
+  {
+    "companyName": "HKS Inc",
+    "focuses": "Architecture",
+    "positionTypes": [
+      "Interns",
+      "Full-time Employees"
+    ],
+    "website": "www.hksinc.com",
+    "interviews": "Yes",
+    "virtualTimes": "",
+    "inPersonTimes": "10:00-10:30, 10:30-11:00, 11:00-11:30, 11:30-12:00",
+    "logoUrlCheckString": "https://storage.tally.so/private/HKS-Logo-Grey-Digital_N2_medium.jpg?id=a9Wq0v&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE5V3EwdiIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwODAyMjk2MH0.BcLISRTudSCoycRYxbh2kCx78HpzClzM51sCjUJk74E&signature=2d08d174085ba2bb2191e92488e7746b92b48808ec472646c9da4159d731f997"
+  },
+  {
+    "companyName": "Framestore",
+    "focuses": "VFX and Immersive",
+    "positionTypes": [
+      "Interns"
+    ],
+    "website": "https://www.framestore.com/",
+    "interviews": "No",
+    "virtualTimes": "",
+    "inPersonTimes": "10:00-10:30, 10:30-11:00, 11:00-11:30, 11:30-12:00, 12:30-1:00",
+    "logoUrlCheckString": "https://storage.tally.so/private/LOGO_blue_RGB.png?id=YP2Axd&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllQMkF4ZCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwODAyNjI0NX0.W8mI6z7mG07i4UvWYP1VBjaVXncKQ-ZRBFzzV9ALGRQ&signature=2718c04f09084dc58d0b15dac9d289cb97519c0530d0877c0d161bbf13d0fcda"
   }
 ]`);
