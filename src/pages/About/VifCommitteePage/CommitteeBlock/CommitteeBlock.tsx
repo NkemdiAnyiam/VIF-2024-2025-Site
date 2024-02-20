@@ -102,16 +102,16 @@ export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
           <p className={`committee-block__role`}>{props.role}</p>
         </div>
 
+        <button className="dropdown-marker-container" aria-label={`${expanded ? 'Collapse' : 'Expand'} description for ${props.fullName}`}>
+          <span className={`dropdown-marker${expanded ? ' dropdown-marker--up' : ''}`}></span>
+        </button>
+
         {
           Object.keys(props.socials).length > 0 &&
           <ul className={`committee-block__socials`}>
             {renderSocialLinks(props.socials, props.fullName)}
           </ul>
         }
-
-        <button className="dropdown-marker-container" aria-label={`${expanded ? 'Collapse' : 'Expand'} description for ${props.fullName}`}>
-          <span className={`dropdown-marker${expanded ? ' dropdown-marker--up' : ''}`}></span>
-        </button>
       </div>
 
       <div className={`committee-block__description${!expanded ? ' committee-block__description--hidden' : ''}`} aria-hidden={!expanded ? "true" : "false"}>
