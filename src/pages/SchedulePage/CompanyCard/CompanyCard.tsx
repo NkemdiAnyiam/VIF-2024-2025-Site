@@ -54,7 +54,7 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
         </button>
       </div>
 
-      <div className={`company-card__description${!expanded ? ' company-card__description--hidden' : ''}`}>
+      <div className={`company-card__description${!expanded ? ' company-card__description--hidden' : ''}`} aria-hidden={!expanded ? "true" : "false"}>
         <div className="company-card__description-section">
           <h4 className="heading-quaternary">Website:</h4>
           <a
@@ -63,6 +63,7 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
             target="_blank"
             rel="noreferrer"
             aria-label={`Visit ${props.companyName}'s website`}
+            tabIndex={expanded ? 0 : -1}
           >
             Visit {props.companyName}
           </a>

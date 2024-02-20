@@ -114,7 +114,7 @@ export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
         </button>
       </div>
 
-      <div className={`committee-block__description${!expanded ? ' committee-block__description--hidden' : ''}`}>
+      <div className={`committee-block__description${!expanded ? ' committee-block__description--hidden' : ''}`} aria-hidden={!expanded ? "true" : "false"}>
         <div className="paragraphs">
           <p>{props.description}</p>
         </div>
