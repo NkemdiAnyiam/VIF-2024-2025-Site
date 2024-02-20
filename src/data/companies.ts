@@ -218,5 +218,17 @@ export const data = JSON.parse(`[
     "virtualTimes": "",
     "inPersonTimes": "10:00-10:30, 10:30-11:00, 11:00-11:30, 11:30-12:00, 12:30-1:00",
     "logoUrlCheckString": "https://storage.tally.so/private/LOGO_blue_RGB.png?id=YP2Axd&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IllQMkF4ZCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwODAyNjI0NX0.W8mI6z7mG07i4UvWYP1VBjaVXncKQ-ZRBFzzV9ALGRQ&signature=2718c04f09084dc58d0b15dac9d289cb97519c0530d0877c0d161bbf13d0fcda"
+  },
+  {
+    "companyName": "Weston Jones (Freelance)",
+    "focuses": "Game Development",
+    "positionTypes": [
+      ""
+    ],
+    "website": "https://weston-jones.squarespace.com/",
+    "interviews": "No",
+    "virtualTimes": "",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://storage.tally.so/private/WJTechnicalDesign.png?id=zjPaBa&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InpqUGFCYSIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwODM2Nzg1Nn0.tTWIQfxJirANjXLRGkvFopKR3FWHygnIi6rXdNEDdU4&signature=8711d32c63b41e18f27f1e38aa6e40aa28d756f58ece434d1d6391c75b5f2ab5"
   }
 ]`);
