@@ -182,5 +182,17 @@ export const data = JSON.parse(`[
     "virtualTimes": "10:00-10:30, 12:30-1:00",
     "inPersonTimes": "",
     "logoUrlCheckString": "https://storage.tally.so/private/Colorful-Watercolor-Painting-Phone-Wallpaper.png?id=Kzq7PD&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ikt6cTdQRCIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwODQ4NDg0Mn0.C3sCasY7yw3rBaChztpheVoovOgYRPzLtsUD1dn2RG8&signature=915bcc33791eba9d285129e44178e1fce7b563efda361206952dc1365c5245cc"
+  },
+  {
+    "companyName": "Audience Media Group",
+    "focuses": "Graphic Design, Video Editing & Marketing",
+    "positionTypes": [
+      "Part-Time Employees"
+    ],
+    "website": "https://www.ataudience.com/",
+    "interviews": "Yes",
+    "virtualTimes": "10:00-10:30, 10:30-11:00, 11:00-11:30, 11:30-12:00, 12:30-1:00, 2:00-2:30, 3:00-3:30, 3:30-4:00",
+    "inPersonTimes": "",
+    "logoUrlCheckString": "https://storage.tally.so/private/LogoWhite.png?id=W2GD4Q&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlcyR0Q0USIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwODU0ODI2NH0.RuG9XWUXb7o66JUnU4nXxMUxgPHzRCsazLFnjZL0RJs&signature=61ee3893a86aa15f73a47315c4c50aef6ca4c67c5e78bdfc785627ee6186a8b4"
   }
 ]`);
