@@ -191,7 +191,7 @@ export const data = JSON.parse(`[
     ],
     "website": "https://www.ataudience.com/",
     "interviews": "Yes",
-    "virtualTimes": "10:00-10:30, 10:30-11:00, 11:00-11:30, 11:30-12:00, 12:30-1:00, 2:00-2:30, 3:00-3:30, 3:30-4:00",
+    "virtualTimes": "10:30-11:00, 11:00-11:30, 11:30-12:00, 12:30-1:00, 2:00-2:30, 3:00-3:30, 3:30-4:00",
     "inPersonTimes": "",
     "logoUrlCheckString": "https://storage.tally.so/private/LogoWhite.png?id=W2GD4Q&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IlcyR0Q0USIsImZvcm1JZCI6Im1KcFd5ZCIsImlhdCI6MTcwODU0ODI2NH0.RuG9XWUXb7o66JUnU4nXxMUxgPHzRCsazLFnjZL0RJs&signature=61ee3893a86aa15f73a47315c4c50aef6ca4c67c5e78bdfc785627ee6186a8b4"
   }
