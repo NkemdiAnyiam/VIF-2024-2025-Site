@@ -18,7 +18,7 @@ export function Header(props: HeaderProps): JSX.Element {
           <source media="(min-width: 769px)" srcSet={require(`../../images/banners/${props.imageName}.jpg`)} type="image/jpeg" />
           <img
             src={require(`../../images/banners/${props.imageName}.jpg`)}
-            alt="Seated group of Viz students"
+            alt=""
             className="header__background-img"
             {...(props.objectPosition ? {style: {objectPosition: props.objectPosition}} : {})} />
         </picture>
