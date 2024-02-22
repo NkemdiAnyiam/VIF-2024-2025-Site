@@ -1,4 +1,51 @@
 .schedule-page {
+  .event-tables {
+    margin-top: 2rem;
+
+    display: flex;
+    gap: 2rem;
+
+    caption {
+      text-align: left;
+      font-weight: bold;
+      font-size: max(2rem, 18px);
+      margin-bottom: 1rem;
+    }
+
+    table {
+      border: 2px solid white;
+      border-collapse: collapse;
+    }
+
+    thead {
+      font-weight: bold;
+      font-size: max(1.8rem, 17px);
+
+      tr {
+        background-color: $color-violet !important;
+      }
+    }
+
+    tbody {
+    }
+
+    tr {
+      &:nth-child(odd) {
+        background-color: lighten($color-violet-dark, 5%);
+      }
+      &:nth-child(even) {
+        background-color: $color-violet-darkest;
+      }
+    }
+
+    th, td {
+      text-align: left;
+      padding: 1.2rem;
+      border: 1.5px solid white;
+      line-height: 1.5;
+    }
+  }
+
   .section--timetable {
     @include full-bleed;
     @include section-color($color-violet-dark);

@@ -54,6 +54,15 @@ const generateRowData = (companies: Company[], timeType: keyof Pick<Company, 'vi
     });
 };
 
+const generateBasicRow = (time: string, period: 'am' | 'pm', event: string) => {
+  return (
+    <tr key={time}>
+      <td>{time} {period}</td>
+      <td>{event}</td>
+    </tr>
+  );
+};
+
 export function SchedulePage(): JSX.Element {
   return (
     <main className="schedule-page">
@@ -81,6 +90,39 @@ export function SchedulePage(): JSX.Element {
               The Virtual Fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm CST on Discord.
               The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024 from 10am–4pm CST in MSC 2406.
             </p>
+
+            <p>
+              On Friday, there are presentations and other events in addition to the normal fair operations.
+              The schedule of events for the day is shown below.
+            </p>
+          </div>
+
+          <div className="event-tables">
+            <div className="event-table">
+              <table>
+                <caption>Friday Event Schedule</caption>
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    generateBasicRow(`9:30`, 'am', `Volunteers Arrive for Setup`),
+                    generateBasicRow(`10:00`, 'am', `Fair Day Begins`),
+                    generateBasicRow(`11:00`, 'am', `EA Presentation/Q&A`),
+                    generateBasicRow(`12:00`, 'pm', ``),
+                    generateBasicRow(`1:00`, 'pm', `Unreal Blueprints for Vizzers Presentation`),
+                    generateBasicRow(`2:00`, 'pm', `Visualization for Architecture Presentation`),
+                    generateBasicRow(`3:00`, 'pm', ``),
+                    generateBasicRow(`4:00`, 'pm', `Fair Day Ends - Officer Hangout`),
+                    generateBasicRow(`4:30`, 'pm', `Final Clean Up`),
+                    generateBasicRow(`5:00`, 'pm', `Everyone Out`),
+                  ]}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
