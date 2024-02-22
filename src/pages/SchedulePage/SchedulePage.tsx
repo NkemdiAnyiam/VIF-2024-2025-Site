@@ -78,9 +78,9 @@ export function SchedulePage(): JSX.Element {
         </h1>
       </Header>
 
-      <section className="section section--schedule-tba" id="schedule-tba">
+      <section className="section section--overview" id="overview">
         <div className="container">
-          <h2 className="heading-secondary">Stay Tuned</h2>
+          <h2 className="heading-secondary">Overview</h2>
 
           <div className="paragraphs">
             <p>
