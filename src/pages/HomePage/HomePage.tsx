@@ -11,7 +11,7 @@ export function HomePage(): JSX.Element {
   return (
     <main className="home-page">
       <SearchEngineOpt
-        title="Viz Industry Fair 2023-24"
+        title="Viz Industry Fair 2023–24"
         description="Welcome to the Visualization Industry Fair (VIF), the student-run organization and annual event aimed at guiding students toward successful careers."
       />
       <Header type="landing" imageName={'seated-group-photo-2-min'}>

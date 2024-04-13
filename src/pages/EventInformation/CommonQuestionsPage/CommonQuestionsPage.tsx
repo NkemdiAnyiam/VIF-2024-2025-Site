@@ -248,7 +248,7 @@ export function CommonQuestionsPage(): JSX.Element {
   return (
     <main className="common-questions-page">
       <SearchEngineOpt
-        title="Common Questions | Viz Industry Fair 2023-24"
+        title="Common Questions | Viz Industry Fair 2023–24"
         description="Here are common questions from students and employers about the Viz Industry Fair. If you cannot find an answer, email us at pvfavizindustryfair@tamu.edu."
         // structuredJSON={JSON.stringify(renderEntities(studentQAs))}
       />

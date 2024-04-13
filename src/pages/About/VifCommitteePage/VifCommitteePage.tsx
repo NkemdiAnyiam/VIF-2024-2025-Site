@@ -125,7 +125,7 @@ export function VifCommitteePage(): JSX.Element {
   return (
     <main className="vif-committee-page">
       <SearchEngineOpt
-        title="VIF Committee | Viz Industry Fair 2023-24"
+        title="VIF Committee | Viz Industry Fair 2023–24"
         description="Introducing the VIF committee, our dedicated students and faculty who help make the Visualization Industry Fair possible!"
       />
 

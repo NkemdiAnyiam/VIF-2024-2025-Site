@@ -10,7 +10,7 @@ export function AboutVizPage(): JSX.Element {
   return (
     <main className="about-viz-page">
       <SearchEngineOpt
-        title="About Viz | Viz Industry Fair 2023-24"
+        title="About Viz | Viz Industry Fair 2023–24"
         description="Learn about the internationally recognized Visualization program, which has helped develop artists who have ventured into creative and technical fields."
       />
       
