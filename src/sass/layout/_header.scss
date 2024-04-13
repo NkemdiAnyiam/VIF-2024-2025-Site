@@ -22,6 +22,10 @@
     @include media-max(640px) {
       --height: 52rem;
     }
+
+    @include media-max(560px) {
+      --height: 56rem;
+    }
   }
 
   &--normal {

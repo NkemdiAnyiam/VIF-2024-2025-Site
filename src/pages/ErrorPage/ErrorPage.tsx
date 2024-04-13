@@ -13,7 +13,7 @@ export function ErrorPage(props: ErrorPageProps): JSX.Element {
   return (
     <main className="error-page">
       <SearchEngineOpt
-        title={`${props.message} | Viz Industry Fair 2024`}
+        title={`${props.message} | Viz Industry Fair 2023-24`}
         disableCanonicalUrl
         // description="The Viz Industry Fair is an opportunity for students and alumni to connect with prospective employers in leading industries AND receive professional feedback."
       />

@@ -68,7 +68,7 @@ export function SchedulePage(): JSX.Element {
     <main className="schedule-page">
 
       <SearchEngineOpt
-        title="Schedule | Viz Industry Fair 2024"
+        title="Schedule | Viz Industry Fair 2023-24"
         description="Find out what companies are attending the fair, when they will be avaiable, and whom they are hiring."
       />
 
