@@ -11,7 +11,7 @@ export function ForIndustryPage(): JSX.Element {
   return (
     <main className="for-industry-page">
       <SearchEngineOpt
-        title="For Industry | Viz Industry Fair 2023–24"
+        title="For Industry | Viz Industry Fair 2024–25"
         description="Employers and industry guests will find important information about the Viz Industry Fair, including registration forms and volunteer opportunities."
       />
 
@@ -38,12 +38,19 @@ export function ForIndustryPage(): JSX.Element {
               Please make sure to fill out our form—this will ensure you a "table" at the fair and help us with planning the event.
               Our Visualization Industry Fair is held both virtually and in-person—in the form, you have the option to attend either one or both.
               <br />
-              <strong> The Virtual Fair will be held Thursday, February 22<sup>nd</sup>, 2024, from 10am–4pm CST via Discord.</strong>
+              <strong> The Virtual Fair will be held Thursday, February 20<sup>th</sup>, 2025, from 10am–4pm CST via Discord.</strong>
               <br />
-              <strong> The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm CST in MSC 2406.</strong>
+              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025, from 10am–4pm CST on TAMU campus (Location TBD).</strong>
             </p>
 
-            <a href="https://tally.so/r/mJpWyd" className="registration-button registration-button--red" target="_blank" rel="noreferrer">Register Here</a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc9py6MJjTf5IecnIta7BFZaSo7mm1YwfEFc5OYmSsYAkENeQ/viewform?usp=sf_link"
+              className="registration-button registration-button--red"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Register Here
+            </a>
 
             <p>
               Additionally, VIF has access to presentation and interview rooms during the fair.
@@ -80,19 +87,19 @@ export function ForIndustryPage(): JSX.Element {
               eventBoxes={[
                 <EventBox
                   heading="Fall"
-                  headingLink={`https://tally.so/r/3NlRzQ`}
+                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSfNS-ZJFzCvcigJAELoKFY34j_i9ZzIRivrmR8J1JUsgQNQrQ/viewform?usp=sf_link`}
                   events={[
-                    ["Thursday", "October", 19, ['10am', '4pm']],
-                    ["Friday", "October", 20, ['10am', '4pm']],
+                    ["Friday", "October", 18, ['10am', '4pm']],
+                    ["Saturday", "October", 19, ['10am', '4pm']],
                   ]}
                 />,
 
                 <EventBox
                   heading="Spring"
-                  headingLink={`https://tally.so/r/mJpW7d `}
+                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSd1mOyhl7UGzctZqxngIk16Bm_eeoyZQrq2hMJk-YnvZbcK5w/viewform?usp=sf_link`}
                   events={[
-                    ["Thursday", "January", 25, ['10am', '4pm']],
-                    ["Friday", "January", 26, ['10am', '4pm']],
+                    ["Friday", "January", 24, ['10am', '4pm']],
+                    ["Saturday", "January", 25, ['10am', '4pm']],
                   ]}
                 />
               ]}
@@ -109,17 +116,17 @@ export function ForIndustryPage(): JSX.Element {
               eventBoxes={[
                 <EventBox
                   heading="Fall"
-                  headingLink={`https://tally.so/r/3NldyN`}
+                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSflSAGSoFqtyLXA7ZwJpHv_TibVa7IE5whkKU16ipSqTvp0iQ/viewform?usp=sf_link`}
                   events={[
-                    ["Friday", "November", 3, ['10am', '4pm']],
+                    ["Friday", "November", 8, ['10am', '4pm']],
                   ]}
                 />,
 
                 <EventBox
                   heading="Spring"
-                  headingLink={`https://tally.so/r/w8aROx`}
+                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSfVjJZ7Wsu8FoHDF6c1aGHvlL2oqI7pIeWgX9X4L0JTX5wbKg/viewform?usp=sf_link`}
                   events={[
-                    ["Saturday", "February", 3, ['10am', '4pm']],
+                    ["Friday", "February", 7, ['10am', '4pm']],
                   ]}
                 />
               ]}
@@ -133,6 +140,7 @@ export function ForIndustryPage(): JSX.Element {
 
             
 
+            {/* TODO: get updated photo and dates */}
             <Event
               eventName="Alumni Mixer"
             >

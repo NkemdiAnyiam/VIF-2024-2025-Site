@@ -70,7 +70,7 @@ export function ForStudentsPage(): JSX.Element {
   return (
     <main className="for-students-page">
       <SearchEngineOpt
-        title="For Students | Viz Industry Fair 2023–24"
+        title="For Students | Viz Industry Fair 2024–25"
         description="Students will find important information about the Viz Industry Fair, including registration forms for the fair and other events."
       />
 
@@ -91,12 +91,12 @@ export function ForStudentsPage(): JSX.Element {
               The Visualization Industry Fair (VIF) is an opportunity for students interested in Animation, Gaming, Graphics,
               and Interactive technologies to connect with prospective employers working in high level positions
               in some of today's leading industries and receive professional feedback on their work.
-              <strong> The Virtual Fair will be held Thursday, February 22<sup>nd</sup>, 2024, from 10am–4pm CST via Discord.</strong>
-              <strong> The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm CST in MSC 2406.</strong>
+              <strong> The Virtual Fair will be held Thursday, February 20<sup>th</sup>, 2025, from 10am–4pm CST via Discord.</strong>
+              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025, from 10am–4pm CST on the TAMU campus (Location TBD).</strong>
             </p>
 
             <p className="no-gap">
-              <strong>Before you register for the Fair, </strong>please <a href="https://tally.so/r/3xMRPE" className="link" target="_blank" rel="noreferrer">register for our new Professionalism Workshop</a>!
+              <strong>Before you register for the Fair, </strong>please <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoB9qfICTNYIYsUCqZSEnqLXFpznto27DDqN_6iEeRWjHZfg/viewform?usp=sf_link" className="link" target="_blank" rel="noreferrer">register for our new Professionalism Workshop</a>!
               This workshop serves as an informational for the VIF events and teaches you best practices for communicating with industry professionals.
               To uphold the professional standards of Texas A&M University, current students are <strong>required</strong> to
               attend one of the three professionalism workshops before attending the industry fair or any other VIF event.
@@ -106,9 +106,9 @@ export function ForStudentsPage(): JSX.Element {
             </p>
 
             <ul className="no-gap">
-              <li>Monday, September 25<sup>th</sup></li>
-              <li>Wednesday, September 27<sup>th</sup></li>
-              <li>Friday, September 29<sup>th</sup></li>
+              <li>Tuesday, September 24<sup>th</sup>, 10am–12pm</li>
+              <li>Wednesday, September 25<sup>th</sup>, 10am–12pm</li>
+              <li>Friday, September 27<sup>th</sup>, 3pm–5pm</li>
             </ul>
             
             <p>
@@ -121,10 +121,10 @@ export function ForStudentsPage(): JSX.Element {
               To register for the fair itself, you will need a downloadable version of your resume and a link to your portfolio website.
             </p>
             <p className="no-gap">
-              Please <a href="https://tally.so/r/wgbEqP" className="link" target="_blank" rel="noreferrer">register for the Virtual Fair here</a>.
+              Please <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3fUZpRlQ6cb70fEC-5DQzMclIu9UIV3qOd-aIdMGwq3BjOw/viewform?usp=sf_link" className="link" target="_blank" rel="noreferrer">register for the Virtual Fair here</a>.
             </p>
             <p>
-              Please <a href="https://tally.so/r/w7LakL" className="link" target="_blank" rel="noreferrer">register for the In-Person Fair here</a>.
+              Please <a href="https://docs.google.com/forms/d/e/1FAIpQLScSyjIGDruxEXK9J5VTcyX2cs0AtWVAkAZaIEWcIUjWwl4t4g/viewform?usp=sf_link" className="link" target="_blank" rel="noreferrer">register for the In-Person Fair here</a>.
             </p>
           </div>
         </div>
@@ -147,19 +147,19 @@ export function ForStudentsPage(): JSX.Element {
               eventBoxes={[
                 <EventBox
                   heading="Fall"
-                  headingLink="https://tally.so/r/mZEZxy"
+                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSf7nnaYybNwZOKcpEiMSdKaqul86TqGAwHhvwsDaUV4nVZv9Q/viewform?usp=sf_link`}
                   events={[
-                    ['Thursday', 'October', 19, ['10am', '4pm']],
-                    ['Friday', 'October', 20, ['10am', '4pm']],
+                    ["Friday", "October", 18, ['10am', '4pm']],
+                    ["Saturday", "October", 19, ['10am', '4pm']],
                   ]}
                 />,
 
                 <EventBox
                   heading="Spring"
-                  headingLink="https://tally.so/r/w2jpVb"
+                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSer6Vvt7GMlDyuiJZpm3DGcNmCRmZY9mZo1mMWG2w_lmlV7Aw/viewform?usp=sf_link`}
                   events={[
-                    ['Thursday', 'January', 25, ['10am', '4pm']],
-                    ['Friday', 'January', 26, ['10am', '4pm']],
+                    ["Friday", "January", 24, ['10am', '4pm']],
+                    ["Saturday", "January", 25, ['10am', '4pm']],
                   ]}
                 />
               ]}
@@ -170,22 +170,23 @@ export function ForStudentsPage(): JSX.Element {
               eventBoxes={[
                 <EventBox
                   heading="Fall"
-                  headingLink="https://tally.so/r/nrDMRL"
+                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLScv0r3HDa4H61GPp8aigegVrpgSCFUy62Z2TJlG1dwdAVZV0w/viewform?usp=sf_link`}
                   events={[
-                    ['Friday', 'November', 3, ['10am', '4pm']],
+                    ["Friday", "November", 8, ['10am', '4pm']],
                   ]}
                 />,
 
                 <EventBox
                   heading="Spring"
-                  headingLink="https://tally.so/r/w2a7yg"
+                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSdVzGMG3G4I9buRM4bO8UTjeq_QhYlFa0KloeHkvPQNIviw1A/viewform?usp=sf_link`}
                   events={[
-                    ['Saturday', 'February', 3, ['10am', '4pm']],
+                    ["Friday", "February", 7, ['10am', '4pm']],
                   ]}
                 />
               ]}
             />
 
+            {/* TODO: get updated photo and dates */}
             <Event
               eventName="Alumni Mixer"
             >
