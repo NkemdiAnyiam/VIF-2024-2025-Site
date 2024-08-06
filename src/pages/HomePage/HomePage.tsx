@@ -11,12 +11,12 @@ export function HomePage(): JSX.Element {
   return (
     <main className="home-page">
       <SearchEngineOpt
-        title="Viz Industry Fair 2023–24"
+        title="Viz Industry Fair 2024–25"
         description="Welcome to the Visualization Industry Fair (VIF), the student-run organization and annual event aimed at guiding students toward successful careers."
       />
       <Header type="landing" imageName={'seated-group-photo-2-min'}>
         <h1 className="heading-primary">
-          <span>Welcome to the</span> <span>2023–24</span> <span>VIZ Industry Fair!</span>
+          <span>Welcome to the</span> <span>2024–25</span> <span>VIZ Industry Fair!</span>
         </h1>
         <p className="header__intro-text">
           Viz Industry Fair (VIF) is both an organization and annual event dedicated to career planning and success for students within the new school
@@ -37,11 +37,11 @@ export function HomePage(): JSX.Element {
               This event is an opportunity for students and alumni interested in Visualization—which includes Animation, Gaming, Graphics
               and Interactive technologies—to connect with prospective employers working in high-level positions in some of today's leading industries
               and receive professional feedback on their work.
-              <strong> The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024, from 10am–4pm CST in MSC 2406.</strong>
+              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025, from 10am–4pm CST on the TAMU campus (Location TBD).</strong>
             </p>
             <p>
               Because of continuing concerns with accessibility, we will be holding a Virtual Fair this year as well.
-              <strong> The Virtual Fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm CST on Discord.</strong>
+              <strong> The Virtual Fair will take place Thursday, February 20<sup>th</sup>, 2025 from 10am–4pm CST on Discord.</strong>
             </p>
             <p>
               This year, we are inviting former students to participate in both our virtual and in-person events at the same level as our current students,
