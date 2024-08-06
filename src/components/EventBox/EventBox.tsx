@@ -15,10 +15,10 @@ export type EventBoxProps = {
 
 const monthToYear = (month: Month): number => {
   // TODO: Might have to change this logic in the future.
-  // Logic is that Fall semester = 2023 and spring semester = 2024
+  // Logic is that Fall semester = 2024 and spring semester = 2025
   const yearNum = new Date(`${month} 1`).getMonth();
-  if (yearNum >= 7) { return 2023; }
-  else { return 2024; }
+  if (yearNum >= 7) { return 2024; }
+  else { return 2025; }
 }
 
 const getNthSunday = (month: Month, year: number, nthSunday: number): number => {
