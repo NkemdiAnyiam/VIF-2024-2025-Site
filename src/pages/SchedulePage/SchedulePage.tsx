@@ -27,7 +27,8 @@ const timeRanges = [
 type Company = CompanyCardProps & {virtualTimes: string, inPersonTimes: string};
 
 const companyComparator = (companyA: Company, companyB: Company) => companyA.companyName.toLowerCase().localeCompare(companyB.companyName.toLowerCase());
-const companyCardData: Company[] = ([...data] as Company[]).sort(companyComparator);
+// const companyCardData: Company[] = ([...data] as Company[]).sort(companyComparator);
+const companyCardData: Company[] = ([] as Company[]).sort(companyComparator);
 
 const renderCards = (companies: Company[]): JSX.Element[] => {
   return companies.map((company) => {
@@ -68,7 +69,7 @@ export function SchedulePage(): JSX.Element {
     <main className="schedule-page">
 
       <SearchEngineOpt
-        title="Schedule | Viz Industry Fair 2023–24"
+        title="Schedule | Viz Industry Fair 2024–25"
         description="Find out what companies are attending the fair, when they will be avaiable, and whom they are hiring."
       />
 
@@ -87,17 +88,17 @@ export function SchedulePage(): JSX.Element {
               On this page, you can find <a className="link" href="/schedule#companies">information about any registered companies</a> as
               well as <a className="link" href="/schedule#timetable">when they will be attending the fairs</a>.
               Any company that registers for the Virtual or In-Person Fair will show up here, so stay tuned.
-              The Virtual Fair will take place Thursday, February 22<sup>nd</sup>, 2024 from 10am–4pm CST on Discord.
-              The In-Person Fair will be held Friday, February 23<sup>rd</sup>, 2024 from 10am–4pm CST in MSC 2406.
+              The Virtual Fair will take place Thursday, February 20<sup>th</sup>, 2025 from 10am–4pm CST on Discord.
+              The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025 from 10am–4pm CST on the TAMU campus (Location TBD).
             </p>
 
-            <p>
+            {/* <p>
               On Friday, there are presentations and other events in addition to the normal fair operations.
               The schedule of events for the day is shown below.
-            </p>
+            </p> */}
           </div>
 
-          <div className="event-tables">
+          {/* <div className="event-tables">
             <div className="event-table">
               <table>
                 <caption>Friday Event Schedule</caption>
@@ -123,7 +124,7 @@ export function SchedulePage(): JSX.Element {
                 </tbody>
               </table>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
