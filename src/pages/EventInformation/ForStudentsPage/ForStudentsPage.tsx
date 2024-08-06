@@ -186,7 +186,7 @@ export function ForStudentsPage(): JSX.Element {
               ]}
             />
 
-            {/* TODO: get updated photo and dates */}
+            {/* TODO: get new dates */}
             <Event
               eventName="Alumni Mixer"
             >
@@ -207,9 +207,9 @@ export function ForStudentsPage(): JSX.Element {
                   </p>
 
                   <picture className="building-photo-picture">
-                    <source srcSet={require(`../../../images/misc/corner-bar-and-grill-min.webp`)} type="image/webp" />
-                    <source srcSet={require(`../../../images/misc/corner-bar-and-grill-min.jpg`)} type="image/jpeg" />
-                    <img src={require(`../../../images/misc/corner-bar-and-grill-min.jpg`)} alt={`The Corner Bar and Grill`} className="building-photo-img" />
+                    <source srcSet={require(`../../../images/misc/alumni-mixer-photo-min.webp`)} type="image/webp" />
+                    <source srcSet={require(`../../../images/misc/alumni-mixer-photo-min.jpg`)} type="image/jpeg" />
+                    <img src={require(`../../../images/misc/alumni-mixer-photo-min.jpg`)} alt={`Alumni Mixer`} className="building-photo-img" />
                   </picture>
                 </div>
               </div>
