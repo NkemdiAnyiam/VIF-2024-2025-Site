@@ -20,8 +20,8 @@ const studentQAs: QA[] = [
       <>
         <p>
           YES!
-          Please <a className="link" href="https://tally.so/r/wgbEqP" target="_blank" rel="noreferrer" aria-label='Open Virtual Registration Form'>register for the Virtual Fair here</a>.
-          Please <a className="link" href="https://tally.so/r/w7LakL" target="_blank" rel="noreferrer" aria-label='Open In-Person Registration Form'>register for the In-Person Fair here</a>.
+          Please <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLSc3fUZpRlQ6cb70fEC-5DQzMclIu9UIV3qOd-aIdMGwq3BjOw/viewform?usp=sf_link" target="_blank" rel="noreferrer" aria-label='Open Virtual Registration Form'>register for the Virtual Fair here</a>.
+          Please <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLScSyjIGDruxEXK9J5VTcyX2cs0AtWVAkAZaIEWcIUjWwl4t4g/viewform?usp=sf_link" target="_blank" rel="noreferrer" aria-label='Open In-Person Registration Form'>register for the In-Person Fair here</a>.
         </p>
 
         <p>
@@ -56,7 +56,7 @@ const studentQAs: QA[] = [
     content: (
       <>
         <p>
-          <a className="link" href="https://tally.so/r/3xMRPE" target="_blank" rel="noreferrer"><strong>REGISTER FOR THE PROFESSIONALISM WORKSHOP!</strong></a>
+          <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLSeoB9qfICTNYIYsUCqZSEnqLXFpznto27DDqN_6iEeRWjHZfg/viewform?usp=sf_link" target="_blank" rel="noreferrer"><strong>REGISTER FOR THE PROFESSIONALISM WORKSHOP!</strong></a>
         </p>
 
         <p>
@@ -68,13 +68,13 @@ const studentQAs: QA[] = [
           The dates for these workshops are as follows:
         </p>
         <ul>
-          <li>Monday, September 25<sup>th</sup></li>
-          <li>Wednesday, September 27<sup>th</sup></li>
-          <li>Friday, September 29<sup>th</sup></li>
+          <li>Tuesday, September 24<sup>th</sup>, 10am–12pm</li>
+          <li>Wednesday, September 25<sup>th</sup>, 10am–12pm</li>
+          <li>Friday, September 27<sup>th</sup>, 3pm–5pm</li>
         </ul>
 
         <p>
-          Current students are <strong>required</strong> to attend one workshop if they wish to attend any of the portfolio reviews,
+          Current students are <strong>required to attend one workshop</strong> if they wish to attend any of the portfolio reviews,
           mock interviews, or the virtual/in-person industry fair. The workshops are virtual via Zoom.
           Students who register for the workshops will be emailed the Zoom link.
         </p>
@@ -248,7 +248,7 @@ export function CommonQuestionsPage(): JSX.Element {
   return (
     <main className="common-questions-page">
       <SearchEngineOpt
-        title="Common Questions | Viz Industry Fair 2023–24"
+        title="Common Questions | Viz Industry Fair 2024–25"
         description="Here are common questions from students and employers about the Viz Industry Fair. If you cannot find an answer, email us at pvfavizindustryfair@tamu.edu."
         // structuredJSON={JSON.stringify(renderEntities(studentQAs))}
       />
