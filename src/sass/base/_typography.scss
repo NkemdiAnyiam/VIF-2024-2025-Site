@@ -107,6 +107,10 @@
 
   ul {
     list-style: inside;
+
+    ul {
+      padding-left: 2rem;
+    }
   }
 }
 
