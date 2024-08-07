@@ -88,7 +88,7 @@ export function SchedulePage(): JSX.Element {
               well as <a className="link" href="/schedule#timetable">when they will be attending the fairs</a>.
               Any company that registers for the Virtual or In-Person Fair will show up here, so stay tuned.
               The Virtual Fair will take place Thursday, February 20<sup>th</sup>, 2025 from 10am–4pm CST on Discord.
-              The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025 from 10am–4pm CST on the TAMU campus (Location TBD).
+              The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025 from 10am–4pm CST on the TAMU campus (Location To Be Determined).
             </p>
 
             {/* <p>

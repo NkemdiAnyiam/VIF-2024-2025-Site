@@ -37,7 +37,7 @@ export function HomePage(): JSX.Element {
               This event is an opportunity for students and alumni interested in Visualization—which includes Animation, Gaming, Graphics
               and Interactive technologies—to connect with prospective employers working in high-level positions in some of today's leading industries
               and receive professional feedback on their work.
-              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025, from 10am–4pm CST on the TAMU campus (Location TBD).</strong>
+              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025, from 10am–4pm CST on the TAMU campus (Location To Be Determined).</strong>
             </p>
             <p>
               Because of continuing concerns with accessibility, we will be holding a Virtual Fair this year as well.

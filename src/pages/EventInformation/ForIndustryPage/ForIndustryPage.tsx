@@ -40,7 +40,7 @@ export function ForIndustryPage(): JSX.Element {
               <br />
               <strong> The Virtual Fair will be held Thursday, February 20<sup>th</sup>, 2025, from 10am–4pm CST via Discord.</strong>
               <br />
-              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025, from 10am–4pm CST on TAMU campus (Location TBD).</strong>
+              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025, from 10am–4pm CST on TAMU campus (Location To Be Determined).</strong>
             </p>
 
             <a

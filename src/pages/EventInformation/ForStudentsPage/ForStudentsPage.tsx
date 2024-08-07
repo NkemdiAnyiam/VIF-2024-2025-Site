@@ -84,7 +84,7 @@ export function ForStudentsPage(): JSX.Element {
               and Interactive technologies to connect with prospective employers working in high level positions
               in some of today's leading industries and receive professional feedback on their work.
               <strong> The Virtual Fair will be held Thursday, February 20<sup>th</sup>, 2025, from 10am–4pm CST via Discord.</strong>
-              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025, from 10am–4pm CST on the TAMU campus (Location TBD).</strong>
+              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025, from 10am–4pm CST on the TAMU campus (Location To Be Determined).</strong>
             </p>
 
             <p className="no-gap">
