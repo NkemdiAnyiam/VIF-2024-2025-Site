@@ -200,10 +200,9 @@ export function ForStudentsPage(): JSX.Element {
 
                 <div className="photo-and-paragraph">
                   <p>
-                    The Alumni Mixer is being held at <a href="https://maps.app.goo.gl/LntciY62AtJRsrUZ8" className="link" target="_blank" rel="noreferrer">The Corner Bar and Grill</a>,
-                    located at 401 University Dr, College Station, TX 77840. VIF will be catering a fixed menu and non-alcoholic beverages.
-                    Expenses such as parking and alcoholic beverages will not be covered by VIF. <a href="https://tally.so/r/nrOlON" className="link" target="_blank" rel="noreferrer">
-                    Register for the event here</a>.
+                    Once we have secured a venue for this event, an announcement email will be sent out with more details,
+                    and an update will be posted here on our website. VIF will be catering a fixed menu and non-alcoholic beverages.
+                    Expenses such as parking and alcoholic beverages will not be covered by VIF. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyRn-3dVB9q_1qfkP2MTx3cjOKjHkQRONqQwFFUQvwUhjoEQ/viewform?usp=sf_link" className="link" target="_blank" rel="noreferrer">Register for the event here</a>.
                   </p>
 
                   <picture className="building-photo-picture">
