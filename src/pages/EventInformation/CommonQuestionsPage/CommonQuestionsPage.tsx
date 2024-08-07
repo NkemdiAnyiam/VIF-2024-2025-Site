@@ -68,10 +68,23 @@ const studentQAs: QA[] = [
           The dates for these workshops are as follows:
         </p>
         <ul>
-          <li>Tuesday, September 24<sup>th</sup>, 10am–12pm</li>
-          <li>Wednesday, September 25<sup>th</sup>, 10am–12pm</li>
-          <li>Friday, September 27<sup>th</sup>, 3pm–5pm</li>
-        </ul>
+          <li>
+            <strong>Fall 2024</strong>
+            <ul>
+              <li>Tuesday, September 24<sup>th</sup>, 10am–12pm</li>
+              <li>Wednesday, September 25<sup>th</sup>, 10am–12pm</li>
+              <li>Friday, September 27<sup>th</sup>, 3pm–5pm</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Spring 2025</strong>
+            <ul>
+              <li>Tuesday, January 14<sup>th</sup>, 10am–12pm</li>
+              <li>Wednesday, January 15<sup>th</sup>, 10am–12pm</li>
+              <li>Friday, January 17<sup>th</sup>, 3pm–5pm</li>
+            </ul>
+          </li>
+      </ul>
 
         <p>
           Current students are <strong>required to attend one workshop</strong> if they wish to attend any of the portfolio reviews,
