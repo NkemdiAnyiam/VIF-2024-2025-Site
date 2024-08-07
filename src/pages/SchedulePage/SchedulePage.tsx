@@ -27,8 +27,7 @@ const timeRanges = [
 type Company = CompanyCardProps & {virtualTimes: string, inPersonTimes: string};
 
 const companyComparator = (companyA: Company, companyB: Company) => companyA.companyName.toLowerCase().localeCompare(companyB.companyName.toLowerCase());
-// const companyCardData: Company[] = ([...data] as Company[]).sort(companyComparator);
-const companyCardData: Company[] = ([] as Company[]).sort(companyComparator);
+const companyCardData: Company[] = ([...data] as Company[]).sort(companyComparator);
 
 const renderCards = (companies: Company[]): JSX.Element[] => {
   return companies.map((company) => {
@@ -55,14 +54,14 @@ const generateRowData = (companies: Company[], timeType: keyof Pick<Company, 'vi
     });
 };
 
-const generateBasicRow = (time: string, period: 'am' | 'pm', event: string) => {
-  return (
-    <tr key={time}>
-      <td>{time} {period}</td>
-      <td>{event}</td>
-    </tr>
-  );
-};
+// const generateBasicRow = (time: string, period: 'am' | 'pm', event: string) => {
+//   return (
+//     <tr key={time}>
+//       <td>{time} {period}</td>
+//       <td>{event}</td>
+//     </tr>
+//   );
+// };
 
 export function SchedulePage(): JSX.Element {
   return (
