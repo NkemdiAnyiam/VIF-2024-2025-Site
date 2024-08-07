@@ -105,11 +105,17 @@
     font-style: italic;
   }
 
+  ul, ol {
+    ul, ol {
+      padding-left: 2rem;
+    }
+  }
+
   ul {
     list-style: inside;
 
     ul {
-      padding-left: 2rem;
+      list-style-type: circle;
     }
   }
 }
