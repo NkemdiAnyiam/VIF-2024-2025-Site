@@ -28,8 +28,8 @@ export function HomePage(): JSX.Element {
         <div className="container">
           <h2 className="heading-secondary">Introduction</h2>
           <VideoBox
-            title="TAMU Best of Visualization - UI/UX and Graphic Design"
-            videoId="sfnlbThIZtY"
+            title="Visualization Industry Fair 2024–2025 Trailer"
+            videoId="k6dpVnG80NY"
             fixedScale
           />
           <div className="paragraphs">
