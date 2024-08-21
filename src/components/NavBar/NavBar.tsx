@@ -86,7 +86,11 @@ export function NavBar(): JSX.Element {
             <VifLogoWide className={`vif-logo-wide${!(sticky || expanded) ? '' : ' vif-logo--invisible'}`} />
         </Link>
         <div className="navbar__logo-link navbar__logo-link--tamu">
-          <TamLogoWhite className={`tamu-logo-mark`} />
+          {
+            (sticky || !isMobileWidth)
+            ? <img className='tamu-logo-mark' src={require(`../../images/logos/PVFA-logo-White-Horizontal.png`)} alt="PVFA logo" />
+            : <TamLogoWhite className={`tamu-logo-mark`} />
+          }
         </div>
       </div>
       
