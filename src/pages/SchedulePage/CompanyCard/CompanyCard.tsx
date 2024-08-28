@@ -29,13 +29,15 @@ const nameToLogoName = (companyName: string): string => {
 };
 
 const renderTags = (positionTypes: string[]): JSX.Element[] => {
-  return positionTypes.map((positionType) => {
-    return (
-      <li key={positionType.replace(' employees', '')} className="company-card__position-item">
-        <div className="company-card__tag">{positionType.replace(' employees', '')}</div>
-      </li>
-    );
-  });
+  return positionTypes
+    .filter(positionType => positionType.trim() !== '') // prevent blanks
+    .map((positionType) => {
+      return (
+        <li key={positionType.replace(' employees', '')} className="company-card__position-item">
+          <div className="company-card__tag">{positionType.replace(' employees', '')}</div>
+        </li>
+      );
+    });
 };
 
 export function CompanyCard(props: CompanyCardProps): JSX.Element {
