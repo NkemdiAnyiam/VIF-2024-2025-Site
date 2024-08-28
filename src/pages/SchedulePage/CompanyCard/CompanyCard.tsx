@@ -14,15 +14,25 @@ const cleanUrl = (url: string): string => {
   return url.match(/(https|http):\/\//) ? url : `https://${url}`;
 };
 
+/**
+ * 
+ * @param companyName 
+ * @returns 
+ * @example
+ * ```ts
+ * const newName = nameToLogoName('Bluepoint Games'); // 'bluepoint-games-min'
+ * ```
+ */
 const nameToLogoName = (companyName: string): string => {
+  // example: Bluepoint Games becomes bluepoint-games-min
   return companyName.trim().toLowerCase().replaceAll(/\s+/g, '-').replaceAll(/\(|\)|\./g, '') + '-min';
 };
 
 const renderTags = (positionTypes: string[]): JSX.Element[] => {
   return positionTypes.map((positionType) => {
     return (
-      <li key={positionType} className="company-card__position-item">
-        <div className="company-card__tag">{positionType}</div>
+      <li key={positionType.replace(' employees', '')} className="company-card__position-item">
+        <div className="company-card__tag">{positionType.replace(' employees', '')}</div>
       </li>
     );
   });

@@ -22,7 +22,7 @@ const timeRanges = [
   '3:00',
   '3:30',
   '4:00',
-].map((_, index, array) => `${array[index]}-${array[index+1]}`).slice(0, -1);
+].map((_, index, array) => `${array[index]} - ${array[index+1]}`).slice(0, -1);
 
 type Company = CompanyCardProps & {virtualTimes: string, inPersonTimes: string};
 

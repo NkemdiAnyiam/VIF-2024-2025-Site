@@ -8,7 +8,7 @@ const parse = csvParse.parse;
   const csvFilePath = path.resolve(__dirname, 'companyFairSubmissions.csv');
   
   // relevant column headers
-  const headers = ['Company Name', 'Company Focus', 'Other Focuses', 'Position Types', 'Interviews', 'Company Website', 'Virtual Fair Times', 'In-Person Fair Times', 'Company Logo'];
+  const headers = ['company-name', 'focuses', 'position-types', 'interviews', 'website', 'virtual-fair-times', 'in-person-fair-times', 'logo'];
   
   const fileContent = fs.readFileSync(csvFilePath, { encoding: 'utf-8' });
   
@@ -24,19 +24,16 @@ const parse = csvParse.parse;
     const companiesMap = new Map(); // using map to overwrite duplicate company names
     for (const row of result.slice(1)) {
       const tupleRecord = columnIndices.map(index => row[index]);
-      const [companyName, companyFocuses, otherFocuses, positionTypes, interviews, website, virtualTimes, inPersonTimes, logoUrlCheckString] = tupleRecord;
+      const [companyName, companyFocuses, positionTypes, interviews, website, virtualTimes, inPersonTimes, logoUrlCheckString] = tupleRecord;
       // if row empty, don't add to map
       if (!companyName) { continue; }
-      
-      // get rid of 'Other' option from focuses
-      const [focuses1, focuses2] = [companyFocuses.split(/\s*,\s*/).filter(str => str.toLowerCase() !== 'other').join(', '), otherFocuses];
 
       if (companiesMap.has(companyName.trim().toLowerCase())) { throw new Error(`ERROR: Duplicate company ${companyName} found`); }
 
       const companyObj = {
         companyName,
         // join focuses into string separated by commas
-        focuses: focuses1 && focuses2 ? `${focuses1},${focuses2}`.split(/\s*,\s*/).join(', ') : focuses1 || focuses2,
+        focuses: `${companyFocuses}`.split(/\s*,\s*/).join(', '),
         // split position types into an array
         positionTypes: positionTypes.split(/\s*,\s*/),
         website,
