@@ -199,6 +199,10 @@
     &--red {
       background-color: $color-brand-red-dark;
     }
+
+    &--yellow {
+      background-color: darken($color-brand-yellow-darker, 2%);
+    }
   }
 }
 

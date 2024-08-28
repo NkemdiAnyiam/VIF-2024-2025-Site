@@ -88,7 +88,17 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
 
         <div className="company-card__description-section">
           <h4 className="heading-quaternary">Interviews:</h4>
-          <div className={`company-card__tag company-card__tag--${props.interviews === 'Yes' ? 'green' : 'red'}`}>{props.interviews}</div>
+          <div className={`company-card__tag company-card__tag--${
+            (() => {
+              switch(props.interviews) {
+                case 'Yes': return 'green';
+                case 'No': return 'red';
+                case 'Maybe': return 'yellow';
+              }
+            })()}`
+          }>
+            {props.interviews}
+          </div>
         </div>
       </div>
     </div>
