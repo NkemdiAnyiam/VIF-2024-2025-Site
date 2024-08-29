@@ -5,6 +5,7 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 import { CommitteeBlock, CommitteeBlockProps } from './CommitteeBlock/CommitteeBlock';
 import { Header } from '../../../components/Header/Header';
 import { committeeMembersData } from '../../../data/committee';
+import { fairTimes } from '../../../data';
 
 const renderVifCommBlocks = (items: CommitteeBlockProps[]) => {
   return [...items]
@@ -29,7 +30,7 @@ export function VifCommitteePage(): JSX.Element {
   return (
     <main className="vif-committee-page">
       <SearchEngineOpt
-        title="VIF Committee | Viz Industry Fair 2024–25"
+        title={`VIF Committee | Viz Industry Fair ${fairTimes.yearEnDashRange}`}
         description="Introducing the VIF committee, our dedicated students and faculty who help make the Visualization Industry Fair possible!"
       />
 

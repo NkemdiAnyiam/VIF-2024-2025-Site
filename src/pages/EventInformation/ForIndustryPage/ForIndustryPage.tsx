@@ -6,12 +6,13 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 import { EventBox } from '../../../components/EventBox/EventBox';
 import { Event } from '../../../components/Event/Event';
 import { Header } from '../../../components/Header/Header';
+import { fairTimes } from '../../../data';
 
 export function ForIndustryPage(): JSX.Element {
   return (
     <main className="for-industry-page">
       <SearchEngineOpt
-        title="For Industry | Viz Industry Fair 2024–25"
+        title={`For Industry | Viz Industry Fair ${fairTimes.yearEnDashRange}`}
         description="Employers and industry guests will find important information about the Viz Industry Fair, including registration forms and volunteer opportunities."
       />
 

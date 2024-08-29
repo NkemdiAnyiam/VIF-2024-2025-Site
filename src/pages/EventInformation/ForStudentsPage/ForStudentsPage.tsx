@@ -6,6 +6,7 @@ import { Header } from '../../../components/Header/Header';
 import { Event } from '../../../components/Event/Event';
 import { EventBox } from '../../../components/EventBox/EventBox';
 import { pastCompanies } from '../../../data/companies';
+import { fairTimes } from '../../../data';
 
 const renderPastCompanies = (companies: string[]) => {
   return companies.map((companyName) => {
@@ -23,7 +24,7 @@ export function ForStudentsPage(): JSX.Element {
   return (
     <main className="for-students-page">
       <SearchEngineOpt
-        title="For Students | Viz Industry Fair 2024–25"
+        title={`For Students | Viz Industry Fair ${fairTimes.yearEnDashRange}`}
         description="Students will find important information about the Viz Industry Fair, including registration forms for the fair and other events."
       />
 

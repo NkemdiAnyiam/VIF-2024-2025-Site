@@ -5,12 +5,13 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 import { PictureSquare } from '../../../components/PictureSquare/PictureSquare';
 import { VideoBox } from '../../../components/VideoBox/VideoBox';
 import { Header } from '../../../components/Header/Header';
+import { fairTimes } from '../../../data';
 
 export function AboutVizPage(): JSX.Element {
   return (
     <main className="about-viz-page">
       <SearchEngineOpt
-        title="About Viz | Viz Industry Fair 2024–25"
+        title={`About Viz | Viz Industry Fair ${fairTimes.yearEnDashRange}`}
         description="Learn about the internationally recognized Visualization program, which has helped develop artists who have ventured into creative and technical fields."
       />
       

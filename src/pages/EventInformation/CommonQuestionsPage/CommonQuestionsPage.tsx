@@ -7,6 +7,7 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 import { Header } from '../../../components/Header/Header';
 import { QuestionBox, QuestionBoxProps } from './QuestionBox/QuestionBox';
 import { companyQAs, studentQAs, QA } from '../../../data/commonQuestions';
+import { fairTimes } from '../../../data';
 
 const renderQuestions = (items: QA[], color: QuestionBoxProps['color']) => {
   return items.map(({ question, content }, index) => {
@@ -44,7 +45,7 @@ export function CommonQuestionsPage(): JSX.Element {
   return (
     <main className="common-questions-page">
       <SearchEngineOpt
-        title="Common Questions | Viz Industry Fair 2024–25"
+        title={`Common Questions | Viz Industry Fair ${fairTimes.yearEnDashRange}`}
         description="Here are common questions from students and employers about the Viz Industry Fair. If you cannot find an answer, email us at pvfavizindustryfair@tamu.edu."
         // structuredJSON={JSON.stringify(renderEntities(studentQAs))}
       />

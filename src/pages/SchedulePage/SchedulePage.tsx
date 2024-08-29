@@ -6,7 +6,7 @@ import { Header } from '../../components/Header/Header';
 import { Timetable } from '../../components/Timetable/Timetable';
 import { CompanyCard, CompanyCardProps } from './CompanyCard/CompanyCard';
 
-import { companies, timeRanges } from '../../data';
+import { companies, fairTimes, timeRanges } from '../../data';
 
 type Company = CompanyCardProps & {virtualTimes: string, inPersonTimes: string};
 
@@ -52,7 +52,7 @@ export function SchedulePage(): JSX.Element {
     <main className="schedule-page">
 
       <SearchEngineOpt
-        title="Schedule | Viz Industry Fair 2024–25"
+        title={`Schedule | Viz Industry Fair ${fairTimes.yearEnDashRange}`}
         description="Find out what companies are attending the fair, when they will be avaiable, and whom they are hiring."
       />
 

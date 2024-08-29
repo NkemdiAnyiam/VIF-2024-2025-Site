@@ -15,3 +15,19 @@ export const timePoints = [
 ];
 
 export const timeRanges = timePoints.map((_, index, array) => `${array[index]} - ${array[index+1]}`).slice(0, -1);
+
+export const fairTimes = {
+  yearStart: `2024`,
+  yearEnd: `2025`,
+  get yearEnDashRange() { return `${this.yearStart}–${this.yearEnd.substring(2)}`; },
+  virtualFair: {
+    date: `2025-02-20`,
+    startTime: `10am`,
+    endTime: `4pm`
+  },
+  inPersonFair: {
+    date: `2025-02-21`,
+    startTime: `10am`,
+    endTime: `4pm`
+  },
+}
