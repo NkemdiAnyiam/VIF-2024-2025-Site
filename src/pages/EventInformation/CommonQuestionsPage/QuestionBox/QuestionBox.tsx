@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-type QuestionBoxProps = {
+export type QuestionBoxProps = {
   qNum: number;
   question: string;
   children: JSX.Element;

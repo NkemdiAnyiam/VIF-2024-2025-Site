@@ -1,29 +1,25 @@
 import React , { useState } from 'react';
 
-import { LogoInstagram, LogoLinkedin, LogoTwitter, LogoYoutube, LogoGithub, GlobeOutline, LogoFacebook } from '../../../../components/iconComponents';
+import {
+  LogoInstagram, LogoLinkedin, LogoTwitter, LogoYoutube,
+  LogoGithub, GlobeOutline, LogoFacebook
+} from '../../../../components/iconComponents';
+
+import { CommitteeMember, Socials } from '../../../../data/committee';
 
 type Color = 'red' | 'green' | 'yellow' | 'purple';
 
-type Socials = {
-  linkedin: string;
-  youtube: string;
-  twitter: string;
-  github: string;
-  facebook: string;
-  instagram: string;
-  website: string;
-};
-
-export type CommitteeBlockProps = {
-  fullName: string;
-  role: string;
-  rank: 1 | 2 | 3 | 4;
-  imageName: string;
-  specialImageName?: string;
-  specialImgAlt?: string;
-  description: string;
-  socials: Partial<Socials>;
-};
+export type CommitteeBlockProps = Pick<
+  CommitteeMember,
+  | 'fullName'
+  | 'role'
+  | 'rank'
+  | 'imageName'
+  | 'specialImageName'
+  | 'specialImgAlt'
+  | 'description'
+  | 'socials'
+>;
 
 const rankToColor = (rank: CommitteeBlockProps['rank']): Color => {
   switch(rank) {

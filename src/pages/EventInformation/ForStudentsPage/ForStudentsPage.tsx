@@ -5,46 +5,7 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 import { Header } from '../../../components/Header/Header';
 import { Event } from '../../../components/Event/Event';
 import { EventBox } from '../../../components/EventBox/EventBox';
-
-// type PastCompany = {
-//   companyName: string;
-// }
-
-const pastCompanies: string[] = Array.from(new Set([
-  "900lbs",
-  "A Bunch Of Short Guys",
-  "AEM Creations",
-  "Aggieland Outfitters",
-  "Bluepoint Games",
-  "BonusXP",
-  "Booz Allen Hamilton, Inc.",
-  "C.C. Creations",
-  "Cinevva",
-  "Click Here Labs - TRG",
-  "Cloud Imperium Games",
-  "Credera",
-  "Deloitte",
-  "Digital Seat Media",
-  "DreamWorks Animation",
-  "Electronic Arts",
-  "Framestore",
-  "Game Worlds",
-  "Gearbox Software",
-  "IMG Studio",
-  "Jacobs Architects",
-  "Mighty Coconut",
-  "Pixar",
-  "Powerhouse Animation",
-  "ReelFX",
-  "Six Foot Games",
-  "Texas Film Commission",
-  "Texas Moving Picture Alliance (TXMPA)",
-  "The Third Floor, Inc.",
-  "TRG",
-  "Walt Disney",
-  "Viasat",
-]));
-pastCompanies.sort((a, b) => a.toLowerCase() <= b.toLowerCase() ? -1 : 1);
+import { pastCompanies } from '../../../data/companies';
 
 const renderPastCompanies = (companies: string[]) => {
   return companies.map((companyName) => {
