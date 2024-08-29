@@ -6,7 +6,7 @@ import { Header } from '../../components/Header/Header';
 import { Timetable } from '../../components/Timetable/Timetable';
 import { CompanyCard, CompanyCardProps } from './CompanyCard/CompanyCard';
 
-import { data } from '../../data/companies';
+import { companies } from '../../data';
 
 const timeRanges = [
   '10:00',
@@ -27,7 +27,7 @@ const timeRanges = [
 type Company = CompanyCardProps & {virtualTimes: string, inPersonTimes: string};
 
 const companyComparator = (companyA: Company, companyB: Company) => companyA.companyName.toLowerCase().localeCompare(companyB.companyName.toLowerCase());
-const companyCardData: Company[] = ([...data] as Company[]).sort(companyComparator);
+const companyCardData: Company[] = ([...companies] as Company[]).sort(companyComparator);
 
 const renderCards = (companies: Company[]): JSX.Element[] => {
   return companies.map((company) => {
