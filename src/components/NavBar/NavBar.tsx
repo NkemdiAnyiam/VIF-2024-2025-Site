@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { NavLink } from './NavLink/NavLink';
-import { TamLogoWhite, VifLogoMark, VifLogoWide, XSign } from '../iconComponents';
+import { TamuLogoWhite, VifLogoMark, VifLogoWide, XSign } from '../iconComponents';
 
 export function NavBar(): JSX.Element {
   const [sticky, setSticky] = useState(window.scrollY > 0);
@@ -89,7 +89,7 @@ export function NavBar(): JSX.Element {
           {
             (sticky || !isMobileWidth)
             ? <img className='tamu-logo-mark' src={require(`../../images/logos/PVFA-logo-White-Horizontal.png`)} alt="PVFA logo" />
-            : <TamLogoWhite className={`tamu-logo-mark`} />
+            : <TamuLogoWhite className={`tamu-logo-mark`} />
           }
         </div>
       </div>

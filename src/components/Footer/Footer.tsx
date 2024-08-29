@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { FooterLink } from './FooterLink/FooterLink';
-import { LogoInstagram, LogoLinkedin, LogoTwitter, LogoYoutube, TamLogoWhite } from '../iconComponents';
+import { LogoInstagram, LogoLinkedin, LogoTwitter, LogoYoutube, TamuLogoWhite } from '../iconComponents';
 
 export function Footer(): JSX.Element {
   return (
@@ -24,7 +24,7 @@ export function Footer(): JSX.Element {
         </FooterLink>
 
         <FooterLink href="https://pvfa.tamu.edu/" ariaLabel={`Visit PVFA site`}>
-          <TamLogoWhite className="footer__icon footer__icon--tamu" />
+          <TamuLogoWhite className="footer__icon footer__icon--tamu" />
         </FooterLink>
       </ul>
     </footer>
