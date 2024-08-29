@@ -8,7 +8,10 @@ const parse = csvParse.parse;
   const csvFilePath = path.resolve(__dirname, 'companyFairSubmissions.csv');
   
   // relevant column headers
-  const headers = ['company-name', 'focuses', 'position-types', 'interviews', 'website', 'virtual-fair-times', 'in-person-fair-times', 'logo'];
+  const headers = [
+    'company-name', 'focuses', 'position-types', 'interviews', 'website',
+    'virtual-fair-times', 'in-person-fair-times', 'logo', 'attending-virtual-fair', 'attending-in-person-fair',
+  ];
   
   const fileContent = fs.readFileSync(csvFilePath, { encoding: 'utf-8' });
   
@@ -24,9 +27,14 @@ const parse = csvParse.parse;
     const companiesMap = new Map(); // using map to overwrite duplicate company names
     for (const row of result.slice(1)) {
       const tupleRecord = columnIndices.map(index => row[index]);
-      const [companyName, companyFocuses, positionTypes, interviews, website, virtualTimes, inPersonTimes, logoUrlCheckString] = tupleRecord;
+      const [companyName, companyFocuses, positionTypes, interviews,
+        website, virtualTimes, inPersonTimes, logoUrlCheckString,
+        attendingVirtualFair, attendingInPersonFair,
+      ] = tupleRecord;
       // if row empty, don't add to map
       if (!companyName) { continue; }
+      // if attending neither fair, don't add to map
+      if (!(attendingVirtualFair === 'Yes' || attendingInPersonFair === 'Yes')) { continue; }
 
       if (companiesMap.has(companyName.trim().toLowerCase())) { throw new Error(`ERROR: Duplicate company ${companyName} found`); }
 

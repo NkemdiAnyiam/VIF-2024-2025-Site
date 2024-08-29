@@ -25,18 +25,5 @@ export const data = JSON.parse(`[
     "virtualTimes": "All Day",
     "inPersonTimes": "",
     "logoUrlCheckString": "https://brand.netflix.com/en/assets/logos"
-  },
-  {
-    "companyName": "Framestore",
-    "focuses": "Visual Effects",
-    "positionTypes": [
-      "Interns",
-      "Freelancers"
-    ],
-    "website": "https://www.framestore.com/",
-    "interviews": "No",
-    "virtualTimes": "",
-    "inPersonTimes": "",
-    "logoUrlCheckString": "Can not share logo this way "
   }
 ]`);
