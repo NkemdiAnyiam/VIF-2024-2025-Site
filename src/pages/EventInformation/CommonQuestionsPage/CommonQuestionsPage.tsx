@@ -6,7 +6,7 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 
 import { Header } from '../../../components/Header/Header';
 import { QuestionBox, QuestionBoxProps } from './QuestionBox/QuestionBox';
-import { companyQAs, studentQAs, QA } from '../../../data/commonQuestion';
+import { companyQAs, studentQAs, QA } from '../../../data/commonQuestions';
 
 const renderQuestions = (items: QA[], color: QuestionBoxProps['color']) => {
   return items.map(({ question, content }, index) => {
