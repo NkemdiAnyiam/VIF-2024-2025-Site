@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { nameToLogoName, toExternalUrl } from '../../../utils';
 
 export interface CompanyCardProps {
   companyName: string;
@@ -7,26 +8,6 @@ export interface CompanyCardProps {
   website: string;
   interviews: string;
 }
-
-// for some reason, React assumes that any link without an http/https protocol is internal,
-// so we need to fix any submitted links that do not start with http or https
-const cleanUrl = (url: string): string => {
-  return url.match(/(https|http):\/\//) ? url : `https://${url}`;
-};
-
-/**
- * 
- * @param companyName 
- * @returns 
- * @example
- * ```ts
- * const newName = nameToLogoName('Bluepoint Games'); // 'bluepoint-games-min'
- * ```
- */
-const nameToLogoName = (companyName: string): string => {
-  // example: Bluepoint Games becomes bluepoint-games-min
-  return companyName.trim().toLowerCase().replaceAll(/\s+/g, '-').replaceAll(/\(|\)|\./g, '') + '-min';
-};
 
 const renderTags = (positionTypes: string[]): JSX.Element[] => {
   return positionTypes
@@ -70,7 +51,7 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
         <div className="company-card__description-section">
           <h4 className="heading-quaternary">Website:</h4>
           <a
-            href={cleanUrl(props.website)}
+            href={toExternalUrl(props.website)}
             className="link company-card__website"
             target="_blank"
             rel="noreferrer"
