@@ -88,8 +88,8 @@ export function NavBar(): JSX.Element {
         <div className="navbar__logo-link navbar__logo-link--tamu">
           {
             (sticky || !isMobileWidth)
-            ? <PvfaLogoWhite className={`tamu-logo-mark`} />
-            : <TamuLogoWhite className={`tamu-logo-mark`} />
+            ? <PvfaLogoWhite className={`tamu-logo-wide`} />
+            : <TamuLogoWhite className={`tamu-logo-mark`} /> // logo mark shows only at the top of the page at mobile width
           }
         </div>
       </div>
