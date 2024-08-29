@@ -9,3 +9,4 @@ export { default as TamuLogoWhite } from "./TamuLogoWhite";
 export { default as VifLogoMark } from "./VifLogoMark";
 export { default as VifLogoWide } from "./VifLogoWide";
 export { default as XSign } from "./XSign";
+export { default as PvfaLogoWhite } from "./PvfaLogoWhite";
