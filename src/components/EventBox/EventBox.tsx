@@ -1,5 +1,5 @@
 import React from 'react';
-import { Day, getCentralTimeZone, getWeekDatePostfix, Month, Time } from '../../utils/time';
+import { Day, getCentralTimeZone, getWeekdateOrdinal, Month, Time } from '../../utils/time';
 
 type EventData = [day: Day, month: Month, weekDate: number, timeRange: [startTime: Time, endTime: Time]];
 
@@ -14,7 +14,7 @@ const generateListItems = (events: EventData[]): JSX.Element[] => {
   return events.map(([day, month, weekDate, [startTime, endTime]]) => {
     return (
       <li key={`${month} ${weekDate}`} className="event-box__item">
-        <p className="event-box__date">{day}, {month} {weekDate}<sup>{getWeekDatePostfix(weekDate)}</sup></p>
+        <p className="event-box__date">{day}, {month} {weekDate}<sup>{getWeekdateOrdinal(weekDate)}</sup></p>
         <p className="event-box__time">{startTime}–{endTime} {getCentralTimeZone(month, weekDate).short}</p>
       </li>
     );

@@ -51,7 +51,7 @@ export function getCentralTimeZone(monthOrDate: Month | Date, weekDate?: number 
     : {short: 'CST', offset: '-05:00'};
 }
 
-export function getWeekDatePostfix(weekDate: number) {
+export function getWeekdateOrdinal(weekDate: number) {
   switch(weekDate % 10) {
     case 1: return 'st';
     case 2: return 'nd';
@@ -100,7 +100,7 @@ export class TimeEvent {
   readonly endTime: Time;
 
   get weekday(): Day { return new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(this.date) as Day; }
-  get weekdateOrdinal() { return getWeekDatePostfix(this.weekdate); }
+  get weekdateOrdinal() { return getWeekdateOrdinal(this.weekdate); }
   get timeRange(): `${Time}–${Time}` {
     return `${this.startTime}–${this.endTime}`; // e.g.: '10am–4pm CST`
   }
