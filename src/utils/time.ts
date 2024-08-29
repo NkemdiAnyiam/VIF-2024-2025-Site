@@ -47,7 +47,7 @@ export function getCentralTimeZone(month: Month, weekDate: number): CDTTimezone 
 }
 
 export function getWeekDatePostfix(weekDate: number) {
-  switch(weekDate) {
+  switch(weekDate % 10) {
     case 1: return 'st';
     case 2: return 'nd';
     case 3: return 'rd';
