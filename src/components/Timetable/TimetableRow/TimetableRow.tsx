@@ -1,25 +1,10 @@
 import React from 'react';
+import { timePoints } from '../../../data/times';
 
 interface TimetableRowProps {
   isHeader?: boolean;
   cellData: string[];
 }
-
-const times = [
-  '10:00',
-  '10:30',
-  '11:00',
-  '11:30',
-  '12:00',
-  '12:30',
-  '1:00',
-  '1:30',
-  '2:00',
-  '2:30',
-  '3:00',
-  '3:30',
-  '4:00',
-]
 
 const renderCells = (cellData: string[], isHeader?: boolean): JSX.Element[] => {
   let row: JSX.Element[];
@@ -46,14 +31,14 @@ const renderCells = (cellData: string[], isHeader?: boolean): JSX.Element[] => {
             chainStart = index;
           }
           chainStarted = false;
-          const startTime = times[chainStart];
-          const endTime = times[chainStart + availabilities.join('').slice(chainStart).match(/X*/)![0].length];
+          const startTime = timePoints[chainStart];
+          const endTime = timePoints[chainStart + availabilities.join('').slice(chainStart).match(/X*/)![0].length];
           return (
             <div
               title={`${companyName}\n${startTime}-${endTime}`}
               data-group={currentConsec}
-              data-start={times[index]}
-              data-end={times[index + 1]}
+              data-start={timePoints[index]}
+              data-end={timePoints[index + 1]}
               onMouseEnter={(e) => {
                 const parent = e.currentTarget.parentElement!;
                 const children = Array.from(parent.querySelectorAll(`[data-group="${e.currentTarget.dataset.group}"]`));
