@@ -1,25 +1,20 @@
 import React from 'react';
-import { Day, getCentralTimeZone, getWeekdateOrdinal, Month, Time, TimeEvent } from '../../utils';
-
-type EventData = [
-  day: Day, month: Month, weekDate: number,
-  year: number | `${number}`,timeRange: [startTime: Time, endTime: Time]
-];
+import { TimeEvent } from '../../utils';
 
 export type EventBoxProps = {
   heading: string;
   headingLink?: string;
-  events: EventData[];
+  events: TimeEvent[];
   modifiers?: string[];
 };
 
-const generateListItems = (events: EventData[]): JSX.Element[] => {
-  return events.map(([day, month, weekdate, year, [startTime, endTime]]) => {
-    const timeEvent = new TimeEvent({ year, month, startTime, endTime, weekdate });
+const generateListItems = (events: TimeEvent[]): JSX.Element[] => {
+  return events.map((event) => {
+    const {weekday, month, weekdate, weekdateOrdinal, timeRange, timeZone } = event;
     return (
       <li key={`${month} ${weekdate}`} className="event-box__item">
-        <p className="event-box__date">{day}, {month} {weekdate}<sup>{getWeekdateOrdinal(weekdate)}</sup></p>
-        <p className="event-box__time">{startTime}–{endTime} {getCentralTimeZone(timeEvent.dateObj).short}</p>
+        <p className="event-box__date">{weekday}, {month} {weekdate}<sup>{weekdateOrdinal}</sup></p>
+        <p className="event-box__time">{timeRange} {timeZone}</p>
       </li>
     );
   });

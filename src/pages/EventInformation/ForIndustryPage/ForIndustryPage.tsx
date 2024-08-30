@@ -6,7 +6,7 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 import { EventBox } from '../../../components/EventBox/EventBox';
 import { Event } from '../../../components/Event/Event';
 import { Header } from '../../../components/Header/Header';
-import { alumniMixer, fairTimes, inPersonFair, virtualFair } from '../../../data';
+import { alumniMixer, fairTimes, inPersonFair, mockInterviews, portfolioReviews, virtualFair } from '../../../data';
 import { printEventTimeLong } from '../../../utils';
 
 export function ForIndustryPage(): JSX.Element {
@@ -89,20 +89,14 @@ export function ForIndustryPage(): JSX.Element {
               eventBoxes={[
                 <EventBox
                   heading="Fall"
-                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSfNS-ZJFzCvcigJAELoKFY34j_i9ZzIRivrmR8J1JUsgQNQrQ/viewform?usp=sf_link`}
-                  events={[
-                    ["Friday", "October", 18, 2024, ['10am', '4pm']],
-                    ["Saturday", "October", 19, 2024, ['10am', '4pm']],
-                  ]}
+                  headingLink={portfolioReviews.fall.industryLink}
+                  events={portfolioReviews.fall.events}
                 />,
 
                 <EventBox
                   heading="Spring"
-                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSd1mOyhl7UGzctZqxngIk16Bm_eeoyZQrq2hMJk-YnvZbcK5w/viewform?usp=sf_link`}
-                  events={[
-                    ["Friday", "January", 24, 2025, ['10am', '4pm']],
-                    ["Saturday", "January", 25, 2025, ['10am', '4pm']],
-                  ]}
+                  headingLink={portfolioReviews.spring.industryLink}
+                  events={portfolioReviews.spring.events}
                 />
               ]}
             >
@@ -118,18 +112,14 @@ export function ForIndustryPage(): JSX.Element {
               eventBoxes={[
                 <EventBox
                   heading="Fall"
-                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSflSAGSoFqtyLXA7ZwJpHv_TibVa7IE5whkKU16ipSqTvp0iQ/viewform?usp=sf_link`}
-                  events={[
-                    ["Friday", "November", 8, 2024, ['10am', '4pm']],
-                  ]}
+                  headingLink={mockInterviews.fall.industryLink}
+                  events={mockInterviews.fall.events}
                 />,
 
                 <EventBox
                   heading="Spring"
-                  headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSfVjJZ7Wsu8FoHDF6c1aGHvlL2oqI7pIeWgX9X4L0JTX5wbKg/viewform?usp=sf_link`}
-                  events={[
-                    ["Friday", "February", 7, 2025, ['10am', '4pm']],
-                  ]}
+                  headingLink={mockInterviews.spring.industryLink}
+                  events={mockInterviews.spring.events}
                 />
               ]}
             >

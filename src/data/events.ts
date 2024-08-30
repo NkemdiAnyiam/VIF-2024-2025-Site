@@ -54,3 +54,41 @@ export const alumniMixer = new TimeEventWithLinks({
   industryLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdyRn-3dVB9q_1qfkP2MTx3cjOKjHkQRONqQwFFUQvwUhjoEQ/viewform?usp=sf_link',
   location: 'TBD',
 });
+
+export const portfolioReviews = {
+  fall: {
+    studentLink: `https://docs.google.com/forms/d/e/1FAIpQLSf7nnaYybNwZOKcpEiMSdKaqul86TqGAwHhvwsDaUV4nVZv9Q/viewform?usp=sf_link`,
+    industryLink: `https://docs.google.com/forms/d/e/1FAIpQLSfNS-ZJFzCvcigJAELoKFY34j_i9ZzIRivrmR8J1JUsgQNQrQ/viewform?usp=sf_link`,
+    events: [
+      new TimeEvent({ year: 2024, month: 'October', weekdate: 18, startTime: '10am', endTime: '4pm' }),
+      new TimeEvent({ year: 2024, month: 'October', weekdate: 19, startTime: '10am', endTime: '4pm' }),
+    ]
+  },
+  
+  spring: {
+    studentLink: `https://docs.google.com/forms/d/e/1FAIpQLSer6Vvt7GMlDyuiJZpm3DGcNmCRmZY9mZo1mMWG2w_lmlV7Aw/viewform?usp=sf_link`,
+    industryLink: `https://docs.google.com/forms/d/e/1FAIpQLSd1mOyhl7UGzctZqxngIk16Bm_eeoyZQrq2hMJk-YnvZbcK5w/viewform?usp=sf_link`,
+    events: [
+      new TimeEvent({ year: 2025, month: 'January', weekdate: 24, startTime: '10am', endTime: '4pm' }),
+      new TimeEvent({ year: 2025, month: 'January', weekdate: 25, startTime: '10am', endTime: '4pm' }),
+    ]
+  },
+};
+
+export const mockInterviews = {
+  fall: {
+    studentLink: `https://docs.google.com/forms/d/e/1FAIpQLScv0r3HDa4H61GPp8aigegVrpgSCFUy62Z2TJlG1dwdAVZV0w/viewform?usp=sf_link`,
+    industryLink: `https://docs.google.com/forms/d/e/1FAIpQLSflSAGSoFqtyLXA7ZwJpHv_TibVa7IE5whkKU16ipSqTvp0iQ/viewform?usp=sf_link`,
+    events: [
+      new TimeEvent({ year: 2024, month: 'November', weekdate: 8, startTime: '10am', endTime: '4pm' }),
+    ],
+  },
+  
+  spring: {
+    studentLink: `https://docs.google.com/forms/d/e/1FAIpQLSdVzGMG3G4I9buRM4bO8UTjeq_QhYlFa0KloeHkvPQNIviw1A/viewform?usp=sf_link`,
+    industryLink: `https://docs.google.com/forms/d/e/1FAIpQLSfVjJZ7Wsu8FoHDF6c1aGHvlL2oqI7pIeWgX9X4L0JTX5wbKg/viewform?usp=sf_link`,
+    events: [
+      new TimeEvent({ year: 2025, month: 'February', weekdate: 7, startTime: '10am', endTime: '4pm' }),
+    ],
+  },
+};
