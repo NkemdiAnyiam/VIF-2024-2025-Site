@@ -7,6 +7,7 @@ import { SearchEngineOpt } from '../../components/SearchEngineOpt/SearchEngineOp
 import { Header } from '../../components/Header/Header';
 import { VideoBox } from '../../components/VideoBox/VideoBox';
 import { fairTimes, virtualFair, inPersonFair } from '../../data';
+import { printEventTimeLong } from '../../utils';
 
 export function HomePage(): JSX.Element {
   return (
@@ -38,11 +39,11 @@ export function HomePage(): JSX.Element {
               This event is an opportunity for students and alumni interested in Visualization—which includes Animation, Gaming, Graphics
               and Interactive technologies—to connect with prospective employers working in high-level positions in some of today's leading industries
               and receive professional feedback on their work.
-              <strong> The In-Person Fair will be held {inPersonFair.weekday}, {inPersonFair.month} {inPersonFair.weekdate}<sup>{inPersonFair.weekdateOrdinal}</sup>, {inPersonFair.year} from {inPersonFair.timeRange} {inPersonFair.timeZone} on {inPersonFair.location}.</strong>
+              <strong> The In-Person Fair will be held {printEventTimeLong(inPersonFair)} on {inPersonFair.location}.</strong>
             </p>
             <p>
               Because of continuing concerns with accessibility, we will be holding a Virtual Fair this year as well.
-              <strong> The Virtual Fair will take place {virtualFair.weekday}, {virtualFair.month} {virtualFair.weekdate}<sup>{virtualFair.weekdateOrdinal}</sup>, {virtualFair.year} from {virtualFair.timeRange} {virtualFair.timeZone} on {virtualFair.location}.</strong>
+              <strong> The Virtual Fair will take place {printEventTimeLong(virtualFair)} on {virtualFair.location}.</strong>
             </p>
             <p>
               This year, we are inviting former students to participate in both our virtual and in-person events at the same level as our current students,

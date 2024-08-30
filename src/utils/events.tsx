@@ -56,3 +56,21 @@ export class FairTimeEvent extends TimeEvent {
     this.location = data.location;
   }
 }
+
+export function printEventTimeLong(event: TimeEvent) {
+  const {
+    weekday,
+    month,
+    weekdate,
+    weekdateOrdinal,
+    year,
+    timeRange,
+    timeZone,
+  } = event;
+
+  return (
+    <>
+      {weekday}, {month} {weekdate}<sup>{weekdateOrdinal}</sup>, {year} from {timeRange} {timeZone}
+    </>
+  );
+}

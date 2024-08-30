@@ -7,6 +7,7 @@ import { Timetable } from '../../components/Timetable/Timetable';
 import { CompanyCard, CompanyCardProps } from './CompanyCard/CompanyCard';
 
 import { companies, fairTimes, inPersonFair, timeRanges, virtualFair } from '../../data';
+import { printEventTimeLong } from '../../utils';
 
 type Company = CompanyCardProps & {virtualTimes: string, inPersonTimes: string};
 
@@ -71,8 +72,8 @@ export function SchedulePage(): JSX.Element {
               On this page, you can find <a className="link" href="/schedule#companies">information about any registered companies</a> as
               well as <a className="link" href="/schedule#timetable">when they will be attending the fairs</a>.
               Any company that registers for the Virtual or In-Person Fair will show up here, so stay tuned.
-              The Virtual Fair will take place {virtualFair.weekday}, {virtualFair.month} {virtualFair.weekdate}<sup>{virtualFair.weekdateOrdinal}</sup>, {virtualFair.year} from {virtualFair.timeRange} {virtualFair.timeZone} on {virtualFair.location}.
-              The In-Person Fair will be held {inPersonFair.weekday}, {inPersonFair.month} {inPersonFair.weekdate}<sup>{inPersonFair.weekdateOrdinal}</sup>, {inPersonFair.year} from {inPersonFair.timeRange} {inPersonFair.timeZone} on {inPersonFair.location}.
+              The Virtual Fair will take place {printEventTimeLong(virtualFair)} on {virtualFair.location}.
+              The In-Person Fair will be held {printEventTimeLong(inPersonFair)} on {inPersonFair.location}.
             </p>
 
             {/* <p>
