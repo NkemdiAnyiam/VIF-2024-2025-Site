@@ -87,77 +87,10 @@ function toLongTime(time: string) {
   return `${hours}:${remainder}`;
 }
 
-function makeDate(data: {year: `${number}` | number, month: Month, weekdate: `${number}` | number, time?: Time}) {
+export function makeDate(data: {year: `${number}` | number, month: Month, weekdate: `${number}` | number, time?: Time}) {
   const {
     year, month, weekdate, time
   } = data;
   return new Date(`${year}-${toPadded(new Date(`${month} 1`).getMonth() + 1)}`
     + `-${toPadded(weekdate)}T${toLongTime(time ?? '1am')}${getCentralTimeZone(month, weekdate, year).offset}`);
 }
-
-interface TimeEventProps {
-  year: number | `${number}`;
-  month: Month;
-  weekdate: number;
-  startTime: Time;
-  endTime: Time;
-}
-
-export class TimeEvent {
-  readonly year: number;
-  readonly month: Month;
-  readonly weekdate: number;
-  readonly startTime: Time;
-  readonly endTime: Time;
-
-  get weekday(): Day { return new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(this.dateObj) as Day; }
-  get weekdateOrdinal() { return getWeekdateOrdinal(this.weekdate); }
-  get timeRange(): `${Time}–${Time}` {
-    return `${this.startTime}–${this.endTime}`; // e.g.: '10am–4pm CST`
-  }
-  get timeZone(): 'CST' | 'CDT' { return getCentralTimeZone(this.dateObj).short; }
-  get dateObj() { return makeDate({year: this.year, month: this.month, weekdate: this.weekdate}); }
-
-  constructor({year, month, weekdate, startTime, endTime}: TimeEventProps) {
-    this.year = Number(year);
-    this.month = month;
-    this.weekdate = weekdate;
-    this.startTime = startTime;
-    this.endTime = endTime;
-  }
-
-  private get startDate() { return makeDate({year: this.year, month: this.month, weekdate: this.weekdate, time: this.startTime}); }
-  private get endDate() { return makeDate({year: this.year, month: this.month, weekdate: this.weekdate, time: this.endTime}); }
-}
-
-interface FairTimeEventProps extends TimeEventProps {
-  studentLink: string;
-  industryLink: string;
-  location: string;
-}
-
-export class FairTimeEvent extends TimeEvent {
-  readonly studentLink: string;
-  readonly industryLink: string;
-  readonly location: string;
-
-  constructor(data: FairTimeEventProps) {
-    super(data);
-    this.studentLink = data.studentLink;
-    this.industryLink = data.industryLink;
-    this.location = data.location;
-  }
-}
-
-// interface ProfWorkshopEventProps extends TimeEventProps {
-//   link: string;
-// }
-
-// export class ProfWorkshopTimeEvent extends TimeEvent {
-//   readonly link: string;
-
-//   constructor(data: ProfWorkshopEventProps) {
-//     super(data);
-//     this.link = data.link;
-//   }
-// }

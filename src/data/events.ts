@@ -1,4 +1,4 @@
-import { FairTimeEvent, TimeEvent } from "../utils/time";
+import { FairTimeEvent, TimeEvent } from "../utils/events";
 
 export const virtualFair = new FairTimeEvent({
   year: 2025,

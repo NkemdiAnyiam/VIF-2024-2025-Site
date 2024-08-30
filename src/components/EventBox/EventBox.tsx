@@ -1,5 +1,5 @@
 import React from 'react';
-import { Day, getCentralTimeZone, getWeekdateOrdinal, Month, Time, TimeEvent } from '../../utils/time';
+import { Day, getCentralTimeZone, getWeekdateOrdinal, Month, Time, TimeEvent } from '../../utils';
 
 type EventData = [
   day: Day, month: Month, weekDate: number,

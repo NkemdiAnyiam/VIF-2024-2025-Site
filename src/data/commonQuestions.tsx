@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { inPersonFair, professionalismWorkshops, virtualFair } from "./events";
-import { TimeEvent } from "../utils/time";
+import { TimeEvent } from "../utils/events";
 
 export type QA = {
   question: string;

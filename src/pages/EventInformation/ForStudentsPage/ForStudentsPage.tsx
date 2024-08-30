@@ -7,7 +7,7 @@ import { Event } from '../../../components/Event/Event';
 import { EventBox } from '../../../components/EventBox/EventBox';
 import { pastCompanies } from '../../../data/companies';
 import { fairTimes, inPersonFair, professionalismWorkshops, virtualFair } from '../../../data';
-import { TimeEvent } from '../../../utils/time';
+import { TimeEvent } from '../../../utils/events';
 
 const listWorkshopData = (workshop: TimeEvent): JSX.Element => {
   return (
