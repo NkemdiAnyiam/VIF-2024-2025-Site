@@ -6,7 +6,7 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 import { EventBox } from '../../../components/EventBox/EventBox';
 import { Event } from '../../../components/Event/Event';
 import { Header } from '../../../components/Header/Header';
-import { fairTimes } from '../../../data';
+import { fairTimes, inPersonFair } from '../../../data';
 
 export function ForIndustryPage(): JSX.Element {
   return (
@@ -45,7 +45,7 @@ export function ForIndustryPage(): JSX.Element {
             </p>
 
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc9py6MJjTf5IecnIta7BFZaSo7mm1YwfEFc5OYmSsYAkENeQ/viewform?usp=sf_link"
+              href={inPersonFair.industryLink} // same as virtualFair.industryLink
               className="registration-button registration-button--red"
               target="_blank"
               rel="noreferrer"

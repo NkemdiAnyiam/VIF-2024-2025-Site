@@ -6,7 +6,7 @@ import { Header } from '../../../components/Header/Header';
 import { Event } from '../../../components/Event/Event';
 import { EventBox } from '../../../components/EventBox/EventBox';
 import { pastCompanies } from '../../../data/companies';
-import { fairTimes } from '../../../data';
+import { fairTimes, inPersonFair, virtualFair } from '../../../data';
 
 const renderPastCompanies = (companies: string[]) => {
   return companies.map((companyName) => {
@@ -88,10 +88,10 @@ export function ForStudentsPage(): JSX.Element {
               To register for the fair itself, you will need a downloadable version of your resume and a link to your portfolio website.
             </p>
             <p className="no-gap">
-              Please <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3fUZpRlQ6cb70fEC-5DQzMclIu9UIV3qOd-aIdMGwq3BjOw/viewform?usp=sf_link" className="link" target="_blank" rel="noreferrer">register for the Virtual Fair here</a>.
+              Please <a href={virtualFair.studentLink} className="link" target="_blank" rel="noreferrer">register for the Virtual Fair here</a>.
             </p>
             <p>
-              Please <a href="https://docs.google.com/forms/d/e/1FAIpQLScSyjIGDruxEXK9J5VTcyX2cs0AtWVAkAZaIEWcIUjWwl4t4g/viewform?usp=sf_link" className="link" target="_blank" rel="noreferrer">register for the In-Person Fair here</a>.
+              Please <a href={inPersonFair.studentLink} className="link" target="_blank" rel="noreferrer">register for the In-Person Fair here</a>.
             </p>
           </div>
         </div>
