@@ -13,12 +13,12 @@ export function HomePage(): JSX.Element {
   return (
     <main className="home-page">
       <SearchEngineOpt
-        title={`Viz Industryair ${fairTimes.yearEnDashRange}`}
+        title={`Viz Industry Fair ${fairTimes.yearEnDashRange}`}
         description="Welcome to the Visualization Industry Fair (VIF), the student-run organization and annual event aimed at guiding students toward successful careers."
       />
       <Header type="landing" imageName={'seated-group-photo-2-min'}>
         <h1 className="heading-primary">
-          <span>Welcome to the</span> <span>{fairTimes.yearEnDashRange}</span> <span>VIZ Industry –Fair!</span>
+          <span>Welcome to the</span> <span>{fairTimes.yearEnDashRange}</span> <span>VIZ Industry Fair!</span>
         </h1>
         <p className="header__intro-text">
           Viz Industry Fair (VIF) is both an organization and annual event dedicated to career planning and success for students within the new school
