@@ -39,9 +39,9 @@ export function ForIndustryPage(): JSX.Element {
               Please make sure to fill out our form—this will ensure you a "table" at the fair and help us with planning the event.
               Our Visualization Industry Fair is held both virtually and in-person—in the form, you have the option to attend either one or both.
               <br />
-              <strong> The Virtual Fair will be held Thursday, February 20<sup>th</sup>, 2025, from 10am–4pm CST via Discord.</strong>
+              <strong> The Virtual Fair will be held Thursday, February 20<sup>th</sup>, 2025 from 10am–4pm CST via Discord.</strong>
               <br />
-              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025, from 10am–4pm CST on TAMU campus (Location To Be Determined).</strong>
+              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025 from 10am–4pm CST on TAMU campus (Location To Be Determined).</strong>
             </p>
 
             <a

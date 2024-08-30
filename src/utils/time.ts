@@ -106,6 +106,7 @@ interface TimeEventProps {
 interface FairTimeEventProps extends TimeEventProps {
   studentLink: string;
   industryLink: string;
+  location: string;
 }
 
 export class TimeEvent {
@@ -138,10 +139,12 @@ export class TimeEvent {
 export class FairTimeEvent extends TimeEvent {
   readonly studentLink: string;
   readonly industryLink: string;
+  location: string;
 
   constructor(data: FairTimeEventProps) {
     super(data);
     this.studentLink = data.studentLink;
     this.industryLink = data.industryLink;
+    this.location = data.location;
   }
 }
