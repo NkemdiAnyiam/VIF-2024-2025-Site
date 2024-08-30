@@ -6,7 +6,8 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 import { EventBox } from '../../../components/EventBox/EventBox';
 import { Event } from '../../../components/Event/Event';
 import { Header } from '../../../components/Header/Header';
-import { fairTimes, inPersonFair, virtualFair } from '../../../data';
+import { alumniMixer, fairTimes, inPersonFair, virtualFair } from '../../../data';
+import { printEventTimeLong } from '../../../utils';
 
 export function ForIndustryPage(): JSX.Element {
   return (
@@ -144,7 +145,7 @@ export function ForIndustryPage(): JSX.Element {
             >
               <div className="paragraphs paragraphs--align-left">
                 <p>
-                  Our Alumni Mixer is a new event on <strong>Saturday, November 16<sup>th</sup>, 2024, from 7pm–10pm CST. </strong>
+                  Our Alumni Mixer is a new event on <strong>{printEventTimeLong(alumniMixer)}. </strong>
                   It is an opportunity for current students to network with former students within and outside of the industry,
                   allowing them to network in a casual setting and introduce new faces into the Viz Aggie Network community.
                   <strong> All participants must RSVP in order to attend.</strong>
@@ -154,7 +155,7 @@ export function ForIndustryPage(): JSX.Element {
                   <p>
                     Once we have secured a venue for this event, an announcement email will be sent out with more details,
                     and an update will be posted here on our website. VIF will be catering a fixed menu and non-alcoholic beverages.
-                    Expenses such as parking and alcoholic beverages will not be covered by VIF. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyRn-3dVB9q_1qfkP2MTx3cjOKjHkQRONqQwFFUQvwUhjoEQ/viewform?usp=sf_link" className="link" target="_blank" rel="noreferrer">Register for the event here</a>.
+                    Expenses such as parking and alcoholic beverages will not be covered by VIF. <a href={alumniMixer.industryLink} className="link" target="_blank" rel="noreferrer">Register for the event here</a>.
                   </p>
 
                   <picture className="building-photo-picture">

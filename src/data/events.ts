@@ -1,6 +1,6 @@
-import { FairTimeEvent, TimeEvent } from "../utils/events";
+import { TimeEventWithLinks, TimeEvent } from "../utils/events";
 
-export const virtualFair = new FairTimeEvent({
+export const virtualFair = new TimeEventWithLinks({
   year: 2025,
   month: 'February',
   weekdate: 20,
@@ -11,7 +11,7 @@ export const virtualFair = new FairTimeEvent({
   location: 'Discord',
 });
 
-export const inPersonFair = new FairTimeEvent({
+export const inPersonFair = new TimeEventWithLinks({
   year: 2025,
   month: 'February',
   weekdate: 21,
@@ -42,4 +42,15 @@ export const professionalismWorkshops = {
     new TimeEvent({ year: 2025, month: 'January', weekdate: 15, startTime: '10am', endTime: '12pm' }),
     new TimeEvent({ year: 2025, month: 'January', weekdate: 17, startTime: '3pm', endTime: '5pm' }),
   ]
-}
+};
+
+export const alumniMixer = new TimeEventWithLinks({
+  year: 2024,
+  month: 'November',
+  weekdate: 16,
+  startTime: '7pm',
+  endTime: '10pm',
+  studentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdyRn-3dVB9q_1qfkP2MTx3cjOKjHkQRONqQwFFUQvwUhjoEQ/viewform?usp=sf_link',
+  industryLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdyRn-3dVB9q_1qfkP2MTx3cjOKjHkQRONqQwFFUQvwUhjoEQ/viewform?usp=sf_link',
+  location: 'TBD',
+});

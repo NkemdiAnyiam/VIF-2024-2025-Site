@@ -6,7 +6,7 @@ import { Header } from '../../../components/Header/Header';
 import { Event } from '../../../components/Event/Event';
 import { EventBox } from '../../../components/EventBox/EventBox';
 import { pastCompanies } from '../../../data/companies';
-import { fairTimes, inPersonFair, professionalismWorkshops, virtualFair } from '../../../data';
+import { alumniMixer, fairTimes, inPersonFair, professionalismWorkshops, virtualFair } from '../../../data';
 import { printEventTimeLong, TimeEvent } from '../../../utils/events';
 
 const listWorkshopData = (workshop: TimeEvent): JSX.Element => {
@@ -162,7 +162,7 @@ export function ForStudentsPage(): JSX.Element {
             >
               <div className="paragraphs">
                 <p>
-                  Our Alumni Mixer is a new event on <strong>Saturday, November 16<sup>th</sup>, 2024, from 7pm–10pm CST. </strong>
+                  Our Alumni Mixer is a new event on <strong>{printEventTimeLong(alumniMixer)}. </strong>
                   It is an opportunity for current students to network with former students within and outside of the industry,
                   allowing them to network in a casual setting and introduce new faces into the Viz Aggie Network community.
                   <strong> All participants must RSVP in order to attend.</strong>
@@ -172,7 +172,7 @@ export function ForStudentsPage(): JSX.Element {
                   <p>
                     Once we have secured a venue for this event, an announcement email will be sent out with more details,
                     and an update will be posted here on our website. VIF will be catering a fixed menu and non-alcoholic beverages.
-                    Expenses such as parking and alcoholic beverages will not be covered by VIF. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyRn-3dVB9q_1qfkP2MTx3cjOKjHkQRONqQwFFUQvwUhjoEQ/viewform?usp=sf_link" className="link" target="_blank" rel="noreferrer">Register for the event here</a>.
+                    Expenses such as parking and alcoholic beverages will not be covered by VIF. <a href={alumniMixer.studentLink} className="link" target="_blank" rel="noreferrer">Register for the event here</a>.
                   </p>
 
                   <picture className="building-photo-picture">

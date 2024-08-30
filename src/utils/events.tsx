@@ -44,7 +44,7 @@ interface FairTimeEventProps extends TimeEventProps {
   location: string;
 }
 
-export class FairTimeEvent extends TimeEvent {
+export class TimeEventWithLinks extends TimeEvent {
   readonly studentLink: string;
   readonly industryLink: string;
   readonly location: string;
