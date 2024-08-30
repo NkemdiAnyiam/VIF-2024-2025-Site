@@ -1,4 +1,4 @@
-import { FairTimeEvent } from "../utils/time";
+import { FairTimeEvent, TimeEvent } from "../utils/time";
 
 export const virtualFair = new FairTimeEvent({
   year: 2025,
@@ -27,3 +27,19 @@ export const fairTimes = {
   yearEnd: 2025,
   get yearEnDashRange() { return `${this.yearStart}–${String(this.yearEnd).substring(2)}`; },
 };
+
+export const professionalismWorkshops = {
+  link: 'https://docs.google.com/forms/d/e/1FAIpQLSeoB9qfICTNYIYsUCqZSEnqLXFpznto27DDqN_6iEeRWjHZfg/viewform?usp=sf_link',
+
+  fall: [
+    new TimeEvent({ year: 2024, month: 'September', weekdate: 24, startTime: '10am', endTime: '12pm' }),
+    new TimeEvent({ year: 2024, month: 'September', weekdate: 25, startTime: '10am', endTime: '12pm' }),
+    new TimeEvent({ year: 2024, month: 'September', weekdate: 27, startTime: '3pm', endTime: '5pm' }),
+  ],
+
+  spring: [
+    new TimeEvent({ year: 2025, month: 'January', weekdate: 14, startTime: '10am', endTime: '12pm' }),
+    new TimeEvent({ year: 2025, month: 'January', weekdate: 15, startTime: '10am', endTime: '12pm' }),
+    new TimeEvent({ year: 2025, month: 'January', weekdate: 17, startTime: '3pm', endTime: '5pm' }),
+  ]
+}

@@ -103,12 +103,6 @@ interface TimeEventProps {
   endTime: Time;
 }
 
-interface FairTimeEventProps extends TimeEventProps {
-  studentLink: string;
-  industryLink: string;
-  location: string;
-}
-
 export class TimeEvent {
   readonly year: number;
   readonly month: Month;
@@ -136,10 +130,16 @@ export class TimeEvent {
   private get endDate() { return makeDate({year: this.year, month: this.month, weekdate: this.weekdate, time: this.endTime}); }
 }
 
+interface FairTimeEventProps extends TimeEventProps {
+  studentLink: string;
+  industryLink: string;
+  location: string;
+}
+
 export class FairTimeEvent extends TimeEvent {
   readonly studentLink: string;
   readonly industryLink: string;
-  location: string;
+  readonly location: string;
 
   constructor(data: FairTimeEventProps) {
     super(data);
@@ -148,3 +148,16 @@ export class FairTimeEvent extends TimeEvent {
     this.location = data.location;
   }
 }
+
+// interface ProfWorkshopEventProps extends TimeEventProps {
+//   link: string;
+// }
+
+// export class ProfWorkshopTimeEvent extends TimeEvent {
+//   readonly link: string;
+
+//   constructor(data: ProfWorkshopEventProps) {
+//     super(data);
+//     this.link = data.link;
+//   }
+// }

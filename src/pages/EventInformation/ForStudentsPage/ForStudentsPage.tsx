@@ -6,7 +6,15 @@ import { Header } from '../../../components/Header/Header';
 import { Event } from '../../../components/Event/Event';
 import { EventBox } from '../../../components/EventBox/EventBox';
 import { pastCompanies } from '../../../data/companies';
-import { fairTimes, inPersonFair, virtualFair } from '../../../data';
+import { fairTimes, inPersonFair, professionalismWorkshops, virtualFair } from '../../../data';
+import { TimeEvent } from '../../../utils/time';
+
+const listWorkshopData = (workshop: TimeEvent): JSX.Element => {
+  return (
+  <li>
+    {workshop.weekday}, {workshop.month} {workshop.weekdate}<sup>{workshop.weekdateOrdinal}</sup>, {workshop.timeRange} {workshop.timeZone}
+  </li>);
+};
 
 const renderPastCompanies = (companies: string[]) => {
   return companies.map((companyName) => {
@@ -50,7 +58,7 @@ export function ForStudentsPage(): JSX.Element {
             </p>
 
             <p className="no-gap">
-              <strong>Before you register for the Fair, </strong>please <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoB9qfICTNYIYsUCqZSEnqLXFpznto27DDqN_6iEeRWjHZfg/viewform?usp=sf_link" className="link" target="_blank" rel="noreferrer">register for our new Professionalism Workshop</a>!
+              <strong>Before you register for the Fair, </strong>please <a href={professionalismWorkshops.link} className="link" target="_blank" rel="noreferrer">register for our new Professionalism Workshop</a>!
               This workshop serves as an informational for the VIF events and teaches you best practices for communicating with industry professionals.
               To uphold the professional standards of Texas A&M University, current students are <strong>required</strong> to
               attend one of the three professionalism workshops before attending the industry fair or any other VIF event.
@@ -63,17 +71,13 @@ export function ForStudentsPage(): JSX.Element {
               <li>
                 <strong>Fall 2024</strong>
                 <ul>
-                  <li>Tuesday, September 24<sup>th</sup>, 10am–12pm</li>
-                  <li>Wednesday, September 25<sup>th</sup>, 10am–12pm</li>
-                  <li>Friday, September 27<sup>th</sup>, 3pm–5pm</li>
+                  {professionalismWorkshops.fall.map(workshop => listWorkshopData(workshop))}
                 </ul>
               </li>
               <li>
                 <strong>Spring 2025</strong>
                 <ul>
-                  <li>Tuesday, January 14<sup>th</sup>, 10am–12pm</li>
-                  <li>Wednesday, January 15<sup>th</sup>, 10am–12pm</li>
-                  <li>Friday, January 17<sup>th</sup>, 3pm–5pm</li>
+                  {professionalismWorkshops.spring.map(workshop => listWorkshopData(workshop))}
                 </ul>
               </li>
             </ul>

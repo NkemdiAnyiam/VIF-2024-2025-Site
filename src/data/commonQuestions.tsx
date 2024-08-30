@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
-import { inPersonFair, virtualFair } from "./events";
+import { inPersonFair, professionalismWorkshops, virtualFair } from "./events";
+import { TimeEvent } from "../utils/time";
 
 export type QA = {
   question: string;
   content: JSX.Element;
   // safeContent?: JSX.Element;
+};
+
+const listWorkshopData = (workshop: TimeEvent): JSX.Element => {
+  return (
+  <li>
+    {workshop.weekday}, {workshop.month} {workshop.weekdate}<sup>{workshop.weekdateOrdinal}</sup>, {workshop.timeRange} {workshop.timeZone}
+  </li>);
 };
 
 export const studentQAs: QA[] = [
@@ -50,7 +58,7 @@ export const studentQAs: QA[] = [
     content: (
       <>
         <p>
-          <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLSeoB9qfICTNYIYsUCqZSEnqLXFpznto27DDqN_6iEeRWjHZfg/viewform?usp=sf_link" target="_blank" rel="noreferrer"><strong>REGISTER FOR THE PROFESSIONALISM WORKSHOP!</strong></a>
+          <a className="link" href={professionalismWorkshops.link} target="_blank" rel="noreferrer"><strong>REGISTER FOR THE PROFESSIONALISM WORKSHOP!</strong></a>
         </p>
 
         <p>
@@ -64,18 +72,14 @@ export const studentQAs: QA[] = [
         <ul>
           <li>
             <strong>Fall 2024</strong>
-            <ul>
-              <li>Tuesday, September 24<sup>th</sup>, 10am–12pm</li>
-              <li>Wednesday, September 25<sup>th</sup>, 10am–12pm</li>
-              <li>Friday, September 27<sup>th</sup>, 3pm–5pm</li>
-            </ul>
+              <ul>
+                {professionalismWorkshops.fall.map(workshop => listWorkshopData(workshop))}
+              </ul>
           </li>
           <li>
             <strong>Spring 2025</strong>
             <ul>
-              <li>Tuesday, January 14<sup>th</sup>, 10am–12pm</li>
-              <li>Wednesday, January 15<sup>th</sup>, 10am–12pm</li>
-              <li>Friday, January 17<sup>th</sup>, 3pm–5pm</li>
+              {professionalismWorkshops.spring.map(workshop => listWorkshopData(workshop))}
             </ul>
           </li>
       </ul>
