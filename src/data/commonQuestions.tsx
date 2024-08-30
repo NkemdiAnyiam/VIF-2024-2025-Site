@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { inPersonFair, virtualFair } from "./events";
 
 export type QA = {
   question: string;
@@ -13,8 +14,8 @@ export const studentQAs: QA[] = [
       <>
         <p>
           YES!
-          Please <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLSc3fUZpRlQ6cb70fEC-5DQzMclIu9UIV3qOd-aIdMGwq3BjOw/viewform?usp=sf_link" target="_blank" rel="noreferrer" aria-label='Open Virtual Registration Form'>register for the Virtual Fair here</a>.
-          Please <a className="link" href="https://docs.google.com/forms/d/e/1FAIpQLScSyjIGDruxEXK9J5VTcyX2cs0AtWVAkAZaIEWcIUjWwl4t4g/viewform?usp=sf_link" target="_blank" rel="noreferrer" aria-label='Open In-Person Registration Form'>register for the In-Person Fair here</a>.
+          Please <a className="link" href={virtualFair.studentLink} target="_blank" rel="noreferrer" aria-label='Open Virtual Registration Form'>register for the Virtual Fair here</a>.
+          Please <a className="link" href={inPersonFair.studentLink} target="_blank" rel="noreferrer" aria-label='Open In-Person Registration Form'>register for the In-Person Fair here</a>.
         </p>
 
         <p>

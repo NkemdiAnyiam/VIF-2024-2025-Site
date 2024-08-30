@@ -6,7 +6,7 @@ import { Header } from '../../components/Header/Header';
 import { Timetable } from '../../components/Timetable/Timetable';
 import { CompanyCard, CompanyCardProps } from './CompanyCard/CompanyCard';
 
-import { companies, fairTimes, timeRanges } from '../../data';
+import { companies, fairTimes, inPersonFair, timeRanges, virtualFair } from '../../data';
 
 type Company = CompanyCardProps & {virtualTimes: string, inPersonTimes: string};
 
@@ -71,8 +71,8 @@ export function SchedulePage(): JSX.Element {
               On this page, you can find <a className="link" href="/schedule#companies">information about any registered companies</a> as
               well as <a className="link" href="/schedule#timetable">when they will be attending the fairs</a>.
               Any company that registers for the Virtual or In-Person Fair will show up here, so stay tuned.
-              The Virtual Fair will take place Thursday, February 20<sup>th</sup>, 2025 from 10am–4pm CST on Discord.
-              The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025 from 10am–4pm CST on the TAMU campus (Location To Be Determined).
+              The Virtual Fair will take place {virtualFair.weekday}, {virtualFair.month} {virtualFair.weekdate}<sup>{virtualFair.weekdateOrdinal}</sup>, {virtualFair.year} from {virtualFair.timeRange} {virtualFair.timeZone} on {virtualFair.location}.
+              The In-Person Fair will be held {inPersonFair.weekday}, {inPersonFair.month} {inPersonFair.weekdate}<sup>{inPersonFair.weekdateOrdinal}</sup>, {inPersonFair.year} from {inPersonFair.timeRange} {inPersonFair.timeZone} on {inPersonFair.location}.
             </p>
 
             {/* <p>
