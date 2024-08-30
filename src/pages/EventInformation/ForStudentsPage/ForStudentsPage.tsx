@@ -116,8 +116,8 @@ export function ForStudentsPage(): JSX.Element {
                   heading="Fall"
                   headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSf7nnaYybNwZOKcpEiMSdKaqul86TqGAwHhvwsDaUV4nVZv9Q/viewform?usp=sf_link`}
                   events={[
-                    ["Friday", "October", 18, ['10am', '4pm']],
-                    ["Saturday", "October", 19, ['10am', '4pm']],
+                    ["Friday", "October", 18, 2024, ['10am', '4pm']],
+                    ["Saturday", "October", 19, 2024, ['10am', '4pm']],
                   ]}
                 />,
 
@@ -125,8 +125,8 @@ export function ForStudentsPage(): JSX.Element {
                   heading="Spring"
                   headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSer6Vvt7GMlDyuiJZpm3DGcNmCRmZY9mZo1mMWG2w_lmlV7Aw/viewform?usp=sf_link`}
                   events={[
-                    ["Friday", "January", 24, ['10am', '4pm']],
-                    ["Saturday", "January", 25, ['10am', '4pm']],
+                    ["Friday", "January", 24, 2025, ['10am', '4pm']],
+                    ["Saturday", "January", 25, 2025, ['10am', '4pm']],
                   ]}
                 />
               ]}
@@ -139,7 +139,7 @@ export function ForStudentsPage(): JSX.Element {
                   heading="Fall"
                   headingLink={`https://docs.google.com/forms/d/e/1FAIpQLScv0r3HDa4H61GPp8aigegVrpgSCFUy62Z2TJlG1dwdAVZV0w/viewform?usp=sf_link`}
                   events={[
-                    ["Friday", "November", 8, ['10am', '4pm']],
+                    ["Friday", "November", 8, 2024, ['10am', '4pm']],
                   ]}
                 />,
 
@@ -147,7 +147,7 @@ export function ForStudentsPage(): JSX.Element {
                   heading="Spring"
                   headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSdVzGMG3G4I9buRM4bO8UTjeq_QhYlFa0KloeHkvPQNIviw1A/viewform?usp=sf_link`}
                   events={[
-                    ["Friday", "February", 7, ['10am', '4pm']],
+                    ["Friday", "February", 7, 2025, ['10am', '4pm']],
                   ]}
                 />
               ]}

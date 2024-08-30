@@ -90,8 +90,8 @@ export function ForIndustryPage(): JSX.Element {
                   heading="Fall"
                   headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSfNS-ZJFzCvcigJAELoKFY34j_i9ZzIRivrmR8J1JUsgQNQrQ/viewform?usp=sf_link`}
                   events={[
-                    ["Friday", "October", 18, ['10am', '4pm']],
-                    ["Saturday", "October", 19, ['10am', '4pm']],
+                    ["Friday", "October", 18, 2024, ['10am', '4pm']],
+                    ["Saturday", "October", 19, 2024, ['10am', '4pm']],
                   ]}
                 />,
 
@@ -99,8 +99,8 @@ export function ForIndustryPage(): JSX.Element {
                   heading="Spring"
                   headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSd1mOyhl7UGzctZqxngIk16Bm_eeoyZQrq2hMJk-YnvZbcK5w/viewform?usp=sf_link`}
                   events={[
-                    ["Friday", "January", 24, ['10am', '4pm']],
-                    ["Saturday", "January", 25, ['10am', '4pm']],
+                    ["Friday", "January", 24, 2025, ['10am', '4pm']],
+                    ["Saturday", "January", 25, 2025, ['10am', '4pm']],
                   ]}
                 />
               ]}
@@ -119,7 +119,7 @@ export function ForIndustryPage(): JSX.Element {
                   heading="Fall"
                   headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSflSAGSoFqtyLXA7ZwJpHv_TibVa7IE5whkKU16ipSqTvp0iQ/viewform?usp=sf_link`}
                   events={[
-                    ["Friday", "November", 8, ['10am', '4pm']],
+                    ["Friday", "November", 8, 2024, ['10am', '4pm']],
                   ]}
                 />,
 
@@ -127,7 +127,7 @@ export function ForIndustryPage(): JSX.Element {
                   heading="Spring"
                   headingLink={`https://docs.google.com/forms/d/e/1FAIpQLSfVjJZ7Wsu8FoHDF6c1aGHvlL2oqI7pIeWgX9X4L0JTX5wbKg/viewform?usp=sf_link`}
                   events={[
-                    ["Friday", "February", 7, ['10am', '4pm']],
+                    ["Friday", "February", 7, 2025, ['10am', '4pm']],
                   ]}
                 />
               ]}
