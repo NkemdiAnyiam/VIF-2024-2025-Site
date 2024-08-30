@@ -6,7 +6,7 @@ import { SearchEngineOpt } from '../../../components/SearchEngineOpt/SearchEngin
 import { EventBox } from '../../../components/EventBox/EventBox';
 import { Event } from '../../../components/Event/Event';
 import { Header } from '../../../components/Header/Header';
-import { fairTimes, inPersonFair } from '../../../data';
+import { fairTimes, inPersonFair, virtualFair } from '../../../data';
 
 export function ForIndustryPage(): JSX.Element {
   return (
@@ -39,9 +39,9 @@ export function ForIndustryPage(): JSX.Element {
               Please make sure to fill out our form—this will ensure you a "table" at the fair and help us with planning the event.
               Our Visualization Industry Fair is held both virtually and in-person—in the form, you have the option to attend either one or both.
               <br />
-              <strong> The Virtual Fair will be held Thursday, February 20<sup>th</sup>, 2025 from 10am–4pm CST via Discord.</strong>
+              <strong> The Virtual Fair will be held {virtualFair.weekday}, {virtualFair.month} {virtualFair.weekdate}<sup>{virtualFair.weekdateOrdinal}</sup>, {virtualFair.year} from {virtualFair.timeRange} {virtualFair.timeZone} on {virtualFair.location}.</strong>
               <br />
-              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025 from 10am–4pm CST on TAMU campus (Location To Be Determined).</strong>
+              <strong> The In-Person Fair will be held {inPersonFair.weekday}, {inPersonFair.month} {inPersonFair.weekdate}<sup>{inPersonFair.weekdateOrdinal}</sup>, {inPersonFair.year} from {inPersonFair.timeRange} {inPersonFair.timeZone} on {inPersonFair.location}.</strong>
             </p>
 
             <a

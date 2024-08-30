@@ -45,8 +45,8 @@ export function ForStudentsPage(): JSX.Element {
               The Visualization Industry Fair (VIF) is an opportunity for students interested in Animation, Gaming, Graphics,
               and Interactive technologies to connect with prospective employers working in high level positions
               in some of today's leading industries and receive professional feedback on their work.
-              <strong> The Virtual Fair will be held Thursday, February 20<sup>th</sup>, 2025 from 10am–4pm CST via Discord.</strong>
-              <strong> The In-Person Fair will be held Friday, February 21<sup>st</sup>, 2025 from 10am–4pm CST on the TAMU campus (Location To Be Determined).</strong>
+              <strong> The Virtual Fair will be held {virtualFair.weekday}, {virtualFair.month} {virtualFair.weekdate}<sup>{virtualFair.weekdateOrdinal}</sup>, {virtualFair.year} from {virtualFair.timeRange} {virtualFair.timeZone} on {virtualFair.location}.</strong>
+              <strong> The In-Person Fair will be held {inPersonFair.weekday}, {inPersonFair.month} {inPersonFair.weekdate}<sup>{inPersonFair.weekdateOrdinal}</sup>, {inPersonFair.year} from {inPersonFair.timeRange} {inPersonFair.timeZone} on {inPersonFair.location}.</strong>
             </p>
 
             <p className="no-gap">
