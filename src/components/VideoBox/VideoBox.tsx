@@ -1,9 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 type VideoBoxProps = {
+  /** String used for the iframe title attribute, loading text, and caption. */
   title: string;
+  /** YouTube id. */
   videoId: string;
+  /** If `true`, the {@link VideoBoxProps.title|title} prop is displayed below the video. */
   includeCaption?: boolean;
+  /** If `true`, the scaling hover effect is disabled. */
   fixedScale?: boolean;
 }
 
