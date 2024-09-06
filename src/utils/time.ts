@@ -14,19 +14,6 @@ type CSTTimezone = {
   offset: '-05:00'
 };
 
-// function monthToSemester(month: Month): 'Fall' | 'Spring' {
-//   return new Date(`${month} 1`).getMonth() >= 7 ? 'Fall' : 'Spring';
-// }
-
-// function monthToYear(month: Month): `${number}` | number {
-//   // TODO: Might have to change this logic in the future.
-//   // Logic is that Fall semester = 2024 and spring semester = 2025
-//   switch(monthToSemester(month)) {
-//     case "Fall": return fairTimes.yearStart;
-//     case "Spring": return fairTimes.yearEnd;
-//   }
-// }
-
 function getNthSunday(month: Month, year: `${number}` | number, nthSunday: number): number {
   let firstDayOfMonth = new Date(`${year} ${month} 1`);
   const daysToFirstSunday = (7 - firstDayOfMonth.getDay()) % 7;
