@@ -105,29 +105,22 @@ export function AboutVizPage(): JSX.Element {
           <ul className="video-list">
             <li className="video-item">
               <VideoBox
-                title="TAMU Best of Visualization 2021"
-                videoId="zt7IZRzFEV8"
+                title="Visualization Animation Sizzle Reel 23-24"
+                videoId="ojG9NL-CG1I"
                 includeCaption
               />
             </li>
             <li className="video-item">
               <VideoBox
                 title="TAMU Best of Visualization - UI/UX and Graphic Design"
-                videoId="Ixusv-GMrho"
+                videoId="0kxrir2IMGE"
                 includeCaption
               />
             </li>
             <li className="video-item">
               <VideoBox
                 title="TAMU Best of Visualization - Game Development"
-                videoId="U2Fjr0saMUY"
-                includeCaption
-              />
-            </li>
-            <li className="video-item">
-              <VideoBox
-                title="TAMU Best of Visualization - FX and Technical Direction"
-                videoId="V-3NX6AHwnY"
+                videoId="1JO_ck6B2QI"
                 includeCaption
               />
             </li>
