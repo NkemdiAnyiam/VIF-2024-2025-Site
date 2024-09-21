@@ -62,7 +62,7 @@ export const committeeMembersData: CommitteeMember[] = [
     rank: 2,
     imageName: `Jocylin-Lopez-min`,
     socials: {
-      linkedin: `www.linkedin.com/in/jocylinylopez`,
+      linkedin: `https://www.linkedin.com/in/jocylin-lopez-763850221/`,
       website: `http://jocylinlopez.com/`,
     },
     description: `Joy is a graduate student pursuing a Master's in Visualization, specializing in character design, modeling, and game design. She works in marketing at the LIVE LAB, manages social media for the university, and holds roles as Social Media Officer for 2D Visual Developers and Lead Concept Artist mentor. Outside of her academic and professional life, Joy enjoys video games, anime, and oil painting.`,
@@ -74,9 +74,9 @@ export const committeeMembersData: CommitteeMember[] = [
     rank: 1,
     imageName: `Skylar-La-min`,
     socials: {
-      linkedin: `https://www.linkedin.com/in/trang-thi-thuy-la-556a712b4/`,
+      linkedin: `https://www.linkedin.com/in/skylar-la-556a712b4/`,
     },
-    description: `Skylar La is a second-year graduate student pursuing a Master of Science in Visualization at Texas A&M University. She owns 2 university degrees (one in Economics, the other in Multimedia). However, she chose to pursue 3D for her career path, especially focusing on Modelling and Layout. She is now the secretary of TAMU VGSA (Texas A&M Visualization Graduate Student Association) and serves as a graduate assistant for Visual studio classes. Her hobbies include playing instruments and composing music.`,
+    description: `Skylar La is a second-year graduate student pursuing a Master of Science in Visualization at Texas A&M University. She owns 2 university degrees (one in Economics, the other in Multimedia). However, she chose to pursue 3D for her career path, especially focusing on Modeling and Layout. She is now the Vice President of TAMU VGSA (Texas A&M Visualization Graduate Student Association) and serves as a graduate assistant for Visual studio classes. Her hobbies include playing instruments and composing music.`,
   },
 
   {
@@ -85,7 +85,7 @@ export const committeeMembersData: CommitteeMember[] = [
     rank: 2,
     imageName: `Shea-Stafford-min`,
     socials: {
-      linkedin: `www.linkedin.com/in/sheastafford`,
+      linkedin: `https://www.linkedin.com/in/shea-stafford-01a28a28a/`,
       website: `https://sheastafford.myportfolio.com/`,
     },
     description: `Shea Stafford is a Sophomore Visualization student pursuing her B.S. degree. Her focus is in Project Management, Surfacing, and Lighting. In addition, she is the Logistics Coordinator of GigaJam, a member of the HIVE, and Industry Relations for A&M’s ACM SIGGRAPH Chapter. She also enjoys learning about animation history, reading fantasy novels, watching movies, and drawing.`,
