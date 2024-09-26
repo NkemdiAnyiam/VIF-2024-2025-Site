@@ -5,14 +5,17 @@ const csvParse = require('csv-parse');
 const parse = csvParse.parse;
 
 (() => {
-  const csvFilePath = path.resolve(__dirname, 'companyFairSubmissions.csv');
+  const fileName = 'companyFairSubmissions.csv';
+  const csvFilePath = path.resolve(__dirname, fileName);
+  if (!fs.existsSync(csvFilePath)) {
+    throw new Error(`File "${csvFilePath}" not found.`);
+  }
   
   // relevant column headers
   const headers = [
     'company-name', 'focuses', 'position-types', 'interviews', 'website',
     'virtual-fair-times', 'in-person-fair-times', 'logo', 'attending-virtual-fair', 'attending-in-person-fair',
   ];
-  
   const fileContent = fs.readFileSync(csvFilePath, { encoding: 'utf-8' });
   
   parse(fileContent, { delimiter: ',', skip_empty_lines: true}, (error, result) => {
