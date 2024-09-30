@@ -2,6 +2,7 @@ import React from 'react';
 
 import { FooterLink } from './FooterLink/FooterLink';
 import { LogoInstagram, LogoLinkedin, LogoTwitter, LogoYoutube, TamuLogoWhite } from '../iconComponents';
+import { Link } from 'react-router-dom';
 
 export function Footer(): JSX.Element {
   return (
@@ -27,6 +28,12 @@ export function Footer(): JSX.Element {
           <TamuLogoWhite className="footer__icon footer__icon--tamu" />
         </FooterLink>
       </ul>
+
+        <p className="footer__copyright">
+          &copy; 2024 Texas A&M University College of Performance, Visualization & Fine Arts. All Rights Reserved.
+        </p>
+
+        <Link to="/about/vif-committee" className="link footer__credits">Credits</Link>
     </footer>
   );
 }
