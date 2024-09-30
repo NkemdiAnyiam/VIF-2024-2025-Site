@@ -33,7 +33,7 @@ export const committeeMembersData: CommitteeMember[] = [
 
   {
     fullName: `Nkemdi Anyiam`,
-    role: `Web Designer / Developer`,
+    role: `Website Designer / Developer`,
     rank: 2,
     imageName: `Nkemdi-Anyiam-min`,
     specialImageName: `Nkemdi-Anyiam-Vector-min`,
