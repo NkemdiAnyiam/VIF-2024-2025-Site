@@ -60,6 +60,24 @@ export function getWeekdateOrdinal(weekDate: number) {
   }
 };
 
+function monthToIndex(month: Month): number {
+  switch (month) {
+    case "January": return 0;
+    case "February": return 1;
+    case "March": return 2;
+    case "April": return 3;
+    case "May": return 4;
+    case "June": return 5;
+    case "July": return 6;
+    case "August": return 7;
+    case "September": return 8;
+    case "October": return 9;
+    case "November": return 10;
+    case "December": return 11;
+    default: throw new RangeError(`Invalid month value "${month}".`);
+  }
+}
+
 const toPadded = (val: `${number}` | number) => String(val).padStart(2, '0');
 
 function toLongTime(time: string) {
@@ -78,6 +96,7 @@ export function makeDate(data: {year: `${number}` | number, month: Month, weekda
   const {
     year, month, weekdate, time
   } = data;
-  return new Date(`${year}-${toPadded(new Date(`${month} 1`).getMonth() + 1)}`
+  // +1 to month because month must be index 1-based in ISO string
+  return new Date(`${year}-${toPadded(monthToIndex(month) + 1)}`
     + `-${toPadded(weekdate)}T${toLongTime(time ?? '1am')}${getCentralTimeZone(month, weekdate, year).offset}`);
 }
