@@ -10,7 +10,7 @@ export type QA = {
 
 const listWorkshopData = (workshop: TimeEvent): JSX.Element => {
   return (
-  <li>
+  <li key={`${workshop.month} ${workshop.weekdate} ${workshop.timeRange}`}>
     {workshop.weekday}, {workshop.month} {workshop.weekdate}<sup>{workshop.weekdateOrdinal}</sup>, {workshop.timeRange} {workshop.timeZone}
   </li>);
 };
