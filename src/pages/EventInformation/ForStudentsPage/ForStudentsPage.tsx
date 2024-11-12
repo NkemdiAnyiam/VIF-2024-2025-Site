@@ -8,6 +8,7 @@ import { EventBox } from '../../../components/EventBox/EventBox';
 import { pastCompanies } from '../../../data/companies';
 import { alumniMixer, fairTimes, inPersonFair, mockInterviews, portfolioReviews, professionalismWorkshops, virtualFair } from '../../../data';
 import { printEventTimeLong, TimeEvent } from '../../../utils/events';
+import { Notice } from '../../../components/Notice/Notice';
 
 const listWorkshopData = (workshop: TimeEvent): JSX.Element => {
   return (
@@ -150,9 +151,14 @@ export function ForStudentsPage(): JSX.Element {
             <Event
               eventName="Alumni Mixer"
             >
+              <Notice>
+                Due to logistical issues, we unfortunately need to cancel the Alumni Mixer.
+                Stay tuned for a new date announcement for next semester!
+                We appreciate your understanding and look forward to seeing you soon.
+              </Notice>
               <div className="paragraphs">
                 <p>
-                  Our Alumni Mixer is a new event on <strong>{printEventTimeLong(alumniMixer)}. </strong>
+                  Our Alumni Mixer is a new event on <strong className="strike-through">{printEventTimeLong(alumniMixer)}. </strong>
                   It is an opportunity for current students to network with former students within and outside of the industry,
                   allowing them to network in a casual setting and introduce new faces into the Viz Aggie Network community.
                   <strong> All participants must RSVP in order to attend.</strong>
