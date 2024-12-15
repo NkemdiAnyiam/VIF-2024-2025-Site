@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { nameToLogoName, toExternalUrl } from '../../../utils';
+import { webimator } from 'webimator';
 
 export interface CompanyCardProps {
   companyName: string;
@@ -21,13 +22,40 @@ const renderTags = (positionTypes: string[]): JSX.Element[] => {
     });
 };
 
+const {Entrance, Exit} = webimator.createAnimationClipFactories();
+
 export function CompanyCard(props: CompanyCardProps): JSX.Element {
   const [expanded, setExpanded] = useState(false);
+  const [awaitingChange, setAwaitingChange] = useState(false);
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  
+  const handleDropdownClick = () => {
+    if (awaitingChange) { return; }
+    setAwaitingChange(true);
+
+    const element = contentRef.current;
+
+    if (!expanded) {
+      Entrance(element, '~slide-in', [], { duration: 100 }).play()
+        .then(() => {
+          setExpanded(true);
+          setAwaitingChange(false);
+        });
+    }
+
+    else {
+      Exit(element, '~slide-out', [], { duration: 100 }).play()
+        .then(() => {
+          setExpanded(false);
+          setAwaitingChange(false);
+        });
+    }
+  };
   const logoName = nameToLogoName(props.companyName);
 
   return (
     <div className={`company-card company-card--white`}>
-      <div className="company-card__header" onClick={() => setExpanded(!expanded)}>
+      <div className="company-card__header" onClick={() => handleDropdownClick()}>
         <div className="company-card__photo-container">
           <picture className="company-card__picture">
             <source srcSet={require(`../../../images/companies/${logoName}.webp`)} type="image/webp" />
@@ -47,7 +75,7 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
         </button>
       </div>
 
-      <div className={`company-card__description${!expanded ? ' company-card__description--hidden' : ''}`} aria-hidden={!expanded ? "true" : "false"}>
+      <div ref={contentRef} className={`company-card__description wbmtr-display-none`} aria-hidden={!expanded ? "true" : "false"}>
         <div className="company-card__description-section">
           <h4 className="heading-quaternary">Website:</h4>
           <a

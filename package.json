@@ -16,12 +16,13 @@
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webimator": "^0.22.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "create-icons": "npx @svgr/cli src/icons --out-dir src/Components/iconComponents --icon --no-dimensions --ignore-existing --typescript",
     "parse-companies": "node parseCompaniesCsv.js"
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
     "@svgr/webpack": "^8.0.1",
     "@types/react-router-dom": "^5.3.3",
     "csv-parse": "^5.5.2",

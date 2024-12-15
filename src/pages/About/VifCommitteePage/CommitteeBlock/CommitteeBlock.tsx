@@ -1,4 +1,4 @@
-import React , { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 import {
   LogoInstagram, LogoLinkedin, LogoTwitter, LogoYoutube,
@@ -6,6 +6,7 @@ import {
 } from '../../../../components/iconComponents';
 
 import { CommitteeMember, Socials } from '../../../../data/committee';
+import { webimator } from 'webimator';
 
 type Color = 'red' | 'green' | 'yellow' | 'purple';
 
@@ -71,12 +72,39 @@ const renderSocialLinks = (socials: Partial<Socials>, memberName: string): JSX.E
     });
 };
 
+const {Entrance, Exit} = webimator.createAnimationClipFactories();
+
 export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
   const [expanded, setExpanded] = useState(false);
+  const [awaitingChange, setAwaitingChange] = useState(false);
+  const contentRef = useRef<HTMLDivElement | null>(null);
+
+  const handleDropdownClick = () => {
+    if (awaitingChange) { return; }
+    setAwaitingChange(true);
+
+    const element = contentRef.current;
+
+    if (!expanded) {
+      Entrance(element, '~slide-in', [], { duration: 100 }).play()
+        .then(() => {
+          setExpanded(true);
+          setAwaitingChange(false);
+        });
+    }
+
+    else {
+      Exit(element, '~slide-out', [], { duration: 100 }).play()
+        .then(() => {
+          setExpanded(false);
+          setAwaitingChange(false);
+        });
+    }
+  };
 
   return (
     <div className={`committee-block${` committee-block--${rankToColor(props.rank)}`}`}>
-      <div className="committee-block__header" onClick={() => setExpanded(!expanded)}>
+      <div className="committee-block__header" onClick={() => handleDropdownClick()}>
         <div className="committee-block__photo-container">
           <picture className="committee-block__picture">
             <source srcSet={require(`../../../../images/committee/${props.imageName}.webp`)} type="image/webp" />
@@ -110,7 +138,11 @@ export function CommitteeBlock(props: CommitteeBlockProps): JSX.Element {
         }
       </div>
 
-      <div className={`committee-block__description${!expanded ? ' committee-block__description--hidden' : ''}`} aria-hidden={!expanded ? "true" : "false"}>
+      <div
+        ref={contentRef}
+        className={`committee-block__description wbmtr-display-none`}
+        // aria-hidden={!expanded ? "true" : "false"}
+      >
         <div className="paragraphs">
           <p>{props.description}</p>
         </div>
