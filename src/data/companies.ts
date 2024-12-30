@@ -39,6 +39,19 @@ export const companies = JSON.parse(`[
     "virtualTimes": "All Day",
     "inPersonTimes": "",
     "logoUrlCheckString": "It doesn't want to upload for me, but I'm happy to email you a logo!"
+  },
+  {
+    "companyName": "Audience Media Group",
+    "focuses": "Graphic Design, Marketing, Photography, Video Editing",
+    "positionTypes": [
+      "Interns",
+      "Part-time employees"
+    ],
+    "website": "https://www.ataudience.com/",
+    "interviews": "Yes",
+    "virtualTimes": "10:00 - 10:30, 10:30 - 11:00, 11:00 - 11:30, 11:30 - 12:00, 12:30 - 1:00, 2:00 - 2:30, 3:00 - 3:30, 3:30 - 4:00",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://drive.google.com/file/d/1vD0FWGU6tqGDsUTCpPBOqFpRFEyEYMg2/view?usp=drive_link"
   }
 ]`);
 /**** GEN:E id="companies-csv" */
