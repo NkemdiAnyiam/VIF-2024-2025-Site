@@ -52,6 +52,22 @@ export const companies = JSON.parse(`[
     "virtualTimes": "10:00 - 10:30, 10:30 - 11:00, 11:00 - 11:30, 11:30 - 12:00, 12:30 - 1:00, 2:00 - 2:30, 3:00 - 3:30, 3:30 - 4:00",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://drive.google.com/file/d/1vD0FWGU6tqGDsUTCpPBOqFpRFEyEYMg2/view?usp=drive_link"
+  },
+  {
+    "companyName": "TRG",
+    "focuses": "Animation, Graphic Design",
+    "positionTypes": [
+      "Interns",
+      "Full-time employees",
+      "Part-time employees",
+      "Contract workers",
+      "Freelancers"
+    ],
+    "website": "https://trg.agency/",
+    "interviews": "No",
+    "virtualTimes": "All Day",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "Yes"
   }
 ]`);
 /**** GEN:E id="companies-csv" */
