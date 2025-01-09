@@ -29,7 +29,7 @@ export const fairTimes = {
 };
 
 export const professionalismWorkshops = {
-  link: 'https://docs.google.com/forms/d/e/1FAIpQLSeoB9qfICTNYIYsUCqZSEnqLXFpznto27DDqN_6iEeRWjHZfg/viewform?usp=sf_link',
+  link: 'https://docs.google.com/forms/d/e/1FAIpQLSd-ZnN9_EDIkmejamRJdxBVMqe1ZrBzQgdm11KH4HRqGV44-w/viewform?usp=sf_link',
 
   fall: [
     new TimeEvent({ year: 2024, month: 'September', weekdate: 24, startTime: '10am', endTime: '12pm' }),
