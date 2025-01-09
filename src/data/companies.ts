@@ -68,6 +68,18 @@ export const companies = JSON.parse(`[
     "virtualTimes": "All Day",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "Yes"
+  },
+  {
+    "companyName": "Amazon",
+    "focuses": "Product Design, User Experience Design, UX Writing",
+    "positionTypes": [
+      "Full-time employees"
+    ],
+    "website": "www.amazon.com",
+    "interviews": "No",
+    "virtualTimes": "10:00 - 10:30, 10:30 - 11:00, 11:00 - 11:30, 11:30 - 12:00",
+    "inPersonTimes": "",
+    "logoUrlCheckString": "https://images.app.goo.gl/BhWDGMAA9qP3froJ9"
   }
 ]`);
 /**** GEN:E id="companies-csv" */
