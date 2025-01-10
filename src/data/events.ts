@@ -50,8 +50,10 @@ export const alumniMixer = new TimeEventWithLinks({
   weekdate: 16,
   startTime: '7pm',
   endTime: '10pm',
-  studentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdyRn-3dVB9q_1qfkP2MTx3cjOKjHkQRONqQwFFUQvwUhjoEQ/viewform?usp=sf_link',
-  industryLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdyRn-3dVB9q_1qfkP2MTx3cjOKjHkQRONqQwFFUQvwUhjoEQ/viewform?usp=sf_link',
+  // studentLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdyRn-3dVB9q_1qfkP2MTx3cjOKjHkQRONqQwFFUQvwUhjoEQ/viewform?usp=sf_link',
+  // industryLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdyRn-3dVB9q_1qfkP2MTx3cjOKjHkQRONqQwFFUQvwUhjoEQ/viewform?usp=sf_link',
+  studentLink: '#',
+  industryLink: '#',
   location: 'TBD',
 });
 

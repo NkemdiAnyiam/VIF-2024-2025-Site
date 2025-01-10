@@ -168,7 +168,7 @@ export function ForStudentsPage(): JSX.Element {
                   <p>
                     Once we have secured a venue for this event, an announcement email will be sent out with more details,
                     and an update will be posted here on our website. VIF will be catering a fixed menu and non-alcoholic beverages.
-                    Expenses such as parking and alcoholic beverages will not be covered by VIF. <a href={alumniMixer.studentLink} className="link" target="_blank" rel="noreferrer">Register for the event here</a>.
+                    Expenses such as parking and alcoholic beverages will not be covered by VIF. <a href={alumniMixer.studentLink} className="link strike-through" target="_blank" rel="noreferrer">Register for the event here</a>.
                   </p>
 
                   <picture className="building-photo-picture">
