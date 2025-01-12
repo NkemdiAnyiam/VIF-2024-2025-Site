@@ -80,6 +80,22 @@ export const companies = JSON.parse(`[
     "virtualTimes": "10:00 - 10:30, 10:30 - 11:00, 11:00 - 11:30, 11:30 - 12:00",
     "inPersonTimes": "",
     "logoUrlCheckString": "https://images.app.goo.gl/BhWDGMAA9qP3froJ9"
+  },
+  {
+    "companyName": "Captiv Studios ",
+    "focuses": "Virtual Production ",
+    "positionTypes": [
+      "Interns",
+      "Full-time employees",
+      "Part-time employees",
+      "Contract workers",
+      "Freelancers"
+    ],
+    "website": "https://www.captivstudios.com/",
+    "interviews": "Yes",
+    "virtualTimes": "All Day",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://drive.google.com/file/d/1wtwjDwzGuUo8e9MK00lGu9D9QWs_S-DJ/view?usp=drive_link"
   }
 ]`);
 /**** GEN:E id="companies-csv" */
