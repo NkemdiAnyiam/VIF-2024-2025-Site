@@ -175,6 +175,27 @@
     color: $color-brand-green-dark;
     border-bottom: 1px solid currentColor;
   }
+
+  &--lighter {
+    &:link,
+    &:visited {
+      color: lighten($color-brand-green-light, 28);
+    }
+
+    &:hover {
+      color: lighten($color-brand-green, 28);
+      border-bottom: 1px solid currentColor;
+    
+      // &::selection {
+      //   text-decoration-style: solid;
+      // }
+    }
+
+    &:active {
+      color: lighten($color-brand-green-dark, 28);
+      border-bottom: 1px solid currentColor;
+    }
+  }
 }
 
 .strike-through {
