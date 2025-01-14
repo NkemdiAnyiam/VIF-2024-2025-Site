@@ -1,7 +1,7 @@
 import React from 'react';
 
 type NoticeProps = {
-  children: string;
+  children: JSX.Element | string;
 }
 
 export function Notice(props: NoticeProps): JSX.Element {
