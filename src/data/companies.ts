@@ -96,6 +96,20 @@ export const companies = JSON.parse(`[
     "virtualTimes": "All Day",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://drive.google.com/file/d/1wtwjDwzGuUo8e9MK00lGu9D9QWs_S-DJ/view?usp=drive_link"
+  },
+  {
+    "companyName": "Electronic Arts",
+    "focuses": "Game Development",
+    "positionTypes": [
+      "Interns",
+      "Full-time employees",
+      "Contract workers"
+    ],
+    "website": "https://www.ea.com/",
+    "interviews": "No",
+    "virtualTimes": "All Day",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://www.dropbox.com/scl/fi/no3qn6gk0q2pj7gsg70t3/EA_Logo_Hero.png?rlkey=t7mi0e5she3jdl5sv3txt6vj8&st=6bb3clzp&dl=0"
   }
 ]`);
 /**** GEN:E id="companies-csv" */
