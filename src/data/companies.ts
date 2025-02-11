@@ -122,6 +122,31 @@ export const companies = JSON.parse(`[
     "virtualTimes": "All Day",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://drive.google.com/drive/folders/1O0JIEF0nLGE9ifw8xxfu-VmUjQStQj_w?usp=drive_link"
+  },
+  {
+    "companyName": "STRAND",
+    "focuses": "Architectural Visualization",
+    "positionTypes": [
+      "Interns",
+      "Full-time employees"
+    ],
+    "website": "https://www.strandae.com/",
+    "interviews": "Yes",
+    "virtualTimes": "10:00 - 10:30, 10:30 - 11:00, 11:00 - 11:30, 11:30 - 12:00, 12:30 - 1:00",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "Email sent"
+  },
+  {
+    "companyName": "Angus Animation",
+    "focuses": "Animation",
+    "positionTypes": [
+      "Members"
+    ],
+    "website": "AngusAnimation.com",
+    "interviews": "No",
+    "virtualTimes": "",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://drive.google.com/drive/folders/1X79N1YFFQZawgOMNwiQ3wXcBPc52Biom?usp=sharing"
   }
 ]`);
 /**** GEN:E id="companies-csv" */
