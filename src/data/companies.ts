@@ -110,6 +110,18 @@ export const companies = JSON.parse(`[
     "virtualTimes": "All Day",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://www.dropbox.com/scl/fi/no3qn6gk0q2pj7gsg70t3/EA_Logo_Hero.png?rlkey=t7mi0e5she3jdl5sv3txt6vj8&st=6bb3clzp&dl=0"
+  },
+  {
+    "companyName": "PBK Architects",
+    "focuses": "Architecture",
+    "positionTypes": [
+      "Full-time employees"
+    ],
+    "website": "https://pbk.com/",
+    "interviews": "Yes",
+    "virtualTimes": "All Day",
+    "inPersonTimes": "All Day",
+    "logoUrlCheckString": "https://drive.google.com/drive/folders/1O0JIEF0nLGE9ifw8xxfu-VmUjQStQj_w?usp=drive_link"
   }
 ]`);
 /**** GEN:E id="companies-csv" */
