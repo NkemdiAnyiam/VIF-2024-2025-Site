@@ -147,6 +147,21 @@ export const companies = JSON.parse(`[
     "virtualTimes": "",
     "inPersonTimes": "All Day",
     "logoUrlCheckString": "https://drive.google.com/drive/folders/1X79N1YFFQZawgOMNwiQ3wXcBPc52Biom?usp=sharing"
+  },
+  {
+    "companyName": "Amerra, Inc.",
+    "focuses": "Animation, Game Development, Graphic Design, AR / VR",
+    "positionTypes": [
+      "Interns",
+      "Part-time employees",
+      "Contract workers",
+      "Freelancers"
+    ],
+    "website": "www.amerra.com",
+    "interviews": "No",
+    "virtualTimes": "",
+    "inPersonTimes": "10:00 - 10:30",
+    "logoUrlCheckString": "https://www.amerra.com/signature/amerralogo.png"
   }
 ]`);
 /**** GEN:E id="companies-csv" */
