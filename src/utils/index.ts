@@ -15,7 +15,7 @@ export function toExternalUrl(url: string): string {
  */
 export function nameToLogoName(companyName: string): string {
   // example: Bluepoint Games becomes bluepoint-games-min
-  return companyName.trim().toLowerCase().replaceAll(/\s+/g, '-').replaceAll(/\(|\)|\./g, '') + '-min';
+  return companyName.trim().toLowerCase().replaceAll(/\s+/g, '-').replaceAll(/\(|\)|\.|,|!|:|\?|\/|\\|;|'|"|`/g, '') + '-min';
 };
 
 export * from './events';
