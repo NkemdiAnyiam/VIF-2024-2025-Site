@@ -162,6 +162,19 @@ export const companies = JSON.parse(`[
     "virtualTimes": "",
     "inPersonTimes": "10:00 - 10:30",
     "logoUrlCheckString": "https://www.amerra.com/signature/amerralogo.png"
+  },
+  {
+    "companyName": "The Stronghold Companies",
+    "focuses": "Animation, Graphic Design, Basic Photography/Videography",
+    "positionTypes": [
+      "Interns",
+      "Freelancers"
+    ],
+    "website": "thestrongholdcompanies.com",
+    "interviews": "No",
+    "virtualTimes": "11:30 - 12:00, 12:30 - 1:00, 1:00 - 1:30, 1:30 - 2:00, 2:00 - 2:30",
+    "inPersonTimes": "2:00 - 2:30, 3:00 - 3:30, 3:30 - 4:00",
+    "logoUrlCheckString": "Option 2"
   }
 ]`);
 /**** GEN:E id="companies-csv" */
