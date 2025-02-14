@@ -29,6 +29,11 @@ export function CompanyCard(props: CompanyCardProps): JSX.Element {
     <div className={`company-card company-card--white`}>
       <div className="company-card__header" onClick={() => setExpanded(!expanded)}>
         <div className="company-card__photo-container">
+          {/* <picture className="company-card__picture company-card__picture--blurred">
+            <source srcSet={require(`../../../images/companies/${logoName}.webp`)} type="image/webp" />
+            <source srcSet={require(`../../../images/companies/${logoName}.jpg`)} type="image/jpeg" />
+            <img src={require(`../../../images/companies/${logoName}.jpg`)} alt={props.companyName + ' logo'} className="company-card__photo company-card__photo--blurred" />
+          </picture> */}
           <picture className="company-card__picture">
             <source srcSet={require(`../../../images/companies/${logoName}.webp`)} type="image/webp" />
             <source srcSet={require(`../../../images/companies/${logoName}.jpg`)} type="image/jpeg" />
