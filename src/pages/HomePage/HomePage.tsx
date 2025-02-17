@@ -21,7 +21,7 @@ export function HomePage(): JSX.Element {
           <span>Welcome to the</span> <span>{fairTimes.yearEnDashRange}</span> <span>VIZ Industry Fair!</span>
         </h1>
         <p className="header__intro-text">
-          Viz Industry Fair (VIF) is both an organization and annual event dedicated to career planning and success for students within the new school
+          Viz Industry Fair (VIF) is both an organization and annual event dedicated to career planning and success for students within the new College
           of Performance, Visualization & Fine Arts (PVFA) at Texas A&M University.
         </p>
       </Header>
