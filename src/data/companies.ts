@@ -175,6 +175,20 @@ export const companies = JSON.parse(`[
     "virtualTimes": "All Day",
     "inPersonTimes": "",
     "logoUrlCheckString": "https://drive.google.com/file/d/1RS4psIL61JvDXXa6SNB5EW9GKemnmOPl/view?usp=sharing"
+  },
+  {
+    "companyName": "MOREgroup (Huckabee)",
+    "focuses": "Animation",
+    "positionTypes": [
+      "Interns",
+      "Full-time employees",
+      "Part-time employees"
+    ],
+    "website": "moregroup-inc.com",
+    "interviews": "Yes",
+    "virtualTimes": "11:30 - 12:00, 12:30 - 1:00, 1:00 - 1:30, 1:30 - 2:00, 2:00 - 2:30",
+    "inPersonTimes": "11:30 - 12:00, 12:30 - 1:00, 1:00 - 1:30, 1:30 - 2:00, 2:00 - 2:30, 3:00 - 3:30",
+    "logoUrlCheckString": "https://www.godspeed.com/investments/huckabee/"
   }
 ]`);
 /**** GEN:E id="companies-csv" */
