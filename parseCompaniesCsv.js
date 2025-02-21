@@ -49,8 +49,8 @@ const parse = csvParse.parse;
         positionTypes: positionTypes.split(/\s*,\s*/),
         website,
         interviews,
-        virtualTimes,
-        inPersonTimes,
+        virtualTimes: attendingVirtualFair === 'No' ? "" : virtualTimes,
+        inPersonTimes: attendingInPersonFair === 'No' ? "" : inPersonTimes,
         logoUrlCheckString
       }
       companiesMap.set(companyName.trim().toLowerCase(), companyObj);

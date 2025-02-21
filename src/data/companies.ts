@@ -66,7 +66,7 @@ export const companies = JSON.parse(`[
     "website": "https://trg.agency/",
     "interviews": "No",
     "virtualTimes": "All Day",
-    "inPersonTimes": "All Day",
+    "inPersonTimes": "",
     "logoUrlCheckString": "Yes"
   },
   {
@@ -94,7 +94,7 @@ export const companies = JSON.parse(`[
     "website": "https://www.captivstudios.com/",
     "interviews": "Yes",
     "virtualTimes": "All Day",
-    "inPersonTimes": "All Day",
+    "inPersonTimes": "",
     "logoUrlCheckString": "https://drive.google.com/file/d/1wtwjDwzGuUo8e9MK00lGu9D9QWs_S-DJ/view?usp=drive_link"
   },
   {
@@ -147,7 +147,7 @@ export const companies = JSON.parse(`[
     "website": "www.amerra.com",
     "interviews": "No",
     "virtualTimes": "",
-    "inPersonTimes": "10:00 - 10:30",
+    "inPersonTimes": "10:00 - 10:30, 10:30 - 11:00, 11:00 - 11:30,  11:30 - 12:00, 12:00 - 12:30, 12:30 - 1:00",
     "logoUrlCheckString": "https://www.amerra.com/signature/amerralogo.png"
   },
   {
@@ -160,7 +160,7 @@ export const companies = JSON.parse(`[
     "website": "thestrongholdcompanies.com",
     "interviews": "No",
     "virtualTimes": "11:30 - 12:00, 12:30 - 1:00, 1:00 - 1:30, 1:30 - 2:00, 2:00 - 2:30",
-    "inPersonTimes": "2:00 - 2:30, 3:00 - 3:30, 3:30 - 4:00",
+    "inPersonTimes": "",
     "logoUrlCheckString": "Option 2"
   },
   {
@@ -186,7 +186,7 @@ export const companies = JSON.parse(`[
     ],
     "website": "moregroup-inc.com",
     "interviews": "Yes",
-    "virtualTimes": "11:30 - 12:00, 12:30 - 1:00, 1:00 - 1:30, 1:30 - 2:00, 2:00 - 2:30",
+    "virtualTimes": "",
     "inPersonTimes": "11:30 - 12:00, 12:30 - 1:00, 1:00 - 1:30, 1:30 - 2:00, 2:00 - 2:30, 3:00 - 3:30",
     "logoUrlCheckString": "https://www.godspeed.com/investments/huckabee/"
   }
